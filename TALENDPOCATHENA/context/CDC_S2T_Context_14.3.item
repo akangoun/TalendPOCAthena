@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_1RidYBMAEeu_N67zfaBnvw">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1RidYRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_1RidYhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_1RidYxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidZBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1RidZRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1RidZhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_1RidZxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidaBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_1RidaRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_1RidahMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_1RidaxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidbBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidbRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidbhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_1RidbxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidcBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidcRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_1RidchMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidcxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_1RiddBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_1RiddRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RiddhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RiddxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RideBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RideRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidehMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidexMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_1RidfBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidfRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidfhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidfxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidgBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_1RidgRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidghMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_1RidgxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidhBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_1RidhRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidhhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidhxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidiBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RidiRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_IFbGYBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpwBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpwRVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpwhVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpwxVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpxBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpxRVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0nIpxhVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_Vuzr4BVwEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxoBYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxoRYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxohYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_rILhABeQEeuTJfcLUJpqRw"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu8CA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu8SA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu8iA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu8yA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu9CA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu9SA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu9iA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu9yA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2Z6kM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2Z6kc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2Z6ks4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2Z6k84vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_KjE0kBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0kRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_KjE0khQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE0kxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0lBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0lRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0lhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE0lxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0mBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_KjE0mRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_KjE0mhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_KjE0mxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0nBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0nRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0nhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_KjE0nxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0oBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0oRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_KjE0ohQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0oxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE0pBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE0pRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0phQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0pxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0qBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0qRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0qhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0qxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_KjE0rBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0rRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0rhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0rxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0sBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_KjE0sRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0shQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE0sxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0tBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE0tRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0thQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0txQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0uBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0uRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE0uhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpxxVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpyBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpyRVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpyhVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpyxVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nIpzBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0nIpzRVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_Vuzr4RVwEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxoxYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxpBYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxpRYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_rILhAReQEeuTJfcLUJpqRw"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu-CA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu-SA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu-iA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu-yA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu_CA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu_SA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu_iA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91Vu_yA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2ahoM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2ahoc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2ahos4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2aho84vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_RpuRsBQDEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_RpuRsRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_RpuRshQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_RpuRsxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRtBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_RpuRtRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_RpuRthQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_RpuRtxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRuBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_RpuRuRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_RpuRuhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_RpuRuxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRvBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRvRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRvhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_RpuRvxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRwBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRwRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_RpuRwhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRwxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_RpuRxBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_RpuRxRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRxhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRxxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRyBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRyRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRyhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRyxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_RpuRzBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRzRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRzhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuRzxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuR0BQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_RpuR0RQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuR0hQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_RpuR0xQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuR1BQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_RpuR1RQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuR1hQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuR1xQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuR2BQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_RpuR2RQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_RpuR2hQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ0BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ0RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ0hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ0xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ1BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ1RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0nJQ1hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_Vu0S8BVwEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxphYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxpxYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxqBYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_rILhAheQEeuTJfcLUJpqRw"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvACA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvASA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvAiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvAyA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvBCA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvBSA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvBiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvByA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2ahpM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2ahpc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2ahps4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2ahp84vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_KjE0uxQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0vBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_KjE0vRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE0vhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0vxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0wBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0wRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE0whQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0wxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_KjE0xBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_KjE0xRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_KjE0xhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0xxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0yBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0yRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_KjE0yhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0yxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0zBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_KjE0zRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0zhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE0zxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE00BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE00RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE00hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE00xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE01BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE01RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE01hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_KjE01xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE02BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE02RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE02hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE02xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_KjE03BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE03RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE03hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE03xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE04BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE04RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE04hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE04xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE05BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE05RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ1xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ2BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ2RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ2hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ2xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ3BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0nJQ3RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_Vu0S8RVwEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxqRYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxqhYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djbxqxYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_rILhAxeQEeuTJfcLUJpqRw"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvCCA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvCSA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvCiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvCyA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvDCA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvDSA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvDiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvDyA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2bIsM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2bIsc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2bIss4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2bIs84vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_1Rid3hMAEeu_N67zfaBnvw">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1Rid3xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_1Rid4BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_1Rid4RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid4hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1Rid4xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1Rid5BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_1Rid5RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid5hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_1Rid5xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_1Rid6BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_1Rid6RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid6hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid6xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid7BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_1Rid7RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid7hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid7xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_1Rid8BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid8RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_1Rid8hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_1Rid8xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid9BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid9RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid9hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid9xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid-BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid-RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_1Rid-hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid-xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid_BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid_RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1Rid_hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_1Rid_xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RieABMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_1RieARMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RieAhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_1RieAxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RieBBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RieBRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RieBhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_1RieBxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_IFbGYRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ3hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ3xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ4BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ4RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ4hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJQ4xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0nJQ5BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_Vu0S8hVwEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djcYsBYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djcYsRYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djcYshYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_rILhBBeQEeuTJfcLUJpqRw"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvECA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvESA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvEiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvEyA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvFCA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvFSA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvFiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvFyA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2bItM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2bItc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2bIts4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2bIt84vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SL_STG" xmi:id="_0cueUM4vEeyCdd6IuMV3Ag">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cueUc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_0cueUs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cueU84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueVM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cueVc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cueVs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cueV84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueWM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_0cueWc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_0cueWs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_0cueW84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueXM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueXc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueXs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_0cueX84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueYM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueYc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_0cueYs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueY84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cueZM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cueZc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueZs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueZ84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueaM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueac4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueas4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuea84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_0cuebM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuebc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuebs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueb84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuecM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_0cuecc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuecs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuec84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuedM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cuedc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueds4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cued84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueeM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueec4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuees4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuee84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuefM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuefc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuefs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuef84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuegM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuegc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cuegs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueg84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuehM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuehc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuehs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueh84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueiM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueic4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueis4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuei84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuejM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuejc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuejs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cuej84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cuekM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuekc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueks4vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_KjE05hQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE05xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_KjE06BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE06RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE06hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE06xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE07BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE07RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE07hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_KjE07xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_KjE08BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_KjE08RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE08hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE08xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE09BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_KjE09RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE09hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE09xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_KjE0-BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0-RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE0-hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE0-xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0_BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0_RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0_hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE0_xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1ABQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1ARQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_KjE1AhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1AxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1BBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1BRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1BhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_KjE1BxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1CBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE1CRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1ChQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_KjE1CxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1DBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1DRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1DhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_KjE1DxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_KjE1EBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJ34BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJ34RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJ34hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJ34xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJ35BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0nJ35RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0nJ35hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_Vu0S8xVwEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djcYsxYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djcYtBYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_djcYtRYnEeuQAfXX0tarVA"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_rILhBReQEeuTJfcLUJpqRw"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvGCA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvGSA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvGiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvGyA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvHCA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvHSA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvHiA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_91VvHyA8EeuaWY5JFvxBOw"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2bIuM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_f2bIuc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2bIus4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_f2bIu84vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="UAT" xmi:id="_0cuek84vEeyCdd6IuMV3Ag">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cuelM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="2022-05-01 00:00:00" xmi:id="_0cuelc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cuels4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuel84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cuemM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cuemc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cuems4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuem84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Stage" xmi:id="_0cuenM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1" xmi:id="_0cuenc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_0cuens4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuen84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueoM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueoc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" xmi:id="_0cueos4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueo84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuepM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_0cuepc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueps4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuep84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cueqM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueqc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueqs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueq84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuerM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuerc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuers4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_0cuer84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuesM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuesc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuess4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cues84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" xmi:id="_0cuetM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuetc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuets4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuet84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cueuM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueuc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueus4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueu84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuevM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuevc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuevs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuev84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuewM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuewc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuews4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cuew84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuexM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="-1" xmi:id="_0cuexc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuexs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuex84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueyM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="-1" xmi:id="_0cueyc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cueys4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuey84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuezM4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuezc4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuezs4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cuez84vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cue0M4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cue0c4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cue0s4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_0cue084vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cue1M4vEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="null" xmi:id="_0cue1c4vEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f1fb35ce-b763-4f54-b935-6a12a23576cb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Dp1eDtvhc+V8kgu4jWbyiSJJH9RxymShcVnDbFlj8foDaZK/AlhybkYeK8UkJlwW4NAboYJxsEQZ&#13;
+3bLfoVsgJA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6f8f1b98-366c-47fa-841c-fe192b1f55d9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wFxUDN7iVd+5okXn8r4MvFc5Wuz/9gClkD+Xb9ZYgmqUjVvmz739H9arR6mUxg7aMCLxCiOfBntz&#13;
+pPG+pl/+Aw==</DigestValue></Reference></SignedInfo><SignatureValue>BM90rL0Nv2cp4SVgjcnTEIIjVtVGQMI2Aq3gUnwuTOI1eKmV79tayFTO1z0Cr2vCPfhrnJv5hwdQ&#13;
+Ild38U68XuF1eDFloG2WtCMg85+souYinWY1IU6Pnoih4CWV9vy/60acoBsYUkenhRAnMt6JSmrT&#13;
+L2u09WHgoAD80ZV0TWXqhn/3oCoYlmP30258IdQd9Yzt5dw0Ao5XL7tKQxDADQGmDZru9Kt/H97C&#13;
+TdcWpUjTdsTKLcl4emxT59JkbHuW8AhMmuWtEx9s1bn8n6SbmvlyeR3+E17EgwzOOjzTdP+VWGUI&#13;
+l00v8WfximdSYb4Bx4hU+QKifgMdlc1IqFluow==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6f8f1b98-366c-47fa-841c-fe192b1f55d9" Target="#_f1fb35ce-b763-4f54-b935-6a12a23576cb"><Timestamp>2023-06-11 03:03:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

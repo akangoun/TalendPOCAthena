@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:+A0ee0xXYFPyt4C+QApQ8/oMdAv9N6CGuKpXt9iquHPiBJAWpVjY3y3u"/>
+    <contextParameter comment="" internalId="_rE_aMMpnEe2d6r-wcl9yVw" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_rE_aMcpnEe2d6r-wcl9yVw" name="TGT_Criteria_GetMax_RowVer" prompt="TGT_Criteria_GetMax_RowVer?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rE_aMspnEe2d6r-wcl9yVw" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" internalId="_rE_aM8pnEe2d6r-wcl9yVw" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_rE_aNMpnEe2d6r-wcl9yVw" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_rE_aNcpnEe2d6r-wcl9yVw" name="TGT_Criteria_GetMax_UpdateDate2" prompt="TGT_Criteria_GetMax_UpdateDate2?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rE_aNspnEe2d6r-wcl9yVw" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABQMpnEe2d6r-wcl9yVw" name="DI_CDC_Type" prompt="DI_CDC_Type?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABQcpnEe2d6r-wcl9yVw" name="DI_JobContext" prompt="DI_JobContext?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABQspnEe2d6r-wcl9yVw" name="TGT_Criteria_GetMax_CreateDate" prompt="TGT_Criteria_GetMax_CreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABQ8pnEe2d6r-wcl9yVw" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABRMpnEe2d6r-wcl9yVw" name="TGT_Criteria_NK_VerNo" prompt="TGT_Criteria_NK_VerNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABRcpnEe2d6r-wcl9yVw" name="DI_JobName" prompt="DI_JobName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABRspnEe2d6r-wcl9yVw" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABR8pnEe2d6r-wcl9yVw" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABSMpnEe2d6r-wcl9yVw" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABScpnEe2d6r-wcl9yVw" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABSspnEe2d6r-wcl9yVw" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABS8pnEe2d6r-wcl9yVw" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" internalId="_rFABTMpnEe2d6r-wcl9yVw" name="TGT_Criteria_Combo2_String" prompt="TGT_Criteria_Combo2_String?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABTcpnEe2d6r-wcl9yVw" name="TGT_MaxSystemModStamp" prompt="TGT_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" internalId="_rFABTspnEe2d6r-wcl9yVw" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" internalId="_rFABT8pnEe2d6r-wcl9yVw" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABUMpnEe2d6r-wcl9yVw" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABUcpnEe2d6r-wcl9yVw" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABUspnEe2d6r-wcl9yVw" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABU8pnEe2d6r-wcl9yVw" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABVMpnEe2d6r-wcl9yVw" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABVcpnEe2d6r-wcl9yVw" name="SRC_MaxRowVersion" prompt="SRC_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" internalId="_rFABVspnEe2d6r-wcl9yVw" name="SRC_Criteria_GetMax" prompt="SRC_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABV8pnEe2d6r-wcl9yVw" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABWMpnEe2d6r-wcl9yVw" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABWcpnEe2d6r-wcl9yVw" name="TGT_Criteria_Combo2_Int" prompt="TGT_Criteria_Combo2_Int?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABWspnEe2d6r-wcl9yVw" name="TGT_MaxModifyDate2" prompt="TGT_MaxModifyDate2?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" internalId="_rFABW8pnEe2d6r-wcl9yVw" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" internalId="_rFABXMpnEe2d6r-wcl9yVw" name="SRC_TableName2" prompt="SRC_TableName2?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABXcpnEe2d6r-wcl9yVw" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABXspnEe2d6r-wcl9yVw" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABX8pnEe2d6r-wcl9yVw" name="SRC_TableName3" prompt="SRC_TableName3?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABYMpnEe2d6r-wcl9yVw" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" internalId="_rFABYcpnEe2d6r-wcl9yVw" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" internalId="_rFABYspnEe2d6r-wcl9yVw" name="TGT_Criteria_GUID" prompt="TGT_Criteria_GUID?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABY8pnEe2d6r-wcl9yVw" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABZMpnEe2d6r-wcl9yVw" name="TGT_Criteria_GetMaxSystemModStamp" prompt="TGT_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABZcpnEe2d6r-wcl9yVw" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABZspnEe2d6r-wcl9yVw" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABZ8pnEe2d6r-wcl9yVw" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABaMpnEe2d6r-wcl9yVw" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABacpnEe2d6r-wcl9yVw" name="SRC_Criteria_GetMaxSystemModStamp" prompt="SRC_Criteria_GetMaxSystemModStamp?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABaspnEe2d6r-wcl9yVw" name="DI_JobStatus" prompt="DI_JobStatus?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABa8pnEe2d6r-wcl9yVw" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABbMpnEe2d6r-wcl9yVw" name="Source_Query" prompt="Source_Query?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABbcpnEe2d6r-wcl9yVw" name="SRC_IndexTableWildcard" prompt="SRC_IndexTableWildcard?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABbspnEe2d6r-wcl9yVw" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABb8pnEe2d6r-wcl9yVw" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" internalId="_rFABcMpnEe2d6r-wcl9yVw" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABccpnEe2d6r-wcl9yVw" name="SRC_IndexColumn" prompt="SRC_IndexColumn?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABcspnEe2d6r-wcl9yVw" name="SRC_MaxSystemModStamp" prompt="SRC_MaxSystemModStamp?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" internalId="_rFABc8pnEe2d6r-wcl9yVw" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_rFABdMpnEe2d6r-wcl9yVw" name="TGT_Criteria_Combo1_String" prompt="TGT_Criteria_Combo1_String?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABdcpnEe2d6r-wcl9yVw" name="SRC_IndexTable" prompt="SRC_IndexTable?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABdspnEe2d6r-wcl9yVw" name="SRC_Criteria_GetMax_UpdateDate" prompt="SRC_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABd8pnEe2d6r-wcl9yVw" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" internalId="_rFABeMpnEe2d6r-wcl9yVw" name="SRC_IndexName" prompt="SRC_IndexName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABecpnEe2d6r-wcl9yVw" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABespnEe2d6r-wcl9yVw" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABe8pnEe2d6r-wcl9yVw" name="TGT_Criteria_GetMax_UpdateDate" prompt="TGT_Criteria_GetMax_UpdateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABfMpnEe2d6r-wcl9yVw" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABfcpnEe2d6r-wcl9yVw" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_rFABfspnEe2d6r-wcl9yVw" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" internalId="_rFABf8pnEe2d6r-wcl9yVw" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABgMpnEe2d6r-wcl9yVw" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABgcpnEe2d6r-wcl9yVw" name="SRC_Criteria_GetMax_UpdateDate2" prompt="SRC_Criteria_GetMax_UpdateDate2?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABgspnEe2d6r-wcl9yVw" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABg8pnEe2d6r-wcl9yVw" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_rFABhMpnEe2d6r-wcl9yVw" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" internalId="_rFABhcpnEe2d6r-wcl9yVw" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:J97agTTdSTvivevbOwGmMcXguUXbmjJ6pKlR0x5A"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend-Studio-v801_workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:h+qYb3fehci/RShW6a0uVqOi4jJIMm67icLJU4u2"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_a2kIUMVvEey3xfLApzgqSw" name="DQTechnical"/>
+    <routinesParameter id="_a2J4oMVvEey3xfLApzgqSw" name="DataMasking"/>
+    <routinesParameter id="_mnd_ILBpEeydZsfTpczvmg" name="DataOperation"/>
+    <routinesParameter id="_a2eBsMVvEey3xfLApzgqSw" name="DataQualityDependencies"/>
+    <routinesParameter id="_a2a-YMVvEey3xfLApzgqSw" name="DataQuality"/>
+    <routinesParameter id="_a2hFAMVvEey3xfLApzgqSw" name="DqStringHandling"/>
+    <routinesParameter id="_mnks0LBpEeydZsfTpczvmg" name="Mathematical"/>
+    <routinesParameter id="_mnud0LBpEeydZsfTpczvmg" name="Numeric"/>
+    <routinesParameter id="_moFqMLBpEeydZsfTpczvmg" name="Relational"/>
+    <routinesParameter id="_mlWfQLBpEeydZsfTpczvmg" name="SQLike"/>
+    <routinesParameter id="_moU6wLBpEeydZsfTpczvmg" name="StringHandling"/>
+    <routinesParameter id="_mogg8LBpEeydZsfTpczvmg" name="TalendDataGenerator"/>
+    <routinesParameter id="_moy00LBpEeydZsfTpczvmg" name="TalendDate"/>
+    <routinesParameter id="_mpQH0LBpEeydZsfTpczvmg" name="TalendStringUtil"/>
+    <routinesParameter id="_mpD6kLBpEeydZsfTpczvmg" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="7" offsetLabelY="0" posX="416" posY="64" sizeX="96" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// ***** CHANGE Job Specific Contexts Below ***** //&#10;&#10;context.DI_CDC         = 3;  /// CDC processing: 1 = SK Max SeqNo Insert Only, 2 Seqno &amp; RowVersion, 3 = SeqNo &amp; Last update date&#10;// CDC processing - 1 = SK Max SeqNo Insert Only; 2 Insert SeqNo Modify RowVersion, 3 Insert SeqNo Modify UpdateDate&#10;&#10;context.DI_JobName = jobName;     &#10;context.DI_JobContext = contextStr;      &#10;&#10;context.DI_Schema = &quot;Stage&quot;;&#10;&#10;context.SRC_Name = &quot;edw&quot;;     // from SOR_System&#10;context.SRC_TableName = &quot;OpportunityLineItem&quot;;&#10;&#10;context.TGT_Name = &quot;sfdc&quot;;     // from SOR_System&#10;context.TGT_TableName = &quot;sfdc_OpportunityLineItem&quot;;    // testng only&#10;context.TGT_Criteria_GetMax_UpdateDate = &quot;LastModifiedDate&quot;;  // sfdc&#10;&#10;//  &quot; &quot;+ context.TGT_Criteria_GetMax_UpdateDate  + &quot;  &gt;  &quot; + TalendDate.formatDate(&quot;yyyy-MM-dd'T'HH:mm:ss&quot;,  context.TGT_MaxModifyDate) + &quot;Z &quot;;&#10;&#10;///// source db config&#10;//context.SRC_Server = context.adventureworksdw_Server;&#10;//context.SRC_Database = context.adventureworksdw_Database;&#10;//context.SRC_Schema =  context.adventureworksdw_Schema;&#10;//context.SRC_Port = context.adventureworksdw_Port;&#10;//context.SRC_Password = context.adventureworksdw_Password;&#10;//context.SRC_Login = context.adventureworksdw_Login;&#10;//context.SRC_AdditionalParams = context.adventureworksdw_AdditionalParams;&#10;&#10;/// target db config&#10;//context.TGT_Server = context.sandbox_local_Server;&#10;//context.TGT_Database = context.sandbox_local_Database;&#10;//context.TGT_Schema = context.sandbox_local_Schema ;     // from SOR_System&#10;//context.TGT_Port = context.sandbox_local_Port;&#10;//context.TGT_Password = context.sandbox_local_Password;&#10;//context.TGT_Login = context.sandbox_local_Login;&#10;//context.TGT_AdditionalParams = context.sandbox_local_AdditionalParams;&#10;&#10;// Debug Contexts Below //&#10;&#10;System.out.println(&quot;----&gt; Assign Context Variables - Job: &quot;+ jobName +&quot; CDC Context Variables S2T. SRC_Name: &quot;+context.SRC_Name+&quot; SRC_TableName: &quot;+context.SRC_TableName);&#10;System.out.println(&quot;----&gt;                       TGT_Name: &quot;+context.TGT_Name+ &quot; TGT_TableName: &quot;+context.TGT_TableName+&quot; TGT_Criteria_GetMax_UpdateDate: &quot;+context.TGT_Criteria_GetMax_UpdateDate+&quot;\n&quot;);&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Job_Specific_Context"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" show="false" value="100"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getFirstName()"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getLastName()"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getUsCity()"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRowGenerator_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getLastName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getUsCity&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getLastName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getUsCity&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="First"/>
+    <elementParameter field="TEXT" name="SLEEPTIME" value="10000"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_2"/>
+    <elementParameter field="TEXT" name="NB_ROWS" show="false" value="3"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getFirstName()"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getLastName()"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="ARRAY" value="TalendDataGenerator.getUsCity()"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRowGenerator_2">
+      <column comment="" defaultValue="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getLastName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getUsCity&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#10;//&#10;// multiply by 2 the row identifier&#10;// output_row.id = input_row.id * 2;&#10;//&#10;// lowercase the name&#10;// output_row.name = input_row.name.toLowerCase();&#10;&#10;System.out.println(&quot;----&gt; WAITING.....:10 Seconds&quot;);&#10;Thread.sleep(10000);&#10;&#10;output_row.Id = row2.Id;&#10;output_row.FirstName=row2.FirstName;&#10;output_row.LastName=row2.LastName;&#10;output_row.City=row2.City;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Sleep 10 Sec"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getLastName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getUsCity&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="City"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" defaultValue="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getAsciiRandomString&quot;,&quot;PARAMETERS&quot;:[{&quot;PARAMETER_NAME&quot;:&quot;length&quot;,&quot;PARAMETER_VALUE&quot;:&quot;6 &quot;}],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendString&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="FirstName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getFirstName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="LastName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getLastName&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="City" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true">
+        <additionalField key="FUNCTION_INFO" value="{&quot;NAME&quot;:&quot;getUsCity&quot;,&quot;PARAMETERS&quot;:[],&quot;PARAMETER_CLASS_NAME&quot;:&quot;TalendDataGenerator&quot;}"/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="DI_CNTL_JobStats_BigQuery" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="800" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DI_CNTL_JobStats_BigQuery_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="DI_CNTL_JobStats_BigQuery"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRowGenerator_1" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tRowGenerator_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tRowGenerator_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Synchronize"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tRowGenerator_2" offsetLabelX="0" offsetLabelY="0" source="tRowGenerator_2" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRowGenerator_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DI_CNTL_JobStats_BigQuery_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a08df788-fe98-426e-b57a-f1ae69a0ad03"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z0twGibjUWPiKZ9DfXNvfvhisossz8L1+oc2iDnh8WGAlwNfhGyprsPoJA7H2saEh3Vtj5psKzJM&#13;
+hLQ1Iedxcg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4619a8f6-f5f2-4ade-a532-eceeb9c1ae7d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8GkPYV7rLd2Tcv79SvzHF7kHbU0+DHW0WxHheU/Q+e4CgjYBEf5mTsrZesQGojLPWRXl1BHgShax&#13;
+JkNgogaxsA==</DigestValue></Reference></SignedInfo><SignatureValue>kJLQ992Y+WQ7lAAySm7MXJPRShjOLlMM8Kw1y6AqEE3Sg9fKLB4Jj7CidS4pOzNq4a+kSOCYUnLP&#13;
+WjtwS9ojeLvPgFF8Z3r6P/N/OC2wuJZIP6u8OALrOYlslNgvWHE4Xr7zdU987NC1NkHUMol3K8v7&#13;
+Qzqg8WWEQop7PMpstPUNgkMJIa+Cx0jQ76Q4ygNJikc66idNA7aDczMkeA3S45bMfT5xFtxnpj5p&#13;
+SFxqH8hP0gEbHXpIFbmk/KbSGCCStHl/l5tI9KdU6dq5hG6r8t8C2ispo3U/YloyeL5FS4VbCVR6&#13;
+GkKRgTcFIMMkrgQXncSSIhoA1196dDZWegs56Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4619a8f6-f5f2-4ade-a532-eceeb9c1ae7d" Target="#_a08df788-fe98-426e-b57a-f1ae69a0ad03"><Timestamp>2023-06-11 03:03:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="LOC">
+      <contextParameter comment="" internalId="_tTNNkMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="di_cntl"/>
+      <contextParameter comment="" internalId="_tTNNkcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+      <contextParameter comment="" internalId="_tTNNkswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl-edw-test-psql-uswest2-cluster.cluster-c8fmpdadztny.us-west-2.rds.amazonaws.com"/>
+      <contextParameter comment="" internalId="_tTNNk8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_tTNNlMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_tTNNlcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_tTNNlswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:fOISiowGHTAPhH+5E+hO0ToPllGFQ56ZIjcc8/W0TXy5hjxb/k8ag2li9YNd"/>
+    </context>
+    <context confirmationNeeded="false" name="PRD">
+      <contextParameter comment="" internalId="_tTNNl8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="di_cntl"/>
+      <contextParameter comment="" internalId="_tTNNmMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="prd"/>
+      <contextParameter comment="" internalId="_tTNNmcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl-edw-test-psql-uswest2-cluster.cluster-c8fmpdadztny.us-west-2.rds.amazonaws.com"/>
+      <contextParameter comment="" internalId="_tTNNmswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_tTNNm8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_tTNNnMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_tTNNncwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:WwxQHd/YPlV4LFX/mpusueVlUUj8lmWtB902go1hAI+DEi2RfMsq7xqrIAlh"/>
+    </context>
+    <context confirmationNeeded="false" name="DEV">
+      <contextParameter comment="" internalId="_tTN0oMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="di_cntl"/>
+      <contextParameter comment="" internalId="_tTN0ocwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="dev"/>
+      <contextParameter comment="" internalId="_tTN0oswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl-edw-test-psql-uswest2-cluster.cluster-c8fmpdadztny.us-west-2.rds.amazonaws.com"/>
+      <contextParameter comment="" internalId="_tTN0o8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_tTN0pMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_tTN0pcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_tTN0pswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:eJdpwjU8Ctxgrx/owqxUwReofYkGLETiAzE+tgUBjeaHmPvaztpGjBco8tgj"/>
+    </context>
+    <context confirmationNeeded="false" name="TST">
+      <contextParameter comment="" internalId="_tTN0p8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="di_cntl"/>
+      <contextParameter comment="" internalId="_tTN0qMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+      <contextParameter comment="" internalId="_tTN0qcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl-edw-test-psql-uswest2-cluster.cluster-c8fmpdadztny.us-west-2.rds.amazonaws.com"/>
+      <contextParameter comment="" internalId="_tTN0qswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_tTN0q8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_tTN0rMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_tTN0rcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:QyRWgyjyESWykP4IWebzDGfuArQJ7c0DvteQMRaJWyhVv2Qqw9WWgPJoqozX"/>
+    </context>
+    <context confirmationNeeded="false" name="SBX">
+      <contextParameter comment="" internalId="_tTN0rswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="di_cntl"/>
+      <contextParameter comment="" internalId="_tTN0r8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+      <contextParameter comment="" internalId="_tTN0sMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl-edw-test-psql-uswest2-cluster.cluster-c8fmpdadztny.us-west-2.rds.amazonaws.com"/>
+      <contextParameter comment="" internalId="_tTN0scwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_tTN0sswkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_tTN0s8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_tTN0tMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:FZiN8bny2h1VLa63l/mQgSs8xc4vMHDd0uTNbWqqedAA1TuuyHJ0vWbS9hjj"/>
+    </context>
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" internalId="_tTN0tcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_tTN0tswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+      <contextParameter comment="" internalId="_tTN0t8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+      <contextParameter comment="" internalId="_tTN0uMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_tTN0ucwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_tTN0uswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_tTN0u8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:Bse4nNQlY6LkPLPUddbZ/F7Vegzdm+W1pgeqS7hDzRaNOjn+2fXI+EY4"/>
+    </context>
+    <context confirmationNeeded="false" name="PRE">
+      <contextParameter comment="" internalId="_1foBINYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_1foBIdYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="di_cntl"/>
+      <contextParameter comment="" internalId="_1foBItYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+      <contextParameter comment="" internalId="_1foBI9YDEeyFh5pKXX-Cbg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_1foBJNYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:XD3uS903QmjkcFPeV7kahVhE4h75CMAcEhpxpMO7+PtvRNOU4lharR8IUuyG"/>
+      <contextParameter comment="" internalId="_1foBJdYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_1foBJtYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl-edw-test-psql-uswest2-cluster.cluster-c8fmpdadztny.us-west-2.rds.amazonaws.com"/>
+    </context>
+    <context confirmationNeeded="false" name="DEV_AZ">
+      <contextParameter comment="" internalId="_Pd1vsPydEeyZMphe3I-ioQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_Pd1vsfydEeyZMphe3I-ioQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_Pd1vsvydEeyZMphe3I-ioQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="dev"/>
+      <contextParameter comment="" internalId="_Pd1vs_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_Pd1vtPydEeyZMphe3I-ioQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:c0dwNSj9G3/aWiqSqMOxwD4wG5Bt9PsGegfd7i8Yg76R0RtgOyJRazaD"/>
+      <contextParameter comment="" internalId="_Pd1vtfydEeyZMphe3I-ioQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_Pd1vtvydEeyZMphe3I-ioQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    </context>
+    <context confirmationNeeded="false" name="LOC_AZ">
+      <contextParameter comment="" internalId="_Pd1vt_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_Pd1vuPydEeyZMphe3I-ioQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_Pd1vufydEeyZMphe3I-ioQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+      <contextParameter comment="" internalId="_Pd1vuvydEeyZMphe3I-ioQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_Pd1vu_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:JcrlZ48YHfHDKkZAL6CanS5nSklCnl/kQe8j/uTXQNka0aobs2+33qSk"/>
+      <contextParameter comment="" internalId="_Pd1vvPydEeyZMphe3I-ioQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_Pd1vvfydEeyZMphe3I-ioQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    </context>
+    <context confirmationNeeded="false" name="PRD_AZ">
+      <contextParameter comment="" internalId="_Pd1vvvydEeyZMphe3I-ioQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_Pd1vv_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_Pd1vwPydEeyZMphe3I-ioQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="prd"/>
+      <contextParameter comment="" internalId="_Pd1vwfydEeyZMphe3I-ioQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_Pd1vwvydEeyZMphe3I-ioQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:MHFCjzobc27Zi/2wxd1KyUtDbnQrW5DIIBnSE22Qg9FwWry/2k/rAARJ"/>
+      <contextParameter comment="" internalId="_Pd1vw_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_Pd1vxPydEeyZMphe3I-ioQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    </context>
+    <context confirmationNeeded="false" name="PRE_AZ">
+      <contextParameter comment="" internalId="_Pd1vxfydEeyZMphe3I-ioQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_Pd1vxvydEeyZMphe3I-ioQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_Pd1vx_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+      <contextParameter comment="" internalId="_Pd1vyPydEeyZMphe3I-ioQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_Pd1vyfydEeyZMphe3I-ioQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:LU3X9BIUPxFq2nzDDX5hQmc8W5ViJZ02Ku0TC4sZfcWu25bpC7f38xeN"/>
+      <contextParameter comment="" internalId="_Pd1vyvydEeyZMphe3I-ioQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_Pd1vy_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    </context>
+    <context confirmationNeeded="false" name="SBX_AZ">
+      <contextParameter comment="" internalId="_Pd1vzPydEeyZMphe3I-ioQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_Pd1vzfydEeyZMphe3I-ioQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_Pd1vzvydEeyZMphe3I-ioQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+      <contextParameter comment="" internalId="_Pd1vz_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_Pd1v0PydEeyZMphe3I-ioQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:RcTo699CSYGDNdPGLq6ope/NLNxj6a8gOSi2B3nzYQNrGqiqZU+dfNt6"/>
+      <contextParameter comment="" internalId="_Pd1v0fydEeyZMphe3I-ioQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_Pd1v0vydEeyZMphe3I-ioQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    </context>
+    <context confirmationNeeded="false" name="TST_AZ">
+      <contextParameter comment="" internalId="_Pd1v0_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_Pd1v1PydEeyZMphe3I-ioQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_Pd1v1fydEeyZMphe3I-ioQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+      <contextParameter comment="" internalId="_Pd1v1vydEeyZMphe3I-ioQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_Pd1v1_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:ExvwojfbvsD24u6ClVBiCDiFBIiutEYURbOjTUzphhLmn5uQ27VsYg5E"/>
+      <contextParameter comment="" internalId="_Pd1v2PydEeyZMphe3I-ioQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_Pd1v2fydEeyZMphe3I-ioQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    </context>
+    <context confirmationNeeded="false" name="UAT_AZ">
+      <contextParameter comment="" internalId="_Pd1v2vydEeyZMphe3I-ioQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+      <contextParameter comment="" internalId="_Pd1v2_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+      <contextParameter comment="" internalId="_Pd1v3PydEeyZMphe3I-ioQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="uat"/>
+      <contextParameter comment="" internalId="_Pd1v3fydEeyZMphe3I-ioQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+      <contextParameter comment="" internalId="_Pd1v3vydEeyZMphe3I-ioQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:+1hiJ77plw3WVEYfYjUugT+bvOcXl7ZzKym6mcrzanmzZSvLTwzsN0Xa"/>
+      <contextParameter comment="" internalId="_Pd1v3_ydEeyZMphe3I-ioQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+      <contextParameter comment="" internalId="_Pd1v4PydEeyZMphe3I-ioQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="Postgressqledwdev1"/>
+    </context>
+    <parameters>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Talend/5.6.1_Client/studio/workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:cOJ/PimxZ2KzXVCmANpPbCg4afe0cwtpS4VcANPJ"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_gHt69mI7EeqL18PF2MyE_w" name="Relational"/>
+      <routinesParameter id="_gIBc-mI7EeqL18PF2MyE_w" name="TalendString"/>
+      <routinesParameter id="_gIKm6WI7EeqL18PF2MyE_w" name="TalendStringUtil"/>
+      <routinesParameter id="_gH3r-WI7EeqL18PF2MyE_w" name="TalendDataGenerator"/>
+      <routinesParameter id="_gGwRrGI7EeqL18PF2MyE_w" name="DataQuality"/>
+      <routinesParameter id="_gHppgGI7EeqL18PF2MyE_w" name="Numeric"/>
+      <routinesParameter id="_gHDMm2I7EeqL18PF2MyE_w" name="DqStringHandling"/>
+      <routinesParameter id="_gHWuoGI7EeqL18PF2MyE_w" name="Mathematical"/>
+      <routinesParameter id="_gHt7AGI7EeqL18PF2MyE_w" name="StringHandling"/>
+      <routinesParameter id="_gHWulmI7EeqL18PF2MyE_w" name="DataOperation"/>
+      <routinesParameter id="_gHDMpWI7EeqL18PF2MyE_w" name="DQTechnical"/>
+      <routinesParameter id="_gHM9mWI7EeqL18PF2MyE_w" name="SQLike"/>
+      <routinesParameter id="_gIBc8GI7EeqL18PF2MyE_w" name="TalendDate"/>
+      <routinesParameter id="_a2J4oMVvEey3xfLApzgqSw" name="DataMasking"/>
+      <routinesParameter id="_a2eBsMVvEey3xfLApzgqSw" name="DataQualityDependencies"/>
+    </parameters>
+    <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+      <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+      <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tLogCatcher_1">
+        <column key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_NVTnMMwcEey1p4M7NYmjkg-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+      <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="cntl_logCatcher" name="out_log">
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+      <metadata connector="FLOW" label="out_GlobalVar" name="out_glovar">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties/>
+        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+        <outputTables name="out_log" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="logc.moment" name="moment" nullable="true" type="id_Date"/>
+          <mapperTableEntries expression="logc.pid" name="pid" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.root_pid" name="root_pid" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.father_pid" name="father_pid" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.project" name="project" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.job" name="job" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.context" name="context" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.priority" name="priority" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="logc.type" name="type" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.origin" name="origin" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="StringHandling.LEFT(logc.message,254) " name="message" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.code" name="code" nullable="true" type="id_Integer"/>
+        </outputTables>
+        <outputTables name="out_glovar" sizeState="INTERMEDIATE">
+          <mapperTableEntries expression="logc.pid" name="pid" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.root_pid" name="root_pid" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.job" name="job" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.project" name="project" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.origin" name="origin" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="StringHandling.LEFT(logc.message,254) " name="message" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="logc.code" name="code" nullable="true" type="id_Integer"/>
+        </outputTables>
+        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="logc" sizeState="INTERMEDIATE">
+          <mapperTableEntries name="moment" nullable="true" type="id_Date"/>
+          <mapperTableEntries name="pid" nullable="true" type="id_String"/>
+          <mapperTableEntries name="root_pid" nullable="true" type="id_String"/>
+          <mapperTableEntries name="father_pid" nullable="true" type="id_String"/>
+          <mapperTableEntries name="project" nullable="true" type="id_String"/>
+          <mapperTableEntries name="job" nullable="true" type="id_String"/>
+          <mapperTableEntries name="context" nullable="true" type="id_String"/>
+          <mapperTableEntries name="priority" nullable="true" type="id_Integer"/>
+          <mapperTableEntries name="type" nullable="true" type="id_String"/>
+          <mapperTableEntries name="origin" nullable="true" type="id_String"/>
+          <mapperTableEntries name="message" nullable="true" type="id_String"/>
+          <mapperTableEntries name="code" nullable="true" type="id_Integer"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
+      <elementParameter field="TABLE" name="VARIABLES">
+        <elementValue elementRef="KEY" value="&quot;vErrorJobPID&quot;"/>
+        <elementValue elementRef="VALUE" value="out_glovar.pid"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorRootJobPID&quot;"/>
+        <elementValue elementRef="VALUE" value="out_glovar.root_pid"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorOrigin&quot;"/>
+        <elementValue elementRef="VALUE" value="out_glovar.origin"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorMessage&quot;"/>
+        <elementValue elementRef="VALUE" value="out_glovar.message"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorCode&quot;"/>
+        <elementValue elementRef="VALUE" value="out_glovar.code"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorJob&quot;"/>
+        <elementValue elementRef="VALUE" value="out_glovar.job"/>
+        <elementValue elementRef="KEY" value="&quot;vErrorProject&quot;"/>
+        <elementValue elementRef="VALUE" value="out_glovar.project"/>
+      </elementParameter>
+      <elementParameter field="TEXT" name="LABEL" value="set_GlobalVar_Log"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_GlobalVar" name="tSetGlobalVar_1">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="96">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_NtJnsMi0EeyeS_tSFwatpA"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+      <elementParameter field="TEXT" name="HOST" value="context.di_DI_CNTL_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.di_DI_CNTL_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.di_DI_CNTL_Database"/>
+      <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.di_DI_CNTL_Schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.di_DI_CNTL_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eDgCO+vNWr85oM8A8n6jEiEDZlxwoY0Loiyk/GeU/pd8sVKLQLf4zvNdOYliBkBu0rgb11dVxw=="/>
+      <elementParameter field="DBTABLE" name="TABLE" value="&quot;cntl_logcatcher&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+      <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+      <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+      <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.di_DI_CNTL_AdditionalParams"/>
+      <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="moment"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="root_pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="father_pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="project"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="job"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="context"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="priority"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="code"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+      <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="cntl_logCatcher" name="tDBOutput_1">
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+      <metadata connector="REJECT" label="cntl_logCatcher" name="REJECT">
+        <column comment="" key="false" length="23" name="moment" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="priority" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="10" name="code" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <additionalProperties key="Comment" value=""/>
+      </metadata>
+    </node>
+    <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_2"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="TEXT" name="TO" value="&quot;etl.status@gmail.com&quot;"/>
+      <elementParameter field="TEXT" name="FROM" value="&quot;etl.status@gmail.com&quot;"/>
+      <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+      <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;ET&quot;"/>
+      <elementParameter field="TEXT" name="CC" value=""/>
+      <elementParameter field="TEXT" name="BCC" value=""/>
+      <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend ERROR - CNTL_logCatcher_ROOT joblet. PID: &quot;+((String)globalMap.get(&quot;vErrorJobPID&quot;))+&quot; Job Name: &quot;+((String)globalMap.get(&quot;vErrorJob&quot;))"/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Error job: &quot;+((String)globalMap.get(&quot;vErrorJob&quot;))+&quot;\n&quot;+&quot;Error message: &quot;+((String)globalMap.get(&quot;vErrorMessage&quot;))+&quot;\n&quot;+&quot;\nError Job PID: &quot;+((String)globalMap.get(&quot;vErrorJobPID&quot;))+&quot;\n&quot;+&quot;\nError Root Job PID: &quot;+((String)context.getProperty(&quot;vRootPID&quot;))+&quot;\n&quot;+&quot;Error Root_Name: &quot;+((String)context.getProperty(&quot;vRootName&quot;))+&quot;\n&quot;+&quot;\nError Project: &quot;+((String)globalMap.get(&quot;vErrorProject&quot;))"/>
+      <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="false"/>
+      <elementParameter field="TABLE" name="ATTACHMENTS"/>
+      <elementParameter field="TABLE" name="HEADERS"/>
+      <elementParameter field="TEXT" name="SMTP_HOST" value="&quot;smtp.gmail.com&quot;"/>
+      <elementParameter field="TEXT" name="SMTP_PORT" value="465"/>
+      <elementParameter field="CHECK" name="SSL" value="true"/>
+      <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+      <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="BASIC"/>
+      <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;etl.status@gmail.com&quot;"/>
+      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:MfWKkUbDJX6Dp+cdNEZBVZr8/ZzbYkM+7Yde736C56iUVDEAjNs="/>
+      <elementParameter field="PASSWORD" name="TOKEN" show="false" value="enc:system.encryption.key.v1:pc66D+P+ChqVnx8YUje054MJrpHx177H3TQMcdIV/tW8igSPtLI="/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+      <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+      <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+      <elementParameter field="CHECK" name="USE_TWO_LINE_TOKEN" show="false" value="false"/>
+      <elementParameter field="TABLE" name="CONFIGS"/>
+      <elementParameter field="TEXT" name="LABEL" value="send_LogCatcher_notify"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="out_GlobalVar" name="tSendMail_2">
+        <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="logc" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="logc"/>
+    </connection>
+    <connection connectorName="FLOW" label="out_log" lineStyle="0" metaname="out_log" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tDBOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_log"/>
+    </connection>
+    <connection connectorName="FLOW" label="out_glovar" lineStyle="0" metaname="out_glovar" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tSetGlobalVar_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_glovar"/>
+    </connection>
+    <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSetGlobalVar_1" offsetLabelX="0" offsetLabelY="0" source="tSetGlobalVar_1" target="tSendMail_2">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+    </connection>
+    <note opaque="true" posX="96" posY="288" sizeHeight="97" sizeWidth="385" text="If error encountered this triggers&#13;&#10;recording in repository, set global variables&#13;&#10;&amp; stub for other notification">
+      <elementParameter field="COLOR" name="NOTE_COLOR" value="255;255;255"/>
+      <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+      <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+      <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+      <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+      <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="0;0;0"/>
+    </note>
+    <note opaque="true" posX="928" posY="288" sizeHeight="97" sizeWidth="353" text="Stub - replace with whatever&#13;&#10; method chosen for error notification">
+      <elementParameter field="COLOR" name="NOTE_COLOR" value="225;225;135"/>
+      <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+      <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+      <elementParameter field="TEXT" name="FONT_SIZE" value="12"/>
+      <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+    </note>
+    <subjob>
+      <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+      <elementParameter field="TEXT" name="SUBJOB_TITLE" value="LogCatcher without send email norification - Main (Root) Job &amp; process metadata recorded"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;191;255"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_2"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray innerContent="89504E470D0A1A0A0000000D494844520000002000000020080300000044A48AC600000300504C54450000000000330000660000990000CC0000FF002B00002B33002B66002B99002BCC002BFF0055000055330055660055990055CC0055FF0080000080330080660080990080CC0080FF00AA0000AA3300AA6600AA9900AACC00AAFF00D50000D53300D56600D59900D5CC00D5FF00FF0000FF3300FF6600FF9900FFCC00FFFF3300003300333300663300993300CC3300FF332B00332B33332B66332B99332BCC332BFF3355003355333355663355993355CC3355FF3380003380333380663380993380CC3380FF33AA0033AA3333AA6633AA9933AACC33AAFF33D50033D53333D56633D59933D5CC33D5FF33FF0033FF3333FF6633FF9933FFCC33FFFF6600006600336600666600996600CC6600FF662B00662B33662B66662B99662BCC662BFF6655006655336655666655996655CC6655FF6680006680336680666680996680CC6680FF66AA0066AA3366AA6666AA9966AACC66AAFF66D50066D53366D56666D59966D5CC66D5FF66FF0066FF3366FF6666FF9966FFCC66FFFF9900009900339900669900999900CC9900FF992B00992B33992B66992B99992BCC992BFF9955009955339955669955999955CC9955FF9980009980339980669980999980CC9980FF99AA0099AA3399AA6699AA9999AACC99AAFF99D50099D53399D56699D59999D5CC99D5FF99FF0099FF3399FF6699FF9999FFCC99FFFFCC0000CC0033CC0066CC0099CC00CCCC00FFCC2B00CC2B33CC2B66CC2B99CC2BCCCC2BFFCC5500CC5533CC5566CC5599CC55CCCC55FFCC8000CC8033CC8066CC8099CC80CCCC80FFCCAA00CCAA33CCAA66CCAA99CCAACCCCAAFFCCD500CCD533CCD566CCD599CCD5CCCCD5FFCCFF00CCFF33CCFF66CCFF99CCFFCCCCFFFFFF0000FF0033FF0066FF0099FF00CCFF00FFFF2B00FF2B33FF2B66FF2B99FF2BCCFF2BFFFF5500FF5533FF5566FF5599FF55CCFF55FFFF8000FF8033FF8066FF8099FF80CCFF80FFFFAA00FFAA33FFAA66FFAA99FFAACCFFAAFFFFD500FFD533FFD566FFD599FFD5CCFFD5FFFFFF00FFFF33FFFF66FFFF99FFFFCCFFFFFF000000000000000000000000D9F6F228000000FD74524E53FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00F64F3403000000DC49444154789CED923D4EC34010857D1F721B245750718E57536D9534F802BE420E300DE3062EE26AB6C9D7B063399141516810A2E0ED6AB43FA36F466FB7D3787B74DFDCABFB2384D42D0210C72567A3511782A86E3B64663157666C8E19D5106782D5C14C1478CAD902770AD4D3305D56188AF5D21E8A7BE16132E8A152B204B8E555E848424A0626760CF1982560B68363CF2AD35AA2EE312C0E44599A6C6D12197823A513EFAC5A8D8AFB4C78C5C38990CB71E7053FE962F5C685DCB6FE59D6E3A7B768DAE4E741236C7DBDE2F817C2B5C7FA9DFFF04FF809C2078AEF735C57AFE07C0000000049454E44AE426082"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7603910f-ea8b-495c-ab46-19fca503f591"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XVX3I0dlEAXxMO2EgHMIz9HDlFhZT4B8639KKPsJsxD/DRShgTWKnS2ne0+B8WrB4lZFPqkcPfoM&#13;
+pO77usYIyQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_98efbbbe-63b9-4aa7-9b23-9d100d53f3f1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qtdynBYPD5lyGvF0OhKZFmkW8+ByufLfJNdgVIsQmZ4HdUHI2nCOxtwLhOMSytTpVY2rLWCQK/Ju&#13;
+orhVtCaNWg==</DigestValue></Reference></SignedInfo><SignatureValue>iQ/x3jgkWyoG//vmw4M93hRaqMVPm7lrN74Wo+o8nV9axHTa3U7NLrZzDSc5jX4vNuA1/jZ7E7UF&#13;
+tGnXLa1YcxEQyvSEJ+eOzVRQ8g5zrnIN4fJC1KKcP7wutRdWpDxo1GdACovTMu03K7OyxXQNolcB&#13;
+M4lhM7vV37cs6G8mMTJgVIWdj4z4hB0U4F2UrSzRRRuX6tH70xt9OfXEiIYX6WPAbog0ip70+ary&#13;
+pW7JoZZa5gKmD1nyflAxn51bDu4OG4Ct/sNtE/Op83liEUENJQIYpaBxxAuM1yReYBcbMK3Ow/BM&#13;
+RprcGyXMlVWc8jIiLl47UGxvW4EKtd5Jc9zr7w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_98efbbbe-63b9-4aa7-9b23-9d100d53f3f1" Target="#_7603910f-ea8b-495c-ab46-19fca503f591"><Timestamp>2023-06-11 03:03:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

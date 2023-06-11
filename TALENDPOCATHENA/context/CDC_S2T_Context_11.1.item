@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_1RidYBMAEeu_N67zfaBnvw">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1RidYRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1RidYhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_1RidYxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidZBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1RidZRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1RidZhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_1RidZxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidaBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" type="id_String" value="Stage" xmi:id="_1RidaRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_1RidahMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_1RidaxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidbBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidbRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidbhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_1RidbxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidcBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidcRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_1RidchMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidcxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_1RiddBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_1RiddRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RiddhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RiddxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RideBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RideRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidehMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidexMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_1RidfBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidfRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidfhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidfxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidgBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_1RidgRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidghMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_1RidgxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidhBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_1RidhRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidhhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidhxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidiBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RidiRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_IFbGYBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_0nIpwBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_0nIpwRVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_0nIpwhVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_0nIpwxVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_0nIpxBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_0nIpxRVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" type="id_String" value="null" xmi:id="_0nIpxhVWEeuUla4iiJBSdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_KjE0kBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0kRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0khQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE0kxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0lBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0lRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0lhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE0lxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0mBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" type="id_String" value="Stage" xmi:id="_KjE0mRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_KjE0mhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_KjE0mxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0nBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0nRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0nhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_KjE0nxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0oBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0oRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_KjE0ohQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0oxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE0pBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE0pRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0phQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0pxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0qBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0qRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0qhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0qxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_KjE0rBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0rRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0rhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0rxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0sBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_KjE0sRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0shQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE0sxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0tBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE0tRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0thQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE0txQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE0uBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE0uRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE0uhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nIpxxVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nIpyBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nIpyRVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nIpyhVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nIpyxVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nIpzBVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" type="id_String" value="" xmi:id="_0nIpzRVWEeuUla4iiJBSdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_RpuRsBQDEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_RpuRsRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_RpuRshQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_RpuRsxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRtBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_RpuRtRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_RpuRthQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_RpuRtxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRuBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" type="id_String" value="Stage" xmi:id="_RpuRuRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_RpuRuhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_RpuRuxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRvBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRvRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRvhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_RpuRvxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRwBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRwRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_RpuRwhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRwxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_RpuRxBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_RpuRxRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRxhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRxxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRyBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRyRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRyhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRyxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_RpuRzBQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRzRQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRzhQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuRzxQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuR0BQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_RpuR0RQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuR0hQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_RpuR0xQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuR1BQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_RpuR1RQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" type="id_String" value="null" xmi:id="_RpuR1hQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_RpuR1xQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_RpuR2BQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_RpuR2RQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_RpuR2hQDEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ0BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ0RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ0hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ0xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ1BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ1RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" type="id_String" value="" xmi:id="_0nJQ1hVWEeuUla4iiJBSdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_KjE0uxQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0vBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0vRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE0vhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0vxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0wBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE0wRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE0whQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0wxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" type="id_String" value="Stage" xmi:id="_KjE0xBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_KjE0xRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_KjE0xhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0xxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0yBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0yRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_KjE0yhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0yxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0zBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_KjE0zRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0zhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE0zxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE00BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE00RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE00hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE00xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE01BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE01RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE01hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_KjE01xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE02BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE02RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE02hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE02xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_KjE03BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE03RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE03hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE03xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE04BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE04RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE04hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE04xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE05BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE05RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ1xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ2BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ2RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ2hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ2xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ3BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" type="id_String" value="" xmi:id="_0nJQ3RVWEeuUla4iiJBSdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_1Rid3hMAEeu_N67zfaBnvw">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1Rid3xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1Rid4BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_1Rid4RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid4hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1Rid4xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_1Rid5BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_1Rid5RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid5hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" type="id_String" value="Stage" xmi:id="_1Rid5xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_1Rid6BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_1Rid6RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid6hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid6xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid7BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_1Rid7RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid7hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid7xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_1Rid8BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid8RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_1Rid8hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_1Rid8xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid9BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid9RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid9hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid9xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid-BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid-RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_1Rid-hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid-xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid_BMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid_RMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" type="id_String" value="null" xmi:id="_1Rid_hMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_1Rid_xMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RieABMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_1RieARMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RieAhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_1RieAxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" type="id_String" value="null" xmi:id="_1RieBBMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_1RieBRMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_1RieBhMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_1RieBxMAEeu_N67zfaBnvw"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_IFbGYRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ3hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ3xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ4BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ4RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ4hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJQ4xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" type="id_String" value="" xmi:id="_0nJQ5BVWEeuUla4iiJBSdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_KjE05hQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE05xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE06BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE06RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE06hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE06xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" type="id_Date" value="1969-07-16 00:00:00" xmi:id="_KjE07BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE07RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE07hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" type="id_String" value="Stage" xmi:id="_KjE07xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_KjE08BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_KjE08RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE08hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE08xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE09BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" type="id_Integer" value="0" xmi:id="_KjE09RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE09hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE09xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_KjE0-BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0-RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE0-hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE0-xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0_BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0_RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0_hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE0_xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1ABQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1ARQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" type="id_Password" value="" xmi:id="_KjE1AhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1AxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1BBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1BRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1BhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_KjE1BxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1CBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE1CRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1ChQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" type="id_Long" value="-1" xmi:id="_KjE1CxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" type="id_String" value="null" xmi:id="_KjE1DBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE1DRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_Name" prompt="SRC_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE1DhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="TGT_Name" prompt="TGT_Name?" promptNeeded="false" type="id_String" value="" xmi:id="_KjE1DxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="SRC_RowCount" prompt="SRC_RowCount?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_KjE1EBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="Target_LineTotal" prompt="Target_LineTotal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJ34BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineInserted" prompt="Target_LineInserted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJ34RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineUpdated" prompt="Target_LineUpdated?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJ34hVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineDeleted" prompt="Target_LineDeleted?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJ34xVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Target_LineRejected" prompt="Target_LineRejected?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJ35BVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_NBLines" prompt="Source_NBLines?" promptNeeded="false" type="id_Integer" value="" xmi:id="_0nJ35RVWEeuUla4iiJBSdg"/>
+    <contextParameter comment="" name="Source_Query" prompt="Source_Query?" promptNeeded="false" type="id_String" value="" xmi:id="_0nJ35hVWEeuUla4iiJBSdg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d6538bca-79a2-413b-aca2-7a6954218e77"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lHuHOApAGY7ph2GtGsOUskVvSLDRH5pcE6yQxZNpc9kDUIwDnXPR9+gf+R79cRX8W3SmFC5NurTD&#13;
+MiV6YPYdCw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_99e1a5e7-a2b9-4e79-854c-cddede1fae77"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NDyLJTtAOfmwMzdmFbo2pYmb4e3KXhRKzFjhBlZkf55JL8JBmhHB97BrNvMXCdVwZCdUX59xgXvr&#13;
+H0SIQ6zAfQ==</DigestValue></Reference></SignedInfo><SignatureValue>HJjfC5/XaF5B86KJFF67Ta3hqohdkhkekW+G1vU8tPoA0129kFDiBV5voOWbApz9EkkXxVoqtcQH&#13;
+c4WB2i8D/pk1iQv2uVmUbIlcCMSneIU9WgKjib55ZQM7As2BzhMpX0wOAKjQY4O1gVHJSLFgfdnT&#13;
+L1H7p6LEcerFaT7/ocuwWC6Yp/Ps0mmuaK42jVUgyfEUpaL8EbBqIiAZugrXPPpOUbTSO2oI5CVi&#13;
+V4ZZiOSqj1fay9TZxfF2iMYXPRMt8+jDPHeVnpYSUmM+WQ6ZUzlWQn955FPuZVMjULH+Xbpx4lWL&#13;
+ANtOqcx/aCOuIDLno9j6O4YLi8LK2U0+PJ8B7g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_99e1a5e7-a2b9-4e79-854c-cddede1fae77" Target="#_d6538bca-79a2-413b-aca2-7a6954218e77"><Timestamp>2023-06-11 03:03:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
