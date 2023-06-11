@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="D01" xmi:id="_iZVuELlhEeu2loAnSRspuw">
+    <contextParameter comment="" name="connection_SFDC_userPassword_password" prompt="connection_SFDC_userPassword_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_iZVuEblhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_callbackHost" prompt="connection_SFDC_oauth_callbackHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuErlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_tokenFile" prompt="connection_SFDC_oauth_tokenFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuE7lhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_userPassword_userId" prompt="connection_SFDC_userPassword_userId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuFLlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_callbackPort" prompt="connection_SFDC_oauth_callbackPort?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="8080" xmi:id="_iZVuFblhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_port" prompt="connection_SFDC_proxy_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="8080" xmi:id="_iZVuFrlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_clientId" prompt="connection_SFDC_clientId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuF7lhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_userPassword_password" prompt="connection_SFDC_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_iZVuGLlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_clientId" prompt="connection_SFDC_oauth_clientId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuGblhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_userPassword_securityKey" prompt="connection_SFDC_userPassword_securityKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_iZVuGrlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_apiVersion" prompt="connection_SFDC_apiVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="47.0" xmi:id="_iZVuG7lhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_keyStore" prompt="connection_SFDC_oauth2JwtFlow_keyStore?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuHLlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_timeout" prompt="connection_SFDC_timeout?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="60000" xmi:id="_iZVuHblhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_issuer" prompt="connection_SFDC_oauth2JwtFlow_issuer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuHrlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_keyStorePassword" prompt="connection_SFDC_oauth2JwtFlow_keyStorePassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:XQwHCZRtslU4ReS+1DKWaZFU68imo1W2KY96xLumh3vvIA==" xmi:id="_iZVuH7lhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_host" prompt="connection_SFDC_proxy_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuILlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_clientSecret" prompt="connection_SFDC_oauth_clientSecret?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_iZVuIblhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_sessionDirectory" prompt="connection_SFDC_sessionDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuIrlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_audience" prompt="connection_SFDC_oauth2JwtFlow_audience?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuI7lhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_endpoint" prompt="connection_SFDC_endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuJLlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_expirationTime" prompt="connection_SFDC_oauth2JwtFlow_expirationTime?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="300" xmi:id="_iZVuJblhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_userPassword_userId" prompt="connection_SFDC_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuJrlhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_subject" prompt="connection_SFDC_oauth2JwtFlow_subject?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuJ7lhEeu2loAnSRspuw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_certificateAlias" prompt="connection_SFDC_oauth2JwtFlow_certificateAlias?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_iZVuKLlhEeu2loAnSRspuw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_6oGrULi1EeuMtLoAC6VZzw">
+    <contextParameter comment="" name="connection_SFDC_userPassword_password" prompt="connection_SFDC_userPassword_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_6oGrUbi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_callbackHost" prompt="connection_SFDC_oauth_callbackHost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrUri1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_tokenFile" prompt="connection_SFDC_oauth_tokenFile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrU7i1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_userPassword_userId" prompt="connection_SFDC_userPassword_userId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrVLi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_callbackPort" prompt="connection_SFDC_oauth_callbackPort?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="8080" xmi:id="_6oGrVbi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_port" prompt="connection_SFDC_proxy_port?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="8080" xmi:id="_6oGrVri1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_clientId" prompt="connection_SFDC_clientId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrV7i1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_userPassword_password" prompt="connection_SFDC_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_6oGrWLi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_clientId" prompt="connection_SFDC_oauth_clientId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrWbi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_userPassword_securityKey" prompt="connection_SFDC_userPassword_securityKey?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_6oGrWri1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_apiVersion" prompt="connection_SFDC_apiVersion?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="47.0" xmi:id="_6oGrW7i1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_keyStore" prompt="connection_SFDC_oauth2JwtFlow_keyStore?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrXLi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_timeout" prompt="connection_SFDC_timeout?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="60000" xmi:id="_6oGrXbi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_issuer" prompt="connection_SFDC_oauth2JwtFlow_issuer?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrXri1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_keyStorePassword" prompt="connection_SFDC_oauth2JwtFlow_keyStorePassword?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:a7KzBWyqfeSr8jdo4Z7syFSr0WwYLTU/8DmdaKz/QXbOUA==" xmi:id="_6oGrX7i1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_host" prompt="connection_SFDC_proxy_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrYLi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth_clientSecret" prompt="connection_SFDC_oauth_clientSecret?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="" xmi:id="_6oGrYbi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_sessionDirectory" prompt="connection_SFDC_sessionDirectory?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrYri1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_audience" prompt="connection_SFDC_oauth2JwtFlow_audience?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrY7i1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_endpoint" prompt="connection_SFDC_endpoint?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrZLi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_expirationTime" prompt="connection_SFDC_oauth2JwtFlow_expirationTime?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="300" xmi:id="_6oGrZbi1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_proxy_userPassword_userId" prompt="connection_SFDC_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrZri1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_subject" prompt="connection_SFDC_oauth2JwtFlow_subject?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGrZ7i1EeuMtLoAC6VZzw"/>
+    <contextParameter comment="" name="connection_SFDC_oauth2JwtFlow_certificateAlias" prompt="connection_SFDC_oauth2JwtFlow_certificateAlias?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_6oGraLi1EeuMtLoAC6VZzw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_541ef00c-9325-4103-9bc7-2234380ae3f7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bPDQ8vk+xzHIgd8AkuDBEWDwSk5U04ZrjUD9DV2/1mSgg2jG55Xt+06E0mNt41sOgx5K86yqTQ4f&#13;
+iGLLPwuqfA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_35842799-0c6c-4718-bfab-8e6c059005c5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QckGQcq47PEhu3HS7iDKhIScCQVL0g/f4jB6AKsqNdOpxXIDB67mDij5dWrRmzdWe2I9vg640A8u&#13;
+uTfvwn3BIQ==</DigestValue></Reference></SignedInfo><SignatureValue>AEuI1IIF8koDtxzkbkn+Z0T+L2IZELDOs1SaRKVoE95ohAV7lFGMCyprazRxe/j1TD02d0MX1gV9&#13;
+LTnZggbKYc4eeQ3FYgxu+vvsDqDNOQPJpMYE/e8JjXV7zJqNAT7zCFG044NFMcAfcbJPFFU2nyYs&#13;
+hOOw1fiJdYUlzgsiqNbVXm4U9udLrgxhEv71Cg9PSCvoqSOxeV/5oASRsa4mnTDVKLdwl1419E0s&#13;
+loTpeBlLfL2159CfsbQPdre1WUMfP6UUl4V8ZJ7CvBn3bLyK/bn/de3626HsrfZ3lUZSMKnsB+MO&#13;
+ThIWekpUvtos+w75waEbqzhDgX2UpXv4odz4Ig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_35842799-0c6c-4718-bfab-8e6c059005c5" Target="#_541ef00c-9325-4103-9bc7-2234380ae3f7"><Timestamp>2023-06-11 03:19:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

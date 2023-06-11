@@ -1,0 +1,38 @@
+{
+  "itemId" : "_0w3TYDhxEeqKlN4JxRQBlg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_H9rOwPN4Eeqa8dlLkrGR9Q",
+    "parameterList" : [ {
+      "id" : "_H94DEfN4Eeqa8dlLkrGR9Q",
+      "name" : "Topic_Name"
+    }, {
+      "id" : "_t3iW4PN4Eeqa8dlLkrGR9Q",
+      "name" : "Project_identifier"
+    }, {
+      "id" : "_t3iW4fN4Eeqa8dlLkrGR9Q",
+      "name" : "Cluster_Identifier"
+    }, {
+      "id" : "_t3iW4vN4Eeqa8dlLkrGR9Q",
+      "name" : "Region"
+    }, {
+      "id" : "_t3iW4_N4Eeqa8dlLkrGR9Q",
+      "name" : "Staging_Bucket"
+    }, {
+      "id" : "_t3iW5PN4Eeqa8dlLkrGR9Q",
+      "name" : "Key_File_Location"
+    }, {
+      "id" : "_xTxXwPN5Eeqa8dlLkrGR9Q",
+      "name" : "Endpoint_Url"
+    }, {
+      "id" : "_w_sBEPQcEeqxcPaQSYooFQ",
+      "name" : "Topic_subscription"
+    }, {
+      "id" : "_YQO9YPQfEeqxcPaQSYooFQ",
+      "name" : "Storage_Folder"
+    }, {
+      "id" : "_kxoiQPQ8Eeqe4-xr4BSG8Q",
+      "name" : "Bucket_Name"
+    } ]
+  } ]
+}

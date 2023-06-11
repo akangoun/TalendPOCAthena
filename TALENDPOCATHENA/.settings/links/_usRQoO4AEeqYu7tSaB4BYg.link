@@ -1,0 +1,29 @@
+{
+  "itemId" : "_usRQoO4AEeqYu7tSaB4BYg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_H9rOwPN4Eeqa8dlLkrGR9Q",
+    "parameterList" : [ {
+      "id" : "_t3iW5PN4Eeqa8dlLkrGR9Q",
+      "name" : "Key_File_Location"
+    }, {
+      "id" : "_t3iW4_N4Eeqa8dlLkrGR9Q",
+      "name" : "Staging_Bucket"
+    }, {
+      "id" : "_t3iW4fN4Eeqa8dlLkrGR9Q",
+      "name" : "Cluster_Identifier"
+    }, {
+      "id" : "_t3iW4PN4Eeqa8dlLkrGR9Q",
+      "name" : "Project_identifier"
+    }, {
+      "id" : "_t3iW4vN4Eeqa8dlLkrGR9Q",
+      "name" : "Region"
+    }, {
+      "id" : "_H94DEfN4Eeqa8dlLkrGR9Q",
+      "name" : "Topic_Name"
+    }, {
+      "id" : "_xTxXwPN5Eeqa8dlLkrGR9Q",
+      "name" : "Endpoint_Url"
+    } ]
+  } ]
+}

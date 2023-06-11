@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/NCMIC</deletedFolders>
+  <deletedFolders>process/NCMIC/INT_dev</deletedFolders>
+  <deletedFolders>process/NCMIC/INT_dev/infox</deletedFolders>
+</recyclebin:RecycleBin>
