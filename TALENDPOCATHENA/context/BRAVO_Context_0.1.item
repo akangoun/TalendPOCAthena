@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_lB8F8B37Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="BRAVO_Port" prompt="BRAVO_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_lB8F8R37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Login" prompt="BRAVO_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_lB8F8h37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Password" prompt="BRAVO_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:IUfJ8uYE+p73bSEM7g12MbH4+n9qTJe2IZu99mv8cEbn4F6nBXDkPLs=" xmi:id="_lB8F8x37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_AdditionalParams" prompt="BRAVO_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_lB8F9B37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Schema" prompt="BRAVO_Schema?" promptNeeded="false" type="id_String" value="GenesisGaming" xmi:id="_lB8F9R37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Server" prompt="BRAVO_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_lB8F9h37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Database" prompt="BRAVO_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_lB8F9x37Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_lB8F-B37Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="BRAVO_Port" prompt="BRAVO_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_lB8F-R37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Login" prompt="BRAVO_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_lB8F-h37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Password" prompt="BRAVO_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:lxUjO+Gg39K4MI1BskZz8vk74pClu38+yH+7p9wuZOj45RTnw7FjGvk=" xmi:id="_lB8F-x37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_AdditionalParams" prompt="BRAVO_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_lB8F_B37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Schema" prompt="BRAVO_Schema?" promptNeeded="false" type="id_String" value="GenesisGaming" xmi:id="_lB8F_R37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Server" prompt="BRAVO_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_lB8F_h37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Database" prompt="BRAVO_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_lB8F_x37Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_lB8GAB37Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="BRAVO_Port" prompt="BRAVO_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_lB8GAR37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Login" prompt="BRAVO_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_lB8GAh37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Password" prompt="BRAVO_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:j05cCs7+FPG4Bkk/8BmkClIrzl+J3X8BeKy4+17DQWVUEWfNqaGstLE=" xmi:id="_lB8GAx37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_AdditionalParams" prompt="BRAVO_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_lB8GBB37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Schema" prompt="BRAVO_Schema?" promptNeeded="false" type="id_String" value="GenesisGaming" xmi:id="_lB8GBR37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Server" prompt="BRAVO_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_lB8GBh37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Database" prompt="BRAVO_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_lB8GBx37Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_lB8GCB37Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="BRAVO_Port" prompt="BRAVO_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_lB8GCR37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Login" prompt="BRAVO_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_lB8GCh37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Password" prompt="BRAVO_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:BOwYcniqPMlLOeH9xEpJ8tuerLci7atE2zFv9jyvVWpCHxskigVpUu4=" xmi:id="_lB8GCx37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_AdditionalParams" prompt="BRAVO_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_lB8GDB37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Schema" prompt="BRAVO_Schema?" promptNeeded="false" type="id_String" value="GenesisGaming" xmi:id="_lB8GDR37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Server" prompt="BRAVO_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_lB8GDh37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Database" prompt="BRAVO_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_lB8GDx37Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_lB8GEB37Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="BRAVO_Port" prompt="BRAVO_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_lB8GER37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Login" prompt="BRAVO_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_lB8GEh37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Password" prompt="BRAVO_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:t/JNcc8b3UuUHlPe/SyViVvBenYRuTaaNKjVrAIvTSEDGIq5ThTeBNg=" xmi:id="_lB8GEx37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_AdditionalParams" prompt="BRAVO_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_lB8GFB37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Schema" prompt="BRAVO_Schema?" promptNeeded="false" type="id_String" value="GenesisGaming" xmi:id="_lB8GFR37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Server" prompt="BRAVO_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_lB8GFh37Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="BRAVO_Database" prompt="BRAVO_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_lB8GFx37Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1619336b-1c16-44e9-bc79-22ec09ca61a3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mSScTx6p5RYUWiHoEJYlsgq7qsy/qXU6MJbLZ/DbBsBBWyKdGPra+Mm59XkvHGXDAxKD6TdrxH94&#13;
+thlSQH/l2w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c4c829c6-f0db-40d3-944a-1b5f6a5fe277"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KptiRuzZlQB03DiNMEPGbVD4eYduldcBUJCAJhbTLQvI0dVhKu01rDCJosszj3cn0uQeWY6AhBCU&#13;
+54yJyyr8CA==</DigestValue></Reference></SignedInfo><SignatureValue>NHXGm+l6S2i/XF0T83+QXbXLC9WiBMKzayEzVv4gCvbgmeDq7KefKqjK2YbADdOHEFRaEDVODSdT&#13;
+xxluVjCqLWwq1o9MQFgUO3fGE5VKoohIAtQeWIdvJ5nF4FhtHAgY/klp1FEIFz5D7K6xhajjG1oZ&#13;
+nk2fuASggI7uxL+wlCgDpxDzHIrRgAQJdOLz9DzWy2NmTqjJMWToyljUcEcjC1MAz7dvvAWuQSKB&#13;
+F6cduebftWQsMjd43cEjzvoZJ23zAPbi4Hsqpkts1FCvGgIXjnw2So6NHJ5seT7IxQCOmjy3YJPj&#13;
+kdxKYqIDNZiOBnmAu333YxJX3WoYqzd4+IRAHw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c4c829c6-f0db-40d3-944a-1b5f6a5fe277" Target="#_1619336b-1c16-44e9-bc79-22ec09ca61a3"><Timestamp>2023-06-11 04:22:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_kyrHQFEGEeuI1Of4vnRRyg">
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHQVEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHQlEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Null_SK" prompt="Default_Null_SK?" promptNeeded="false" type="id_Integer" value="-10" xmi:id="_kyrHQ1EGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Date_Null_SK" prompt="Default_Date_Null_SK?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_x-MREFEsEeuS8riCTqQEvw"/>
+    <contextParameter comment="" name="Default_BigDecimal_Null_SK" prompt="Default_BigDecimal_Null_SK?" promptNeeded="false" type="id_BigDecimal" value="-10" xmi:id="_x-MREVEsEeuS8riCTqQEvw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_kyrHRFEGEeuI1Of4vnRRyg">
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHRVEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHRlEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Null_SK" prompt="Default_Null_SK?" promptNeeded="false" type="id_Integer" value="-10" xmi:id="_kyrHR1EGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Date_Null_SK" prompt="Default_Date_Null_SK?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_x-MRElEsEeuS8riCTqQEvw"/>
+    <contextParameter comment="" name="Default_BigDecimal_Null_SK" prompt="Default_BigDecimal_Null_SK?" promptNeeded="false" type="id_BigDecimal" value="-10" xmi:id="_x-MRE1EsEeuS8riCTqQEvw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_kyrHSFEGEeuI1Of4vnRRyg">
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHSVEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHSlEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Null_SK" prompt="Default_Null_SK?" promptNeeded="false" type="id_Integer" value="-10" xmi:id="_kyrHS1EGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Date_Null_SK" prompt="Default_Date_Null_SK?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_x-MRFFEsEeuS8riCTqQEvw"/>
+    <contextParameter comment="" name="Default_BigDecimal_Null_SK" prompt="Default_BigDecimal_Null_SK?" promptNeeded="false" type="id_BigDecimal" value="-10" xmi:id="_x-MRFVEsEeuS8riCTqQEvw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_kyrHTFEGEeuI1Of4vnRRyg">
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHTVEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHTlEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Null_SK" prompt="Default_Null_SK?" promptNeeded="false" type="id_Integer" value="-10" xmi:id="_kyrHT1EGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Date_Null_SK" prompt="Default_Date_Null_SK?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_x-MRFlEsEeuS8riCTqQEvw"/>
+    <contextParameter comment="" name="Default_BigDecimal_Null_SK" prompt="Default_BigDecimal_Null_SK?" promptNeeded="false" type="id_BigDecimal" value="-10" xmi:id="_x-MRF1EsEeuS8riCTqQEvw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_kyrHUFEGEeuI1Of4vnRRyg">
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHUVEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHUlEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Null_SK" prompt="Default_Null_SK?" promptNeeded="false" type="id_Integer" value="-10" xmi:id="_kyrHU1EGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Date_Null_SK" prompt="Default_Date_Null_SK?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_x-MRGFEsEeuS8riCTqQEvw"/>
+    <contextParameter comment="" name="Default_BigDecimal_Null_SK" prompt="Default_BigDecimal_Null_SK?" promptNeeded="false" type="id_BigDecimal" value="-10" xmi:id="_x-MRGVEsEeuS8riCTqQEvw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_kyrHVFEGEeuI1Of4vnRRyg">
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHVVEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_kyrHVlEGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Null_SK" prompt="Default_Null_SK?" promptNeeded="false" type="id_Integer" value="-10" xmi:id="_kyrHV1EGEeuI1Of4vnRRyg"/>
+    <contextParameter comment="" name="Default_Date_Null_SK" prompt="Default_Date_Null_SK?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_x-MRGlEsEeuS8riCTqQEvw"/>
+    <contextParameter comment="" name="Default_BigDecimal_Null_SK" prompt="Default_BigDecimal_Null_SK?" promptNeeded="false" type="id_BigDecimal" value="-10" xmi:id="_x-MRG1EsEeuS8riCTqQEvw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ec1f71e6-956e-454b-9ff9-c1fa7a099ebb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7oVrs8YuCnAidSgAqUJlyUzHOIZEeKHLLKft+0nyg1QuShKdldyIhNmoTzjm2vDZoIM20bpdgiyX&#13;
+KWDLkIdrig==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4d69ca36-7f9f-40a7-812f-4b8479943c72"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OhgEIz4rhJsk1A0jZNUKPU20KHD/hQnvTI3CM9VpD5B/heLnUF26r6sst/SaCWECSvB5We7ssoYs&#13;
+cZyo/SwBGA==</DigestValue></Reference></SignedInfo><SignatureValue>DkjgcwojFRZs420MVmrGIS7YoHTw/XBHGfAlqN6LHm9777/w5Sfth6uzMcMxnauscY70qqaUNZ8H&#13;
+VWfEWF9X4Iau+T7vVEcaO0OFZ4nJzsDyxsHUIe/P4BbAMQB5J0cEgnmtr5JEmg4O2sKm+rp3+XZ6&#13;
+2kW3orti5k9LiW47gEKKoJ790W8OSuWH6WUUArW8Te0oH/uChnJjn7WDYb9SIP73mXpkr3Y/f9XI&#13;
+hWPOdp64M0/lRPLmgvqNKZ+7cCANYcHh1KXNPd5I6OGTyOqbj7bj5cVFYtczTp7khre5gvXJlTgU&#13;
+XFnsR1QD/7mPO10l3zBv/cJAr5gV5E60nA8U9w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4d69ca36-7f9f-40a7-812f-4b8479943c72" Target="#_ec1f71e6-956e-454b-9ff9-c1fa7a099ebb"><Timestamp>2023-06-11 04:22:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

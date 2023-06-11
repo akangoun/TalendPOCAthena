@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" internalId="_plIgQOAjEey-ZrKB3gp_MA" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_plIgQeAjEey-ZrKB3gp_MA" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" type="id_String" value="info7370"/>
+    <contextParameter comment="" internalId="_plJHUOAjEey-ZrKB3gp_MA" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_plJHUeAjEey-ZrKB3gp_MA" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" type="id_String" value="DI_CNTL"/>
+    <contextParameter comment="" internalId="_plJHUuAjEey-ZrKB3gp_MA" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:LCDnK4gl4W/BpS0/yhrYIs4UrUyeuOGaiB7+Y2CzYqMLUwsF"/>
+    <contextParameter comment="" internalId="_plJHU-AjEey-ZrKB3gp_MA" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_plJHVOAjEey-ZrKB3gp_MA" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="info7370"/>
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_Password" value="enc:system.encryption.key.v1:1IuvwGB2LFKGQvW2oC+WPrAMDJbAi/fnW8zxyfIqlpjA4Z8M"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="sandbox_local"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="localhost"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_plJHVeAjEey-ZrKB3gp_MA" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_plJHVuAjEey-ZrKB3gp_MA" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" type="id_String" value="info7370"/>
+    <contextParameter comment="" internalId="_plJHV-AjEey-ZrKB3gp_MA" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_plJHWOAjEey-ZrKB3gp_MA" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" type="id_String" value="DI_CNTL"/>
+    <contextParameter comment="" internalId="_plJHWeAjEey-ZrKB3gp_MA" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Fy6JMeXTK+8sqhcKEEcXz1DKfc7TG7OWFoqKLnpChr+yJvq8"/>
+    <contextParameter comment="" internalId="_plJHWuAjEey-ZrKB3gp_MA" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_plJHW-AjEey-ZrKB3gp_MA" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="info7370"/>
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_Password" value="enc:system.encryption.key.v1:nVvcRHPjeNM/aJVyhrczEPah+fA/Z6EL5kIr7ITGJJeX1lP3"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="sandbox_local"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="localhost"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" internalId="_plJHXOAjEey-ZrKB3gp_MA" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_plJHXeAjEey-ZrKB3gp_MA" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" type="id_String" value="info7370"/>
+    <contextParameter comment="" internalId="_plJHXuAjEey-ZrKB3gp_MA" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_plJHX-AjEey-ZrKB3gp_MA" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" type="id_String" value="DI_CNTL"/>
+    <contextParameter comment="" internalId="_plJHYOAjEey-ZrKB3gp_MA" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:gfZsmpUubTr4FaL4XksXZ1YxMfnFpEg0Ui7xrh3NF/Cr9P0l"/>
+    <contextParameter comment="" internalId="_plJHYeAjEey-ZrKB3gp_MA" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_plJHYuAjEey-ZrKB3gp_MA" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="info7370"/>
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_Password" value="enc:system.encryption.key.v1:n5GB456YYSxfCdoBJeYLbc1oU1sP4WtwgxSFPLZYQShxc/aX"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="sandbox_local"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="localhost"/>
+  </context>
+  <context confirmationNeeded="false" name="TST">
+    <contextParameter comment="" internalId="_plJHY-AjEey-ZrKB3gp_MA" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_plJHZOAjEey-ZrKB3gp_MA" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" type="id_String" value="info7370"/>
+    <contextParameter comment="" internalId="_plJHZeAjEey-ZrKB3gp_MA" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_plJHZuAjEey-ZrKB3gp_MA" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" type="id_String" value="DI_CNTL"/>
+    <contextParameter comment="" internalId="_plJHZ-AjEey-ZrKB3gp_MA" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:dasJ7RVkKmTFFaxZE6C20RLE1n6PeuBDTD4JyxuhokF8lEqY"/>
+    <contextParameter comment="" internalId="_plJHaOAjEey-ZrKB3gp_MA" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_plJHaeAjEey-ZrKB3gp_MA" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="info7370"/>
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_Password" value="enc:system.encryption.key.v1:O8lf87fFEEYnDK3b0N41NCfQzlB6f2sLJXQ4XRjI66Y5JuLu"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="sandbox_local"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="localhost"/>
+  </context>
+  <context confirmationNeeded="false" name="z">
+    <contextParameter comment="" internalId="_plJHauAjEey-ZrKB3gp_MA" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_plJHa-AjEey-ZrKB3gp_MA" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" type="id_String" value="info7370"/>
+    <contextParameter comment="" internalId="_plJHbOAjEey-ZrKB3gp_MA" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_plJHbeAjEey-ZrKB3gp_MA" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" type="id_String" value="DI_CNTL"/>
+    <contextParameter comment="" internalId="_plJHbuAjEey-ZrKB3gp_MA" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:AzcslsiwesWsBMwaAI3Qlaod7/6dA/xH+RMTcVYGvhaBep2Z"/>
+    <contextParameter comment="" internalId="_plJHb-AjEey-ZrKB3gp_MA" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_plJHcOAjEey-ZrKB3gp_MA" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="info7370"/>
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_Password" value="enc:system.encryption.key.v1:gZZsspWrpQcKawOU+jGc4hrPVrDMhDWGqgb0P31cfZugEQX5"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="sandbox_local"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="localhost"/>
+  </context>
+  <context confirmationNeeded="false" name="LOC">
+    <contextParameter comment="" internalId="_plJHceAjEey-ZrKB3gp_MA" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_plJHcuAjEey-ZrKB3gp_MA" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" type="id_String" value="info7370"/>
+    <contextParameter comment="" internalId="_plJHc-AjEey-ZrKB3gp_MA" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_plJHdOAjEey-ZrKB3gp_MA" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" type="id_String" value="DI_CNTL"/>
+    <contextParameter comment="" internalId="_plJHdeAjEey-ZrKB3gp_MA" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:gApCl9uhzEBxusL2JROiPIudliS0/mUV1Q2NCOVN1lBzHtsu"/>
+    <contextParameter comment="" internalId="_plJHduAjEey-ZrKB3gp_MA" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_plJHd-AjEey-ZrKB3gp_MA" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="info7370"/>
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_Password" value="enc:system.encryption.key.v1:1EejxU1RkOmUAuwMUa0V5Fs7MOI/p8K7yMBDcf/Gal4vbxY9"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="sandbox_local"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="SBX">
+    <contextParameter comment="" internalId="_plJHeOAjEey-ZrKB3gp_MA" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_plJHeeAjEey-ZrKB3gp_MA" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" type="id_String" value="info7370"/>
+    <contextParameter comment="" internalId="_plJHeuAjEey-ZrKB3gp_MA" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_plJHe-AjEey-ZrKB3gp_MA" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" type="id_String" value="DI_CNTL"/>
+    <contextParameter comment="" internalId="_plJHfOAjEey-ZrKB3gp_MA" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:m5ESYgiuzsxRrWCSSS4sL3bw41XWbOKspdjPHqYezAXMGA1H"/>
+    <contextParameter comment="" internalId="_plJHfeAjEey-ZrKB3gp_MA" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_plJHfuAjEey-ZrKB3gp_MA" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value=""/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="info7370"/>
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_Password" value="enc:system.encryption.key.v1:GnYqY0xNtRkfXe2Tfp382wiZB0d6N8RJM/7uINCyBu3V/ae0"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="sandbox_local"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="_pL-3kBQCEeuLR-lMc9lxEA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="TGT_MaxCreateDate" prompt="TGT_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxModifyDate" prompt="TGT_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="TGT_MaxSeqNo" prompt="TGT_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_TableName" prompt="TGT_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_MaxCreateDate" prompt="SRC_MaxCreateDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxModifyDate" prompt="SRC_MaxModifyDate?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Date" value="1969-07-16 00:00:00"/>
+    <contextParameter comment="" name="SRC_MaxSeqNo" prompt="SRC_MaxSeqNo?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="SRC_TableName" prompt="SRC_TableName?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DI_Schema" prompt="DI_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="Stage"/>
+    <contextParameter comment="" name="DI_CDC" prompt="DI_CDC?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="DI_SCD" prompt="DI_SCD?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Server" prompt="SRC_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Database" prompt="SRC_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Schema" prompt="SRC_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_TableRowCount_Before" prompt="TGT_TableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="SRC_Login" prompt="SRC_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Port" prompt="SRC_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_Password" prompt="SRC_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_Criteria_GetMax" prompt="TGT_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SRC_SOR_SK" prompt="SRC_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_SOR_SK" prompt="TGT_SOR_SK?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="SRC_AdditionalParams" prompt="SRC_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Server" prompt="TGT_Server?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Database" prompt="TGT_Database?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Schema" prompt="TGT_Schema?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Login" prompt="TGT_Login?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Port" prompt="TGT_Port?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_Password" prompt="TGT_Password?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Password" value=""/>
+    <contextParameter comment="" name="TGT_AdditionalParams" prompt="TGT_AdditionalParams?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Source_Key" prompt="Source_Key?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCDType2_1" prompt="SCDType2_1?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SCD_Start" prompt="SCD_Start?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="Initial_Load_IND" prompt="Initial_Load_IND?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="SRC_RankQuery" prompt="SRC_RankQuery?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="DeletedTableRowCount_Before" prompt="DeletedTableRowCount_Before?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Integer" value="-1"/>
+    <contextParameter comment="" name="TGT_RowVersion_Criteria_GetMax" prompt="TGT_RowVersion_Criteria_GetMax?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="TGT_MaxRowVersion" prompt="TGT_MaxRowVersion?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_Long" value="-1"/>
+    <contextParameter comment="" name="TGT_Update_Criteria" prompt="TGT_Update_Criteria?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value="null"/>
+    <contextParameter comment="" name="SOR_Name" prompt="SOR_Name?" promptNeeded="false" repositoryContextId="_dgXfsBnMEemh99EK0ZkCQQ" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rJ8yZRiEhSDL2UyV24ifoWG9dH9LoQoRTKNNSUEP"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend_DI-V7.1.1_2020_Workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2pz6tC6XuqnXGnhsLrVx8EYPX6J1k2xfxF1D5Mrj"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_F5AWoPLbEeqlJ7XcrkIyPQ" name="DQTechnical"/>
+    <routinesParameter id="_F4uCxvLbEeqlJ7XcrkIyPQ" name="DataMasking"/>
+    <routinesParameter id="_F5AWqvLbEeqlJ7XcrkIyPQ" name="DataOperation"/>
+    <routinesParameter id="_F40JavLbEeqlJ7XcrkIyPQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_F40JYPLbEeqlJ7XcrkIyPQ" name="DataQuality"/>
+    <routinesParameter id="_F46QCPLbEeqlJ7XcrkIyPQ" name="DqStringHandling"/>
+    <routinesParameter id="_F5GdQPLbEeqlJ7XcrkIyPQ" name="Mathematical"/>
+    <routinesParameter id="_F5GdSvLbEeqlJ7XcrkIyPQ" name="Numeric"/>
+    <routinesParameter id="_F5Mj5vLbEeqlJ7XcrkIyPQ" name="Relational"/>
+    <routinesParameter id="_F5rFCvLbEeqlJ7XcrkIyPQ" name="SQLike"/>
+    <routinesParameter id="_F5SqgPLbEeqlJ7XcrkIyPQ" name="StringHandling"/>
+    <routinesParameter id="_F5e3xvLbEeqlJ7XcrkIyPQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_F5k-YPLbEeqlJ7XcrkIyPQ" name="TalendDate"/>
+    <routinesParameter id="_F5rFAPLbEeqlJ7XcrkIyPQ" name="TalendStringUtil"/>
+    <routinesParameter id="_F5k-avLbEeqlJ7XcrkIyPQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlTableList" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBTableList_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="WHERE_CLAUSE" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for the where clause: &quot;table_name not like '%bua%' AND (table_name like '%ecs%' OR table_name='talend')&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
+    <elementParameter field="TABLE" name="VALUES" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TableName"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tMysqlTableList_1_CURRENT_TABLE&quot;))"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBName"/>
+      <elementValue elementRef="VALUE" value=""/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="true"/>
+    <elementParameter field="TABLE" name="INTABLE">
+      <elementValue elementRef="TableName" value="((String)globalMap.get(&quot;tDBTableList_1_CURRENT_TABLE&quot;))"/>
+      <elementValue elementRef="DBName" value="context.SOR_Name"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="120" name="TableName" nullable="true" originalLength="120" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="DBName" nullable="true" originalLength="120" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_vtvFUBL6EeuLX4pd1qaECg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="a" name="a">
+      <column comment="" key="false" length="-1" name="Table_SK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="TableName" nullable="true" originalLength="120" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="DBName" nullable="true" originalLength="120" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SOR_System_SK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="DI_SOR" name="out_sor">
+      <column comment="" key="true" length="10" name="SOR_SK" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SOR_System_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_DBSchema" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_TableName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_Description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('Manually_Input')'" key="false" length="20" name="DI_Job_SK" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DWInclude" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Numeric.sequence(&quot;s1&quot;,-300,-1) " name="sor_sk" type="id_Integer"/>
+      </varTables>
+      <outputTables name="a" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.sor_sk " name="Table_SK" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row1.TableName " name="TableName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.DBName " name="DBName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SOR_System_SK " name="SOR_System_SK" type="id_Integer"/>
+      </outputTables>
+      <outputTables name="out_sor" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.sor_sk " name="SOR_SK" type="id_Integer"/>
+        <mapperTableEntries expression="row2.SOR_System_SK " name="SOR_System_SK" type="id_Integer"/>
+        <mapperTableEntries expression="&quot;dbo&quot;" name="SOR_DBSchema" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.TableName " name="SOR_TableName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.TableName " name="SOR_Description" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="pid" name="DI_Job_SK" type="id_String"/>
+        <mapperTableEntries expression="&quot;Y&quot;" name="DWInclude" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="TableName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DBName" nullable="true" type="id_String"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="SOR_System_SK" type="id_Integer"/>
+        <mapperTableEntries expression="row1.DBName " name="SOR_Name" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="SOR_Description" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SOR_AppName" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Table_SK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TableName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DBName"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_System_SK"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="a" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="Table_SK" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="TableName" nullable="true" originalLength="120" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="120" name="DBName" nullable="true" originalLength="120" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="SOR_System_SK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.DI_CNTL_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DI_CNTL_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DI_CNTL_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DI_CNTL_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.DI_CNTL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wLnz+DRd8nP7BdUNH12GvQ1WpjT3EkNHaWsqBZuJXaIGvdWCZDRwFPpQgILa2hg+WNHJ6w=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DI_SOR_System&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT   DI_SOR_System.SOR_System_SK,&#10;&#9;&#9;\&quot;&quot;+context.DI_CNTL_Schema+&quot;\&quot;.DI_SOR_System.SOR_Name,&#10;&#9;&#9;\&quot;&quot;+context.DI_CNTL_Schema+&quot;\&quot;.DI_SOR_System.SOR_Description,&#10;&#9;&#9;\&quot;&quot;+context.DI_CNTL_Schema+&quot;\&quot;.DI_SOR_System.SOR_AppName &quot;&#13;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.DI_CNTL_Schema+&quot;\&quot;.DI_SOR_System&#13;&#10;WHERE  SOR_Name = '&quot;+ context.SOR_Name + &quot;'&#13;&#10;&quot;&#13;&#10;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DI_CNTL_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_System_SK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_Description"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_AppName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="-1" name="SOR_System_SK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SOR_Name" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SOR_Description" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SOR_AppName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.DI_CNTL_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.DI_CNTL_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.DI_CNTL_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.DI_CNTL_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.DI_CNTL_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:k0Tu2c8GkK7/lNEbGEhv8LsNdQ0MlSg+X0xZ9cH/hygXmSNuTRXktOYxecFoTjmNYEW4Vg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DI_SOR&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="SOR_SK"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.DI_CNTL_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_System_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_DBSchema"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_TableName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SOR_Description"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_Job_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DWInclude"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DI_SOR" name="tDBOutput_1">
+      <column comment="" key="true" length="10" name="SOR_SK" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SOR_System_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_DBSchema" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_TableName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_Description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('Manually_Input')'" key="false" length="20" name="DI_Job_SK" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DWInclude" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="DI_SOR" name="REJECT">
+      <column comment="" key="true" length="10" name="SOR_SK" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SOR_System_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_DBSchema" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_TableName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="80" name="SOR_Description" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('Manually_Input')'" key="false" length="20" name="DI_Job_SK" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="DWInclude" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_9yILABInEeuzudRwIlThHw"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.sandbox_local_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.sandbox_local_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.sandbox_local_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.sandbox_local_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.sandbox_local_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5Nb7gJcRTR1b6ZbLaa9/9m8Y4Z2FH1OL6PcA7dLqSvSQqjWPTchfS5eaS/TsHz9ufJ/ufNiWfj5AzA=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.sandbox_local_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="sandbox_local"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64" sizeX="96" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// ***** CHANGE Job Specific Contexts Below ***** //&#10;&#10;// TARGET Contexts Below //&#10;context.SOR_Name = &quot;sandbox&quot;;&#10;&#10;&#10;System.out.println(&quot;  ==&gt; Set Context Variables. context.SOR_Name: &quot;+context.SOR_Name);&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Job_Specific_Context"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tDBTableList_1" offsetLabelX="0" offsetLabelY="0" source="tDBTableList_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="TableName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DBName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="a" lineStyle="0" metaname="a" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DBName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Table_SK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SOR_System_SK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="a"/>
+  </connection>
+  <connection connectorName="FLOW" label="out_sor" lineStyle="0" metaname="out_sor" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out_sor"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBTableList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBTableList_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Set Context Variables"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;128;255"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d6c21f24-e6f8-46f2-827f-e02bde16713e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zpS+v00+7HH1HsRQFKqAXUsNvt20SmhuG5c/GpjVtfZkpikz2zq2ADDyOX4Qa7hyeBJU0ORbsjuO&#13;
+UNR9Fxm5zw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8fd92f85-56c5-4618-9b39-6f14558f9281"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7/wJMMIk3TX6ABqOSxtq8lFTRWHDG3i4saUREKJlLdoDvQpKVtNU33PJY/HRDeUAvNbDNp6G4DIB&#13;
+SOL9jy6Q1w==</DigestValue></Reference></SignedInfo><SignatureValue>U7IMf4cHhvlQp5c9VJmURvN5C1S32vqzGDRkzimUuCDo7iPiZjTMq2kfaSi8hIllLq8PNcqvOQIx&#13;
+c5JO730DLri8OwXkUmo3mqUFheH2JTjHARWkXB4rAd08WmkcJQflE96XKWNNCJ81pHS2lZ8MRrhD&#13;
+p6spfIaSF2eG0h75r+mF1EDAC5fOPuOXubOgHJy61IGXIgP+u30Jehx3qDxEk83EydfAHQ2D3y5j&#13;
+T1JMi1RD8qRV6HWjGhsgp2Cvfaz6fe6ldvLhISy/MHM2JY2Ne1pucbZNME6yzkuUIGk2iyr0MohG&#13;
+Vsj0zKwgq/QbDxPvwOEXdiYvOOzmfDSpCMWZSg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8fd92f85-56c5-4618-9b39-6f14558f9281" Target="#_d6c21f24-e6f8-46f2-827f-e02bde16713e"><Timestamp>2023-06-11 03:35:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

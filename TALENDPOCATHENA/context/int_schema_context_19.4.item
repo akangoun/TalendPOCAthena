@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_Kd87wFICEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" type="id_String" value="AthenaDev" xmi:id="_Kd87wVICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_Kd87wlICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" type="id_String" value="stg_loc" xmi:id="_Kd87w1ICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_Kd87xFICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:/Hwkf+DWPfpz8LGXz5pkWaXTpxoHC/fkrkhf48Yz6Y904CQN" xmi:id="_Kd87xVICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_Kd87xlICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_Kd87x1ICEeuIAM6M8xuWrw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_Kd87yFICEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_Kd87yVICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_Kd87ylICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" type="id_String" value="int_dev" xmi:id="_Kd87y1ICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_Kd87zFICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:B2/0URWyFfZDjh9F5wqRfL7L3j5JQG4U25WH1TjxiBO3WjMUFZP8TlI=" xmi:id="_Kd87zVICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_Kd87zlICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_Kd87z1ICEeuIAM6M8xuWrw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_Kd870FICEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" type="id_String" value="AthenaDev" xmi:id="_Kd870VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_Kd870lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" type="id_String" value="stg_loc" xmi:id="_Kd8701ICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_Kd871FICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:JMyGhonBy2WJ0/TiIR9nUIKsgLzXYesZhrx/Sm9uQeHwGEOE" xmi:id="_Kd871VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_Kd871lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_Kd8711ICEeuIAM6M8xuWrw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="MD_SOR" xmi:id="_Kd872FICEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_Kd872VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_Kd872lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" type="id_String" value="int_tst" xmi:id="_Kd8721ICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_Kd873FICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:NXAfcb/t2b7z3rS+n6GkKCIqcadqQtZtZPOhbhKTRZEFZNwOrzxUQa0=" xmi:id="_Kd873VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_Kd873lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_Kd8731ICEeuIAM6M8xuWrw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_Kd874FICEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_Kd874VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_Kd874lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" type="id_String" value="int_uat" xmi:id="_Kd8741ICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_Kd875FICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:rmyWQda7k31otVRMxw6hKI9PCqGYbmNlS7RxV5qb3J5uS2RdgDG4YU8=" xmi:id="_Kd875VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_Kd875lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_Kd8751ICEeuIAM6M8xuWrw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_Kd876FICEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_Kd876VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_Kd876lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" type="id_String" value="sandbox_loc" xmi:id="_Kd8761ICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_Kd877FICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:/wvl/idM6w5tdp3+JXDOJPqDUNtibEaMIf3fMwE5qoWG6iiIS1iTIMk=" xmi:id="_Kd877VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_Kd877lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_Kd8771ICEeuIAM6M8xuWrw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_Kd878FICEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_Kd878VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_Kd878lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" type="id_String" value="int_tst" xmi:id="_Kd8781ICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_Kd879FICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:5/gjv9wXJMgqVlx50YQCcn59jadGj2OAc3WAJTn3p4ps/YStUq11Ma0=" xmi:id="_Kd879VICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_Kd879lICEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_Kd8791ICEeuIAM6M8xuWrw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8406702f-5fa9-43ab-89cf-4d00574dcd63"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hhfwkV3lS6COay/2oTCbdpD9ayxRUtCbGCf80mjqgczam3YuYSzlu9vb7cJfppplf0plqg2DBC6n&#13;
+bMDgo3RyMg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1f71e97e-5023-48b9-b88a-8030671b3942"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bt4UDTJVvCdRxmAPSJnMYZ0oo+ZJNNPYrVWtxlAIOM0lm2X4gA9IguWKZptH4lMBG2vDV8fb/8hM&#13;
+IOJO+txl9Q==</DigestValue></Reference></SignedInfo><SignatureValue>FG3sa/ZSIJAeagdykQzklnY8jT1O+IkZtu3TdcYk4kkh+eSYnXwMCgvUgDcbdea0NnuETbB5rwMn&#13;
+5rsl9KWs2Z4wTrE2emSZinkkCMFJxvHXi3q68mILKHkhuRwpeTDAgBChOVN98QhRs+R3+LGcmHqJ&#13;
+qwOs0Y1SicUO1ZItUB3th1m97V/ej+nkJefsrgvdYhcfkB3GpRtR+XY/06hB3JRS1TVa+qe8Vcdt&#13;
+3WyWKKZTu1C439ghBSbRWf/iyvn5RqTAdudNy3LmmV5Pmnr0MuzMs+usGyHJP+HSLn7JNznjvBbS&#13;
+25YygEiJSsx5kfTSDmPauMIeeVccM58d+c2sgw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1f71e97e-5023-48b9-b88a-8030671b3942" Target="#_8406702f-5fa9-43ab-89cf-4d00574dcd63"><Timestamp>2023-06-11 04:22:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

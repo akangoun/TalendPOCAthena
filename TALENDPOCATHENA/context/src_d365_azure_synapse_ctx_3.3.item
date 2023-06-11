@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_OU5acMr0EeyFVthlZZHF0g">
+    <contextParameter comment="" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_OU5accr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_OU5acsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_OU5ac8r0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="datalakesynapsersm-ondemand.sql.azuresynapse.net" xmi:id="_OU5adMr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="service-talend" xmi:id="_OU5adcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:bmza18up5ubRuHeOwr5VQ0qZZN5MaUHAeSQKqorNHgjoklaNys0ny2ZAvbMv3laWxH9JhHHwiKe0Dg==" xmi:id="_OU5adsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D365ServerlessPool" xmi:id="_OU5ad8r0EeyFVthlZZHF0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_OU5aeMr0EeyFVthlZZHF0g">
+    <contextParameter comment="" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_OU5aecr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_OU5aesr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_OU5ae8r0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net" xmi:id="_OU5afMr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="service-talend" xmi:id="_OU5afcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:/prF+OwJcnuvtSuVMeSqFufCIaE3/zMcIJ5xPTWoFZ+0yhTkfyoTSDr3T6GGjRqzyTwPf5qYydNMZQ==" xmi:id="_OU5afsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D365ServerlessPool" xmi:id="_OU5af8r0EeyFVthlZZHF0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_OU5agMr0EeyFVthlZZHF0g">
+    <contextParameter comment="" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_OU5agcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_OU5agsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_OU5ag8r0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="datalakesynapsersm-ondemand.sql.azuresynapse.net" xmi:id="_OU5ahMr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="service-talend" xmi:id="_OU5ahcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RDO3gpKNPkiVDGomFL/YcTdZD1ueTy4yq0PD3ouOpnNjY6k3P4rTKfZ/eGzbqkQFWR/d9yigFdeTeg==" xmi:id="_OU5ahsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D365ServerlessPool" xmi:id="_OU5ah8r0EeyFVthlZZHF0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_OU5aiMr0EeyFVthlZZHF0g">
+    <contextParameter comment="" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_OU5aicr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_OU5aisr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_OU5ai8r0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="datalakesynapsersm-ondemand.sql.azuresynapse.net" xmi:id="_OU5ajMr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="service-talend" xmi:id="_OU5ajcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:0v8Mt/dGHkosT7C0odcflvOsWH2wQXf8Jjc6cKtgyB1Y/+fh72FBZ09x3kf23YI3r4QCc0twMJLb6Q==" xmi:id="_OU5ajsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D365ServerlessPool" xmi:id="_OU5aj8r0EeyFVthlZZHF0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SL_STG" xmi:id="_OU5akMr0EeyFVthlZZHF0g">
+    <contextParameter comment="" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_OU5akcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_OU5aksr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_OU5ak8r0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="datalakesynapsersm-ondemand.sql.azuresynapse.net" xmi:id="_OU5alMr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="service-talend" xmi:id="_OU5alcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:BAQ1NjOrTp7DAMAMAqvXco3jqvwH/GHiy/hsbDZubb7Y0q7uQGs45//neiWrw3oI4Al/HwEpvvFqYw==" xmi:id="_OU5alsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D365ServerlessPool" xmi:id="_OU5al8r0EeyFVthlZZHF0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_OU5amMr0EeyFVthlZZHF0g">
+    <contextParameter comment="" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_OU5amcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_OU5amsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_OU5am8r0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net" xmi:id="_OU5anMr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="service-talend" xmi:id="_OU5ancr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ka1WuBTGVXwKHeWpcEhSZ5kLksYU3Ws3G6OzQKtv+C1T0SaKrM3pUhSSRZ0r1wxOUkN7wLkuhbBBQA==" xmi:id="_OU5ansr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D365ServerlessPool" xmi:id="_OU5an8r0EeyFVthlZZHF0g"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="UAT" xmi:id="_OU5aoMr0EeyFVthlZZHF0g">
+    <contextParameter comment="" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_OU5aocr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_OU5aosr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_OU5ao8r0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net" xmi:id="_OU5apMr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="service-talend" xmi:id="_OU5apcr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:M1tsfAaZuB5bszUG9+ZQWpfh+FgGrTdp0ij3iT/NWmeyArIxxKnx0ZarZpX9pOI4QBi8f89za52Z6Q==" xmi:id="_OU5apsr0EeyFVthlZZHF0g"/>
+    <contextParameter comment="" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="D365ServerlessPool" xmi:id="_OU5ap8r0EeyFVthlZZHF0g"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ca8acb74-cf7e-47ee-8701-b5d33866fb6a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/U9OsRzA8CpP5LVI5s+1Pg8ttfid+zTnGh9JKSGEv3Eul8XMTW7GUMKVryWtQt3vJMohrJ4cH4Rn&#13;
+a2T/cYFfuQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e97cd72e-268b-4c31-9792-623ed8e3e90e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2z5UguvaoW11pILsoDsXb6m6twYmniPVWnkYJisrc3U8wzk39jUybUPnNq95qygS2DRv8PbidjR1&#13;
+jz4bMnd8VA==</DigestValue></Reference></SignedInfo><SignatureValue>myDSatV6aOKsTWmW+wBAqbRrkQMmQtDGS22aN6MtMtvfIzzGkVgf8dZV/WIgTdNFbc4rKQXR+zhM&#13;
+4lF6OjUMeuer3ntRvi+V/9FYDhkbS9IJooxq523lqjCy1RgCLnRU6dPcUaoCmXIeXUnCCe6u1VHH&#13;
+WDcyIKho9UVbxKg3xMbw0Gm31bjNmzQfR9H+TjF+nDuDFulJd7no6qqpOYWORB9dMlHXQtm7VXZW&#13;
+i6fyw3BT3UL0dX3qXtmz/6+76W9GkiiAbBokxC5nQIh9Ug6DmuT0tVI3EOlJK3xp7yKoW30SGLoO&#13;
+wY4wUlClaibnnG6/VjnhxfYtS/qNtFGggNk70w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e97cd72e-268b-4c31-9792-623ed8e3e90e" Target="#_ca8acb74-cf7e-47ee-8701-b5d33866fb6a"><Timestamp>2023-06-11 03:26:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

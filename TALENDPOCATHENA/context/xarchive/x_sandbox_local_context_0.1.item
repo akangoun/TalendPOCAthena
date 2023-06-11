@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_pMLr4BQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:QBjrn6Izt57kPygHXNLdOCloxLY8j5z6QTW1v56DVUMc+0rV" xmi:id="_pMLr4RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" xmi:id="_pMLr4hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_pMLr4xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="info7370" xmi:id="_pMLr5BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_pMLr5RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_pMLr5hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sandbox_local" xmi:id="_pMLr5xQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_pMLr6BQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:tsUZymWBSBsIE9IVfaZVEpfIXSiaLoC+lYHlU0YRn7dQ0+9B" xmi:id="_pMLr6RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" xmi:id="_pMLr6hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_pMLr6xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="info7370" xmi:id="_pMLr7BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_pMLr7RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_pMLr7hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sandbox_local" xmi:id="_pMLr7xQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_pMLr8BQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:zysm/JXcy7ho9R/gI87TSAti2xwv2Jbf7IwZeq+zqDMzYbDp" xmi:id="_pMLr8RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" xmi:id="_pMLr8hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_pMLr8xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="info7370" xmi:id="_pMLr9BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_pMLr9RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_pMLr9hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sandbox_local" xmi:id="_pMLr9xQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_pMLr-BQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:sOMY5xIno9lNwDLWJPH1EZWLnqudQQLcaN24EQQot/3Sltmo" xmi:id="_pMLr-RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" xmi:id="_pMLr-hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_pMLr-xQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="info7370" xmi:id="_pMLr_BQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_pMLr_RQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_pMLr_hQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sandbox_local" xmi:id="_pMLr_xQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_pMLsCBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="sandbox_local_Password" prompt="sandbox_local_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:6YwQhiorUgU72oUxlpqc6EG+D406JtUAkEmY5lPvPNbM5WZo" xmi:id="_pMLsCRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Server" prompt="sandbox_local_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost" xmi:id="_pMLsChQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Schema" prompt="sandbox_local_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="dbo" xmi:id="_pMLsCxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Login" prompt="sandbox_local_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="info7370" xmi:id="_pMLsDBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_AdditionalParams" prompt="sandbox_local_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_pMLsDRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Port" prompt="sandbox_local_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_pMLsDhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="sandbox_local_Database" prompt="sandbox_local_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="sandbox_local" xmi:id="_pMLsDxQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1e0ef7c0-8e21-49b6-b10d-358eb59f6d1d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/SJlfUZ5sRPspGQktdQqEOeiOZVi18Xa0rkX6Hn2V4Nz46VhKQmjHa+s7oMM77S5cCkIetTYzdd9&#13;
+wPj6Adlv7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8da7e086-97fa-4f9a-ac8c-ebb635efb93a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>J+PSaVlsa5vo/kW9ZG0BBZnltMvbruBJfj7kNF24lteO6ZwhN3YWV1QGidiQ6y2eC5Ip5q4iqac5&#13;
+xS6wtrUEAg==</DigestValue></Reference></SignedInfo><SignatureValue>BbpuEAMtGo53U2xSuwf39iXHDMH8OkddB+MQN0QuKbq3lVblv0LzaPeq4VqPrSeyUYLEP4L4+jVn&#13;
+YwrVcaIov6Bk5zGC51MSbe+LGJWDknKEvNbZNNnKEh58+EBAPNJA/E45WdBS68iEiYNRcCfYGqeI&#13;
+Uqdv/uiaryc1b4gTXTAMvdNCC5dNFAY3IpVOSInPweqKXMGKIW9/86r65lc940Ofk81Ih1V5/D5r&#13;
+y5ihU2HRf6bvFqGGvZSbiXnsseZ4YCUFwf42KK1jVUqOBYzEtMMFFQpf5X/aPCHZaN4vJFr/bdHS&#13;
+seYQPlFNBWZPeo8VdCHrBu5lBg8c7UtlnrPdeA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8da7e086-97fa-4f9a-ac8c-ebb635efb93a" Target="#_1e0ef7c0-8e21-49b6-b10d-358eb59f6d1d"><Timestamp>2023-06-11 03:44:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

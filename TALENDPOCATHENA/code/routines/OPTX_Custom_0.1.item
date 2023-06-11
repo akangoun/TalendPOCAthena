@@ -1,0 +1,113 @@
+package routines;
+
+import java.util.Date;
+
+//import jdk.nashorn.internal.runtime.Context;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class OPTX_Custom {
+
+    /**
+
+     * 
+     * {Category} User Defined
+     * 
+
+     */
+ 
+    public static Date GameDate(Date InputGameDate, Integer HourDiff) {
+        /**
+         *          * 
+         * 
+         * {talendTypes} Date
+         * 
+         * {Category} User Defined
+  
+         */
+     	// Checking NULL values
+    	
+    	// HourDiff==context.INT_Load_Context.SlotGamedayStart_Hour - Is not working Yet
+        if (InputGameDate == null) {
+            return null;
+         }
+    	//String BASE_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    	Date GameDateTime=TalendDate.addDate(InputGameDate, -HourDiff, "HH"); //Adjusting the hour from input date
+    	//Date GDate= TalendDate.parseDate("yyyy-MM-dd", TalendDate.formatDate("yyyy-MM-dd", GameDateTime)); //Extracting Date from Adjusted Date
+    	//Date GTime= TalendDate.parseDate("HH:mm:ss", TalendDate.formatDate("HH:mm:ss", InputGameDate)); //Extracting Time from InputDate
+			//Concatenating the Date from AdjustedDate and InputDate Time
+    	//Date GameStartDate = TalendDate.parseDate(BASE_FORMAT,TalendDate.formatDate("yyyy-MM-dd",GDate) + " " + TalendDate.formatDate("HH:mm:SS",GTime));
+    	
+    	
+    	//return GameStartDate;
+    	return  GameDateTime;
+    	
+
+    } 
+    
+    /**
+     *          * 
+     * 
+     * {talendTypes} int
+     * 
+     * {Category} User Defined
+
+     */ 
+    public static int GameDateSK(Date InputGameDate, Integer HourDiff) {
+
+     	// Checking NULL values
+    	
+    	// HourDiff==context.INT_Load_Context.SlotGamedayStart_Hour - Is not working Yet
+        if (InputGameDate == null) {
+            return 20990101;
+         }
+
+    	Date GameDateTime=TalendDate.addDate(InputGameDate, -HourDiff, "HH"); //Adjusting the hour from input date
+    	int Gdate_SK=Integer.valueOf(TalendDate.formatDate("yyyyMMdd", GameDateTime));
+    	return  Gdate_SK;
+    	
+
+    }    
+    
+    /**
+     *          * 
+     * 
+     * {talendTypes} int
+     * 
+     * {Category} User Defined
+
+     */ 
+    public static int GameMonthSK(Date InputGameDate, Integer HourDiff) {
+
+     	// Checking NULL values
+    	
+    	// HourDiff==context.INT_Load_Context.SlotGamedayStart_Hour - Is not working Yet
+        if (InputGameDate == null) {
+            return 209901;
+         }
+ 
+    	Date GameDateTime=TalendDate.addDate(InputGameDate, -HourDiff, "HH"); //Adjusting the hour from input date
+    	int GdateMonth_SK=Integer.valueOf(TalendDate.formatDate("yyyyMM", GameDateTime));
+    	return  GdateMonth_SK;
+    	
+
+    }    
+       
+    
+}

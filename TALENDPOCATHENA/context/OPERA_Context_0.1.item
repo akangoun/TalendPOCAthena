@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_d435cFaOEeutzbLaa4epNA">
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" type="id_String" value="bireporting" xmi:id="_d435cVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:+cxOQo8nxQ7FQOOxGjaOkTlL9+K6JW7oGdUu5Au29+2+K/zuvg==" xmi:id="_d435claOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" type="id_String" value="10.2.50.175" xmi:id="_d435c1aOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_d435dFaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_d435dVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435dlaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435d1aOEeutzbLaa4epNA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_d435eFaOEeutzbLaa4epNA">
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" type="id_String" value="bireporting" xmi:id="_d435eVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:BX5pRBRWp7QVVuEHvv2Dt29V/mi1dMxVDR8s5DPFSE8500hgiQ==" xmi:id="_d435elaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" type="id_String" value="10.2.50.175" xmi:id="_d435e1aOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_d435fFaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_d435fVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435flaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435f1aOEeutzbLaa4epNA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_d435gFaOEeutzbLaa4epNA">
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" type="id_String" value="bireporting" xmi:id="_d435gVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Fg1VVflpAYbBUq0QOEyxKs7AQn57nNo5Zl1G4G13SIgp6vVysQ==" xmi:id="_d435glaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" type="id_String" value="10.2.50.175" xmi:id="_d435g1aOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_d435hFaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_d435hVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435hlaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435h1aOEeutzbLaa4epNA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_d435iFaOEeutzbLaa4epNA">
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" type="id_String" value="bireporting" xmi:id="_d435iVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:jG5t/VHvNQYaGSnewDAZiKvdf4cukmpJpDqkSf30Wlh/EaFb1w==" xmi:id="_d435ilaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" type="id_String" value="10.2.50.175" xmi:id="_d435i1aOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_d435jFaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_d435jVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435jlaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435j1aOEeutzbLaa4epNA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_d435kFaOEeutzbLaa4epNA">
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" type="id_String" value="bireporting" xmi:id="_d435kVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:LEzjW1hOtofcjJZPlrC/PjSHXkwlOAhNmUODpRUkiYbxsouY4Q==" xmi:id="_d435klaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" type="id_String" value="10.2.50.175" xmi:id="_d435k1aOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_d435lFaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_d435lVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435llaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435l1aOEeutzbLaa4epNA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_d435mFaOEeutzbLaa4epNA">
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" type="id_String" value="bireporting" xmi:id="_d435mVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:2arxAUwmFO7kLUAYuxf2zYabdENDxAb/XJ96hJqVlw97wSHtRA==" xmi:id="_d435mlaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" type="id_String" value="10.2.50.175" xmi:id="_d435m1aOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_d435nFaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" type="id_String" value="1521" xmi:id="_d435nVaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435nlaOEeutzbLaa4epNA"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" type="id_String" value="OPERA" xmi:id="_d435n1aOEeutzbLaa4epNA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3bff84fd-f8cd-4327-ac28-ffb133305568"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JqEGpIpKhgW1Xrq6/nbHIsP+yPW/zvKctJO5XcNQZDk5MvsQ9GO0I7YDAzgFRRGAqcHLDXVmTli7&#13;
+R+jSZbPSRw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2bab8869-b899-451f-85dc-04e4c10d7fbe"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GsdjRt2d5YIrphK8MWkzIY+rZtmKfnMua1PsRxyGZ/QPM0UNVEaOq9vvpXNP5D3sSkQ0tbWgfrh0&#13;
+WmlDw0mcwA==</DigestValue></Reference></SignedInfo><SignatureValue>WJHWt2UfZfP0o2isUeb274SpYmOANderBD4XU8qaXzPTAD48wbOGaON89mRuQigXnNcIZlodEifV&#13;
++CzL579djSdeqrq5C/9PaCWINfIcAPeaeH6gDq8JHh8VSyhkeRwTbC39ZpUSiG3lKPfCxJal8/rL&#13;
+ukPTS5ksUewpb/9fY9sZM+RLpANTzr2S/4T9QGnTXFMSRuRn4TyVVrf2/Ei7YqXy4Hx7KzI8aecW&#13;
+zTCuYvh6DABp96VQ2m4Ygp1hB5tH5TSORmPBtIInCcoMkcTyYKLcNNO7AdOw4AxauEM1Hu/Mf042&#13;
+WdGYTNzYi/w3FxS58T0KJTJzyP6MxMnvsOLhaA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2bab8869-b899-451f-85dc-04e4c10d7fbe" Target="#_3bff84fd-f8cd-4327-ac28-ffb133305568"><Timestamp>2023-06-11 04:22:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

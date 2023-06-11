@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_RmqYEMryEeyFVthlZZHF0g" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RmqYEcryEeyFVthlZZHF0g" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_sbx"/>
+    <contextParameter comment="" internalId="_RmqYEsryEeyFVthlZZHF0g" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_RmqYE8ryEeyFVthlZZHF0g" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RmqYFMryEeyFVthlZZHF0g" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:8PMfpH+ZJ4LUa/Ff3/d3qbL67APGvSvLprGyFDK37bnvbTBHlbSQEQTR"/>
+    <contextParameter comment="" internalId="_RmqYFcryEeyFVthlZZHF0g" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RmqYFsryEeyFVthlZZHF0g" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Vb1n8Mr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Vb1n8cr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_Vb1n8sr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:3DfGN6MSe0aFopS9RC+NxH8tNFaVjAXgplDpXjXFVNUmeAa4zVo1TZ+wJ0qTfLXhK2VA0oWmwp9Yaw=="/>
+    <contextParameter comment="" internalId="_Vb1n88r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vb1n9Mr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="datalakesynapsersm-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_Vb1n9cr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Vb1n9sr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="service-talend"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:79m0rnq6T9/E0eGvScZbRNJljBU6vi0kJJkJFkp3W5/yff4Laj01Gfim"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" internalId="_RmqYF8ryEeyFVthlZZHF0g" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RmqYGMryEeyFVthlZZHF0g" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_RmqYGcryEeyFVthlZZHF0g" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_RmqYGsryEeyFVthlZZHF0g" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RmqYG8ryEeyFVthlZZHF0g" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:/dJWLRowQXnvb12i4ZwQjizQ4qL14fETZx2MDaFEWCqSxRf/wEa4RUne"/>
+    <contextParameter comment="" internalId="_RmqYHMryEeyFVthlZZHF0g" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RmqYHcryEeyFVthlZZHF0g" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Vb1n98r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Vb1n-Mr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_Vb1n-cr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:qon9uec90DrlE3nVRqRVgteDL2A7i1u4rT0DyW1gYZWfBWjLCVjymInycNWy7g=="/>
+    <contextParameter comment="" internalId="_Vb1n-sr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vb1n-8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_Vb1n_Mr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Vb1n_cr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="prd"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:L2CHsmx7L2zz+vFfZCu6p+nCuVMvE3+syWHLuuLvudWp38qu0CnWPmhg"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_RmqYHsryEeyFVthlZZHF0g" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RmqYH8ryEeyFVthlZZHF0g" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_dev"/>
+    <contextParameter comment="" internalId="_RmqYIMryEeyFVthlZZHF0g" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_RmqYIcryEeyFVthlZZHF0g" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RmqYIsryEeyFVthlZZHF0g" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:ba2IRJqUr3V9GsdJxQ8hefmqha83C/SIchSzRDjS+JUwNlaDS2eyR9dW"/>
+    <contextParameter comment="" internalId="_RmqYI8ryEeyFVthlZZHF0g" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RmqYJMryEeyFVthlZZHF0g" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Vb1n_sr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Vb1n_8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_Vb2PAMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:f18awJo78ZKOylVxlCgJpXyYhmL/paQsuq2UHaMfXd8MlWIWQelUxdachSxgjQ=="/>
+    <contextParameter comment="" internalId="_Vb2PAcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vb2PAsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_Vb2PA8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Vb2PBMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="dev"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:O1DM+nn3F5Yt0ud9BP5s9Td3GOlcBJrWazRIF9NpadVKrvlh+kpCzdz0"/>
+  </context>
+  <context confirmationNeeded="false" name="TST">
+    <contextParameter comment="" internalId="_RmqYJcryEeyFVthlZZHF0g" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RmqYJsryEeyFVthlZZHF0g" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_RmqYJ8ryEeyFVthlZZHF0g" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_RmqYKMryEeyFVthlZZHF0g" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RmqYKcryEeyFVthlZZHF0g" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:5ZtChf92TkvBIFMOLZFOIb6HR+h3/WjBkKnC6glHaOiJaNpdva86SUsf"/>
+    <contextParameter comment="" internalId="_RmqYKsryEeyFVthlZZHF0g" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RmqYK8ryEeyFVthlZZHF0g" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Vb2PBcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Vb2PBsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_Vb2PB8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:E5mp+O/7EgsOjikAf+1qlrWOghU9hKrgqqslmCLsyyc4BGLVZrAaOi3NiyJNDQ=="/>
+    <contextParameter comment="" internalId="_Vb2PCMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vb2PCcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_Vb2PCsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Vb2PC8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:VPFFBwIEytDMg3Ltx0+wKiBBbpWmcbmMUSN4QMXLTRjWpDLb4mDHMxR+"/>
+  </context>
+  <context confirmationNeeded="false" name="SBX">
+    <contextParameter comment="" internalId="_RmqYLMryEeyFVthlZZHF0g" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RmqYLcryEeyFVthlZZHF0g" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_sbx"/>
+    <contextParameter comment="" internalId="_RmqYLsryEeyFVthlZZHF0g" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_RmqYL8ryEeyFVthlZZHF0g" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RmqYMMryEeyFVthlZZHF0g" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:nb4SDJ/UvAGquhSDvbEajYGqt1SdBhNw+ntHywmahWAyt+nJuu3fA5sO"/>
+    <contextParameter comment="" internalId="_RmqYMcryEeyFVthlZZHF0g" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RmqYMsryEeyFVthlZZHF0g" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Vb2PDMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Vb2PDcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="EDWTestDB"/>
+    <contextParameter comment="" internalId="_Vb2PDsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:XO2rwdmTcNfpohvpCaBO73bneuNGOiPT4eFlhbKazpTKOpTeMFzPVlsio1h1RA=="/>
+    <contextParameter comment="" internalId="_Vb2PD8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vb2PEMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_Vb2PEcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Vb2PEsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:uA3S9rfMZ7d1onL/HPwWhsPcaWIVXYePpszoCw0jIcHvUI7j9AAHJJzq"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" internalId="_RmqYM8ryEeyFVthlZZHF0g" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RmqYNMryEeyFVthlZZHF0g" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_RmqYNcryEeyFVthlZZHF0g" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_RmqYNsryEeyFVthlZZHF0g" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RmqYN8ryEeyFVthlZZHF0g" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:etD2bXvOCVlrhUnbsWiAgp7tfgJnvdaRsnPl+dlYcSJfMlJ+H8RXd7Xb"/>
+    <contextParameter comment="" internalId="_RmqYOMryEeyFVthlZZHF0g" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RmqYOcryEeyFVthlZZHF0g" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Vb2PE8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Vb2PFMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_Vb2PFcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:cABPSE4LX+9Dltz0VYCh2CuKBzN8mxNFlkyjopGgz+kS9oR+4oO6uDjJBHZ/KQ=="/>
+    <contextParameter comment="" internalId="_Vb2PFsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vb2PF8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_Vb2PGMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Vb2PGcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="uat"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:qT+X1tA4/W+UHBECTWsfH49s8bS12wAfkVbOby2xDRMJabrDSbmApcns"/>
+  </context>
+  <context confirmationNeeded="false" name="SL_STG">
+    <contextParameter comment="" internalId="_RmqYOsryEeyFVthlZZHF0g" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RmqYO8ryEeyFVthlZZHF0g" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_RmqYPMryEeyFVthlZZHF0g" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_RmqYPcryEeyFVthlZZHF0g" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RmqYPsryEeyFVthlZZHF0g" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:H0JprYDVHTV3xutlzVvf4U4EQiWAPz9de1eFqOes6XS2TGfz3q9kSn3c"/>
+    <contextParameter comment="" internalId="_RmqYP8ryEeyFVthlZZHF0g" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RmqYQMryEeyFVthlZZHF0g" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Vb2PGsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_Vb2PG8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_Vb2PHMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:qRUdugsuFYSsmwU2DgDnzo568YHhUc8jFOXI6SEgYmoCUf1RVBDNje8goyccxQ=="/>
+    <contextParameter comment="" internalId="_Vb2PHcr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Vb2PHsr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_Vb2PH8r0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_Vb2PIMr0EeyFVthlZZHF0g" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl_stg"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:8qi1+pWg4c/s7mx0gW/MnXdZeMIM07Fw2QwHZTYPoYqehVVnfRQ4lth2"/>
+  </context>
+  <context confirmationNeeded="false" name="LOC">
+    <contextParameter comment="" internalId="_CsOC4M4wEeyCdd6IuMV3Ag" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_CsOC4c4wEeyCdd6IuMV3Ag" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_sbx"/>
+    <contextParameter comment="" internalId="_CsOC4s4wEeyCdd6IuMV3Ag" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="loc"/>
+    <contextParameter comment="" internalId="_CsOC484wEeyCdd6IuMV3Ag" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_CsOC5M4wEeyCdd6IuMV3Ag" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:glpWfon9sS2uJ1MsixklwXE2+qonVVPieFDc3QHYoIq3hUO5zfIQhg5y"/>
+    <contextParameter comment="" internalId="_CsOC5c4wEeyCdd6IuMV3Ag" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_CsOC5s4wEeyCdd6IuMV3Ag" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_CsOC584wEeyCdd6IuMV3Ag" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_CsOC6M4wEeyCdd6IuMV3Ag" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="EDWTestDB"/>
+    <contextParameter comment="" internalId="_CsOp8M4wEeyCdd6IuMV3Ag" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:iiM44OhdVk81z4AmTUodlDjL52D4K9iublfCQx2e8u5SEScPiIm5YEbLf0/0yQ=="/>
+    <contextParameter comment="" internalId="_CsOp8c4wEeyCdd6IuMV3Ag" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_CsOp8s4wEeyCdd6IuMV3Ag" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_CsOp884wEeyCdd6IuMV3Ag" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_CsOp9M4wEeyCdd6IuMV3Ag" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_CsOp9c4wEeyCdd6IuMV3Ag" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_CsOp9s4wEeyCdd6IuMV3Ag" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_CsOp984wEeyCdd6IuMV3Ag" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_CsOp-M4wEeyCdd6IuMV3Ag" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_CsOp-c4wEeyCdd6IuMV3Ag" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:etzn3vuWfyVp0NBj2DqjM62jLHZuAc8FlkQTtI0Bh04IDZDTF6w0A0G0"/>
+    <contextParameter comment="" internalId="_CsOp-s4wEeyCdd6IuMV3Ag" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_CsOp-84wEeyCdd6IuMV3Ag" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+  </context>
+  <context confirmationNeeded="false" name="PRE">
+    <contextParameter comment="" internalId="_0QNAoNYDEeyFh5pKXX-Cbg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_0QNAodYDEeyFh5pKXX-Cbg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_0QNAotYDEeyFh5pKXX-Cbg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_0QNAo9YDEeyFh5pKXX-Cbg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_0QNApNYDEeyFh5pKXX-Cbg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:D25tYZHSshvzCrNGs+S8dnLA4ONPxUFhTZGqcQSsGp8LR6HyQnDsAPON"/>
+    <contextParameter comment="" internalId="_0QNApdYDEeyFh5pKXX-Cbg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_0QNAptYDEeyFh5pKXX-Cbg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_0QNAp9YDEeyFh5pKXX-Cbg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_0QNAqNYDEeyFh5pKXX-Cbg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_0QNAqdYDEeyFh5pKXX-Cbg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:uNcKfpBHQ1BxJaVJN3N8D0GVMIQiXl/P2AkfDsICKu5+OKq2vKl25F6vO+3Fvw=="/>
+    <contextParameter comment="" internalId="_0QNAqtYDEeyFh5pKXX-Cbg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_0QNAq9YDEeyFh5pKXX-Cbg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_0QNArNYDEeyFh5pKXX-Cbg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_0QNArdYDEeyFh5pKXX-Cbg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_0QNArtYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_0QNAr9YDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_0QNAsNYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_0QNAsdYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_0QNAstYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:wxV6OGju/hz7J2PrU9wbWywA1BudE7SPvPpHdnCX6xE+7P5cchYkFRwB"/>
+    <contextParameter comment="" internalId="_0QNAs9YDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_0QNAtNYDEeyFh5pKXX-Cbg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:P/z5CaCJjWcxU+n1ROfcbT0APJSLXC4+u49AstxV"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend-Studio-v801_workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0KO5ygv0tZoeHR4bJyVeY10kpXgTcZKSs4iDb7WB"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_a2kIUMVvEey3xfLApzgqSw" name="DQTechnical"/>
+    <routinesParameter id="_a2J4oMVvEey3xfLApzgqSw" name="DataMasking"/>
+    <routinesParameter id="_mnd_ILBpEeydZsfTpczvmg" name="DataOperation"/>
+    <routinesParameter id="_a2eBsMVvEey3xfLApzgqSw" name="DataQualityDependencies"/>
+    <routinesParameter id="_a2a-YMVvEey3xfLApzgqSw" name="DataQuality"/>
+    <routinesParameter id="_a2hFAMVvEey3xfLApzgqSw" name="DqStringHandling"/>
+    <routinesParameter id="_mnks0LBpEeydZsfTpczvmg" name="Mathematical"/>
+    <routinesParameter id="_mnud0LBpEeydZsfTpczvmg" name="Numeric"/>
+    <routinesParameter id="_moFqMLBpEeydZsfTpczvmg" name="Relational"/>
+    <routinesParameter id="_mlWfQLBpEeydZsfTpczvmg" name="SQLike"/>
+    <routinesParameter id="_moU6wLBpEeydZsfTpczvmg" name="StringHandling"/>
+    <routinesParameter id="_mogg8LBpEeydZsfTpczvmg" name="TalendDataGenerator"/>
+    <routinesParameter id="_moy00LBpEeydZsfTpczvmg" name="TalendDate"/>
+    <routinesParameter id="_mpQH0LBpEeydZsfTpczvmg" name="TalendStringUtil"/>
+    <routinesParameter id="_mpD6kLBpEeydZsfTpczvmg" name="TalendString"/>
+  </parameters>
+  <node componentName="DI_CNTL_Job_Tracking_Stats_ROOT_pg" componentVersion="12.2" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_4qnfUMrzEeyFVthlZZHF0g"/>
+    <elementParameter field="TEXT" name="HOST" value="context.src_d365_azure_synapse_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.src_d365_azure_synapse_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.src_d365_azure_synapse_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.src_d365_azure_synapse_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.src_d365_azure_synapse_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fCm2OeyX52PeOrIwohR4LKWSOrL+kfqqsWdn2+ZH7VkEEN8VLc0i8qU/LHsv9/m9BgnhmnwqXHzFB6xYgpa1dW8FTQ=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_4qnfUMrzEeyFVthlZZHF0g - InventDim"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;InventDim&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.\&quot;$FileName\&quot;,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim._SysRowId,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.LSN,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.LastProcessedChange_DateTime,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.DataLakeModified_DateTime,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.RECID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.CONFIGID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTBATCHID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTCOLORID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTGTDID_RU,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTLOCATIONID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTOWNERID_RU,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTPROFILEID_RU,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTSERIALID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTSITEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTSIZEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTSTATUSID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTSTYLEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.LICENSEPLATEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.WMSLOCATIONID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.WMSPALLETID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.SHA1HASHHEX,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION1,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION2,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION3,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION4,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION5,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION6,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION7,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION8,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION9,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION9TZID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION10,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.DATAAREAID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.PARTITION,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.RECVERSION,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.MODIFIEDDATETIME,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.MODIFIEDBY,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.CREATEDDATETIME,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTVERSIONID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION11,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.INVENTDIMENSION12,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim.SHA3HASHHEX&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.InventDim&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.src_d365_azure_synapse_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_FileName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_SysRowId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LSN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastProcessedChange_DateTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataLakeModified_DateTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONFIGID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTBATCHID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTCOLORID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTGTDID_RU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTLOCATIONID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTOWNERID_RU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTPROFILEID_RU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSERIALID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSITEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSIZEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSTATUSID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSTYLEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LICENSEPLATEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WMSLOCATIONID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WMSPALLETID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHA1HASHHEX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION8"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION9"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION9TZID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATAAREAID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PARTITION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECVERSION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIEDDATETIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIEDBY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATEDDATETIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTVERSIONID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHA3HASHHEX"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="InventDim" name="tDBInput_1">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CONFIGID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTBATCHID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTCOLORID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTDIMID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="INVENTGTDID_RU" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTLOCATIONID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="INVENTOWNERID_RU" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTPROFILEID_RU" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTSERIALID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSITEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSIZEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTATUSID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTYLEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="LICENSEPLATEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="WMSLOCATIONID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="WMSPALLETID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="SHA1HASHHEX" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION3" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION4" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION5" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION6" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION7" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION8" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="INVENTDIMENSION9" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="INVENTDIMENSION9TZID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="INVENTDIMENSION10" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="MODIFIEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MODIFIEDBY" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="CREATEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTVERSIONID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION11" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION12" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="96" name="SHA3HASHHEX" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_XFTMgNXeEeyFh5pKXX-Cbg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="put_InventDim" name="put_InventDim">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CONFIGID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTBATCHID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTCOLORID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTDIMID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="INVENTGTDID_RU" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTLOCATIONID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="INVENTOWNERID_RU" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTPROFILEID_RU" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTSERIALID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSITEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSIZEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTATUSID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTYLEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="LICENSEPLATEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="WMSLOCATIONID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="WMSPALLETID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="SHA1HASHHEX" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION1" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION2" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION3" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION4" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION5" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION6" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION7" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION8" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="INVENTDIMENSION9" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="INVENTDIMENSION9TZID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="INVENTDIMENSION10" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="MODIFIEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MODIFIEDBY" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="CREATEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTVERSIONID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION11" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION12" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="96" name="SHA3HASHHEX" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="di_created_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_updated_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="put_InventDim" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="get_InventDim._FileName " name="_FileName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim._SysRowId " name="_SysRowId" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_InventDim.LSN " name="LSN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.LastProcessedChange_DateTime " name="LastProcessedChange_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="get_InventDim.DataLakeModified_DateTime " name="DataLakeModified_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="get_InventDim.RECID " name="RECID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_InventDim.CONFIGID " name="CONFIGID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTBATCHID " name="INVENTBATCHID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTCOLORID " name="INVENTCOLORID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMID " name="INVENTDIMID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTGTDID_RU " name="INVENTGTDID_RU" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTLOCATIONID " name="INVENTLOCATIONID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTOWNERID_RU " name="INVENTOWNERID_RU" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTPROFILEID_RU " name="INVENTPROFILEID_RU" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTSERIALID " name="INVENTSERIALID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTSITEID " name="INVENTSITEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTSIZEID " name="INVENTSIZEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTSTATUSID " name="INVENTSTATUSID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTSTYLEID " name="INVENTSTYLEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.LICENSEPLATEID " name="LICENSEPLATEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.WMSLOCATIONID " name="WMSLOCATIONID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.WMSPALLETID " name="WMSPALLETID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.SHA1HASHHEX " name="SHA1HASHHEX" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION1 " name="INVENTDIMENSION1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION2 " name="INVENTDIMENSION2" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION3 " name="INVENTDIMENSION3" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION4 " name="INVENTDIMENSION4" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION5 " name="INVENTDIMENSION5" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION6 " name="INVENTDIMENSION6" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION7 " name="INVENTDIMENSION7" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION8 " name="INVENTDIMENSION8" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION9 " name="INVENTDIMENSION9" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION9TZID " name="INVENTDIMENSION9TZID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION10 " name="INVENTDIMENSION10" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_InventDim.DATAAREAID " name="DATAAREAID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.PARTITION " name="PARTITION" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_InventDim.RECVERSION " name="RECVERSION" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_InventDim.MODIFIEDDATETIME " name="MODIFIEDDATETIME" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="get_InventDim.MODIFIEDBY " name="MODIFIEDBY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.CREATEDDATETIME " name="CREATEDDATETIME" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="get_InventDim.INVENTVERSIONID " name="INVENTVERSIONID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION11 " name="INVENTDIMENSION11" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.INVENTDIMENSION12 " name="INVENTDIMENSION12" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_InventDim.SHA3HASHHEX " name="SHA3HASHHEX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="di_created_dt" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="di_updated_dt" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="di_jobid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="di_isdeleted" nullable="true" type="id_Boolean"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="get_InventDim" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="_FileName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_SysRowId" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="LSN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LastProcessedChange_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DataLakeModified_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="RECID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="CONFIGID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTBATCHID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTCOLORID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTGTDID_RU" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTLOCATIONID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTOWNERID_RU" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTPROFILEID_RU" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTSERIALID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTSITEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTSIZEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTSTATUSID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTSTYLEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LICENSEPLATEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="WMSLOCATIONID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="WMSPALLETID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SHA1HASHHEX" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION5" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION6" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION7" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION8" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION9" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="INVENTDIMENSION9TZID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="INVENTDIMENSION10" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DATAAREAID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PARTITION" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="RECVERSION" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="MODIFIEDDATETIME" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="MODIFIEDBY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CREATEDDATETIME" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="INVENTVERSIONID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION11" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INVENTDIMENSION12" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SHA3HASHHEX" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_2ZkGAMlvEeyeS_tSFwatpA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.stg_EDW_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.stg_EDW_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.stg_EDW_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.stg_EDW_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.stg_EDW_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5jDn9hExsTfYKIzAb32nqLvrUW0iRgPHmJB1+BjO0vRQbSb/soynNwbal2g44ltuZ+sGeA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;d365_InventDim&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.stg_EDW_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="50000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_FileName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_SysRowId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LSN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastProcessedChange_DateTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataLakeModified_DateTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONFIGID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTBATCHID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTCOLORID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTGTDID_RU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTLOCATIONID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTOWNERID_RU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTPROFILEID_RU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSERIALID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSITEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSIZEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSTATUSID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTSTYLEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LICENSEPLATEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WMSLOCATIONID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WMSPALLETID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHA1HASHHEX"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION3"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION4"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION6"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION7"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION8"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION9"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION9TZID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATAAREAID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PARTITION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECVERSION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIEDDATETIME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIEDBY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATEDDATETIME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTVERSIONID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION11"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INVENTDIMENSION12"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHA3HASHHEX"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_created_dt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_updated_dt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_jobid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_isdeleted"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="50000"/>
+    <elementParameter field="TEXT" name="LABEL" value="d365_InventDim"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="put_InventDim" name="tDBOutput_1">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CONFIGID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTBATCHID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTCOLORID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTDIMID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="INVENTGTDID_RU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTLOCATIONID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="INVENTOWNERID_RU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTPROFILEID_RU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTSERIALID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSITEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSIZEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTATUSID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTYLEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="LICENSEPLATEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="WMSLOCATIONID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="WMSPALLETID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="SHA1HASHHEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="INVENTDIMENSION9" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="INVENTDIMENSION9TZID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="INVENTDIMENSION10" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="MODIFIEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MODIFIEDBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="CREATEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTVERSIONID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="96" name="SHA3HASHHEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="di_created_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_updated_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="put_InventDim" name="REJECT">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="CONFIGID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTBATCHID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTCOLORID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTDIMID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="30" name="INVENTGTDID_RU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTLOCATIONID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="INVENTOWNERID_RU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTPROFILEID_RU" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="INVENTSERIALID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSITEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSIZEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTATUSID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTSTYLEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="LICENSEPLATEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="WMSLOCATIONID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="WMSPALLETID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="SHA1HASHHEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION3" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION4" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION5" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION6" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION7" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION8" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="INVENTDIMENSION9" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="INVENTDIMENSION9TZID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="INVENTDIMENSION10" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="MODIFIEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MODIFIEDBY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="CREATEDDATETIME" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INVENTVERSIONID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION11" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="INVENTDIMENSION12" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="96" name="SHA3HASHHEX" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="di_created_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_updated_dt" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss'.000Z'&quot;" precision="-1" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="get_InventDim" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="get_InventDim"/>
+  </connection>
+  <connection connectorName="FLOW" label="put_InventDim" lineStyle="0" metaname="put_InventDim" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="put_InventDim"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Initial load d365 InventDim Table"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="89;182;251"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;255;193"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_618c4689-0d3e-4cfe-a534-0410e9ddf69a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4cj9IXCXoNXmtNaRxBWc0cf+UwVtN3RQL4aL0LVEfIq6LgP4KYLGy3vi+WyckIQ/8d2TYN7eUqNC&#13;
++Bnbebv3OA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_545cec3d-41ce-479a-bfd0-0cc9f167f410"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sAe0jSsHR4zF2F9AFXzr/3JPytX05Rph+p+g4BnuxN8PIgbGYUDOUcyX8Ajj0BhGl53fp7piOxLG&#13;
+l8zUB5ZU5w==</DigestValue></Reference></SignedInfo><SignatureValue>JJoVVNXHFUpBUYjOZjQ09YMvo03RHeQaxO7KH2SPzUuPpd+zcy7aVW0s5MvYMg+W/1FPObb1kSsp&#13;
+8zsxwoKwHEbWhMTO5N9dGgoQiIrEI5x3cKxsAKJnx7DUWvqHNoR42zs8Aftvr25PD41+FMtdYgVV&#13;
+aiDuLUHU+l83cA/wOBT62w6QjfgqX9Nl4r2KT1lx0GTzKKoQo2kuZtNxV+5YGIf8+14KbNFMmN0X&#13;
+jA+h7/WLMCb0uoYAwNWF/FRhIjiVGC6tL7ViJ+f2pJcKNu7hnEH79h5DRBHRPdPjFb4wGYpBkoC9&#13;
+nCyBID9YnTu8PfIEVhxEMuxbfGkNDySYo9ObDA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_545cec3d-41ce-479a-bfd0-0cc9f167f410" Target="#_618c4689-0d3e-4cfe-a534-0410e9ddf69a"><Timestamp>2023-06-11 03:45:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

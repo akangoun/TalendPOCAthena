@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_YeO-ABfKEeuY6vaI0VUEdg">
+    <contextParameter comment="" name="MICROS_Login" prompt="MICROS_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_YeO-ARfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Server" prompt="MICROS_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_YeO-AhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Schema" prompt="MICROS_Schema?" promptNeeded="false" type="id_String" value="Micros" xmi:id="_YeO-AxfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_AdditionalParams" prompt="MICROS_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_YeO-BBfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Password" prompt="MICROS_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:y6jRIHvMJ8BWy6ypklkpqX5wXqg2suZefBXPvLcmWPUUU39t5e3Eqak=" xmi:id="_YeO-BRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Database" prompt="MICROS_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_YeO-BhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Port" prompt="MICROS_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_YeO-BxfKEeuY6vaI0VUEdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_YeO-CBfKEeuY6vaI0VUEdg">
+    <contextParameter comment="" name="MICROS_Login" prompt="MICROS_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_YeO-CRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Server" prompt="MICROS_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_YeO-ChfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Schema" prompt="MICROS_Schema?" promptNeeded="false" type="id_String" value="Micros" xmi:id="_YeO-CxfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_AdditionalParams" prompt="MICROS_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_YeO-DBfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Password" prompt="MICROS_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:k2QY8aN91W53GqDKNZWkhl9SaeH04x6z3miM6+CV2o3iW4D6ywRC0+4=" xmi:id="_YeO-DRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Database" prompt="MICROS_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_YeO-DhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Port" prompt="MICROS_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_YeO-DxfKEeuY6vaI0VUEdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_YeO-EBfKEeuY6vaI0VUEdg">
+    <contextParameter comment="" name="MICROS_Login" prompt="MICROS_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_YeO-ERfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Server" prompt="MICROS_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_YeO-EhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Schema" prompt="MICROS_Schema?" promptNeeded="false" type="id_String" value="Micros" xmi:id="_YeO-ExfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_AdditionalParams" prompt="MICROS_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_YeO-FBfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Password" prompt="MICROS_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:hqWNl63O8XEkyr8Ji7gx9B5MzONIPkfhs5qb5ZdJ4AKga/s+x02o2W0=" xmi:id="_YeO-FRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Database" prompt="MICROS_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_YeO-FhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Port" prompt="MICROS_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_YeO-FxfKEeuY6vaI0VUEdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_YeO-GBfKEeuY6vaI0VUEdg">
+    <contextParameter comment="" name="MICROS_Login" prompt="MICROS_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_YeO-GRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Server" prompt="MICROS_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_YeO-GhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Schema" prompt="MICROS_Schema?" promptNeeded="false" type="id_String" value="Micros" xmi:id="_YeO-GxfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_AdditionalParams" prompt="MICROS_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_YeO-HBfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Password" prompt="MICROS_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:h9vAhWf5W4qU63ZbQWHqm8hwDZPwRFypZ7SrHIxLGCQOuhUogJQz3Rs=" xmi:id="_YeO-HRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Database" prompt="MICROS_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_YeO-HhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Port" prompt="MICROS_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_YeO-HxfKEeuY6vaI0VUEdg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_f8QIwCRBEeuRLsVO-5GruA">
+    <contextParameter comment="" name="MICROS_Login" prompt="MICROS_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_f8QIwSRBEeuRLsVO-5GruA"/>
+    <contextParameter comment="" name="MICROS_Server" prompt="MICROS_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_f8QIwiRBEeuRLsVO-5GruA"/>
+    <contextParameter comment="" name="MICROS_Schema" prompt="MICROS_Schema?" promptNeeded="false" type="id_String" value="Micros" xmi:id="_f8QIwyRBEeuRLsVO-5GruA"/>
+    <contextParameter comment="" name="MICROS_AdditionalParams" prompt="MICROS_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_f8QIxCRBEeuRLsVO-5GruA"/>
+    <contextParameter comment="" name="MICROS_Password" prompt="MICROS_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:vfK4+q8EYRDKYyrs9Y3EINRv5GaQUg7MeqKnTPnq9wO1f5euIm2eIpY=" xmi:id="_f8QIxSRBEeuRLsVO-5GruA"/>
+    <contextParameter comment="" name="MICROS_Database" prompt="MICROS_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_f8QIxiRBEeuRLsVO-5GruA"/>
+    <contextParameter comment="" name="MICROS_Port" prompt="MICROS_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_f8QIxyRBEeuRLsVO-5GruA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_YeO-IBfKEeuY6vaI0VUEdg">
+    <contextParameter comment="" name="MICROS_Login" prompt="MICROS_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_YeO-IRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Server" prompt="MICROS_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_YeO-IhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Schema" prompt="MICROS_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_YeO-IxfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_AdditionalParams" prompt="MICROS_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_YeO-JBfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Password" prompt="MICROS_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:84lXIIGLorzNkR582MTezKHkhoqYw4ftlZDtXkM2smY1Gypo3WtUgeQ=" xmi:id="_YeO-JRfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Database" prompt="MICROS_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_YeO-JhfKEeuY6vaI0VUEdg"/>
+    <contextParameter comment="" name="MICROS_Port" prompt="MICROS_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_YeO-JxfKEeuY6vaI0VUEdg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_30430bd6-eded-4cfb-913f-01f7befe61b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dMOpEEBOSeDKEgIhhsWBzQQ8I/nz8F9Z/YWdkJFhTRJ0WbsGq6TdLkD+7AtNu6LwvG78zHDKeGGb&#13;
+SC3Q9fUMFQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ff8f73c2-2d50-4497-9c66-9226b655bebc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3d0wpy6jO9iGJTmYSVZl7ru/JA3z9XhWPOgXKdJyx9WjSoVZ3w1hy6fHZcuADkOP7VlD5p4YWqzb&#13;
+rFwGzMPT5g==</DigestValue></Reference></SignedInfo><SignatureValue>O3Q0BKT6jpLPRDeL2zyoQd1PvsSxMVgyvnMHYeANFXYEtAPcmaPiLLl7e7mX3cb3YdDH5D9ED8vu&#13;
+ZI2u9pezFcid5zg679hpb3cUnp9X4IAWU1vCQpZFBTEZz2JU61J+iLqR7d13FTo6KX+jRhf9xWKu&#13;
+1HbcppqhAU3siqX/fucCjXJqsxC5rLLnF/GiwOoK4W5Pe2PGREWMNnRps/ZG3oPYAFy58Z8DrbQ1&#13;
+3CIkWJmdKkmuFoksj7xz1sMMtqAMrPvIE2ZsJL/Ph9NEo2qiEg8FTz1xuTJOrNAxFyRSMuScBEKq&#13;
+hvapH9Qrxg0hMUt7kPVaZjYMZmePApVGiAaw5A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ff8f73c2-2d50-4497-9c66-9226b655bebc" Target="#_30430bd6-eded-4cfb-913f-01f7befe61b7"><Timestamp>2023-06-11 04:22:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

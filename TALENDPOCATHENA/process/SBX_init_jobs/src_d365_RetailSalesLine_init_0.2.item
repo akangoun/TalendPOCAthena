@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_gpX_YNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpX_YdbREeyqdtxrDW312w" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpX_YtbREeyqdtxrDW312w" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpX_Y9bREeyqdtxrDW312w" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="datalakesynapsersm-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpX_ZNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="service-talend"/>
+    <contextParameter comment="" internalId="_gpX_ZdbREeyqdtxrDW312w" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:FG6jQp84qmf8O96c2o2NeUCEjENgrrO/ShWQR4LHciPeR+dWwVlB8ZWr0v6bbfxp8RlalbEjJ8cnqg=="/>
+    <contextParameter comment="" internalId="_gpX_ZtbREeyqdtxrDW312w" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_gpX_Z9bREeyqdtxrDW312w" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpX_aNbREeyqdtxrDW312w" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:RDq4LA/8X3Ij/+0G28hgbcSdhYrVEGzvjTTKXDNRUNltYCSBzkvSO0QB"/>
+    <contextParameter comment="" internalId="_gpX_adbREeyqdtxrDW312w" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_sbx"/>
+    <contextParameter comment="" internalId="_gpX_atbREeyqdtxrDW312w" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpX_a9bREeyqdtxrDW312w" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_gpX_bNbREeyqdtxrDW312w" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpX_bdbREeyqdtxrDW312w" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:Am6zaDwatzG6Foi5mfgHXnR1eeqRVnK866jZQe+7RH7a+tVw8Z1+Q0Z9"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" internalId="_gpX_btbREeyqdtxrDW312w" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpX_b9bREeyqdtxrDW312w" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpX_cNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpX_cdbREeyqdtxrDW312w" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpX_ctbREeyqdtxrDW312w" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gpX_c9bREeyqdtxrDW312w" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:E0KfxtOsaoar9Myk7lKffm03ZdzvcRlXsSblH5TQJZY+rSXIlLzF0GFwrlbybA=="/>
+    <contextParameter comment="" internalId="_gpX_dNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_gpX_ddbREeyqdtxrDW312w" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpX_dtbREeyqdtxrDW312w" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:2EHfKH5G7aHEMW0VP194NGbgNMCgFVtaBTyw0aFD2fo/iy6CqhIn3oFD"/>
+    <contextParameter comment="" internalId="_gpX_d9bREeyqdtxrDW312w" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_gpX_eNbREeyqdtxrDW312w" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpX_edbREeyqdtxrDW312w" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_gpX_etbREeyqdtxrDW312w" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpX_e9bREeyqdtxrDW312w" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="prd"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:fbecjkkhYst5u40rwH0t9h0iH24sBpZ57VS1Fo8TmCvQXyQHreZuITHt"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_gpX_fNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpX_fdbREeyqdtxrDW312w" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpX_ftbREeyqdtxrDW312w" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpX_f9bREeyqdtxrDW312w" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpX_gNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gpX_gdbREeyqdtxrDW312w" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:cZdN7M3U4wqfZqd5mpNq2hUjXHAWawM/bZyfz4ygoFa01nfh7RE/fS4EphlDgA=="/>
+    <contextParameter comment="" internalId="_gpX_gtbREeyqdtxrDW312w" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_gpX_g9bREeyqdtxrDW312w" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpX_hNbREeyqdtxrDW312w" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:ncGj4pUmcgGqn7iqFgJKyiJ2vdefL9UwCMZuwsRAFNYkxQh1KXjophtW"/>
+    <contextParameter comment="" internalId="_gpX_hdbREeyqdtxrDW312w" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_dev"/>
+    <contextParameter comment="" internalId="_gpX_htbREeyqdtxrDW312w" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpX_h9bREeyqdtxrDW312w" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_gpX_iNbREeyqdtxrDW312w" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpX_idbREeyqdtxrDW312w" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="dev"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:LPibcS2vDWdzAKTHxsERHSMACMTUxF85RwA5cV6PWmq5V1qoUNnokJm8"/>
+  </context>
+  <context confirmationNeeded="false" name="TST">
+    <contextParameter comment="" internalId="_gpX_itbREeyqdtxrDW312w" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpX_i9bREeyqdtxrDW312w" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpX_jNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpX_jdbREeyqdtxrDW312w" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpX_jtbREeyqdtxrDW312w" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gpX_j9bREeyqdtxrDW312w" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:gP20p0CBC1gwf8a9uEWs/hemm1kjxEIeewOpq7raX3LsoRln7JH6vONLfPqudQ=="/>
+    <contextParameter comment="" internalId="_gpX_kNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_gpX_kdbREeyqdtxrDW312w" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpX_ktbREeyqdtxrDW312w" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:vnOvg927cIJIz00YpKQ2plkmIKqBGgH00OjxNdxF7PbLj7+9dIP6p99J"/>
+    <contextParameter comment="" internalId="_gpX_k9bREeyqdtxrDW312w" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_gpX_lNbREeyqdtxrDW312w" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpX_ldbREeyqdtxrDW312w" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_gpX_ltbREeyqdtxrDW312w" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpX_l9bREeyqdtxrDW312w" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:PQU5qKawO+Md5no4T8FYUgu91xTcGLwP8dti8/J9ZNg/c0ysxs7QwLU4"/>
+  </context>
+  <context confirmationNeeded="false" name="SBX">
+    <contextParameter comment="" internalId="_gpX_mNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpX_mdbREeyqdtxrDW312w" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpX_mtbREeyqdtxrDW312w" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpX_m9bREeyqdtxrDW312w" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpX_nNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gpX_ndbREeyqdtxrDW312w" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:5KXyH097sv7VMwniZxHOeY8PVRYJTdv9k/8/1KxpIvYWz2FnoHFnWmuXzy65ig=="/>
+    <contextParameter comment="" internalId="_gpX_ntbREeyqdtxrDW312w" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="EDWTestDB"/>
+    <contextParameter comment="" internalId="_gpX_n9bREeyqdtxrDW312w" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpX_oNbREeyqdtxrDW312w" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:946frYMD8gDq0rRTDyx4GHZ7afhqpYe0Ibfob54Wq3ybVSBvgawtq48h"/>
+    <contextParameter comment="" internalId="_gpX_odbREeyqdtxrDW312w" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_sbx"/>
+    <contextParameter comment="" internalId="_gpX_otbREeyqdtxrDW312w" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpX_o9bREeyqdtxrDW312w" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_gpX_pNbREeyqdtxrDW312w" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpX_pdbREeyqdtxrDW312w" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:159vWxeyoMZ/V4RmK0A35kYcg7+P8cnLoE81gz46bqvS7/Yasw+uhlIf"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" internalId="_gpX_ptbREeyqdtxrDW312w" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpX_p9bREeyqdtxrDW312w" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpX_qNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpX_qdbREeyqdtxrDW312w" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpX_qtbREeyqdtxrDW312w" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gpX_q9bREeyqdtxrDW312w" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:SPvyThjjuW6x+FJU99roTMDn5WAnvDVLRZ2nvRnvIAe5ejPweHVEaTDPNdmSQQ=="/>
+    <contextParameter comment="" internalId="_gpX_rNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_gpX_rdbREeyqdtxrDW312w" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpX_rtbREeyqdtxrDW312w" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:PR/pqwLGy9HCr37x3BNxLV7ETm9x1bPIzK3IcItFFSJe8BmNt6Wi8T22"/>
+    <contextParameter comment="" internalId="_gpX_r9bREeyqdtxrDW312w" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_gpX_sNbREeyqdtxrDW312w" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpX_sdbREeyqdtxrDW312w" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_gpX_stbREeyqdtxrDW312w" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpX_s9bREeyqdtxrDW312w" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="uat"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:AnmppOke+qLJdhnHQHwJwX3Tw0wIwiJ9gNFo4zoCQo0NI1bIO2cAnMni"/>
+  </context>
+  <context confirmationNeeded="false" name="SL_STG">
+    <contextParameter comment="" internalId="_gpX_tNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpX_tdbREeyqdtxrDW312w" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpX_ttbREeyqdtxrDW312w" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpX_t9bREeyqdtxrDW312w" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpX_uNbREeyqdtxrDW312w" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gpX_udbREeyqdtxrDW312w" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:q1K2WJCClsOJkVSAQE4ymJnAwpcX3JZLVH4Xb1YAj/6v20WfqfHsYYYb8Mk83g=="/>
+    <contextParameter comment="" internalId="_gpX_utbREeyqdtxrDW312w" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_gpX_u9bREeyqdtxrDW312w" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpX_vNbREeyqdtxrDW312w" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:I9jfcYFXaGgswMaoYny2P76cRhREpiHDNvVvAfiB/Kq7s7eSNHmzp0An"/>
+    <contextParameter comment="" internalId="_gpX_vdbREeyqdtxrDW312w" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_gpX_vtbREeyqdtxrDW312w" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpX_v9bREeyqdtxrDW312w" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_gpX_wNbREeyqdtxrDW312w" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpX_wdbREeyqdtxrDW312w" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8LcwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_pYu8LswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl_stg"/>
+    <contextParameter comment="" internalId="_pYu8L8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_pYu8MMwkEeyNnZzo0-K_XA" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_pYu8McwkEeyNnZzo0-K_XA" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_pYu8MswkEeyNnZzo0-K_XA" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_pYu8M8wkEeyNnZzo0-K_XA" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:TlILe0ANUPXPn7gzBNLBO6ngW2vCXwwnkrS/azZcHL6gLsKotXtFvKJg"/>
+  </context>
+  <context confirmationNeeded="false" name="PRE">
+    <contextParameter comment="" internalId="_gpcFENknEey9LLluWRIRQQ" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpcFEdknEey9LLluWRIRQQ" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:MY4eTnlxZ3kLGuKDj3f+eyirJf68FdLbA5YGYy2UHwxLh+/Svm2pLmcn"/>
+    <contextParameter comment="" internalId="_gpcFEtknEey9LLluWRIRQQ" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_gpcFE9knEey9LLluWRIRQQ" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpcFFNknEey9LLluWRIRQQ" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_gpcFFdknEey9LLluWRIRQQ" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpcFFtknEey9LLluWRIRQQ" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_gpcFF9knEey9LLluWRIRQQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_gpcFGNknEey9LLluWRIRQQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_gpcFGdknEey9LLluWRIRQQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gpcFGtknEey9LLluWRIRQQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gpcFG9knEey9LLluWRIRQQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gpcFHNknEey9LLluWRIRQQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_gpcFHdknEey9LLluWRIRQQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:09iu5yTWeSNxRnCJEsMUj7gi9A4OJsOg4FYS8/1h6WQd6nDEKAE0XLb1"/>
+    <contextParameter comment="" internalId="_gpcFHtknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gpcFH9knEey9LLluWRIRQQ" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gpcFINknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gpcFIdknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gpcFItknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gpcFI9knEey9LLluWRIRQQ" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:Gk7qTmoiOYNZH4ECz9yPafrr01ewsJ5TJjbHg7RTJwbS7AbX9AebS91ks9ullQ=="/>
+    <contextParameter comment="" internalId="_gpcFJNknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:BPL3VzGLbQvCoAy03tqYwWEPy8Gn1LS/Xn5aiFsg"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend-Studio-v801_workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9MC5dEH1RcIJpFtumREsXgTIz9ZDK+WdMvt6bKc4"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_a2kIUMVvEey3xfLApzgqSw" name="DQTechnical"/>
+    <routinesParameter id="_a2J4oMVvEey3xfLApzgqSw" name="DataMasking"/>
+    <routinesParameter id="_mnd_ILBpEeydZsfTpczvmg" name="DataOperation"/>
+    <routinesParameter id="_a2eBsMVvEey3xfLApzgqSw" name="DataQualityDependencies"/>
+    <routinesParameter id="_a2a-YMVvEey3xfLApzgqSw" name="DataQuality"/>
+    <routinesParameter id="_a2hFAMVvEey3xfLApzgqSw" name="DqStringHandling"/>
+    <routinesParameter id="_mnks0LBpEeydZsfTpczvmg" name="Mathematical"/>
+    <routinesParameter id="_mnud0LBpEeydZsfTpczvmg" name="Numeric"/>
+    <routinesParameter id="_moFqMLBpEeydZsfTpczvmg" name="Relational"/>
+    <routinesParameter id="_mlWfQLBpEeydZsfTpczvmg" name="SQLike"/>
+    <routinesParameter id="_moU6wLBpEeydZsfTpczvmg" name="StringHandling"/>
+    <routinesParameter id="_mogg8LBpEeydZsfTpczvmg" name="TalendDataGenerator"/>
+    <routinesParameter id="_moy00LBpEeydZsfTpczvmg" name="TalendDate"/>
+    <routinesParameter id="_mpQH0LBpEeydZsfTpczvmg" name="TalendStringUtil"/>
+    <routinesParameter id="_mpD6kLBpEeydZsfTpczvmg" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_4qnfUMrzEeyFVthlZZHF0g"/>
+    <elementParameter field="TEXT" name="HOST" value="context.src_d365_azure_synapse_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.src_d365_azure_synapse_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.src_d365_azure_synapse_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.src_d365_azure_synapse_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.src_d365_azure_synapse_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RSMePfPeD3vrbdk5G/D/GZpjqs1kZL0J4/l6tUfSQIvfGX3M0atd5fys7YAGUXSw0WlHT6OWe+Q9ZBxu4L5PyJ4ELA=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_4qnfUMrzEeyFVthlZZHF0g - RetailSalesLine"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;RetailSalesLine&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.\&quot;$FileName\&quot;,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine._SysRowId,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.LSN,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.LastProcessedChange_DateTime,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.DataLakeModified_DateTime,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.RECID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.CATALOG,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.LINEDSCAMOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.LINEMANUALDISCOUNTAMOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.LINEMANUALDISCOUNTPERCENTAGE,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.LISTINGID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.PERIODICDISCOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.PERIODICPERCENTAGEDISCOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.TOTALDISCOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.TOTALPCTDISCOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.SALESLINE,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.FULFILLMENTSTOREID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.RETURNREASONCODEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.ORIGINALPRICE,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.PRICEOVERRIDEREASONCODE,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.ISPRICEOVERRIDDEN,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.FULFILLMENTSTATUS,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.QUANTITYPICKED,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.QUANTITYPACKED,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.QUANTITYINVOICED,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.INFOCODEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.INFORMATION,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.SUBINFOCODEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.DATAAREAID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.PARTITION,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.RECVERSION,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.LINEPERCENTAGEDISCOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.TENDERDISCOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.TENDERDISCOUNTPERCENTAGE,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.ISPRICEKEYEDIN,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.PICKUPSTARTTIME,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.PICKUPENDTIME,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.QUANTITYNOTPROCESSED,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.QUANTITYPHYSICALLYRESERVED,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.QUANTITYCOLUMNSVERSION,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.RETAILPRODUCTLISTLINEUPDATEID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine.ISPRICELOCKED&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.RetailSalesLine&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.src_d365_azure_synapse_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_FileName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_SysRowId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LSN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastProcessedChange_DateTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataLakeModified_DateTime"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CATALOG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEDSCAMOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEMANUALDISCOUNTAMOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEMANUALDISCOUNTPERCENTAGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LISTINGID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERIODICDISCOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERIODICPERCENTAGEDISCOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTALDISCOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTALPCTDISCOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALESLINE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FULFILLMENTSTOREID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RETURNREASONCODEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORIGINALPRICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRICEOVERRIDEREASONCODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISPRICEOVERRIDDEN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FULFILLMENTSTATUS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYPICKED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYPACKED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYINVOICED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFOCODEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFORMATION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBINFOCODEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATAAREAID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PARTITION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECVERSION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEPERCENTAGEDISCOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TENDERDISCOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TENDERDISCOUNTPERCENTAGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISPRICEKEYEDIN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PICKUPSTARTTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PICKUPENDTIME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYNOTPROCESSED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYPHYSICALLYRESERVED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYCOLUMNSVERSION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RETAILPRODUCTLISTLINEUPDATEID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISPRICELOCKED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="RetailSalesLine" name="tDBInput_1">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CATALOG" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEDSCAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LISTINGID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALPCTDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="SALESLINE" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FULFILLMENTSTOREID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RETURNREASONCODEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="ORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PRICEOVERRIDEREASONCODE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEOVERRIDDEN" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="FULFILLMENTSTATUS" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPICKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPACKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYINVOICED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INFOCODEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="INFORMATION" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SUBINFOCODEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEKEYEDIN" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPSTARTTIME" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPENDTIME" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYNOTPROCESSED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPHYSICALLYRESERVED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="QUANTITYCOLUMNSVERSION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="RETAILPRODUCTLISTLINEUPDATEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICELOCKED" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="__HMYUNh0EeyE-6Y5iJ_9Ag-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="put_CustTable" name="put_CustTable1">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CATALOG" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEDSCAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LISTINGID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALPCTDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="SALESLINE" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FULFILLMENTSTOREID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RETURNREASONCODEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="ORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PRICEOVERRIDEREASONCODE" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEOVERRIDDEN" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="FULFILLMENTSTATUS" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPICKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPACKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYINVOICED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INFOCODEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="INFORMATION" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SUBINFOCODEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEKEYEDIN" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPSTARTTIME" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPENDTIME" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYNOTPROCESSED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPHYSICALLYRESERVED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="QUANTITYCOLUMNSVERSION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="RETAILPRODUCTLISTLINEUPDATEID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICELOCKED" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="di_created_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="di_updated_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="put_CustTable1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="get_CustTable1._FileName " name="_FileName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1._SysRowId " name="_SysRowId" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.LSN " name="LSN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.LastProcessedChange_DateTime " name="LastProcessedChange_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="get_CustTable1.DataLakeModified_DateTime " name="DataLakeModified_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="get_CustTable1.RECID " name="RECID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.CATALOG " name="CATALOG" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.LINEDSCAMOUNT " name="LINEDSCAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.LINEMANUALDISCOUNTAMOUNT " name="LINEMANUALDISCOUNTAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.LINEMANUALDISCOUNTPERCENTAGE " name="LINEMANUALDISCOUNTPERCENTAGE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.LISTINGID " name="LISTINGID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.PERIODICDISCOUNT " name="PERIODICDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.PERIODICPERCENTAGEDISCOUNT " name="PERIODICPERCENTAGEDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.TOTALDISCOUNT " name="TOTALDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.TOTALPCTDISCOUNT " name="TOTALPCTDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.SALESLINE " name="SALESLINE" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.FULFILLMENTSTOREID " name="FULFILLMENTSTOREID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.RETURNREASONCODEID " name="RETURNREASONCODEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.ORIGINALPRICE " name="ORIGINALPRICE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.PRICEOVERRIDEREASONCODE " name="PRICEOVERRIDEREASONCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.ISPRICEOVERRIDDEN " name="ISPRICEOVERRIDDEN" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.FULFILLMENTSTATUS " name="FULFILLMENTSTATUS" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.QUANTITYPICKED " name="QUANTITYPICKED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.QUANTITYPACKED " name="QUANTITYPACKED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.QUANTITYINVOICED " name="QUANTITYINVOICED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.INFOCODEID " name="INFOCODEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.INFORMATION " name="INFORMATION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.SUBINFOCODEID " name="SUBINFOCODEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.DATAAREAID " name="DATAAREAID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.PARTITION " name="PARTITION" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.RECVERSION " name="RECVERSION" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.LINEPERCENTAGEDISCOUNT " name="LINEPERCENTAGEDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.TENDERDISCOUNT " name="TENDERDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.TENDERDISCOUNTPERCENTAGE " name="TENDERDISCOUNTPERCENTAGE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.ISPRICEKEYEDIN " name="ISPRICEKEYEDIN" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE " name="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT " name="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.PICKUPSTARTTIME " name="PICKUPSTARTTIME" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.PICKUPENDTIME " name="PICKUPENDTIME" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.QUANTITYNOTPROCESSED " name="QUANTITYNOTPROCESSED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.QUANTITYPHYSICALLYRESERVED " name="QUANTITYPHYSICALLYRESERVED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="get_CustTable1.QUANTITYCOLUMNSVERSION " name="QUANTITYCOLUMNSVERSION" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="get_CustTable1.RETAILPRODUCTLISTLINEUPDATEID " name="RETAILPRODUCTLISTLINEUPDATEID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="get_CustTable1.ISPRICELOCKED " name="ISPRICELOCKED" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="di_created_dt" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="di_updated_dt" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="pid" name="di_jobid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="di_isdeleted" nullable="true" type="id_Boolean"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="get_CustTable1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="_FileName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="_SysRowId" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="LSN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LastProcessedChange_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="DataLakeModified_DateTime" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="RECID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="CATALOG" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="LINEDSCAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="LINEMANUALDISCOUNTAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="LINEMANUALDISCOUNTPERCENTAGE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="LISTINGID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PERIODICDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="PERIODICPERCENTAGEDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TOTALDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TOTALPCTDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="SALESLINE" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="FULFILLMENTSTOREID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RETURNREASONCODEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ORIGINALPRICE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="PRICEOVERRIDEREASONCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ISPRICEOVERRIDDEN" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="FULFILLMENTSTATUS" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="QUANTITYPICKED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QUANTITYPACKED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QUANTITYINVOICED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="INFOCODEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INFORMATION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SUBINFOCODEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATAAREAID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PARTITION" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="RECVERSION" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="LINEPERCENTAGEDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TENDERDISCOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TENDERDISCOUNTPERCENTAGE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ISPRICEKEYEDIN" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="PICKUPSTARTTIME" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="PICKUPENDTIME" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="QUANTITYNOTPROCESSED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QUANTITYPHYSICALLYRESERVED" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="QUANTITYCOLUMNSVERSION" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="RETAILPRODUCTLISTLINEUPDATEID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ISPRICELOCKED" nullable="true" type="id_Long"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_2ZkGAMlvEeyeS_tSFwatpA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.stg_EDW_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.stg_EDW_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.stg_EDW_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.stg_EDW_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.stg_EDW_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6Y0qn/Y30a3MW43fLSSsj1aw6yGI4uP0/ehir9ruHLELFbXLvxsZEK+gSs0/n+uWe7hoZw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;d365_RetailSalesLine&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.stg_EDW_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_FileName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="_SysRowId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LSN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastProcessedChange_DateTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DataLakeModified_DateTime"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CATALOG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEDSCAMOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEMANUALDISCOUNTAMOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEMANUALDISCOUNTPERCENTAGE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LISTINGID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERIODICDISCOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERIODICPERCENTAGEDISCOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTALDISCOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTALPCTDISCOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALESLINE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FULFILLMENTSTOREID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RETURNREASONCODEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORIGINALPRICE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRICEOVERRIDEREASONCODE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISPRICEOVERRIDDEN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FULFILLMENTSTATUS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYPICKED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYPACKED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYINVOICED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFOCODEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INFORMATION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUBINFOCODEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATAAREAID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PARTITION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECVERSION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LINEPERCENTAGEDISCOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TENDERDISCOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TENDERDISCOUNTPERCENTAGE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISPRICEKEYEDIN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PICKUPSTARTTIME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PICKUPENDTIME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYNOTPROCESSED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYPHYSICALLYRESERVED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITYCOLUMNSVERSION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RETAILPRODUCTLISTLINEUPDATEID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ISPRICELOCKED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_created_dt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_updated_dt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_jobid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_isdeleted"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="put_CustTable" name="tDBOutput_1">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CATALOG" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEDSCAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LISTINGID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALPCTDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="SALESLINE" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FULFILLMENTSTOREID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RETURNREASONCODEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="ORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PRICEOVERRIDEREASONCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEOVERRIDDEN" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="FULFILLMENTSTATUS" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPICKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPACKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYINVOICED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INFOCODEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="INFORMATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SUBINFOCODEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEKEYEDIN" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPSTARTTIME" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPENDTIME" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYNOTPROCESSED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPHYSICALLYRESERVED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="QUANTITYCOLUMNSVERSION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="RETAILPRODUCTLISTLINEUPDATEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICELOCKED" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="di_created_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="di_updated_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="put_CustTable" name="REJECT">
+      <column comment="" key="false" length="100" name="_FileName" nullable="true" originalDbColumnName="$FileName" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="_SysRowId" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="60" name="LSN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="LastProcessedChange_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="DataLakeModified_DateTime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CATALOG" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEDSCAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEMANUALDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="LISTINGID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="PERIODICPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALPCTDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="SALESLINE" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FULFILLMENTSTOREID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RETURNREASONCODEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="ORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PRICEOVERRIDEREASONCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEOVERRIDDEN" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="FULFILLMENTSTATUS" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPICKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPACKED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYINVOICED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INFOCODEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="INFORMATION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SUBINFOCODEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="RECVERSION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="LINEPERCENTAGEDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TENDERDISCOUNTPERCENTAGE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICEKEYEDIN" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPSTARTTIME" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PICKUPENDTIME" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYNOTPROCESSED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="QUANTITYPHYSICALLYRESERVED" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="QUANTITYCOLUMNSVERSION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="40" name="RETAILPRODUCTLISTLINEUPDATEID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ISPRICELOCKED" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="di_created_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="di_updated_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="DI_CNTL_Job_Tracking_Stats_ROOT_pg" componentVersion="12.2" offsetLabelX="0" offsetLabelY="0" posX="832" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection connectorName="FLOW" label="get_CustTable1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="-50" offsetLabelY="2" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="get_CustTable1"/>
+  </connection>
+  <connection connectorName="FLOW" label="put_CustTable1" lineStyle="0" metaname="put_CustTable1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="REMAINBEFORE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXTERNALITEMID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXAUTOGENERATED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVENTTRANSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEPERCENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LEDGERDIMENSION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEAMOUNTTAXMST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEAMOUNTMST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SOURCEDOCUMENTLINE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUMLINEDISC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BILLINGCODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEAMOUNTTAX"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NGPCODESTABLE_FR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIGSTATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="WEIGHT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ASSETID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PDSCWQTY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MCRDELIVERYNAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVERSEDRECID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EINVOICEACCOUNTCODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OLAPCOSTVALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ITEMID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUSTOMERLINENUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEHEADER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RETURNCLOSEDDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSACTIONCODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MULTILNDISC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVENTQTY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIGSALESID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REASONREFRECID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MULTILNPERCENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SALESUNIT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COUNTRYREGIONOFSHIPMENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRICEUNIT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RETURNARRIVALDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_SysRowId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STATPROCID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRENCYCODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVRECREVENUESCHEDULEID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COMMISSCALC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVERSECHARGESALESLIST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORDERLINEREFERENCE_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVOICEID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXITEMGROUP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXWITHHOLDITEMGROUPHEADING_TH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVENTREFTRANSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SALESMARKUP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PDSCWREMAIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVRECDEFERREDPROCESSED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PDSCWQTYPHYSICAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COMMISSAMOUNTMST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUMLINEDISCMST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QTYPHYSICAL"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RETAILCATEGORY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PORT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINENUM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STOCKEDPRODUCT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIGCOUNTRYREGIONID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MCRDLVMODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PARTDELIVERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVRECDEFERRED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REMAIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RETURNDISPOSITIONCODEID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DISCAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INTRASTATFULFILLMENTDATE_HU"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVOICEDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="_FileName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INTRASTATDISPATCHID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINECREATIONSEQUENCENUMBER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVENTDIMID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVENTREFTYPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="COMMISSAMOUNTCUR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DLVDATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUSTINVOICELINEIDREF"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVENTREFID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSPORT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DISCPERCENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXAMOUNTMST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STATLINEAMOUNTMST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SALESID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CREATEDBY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DELIVERYPOSTALADDRESS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXWRITECODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SALESCATEGORY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INTERCOMPANYINVENTTRANSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REVERSECHARGE_W"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GOODSFORFREE_IT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PARENTRECID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SALESPRICE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DELIVERYTYPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STATEOFSHIPMENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ASSETBOOKID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INTRASTATCOMMODITY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXEXEMPTPRICEINCLUSIVEORIGINALPRICE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INFOCODEID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIGINALPRICE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEMANUALDISCOUNTAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SALESLINE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FULFILLMENTSTATUS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TENDERDISCOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ISPRICEOVERRIDDEN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRICEOVERRIDEREASONCODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUANTITYCOLUMNSVERSION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PICKUPENDTIME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CATALOG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LISTINGID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ISPRICELOCKED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PICKUPSTARTTIME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FULFILLMENTSTOREID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUANTITYINVOICED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTALDISCOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUANTITYNOTPROCESSED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TENDERDISCOUNTPERCENTAGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RETAILPRODUCTLISTLINEUPDATEID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUANTITYPICKED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERIODICDISCOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="INFORMATION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ISPRICEKEYEDIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TAXEXEMPTPRICEINCLUSIVEREDUCTIONAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUANTITYPHYSICALLYRESERVED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEPERCENTAGEDISCOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUBINFOCODEID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTALPCTDISCOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUANTITYPACKED"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEDSCAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RETURNREASONCODEID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LINEMANUALDISCOUNTPERCENTAGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PERIODICPERCENTAGEDISCOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="put_CustTable1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_96cf2c89-2bf4-4d6f-b8ed-eafb62500ef0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>lBPxXDzwA1UiZZ9flMVEnrnwJCM0uS5sbzWoDTCW4i+9SSKdgmMFFoVglePYfRrlZg93fyu6jtZn&#13;
+hsXBsFctDA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4465c164-401b-499c-9966-6e9134ad57c2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/f07feNrOF4+R6Csggrm99XAl7hB01SDUObgIPvFR0h6wLr/+klfsRzYnHPlnFiuOZ01sLgRVJFl&#13;
+RbgbIJNsZw==</DigestValue></Reference></SignedInfo><SignatureValue>N+Lw2z1KYvRaiDaHBA0u8SNsPhQg6cX0M5UqN1VuebEvazCG9WDEEDw8SG8uvFqOYYfY+EynbT6J&#13;
+BkTO+rafDxDMcxl5mluVhit2k6w01WXcmoE9Dl/xyZt93IGZanXbYk8Jvv78ykXnuboaCdwIqCxt&#13;
+lFvZQsGVYEozcYnTiWkAP9WXqLxCSbHqsOcApeT+/8v5SUBsrtnZqvF8BZx3Y23NdSfkKRlj4iDz&#13;
+R/eQZuhWt7Czsf6gQUn9We2/pg0NFwjmfOOZYmaNkVacrDga3AOZiFrK2IdkKzSYgo7/bPd7JTji&#13;
+s8vHdg4bLtdCcOddnlhjCtlT1Ilw99mQkM4xyg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4465c164-401b-499c-9966-6e9134ad57c2" Target="#_96cf2c89-2bf4-4d6f-b8ed-eafb62500ef0"><Timestamp>2023-06-11 03:45:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
