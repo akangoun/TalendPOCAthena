@@ -1,0 +1,29 @@
+{
+  "itemId" : "_QMZ6gN0PEeyQx48_Gc5lWw",
+  "contextList" : [ {
+    "contextName" : "SBX",
+    "repoId" : "_0EXIQMi2EeyeS_tSFwatpA",
+    "parameterList" : [ {
+      "id" : "_f_MAOcY5Eey_T7VMIGknkA",
+      "name" : "stg_EDW_Login"
+    }, {
+      "id" : "_f_MAOsY5Eey_T7VMIGknkA",
+      "name" : "stg_EDW_Database"
+    }, {
+      "id" : "_f_MAO8Y5Eey_T7VMIGknkA",
+      "name" : "stg_EDW_Schema"
+    }, {
+      "id" : "_f_MAPMY5Eey_T7VMIGknkA",
+      "name" : "stg_EDW_AdditionalParams"
+    }, {
+      "id" : "_f_MAPcY5Eey_T7VMIGknkA",
+      "name" : "stg_EDW_Password"
+    }, {
+      "id" : "_f_MAPsY5Eey_T7VMIGknkA",
+      "name" : "stg_EDW_Port"
+    }, {
+      "id" : "_f_MAP8Y5Eey_T7VMIGknkA",
+      "name" : "stg_EDW_Server"
+    } ]
+  } ]
+}

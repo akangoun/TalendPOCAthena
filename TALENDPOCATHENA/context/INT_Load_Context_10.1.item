@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_NxpCED4iEeujZt-RlOLdxQ">
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE" prompt="SCD_EFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_8gg90FKAEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_8gg90VKAEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_8gg90lKAEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_VERSION" prompt="SCD_VERSION?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_8gg901KAEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE" prompt="SCD_INEFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="2099-12-31 00:00:00" xmi:id="_As2MoFKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_LATEST_IND" prompt="SCD_LATEST_IND?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_As2MoVKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_SOR_SK" prompt="DI_SOR_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_As2MolKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_PID" prompt="DI_PID?" promptNeeded="false" type="id_String" value="'NoneProvided'" xmi:id="_As2Mo1KHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="Agg_Type_SK" prompt="Agg_Type_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_fvzgIFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Type_Code" prompt="Agg_Type_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_fvzgIVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="dd, mm" name="Agg_Type_Level" prompt="Agg_Type_Level?" promptNeeded="false" type="id_String" value="&quot;dd&quot;" xmi:id="_fvzgIlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_InProgress" prompt="Agg_InProgress?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_fvzgI1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date_SK" prompt="Agg_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgJFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date_SK" prompt="Agg_End_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgJVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date" prompt="Agg_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgJlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date" prompt="Agg_End_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgJ1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Interval" prompt="Agg_Interval?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_N6hccFPHEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Core_Build_Code" prompt="Agg_Core_Build_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_YgiFUFQpEeuzK6gdzLMXhA"/>
+    <contextParameter comment="" name="SlotGamedayStart_Time" prompt="SlotGamedayStart_Time?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_nHzSoFdIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SlotGamedayStart_Hour" prompt="SlotGamedayStart_Hour?" promptNeeded="false" type="id_Integer" value="5" xmi:id="_nHzSoVdIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="InputForGameDate" prompt="InputForGameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_bCeDEFdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate" prompt="GameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_u_qKQFdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_Hour" prompt="GameDate_Hour?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_tkzgYFdKEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_SK" prompt="GameDate_SK?" promptNeeded="false" type="id_Integer" value="20200101" xmi:id="_i9qn8FddEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause1" prompt="SQL_WhereClause1?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiwFmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause2" prompt="SQL_WhereClause2?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiwVmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_Substitute" prompt="Dim_Attr_NULL_Substitute?" promptNeeded="false" type="id_String" value="&quot;NULL Value Input&quot;" xmi:id="_vIOI0F56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_SK" prompt="Dim_Attr_NULL_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_vIOI0V56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Agg_Group_Type" prompt="Agg_Group_Type?" promptNeeded="false" type="id_String" value="&quot;Property&quot;" xmi:id="_ZLPiYGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01" prompt="Agg_SK01?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_ZLPiYWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01_Desc" prompt="Agg_SK01_Desc?" promptNeeded="false" type="id_String" value="&quot;OPTX_Property_SK&quot;" xmi:id="_ZLPiYmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02" prompt="Agg_SK02?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPiY2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02_Desc" prompt="Agg_SK02_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPiZGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03" prompt="Agg_SK03?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPiZWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03_Desc" prompt="Agg_SK03_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPiZmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date_SK" prompt="Report_as_of_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210101" xmi:id="_ZLPiZ2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date" prompt="Report_as_of_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPiaGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Hour_SK" prompt="Report_as_of_Start_Hour_SK?" promptNeeded="false" type="id_String" value="-1" xmi:id="_ZLPiaWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_DateTime" prompt="Report_as_of_Start_DateTime?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPiamSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE_SK" prompt="SCD_INEFFECTIVE_DATE_SK?" promptNeeded="false" type="id_Integer" value="20991231" xmi:id="_nvO50GcREeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE_SK" prompt="SCD_EFFECTIVE_DATE_SK?" promptNeeded="false" type="id_String" value="19690720" xmi:id="_nvO50WcREeuK9LGz2OYOWw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_VCDZ8FKBEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE" prompt="SCD_EFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_VCDZ8VKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ8lKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ81KBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_VERSION" prompt="SCD_VERSION?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ9FKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE" prompt="SCD_INEFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="2099-12-31 00:00:00" xmi:id="_As2MpFKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_LATEST_IND" prompt="SCD_LATEST_IND?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_As2MpVKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_SOR_SK" prompt="DI_SOR_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_As2MplKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_PID" prompt="DI_PID?" promptNeeded="false" type="id_String" value="'NoneProvided'" xmi:id="_As2Mp1KHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="Agg_Type_SK" prompt="Agg_Type_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_fvzgKFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Type_Code" prompt="Agg_Type_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_fvzgKVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="dd, mm" name="Agg_Type_Level" prompt="Agg_Type_Level?" promptNeeded="false" type="id_String" value="&quot;dd&quot;" xmi:id="_fvzgKlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_InProgress" prompt="Agg_InProgress?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_fvzgK1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date_SK" prompt="Agg_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgLFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date_SK" prompt="Agg_End_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgLVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date" prompt="Agg_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgLlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date" prompt="Agg_End_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgL1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Interval" prompt="Agg_Interval?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_N6hccVPHEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Core_Build_Code" prompt="Agg_Core_Build_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_YgiFUVQpEeuzK6gdzLMXhA"/>
+    <contextParameter comment="" name="SlotGamedayStart_Time" prompt="SlotGamedayStart_Time?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_nHzSoldIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SlotGamedayStart_Hour" prompt="SlotGamedayStart_Hour?" promptNeeded="false" type="id_Integer" value="5" xmi:id="_nHzSo1dIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="InputForGameDate" prompt="InputForGameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_bCeDEVdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate" prompt="GameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_u_qKQVdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_Hour" prompt="GameDate_Hour?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_tkzgYVdKEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_SK" prompt="GameDate_SK?" promptNeeded="false" type="id_Integer" value="20200101" xmi:id="_i9qn8VddEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause1" prompt="SQL_WhereClause1?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiwlmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause2" prompt="SQL_WhereClause2?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiw1mOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_Substitute" prompt="Dim_Attr_NULL_Substitute?" promptNeeded="false" type="id_String" value="&quot;NULL Value Input&quot;" xmi:id="_vIOI0l56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_SK" prompt="Dim_Attr_NULL_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_vIOI0156EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Agg_Group_Type" prompt="Agg_Group_Type?" promptNeeded="false" type="id_String" value="&quot;Property&quot;" xmi:id="_ZLPia2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01" prompt="Agg_SK01?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_ZLPibGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01_Desc" prompt="Agg_SK01_Desc?" promptNeeded="false" type="id_String" value="&quot;OPTX_Property_SK&quot;" xmi:id="_ZLPibWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02" prompt="Agg_SK02?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPibmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02_Desc" prompt="Agg_SK02_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPib2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03" prompt="Agg_SK03?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPicGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03_Desc" prompt="Agg_SK03_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPicWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date_SK" prompt="Report_as_of_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210101" xmi:id="_ZLPicmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date" prompt="Report_as_of_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPic2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Hour_SK" prompt="Report_as_of_Start_Hour_SK?" promptNeeded="false" type="id_String" value="-1" xmi:id="_ZLPidGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_DateTime" prompt="Report_as_of_Start_DateTime?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPidWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE_SK" prompt="SCD_INEFFECTIVE_DATE_SK?" promptNeeded="false" type="id_Integer" value="20991231" xmi:id="_nvO50mcREeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE_SK" prompt="SCD_EFFECTIVE_DATE_SK?" promptNeeded="false" type="id_String" value="19690720" xmi:id="_nvO502cREeuK9LGz2OYOWw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_VCDZ9VKBEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE" prompt="SCD_EFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_VCDZ9lKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ91KBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ-FKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_VERSION" prompt="SCD_VERSION?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ-VKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE" prompt="SCD_INEFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="2099-12-31 00:00:00" xmi:id="_As2MqFKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_LATEST_IND" prompt="SCD_LATEST_IND?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_As2MqVKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_SOR_SK" prompt="DI_SOR_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_As2MqlKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_PID" prompt="DI_PID?" promptNeeded="false" type="id_String" value="'NoneProvided'" xmi:id="_As2Mq1KHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="Agg_Type_SK" prompt="Agg_Type_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_fvzgMFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Type_Code" prompt="Agg_Type_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_fvzgMVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="dd, mm" name="Agg_Type_Level" prompt="Agg_Type_Level?" promptNeeded="false" type="id_String" value="&quot;dd&quot;" xmi:id="_fvzgMlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_InProgress" prompt="Agg_InProgress?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_fvzgM1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date_SK" prompt="Agg_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgNFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date_SK" prompt="Agg_End_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgNVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date" prompt="Agg_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgNlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date" prompt="Agg_End_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgN1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Interval" prompt="Agg_Interval?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_N6hcclPHEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Core_Build_Code" prompt="Agg_Core_Build_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_YgiFUlQpEeuzK6gdzLMXhA"/>
+    <contextParameter comment="" name="SlotGamedayStart_Time" prompt="SlotGamedayStart_Time?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_nHzSpFdIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SlotGamedayStart_Hour" prompt="SlotGamedayStart_Hour?" promptNeeded="false" type="id_Integer" value="5" xmi:id="_nHzSpVdIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="InputForGameDate" prompt="InputForGameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_bCeDEldJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate" prompt="GameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_u_qKQldJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_Hour" prompt="GameDate_Hour?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_tkzgYldKEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_SK" prompt="GameDate_SK?" promptNeeded="false" type="id_Integer" value="20200101" xmi:id="_i9qn8lddEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause1" prompt="SQL_WhereClause1?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoixFmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause2" prompt="SQL_WhereClause2?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoixVmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_Substitute" prompt="Dim_Attr_NULL_Substitute?" promptNeeded="false" type="id_String" value="&quot;NULL Value Input&quot;" xmi:id="_vIOI1F56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_SK" prompt="Dim_Attr_NULL_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_vIOI1V56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Agg_Group_Type" prompt="Agg_Group_Type?" promptNeeded="false" type="id_String" value="&quot;Property&quot;" xmi:id="_ZLPidmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01" prompt="Agg_SK01?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_ZLPid2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01_Desc" prompt="Agg_SK01_Desc?" promptNeeded="false" type="id_String" value="&quot;OPTX_Property_SK&quot;" xmi:id="_ZLPieGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02" prompt="Agg_SK02?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPieWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02_Desc" prompt="Agg_SK02_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPiemSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03" prompt="Agg_SK03?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPie2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03_Desc" prompt="Agg_SK03_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPifGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date_SK" prompt="Report_as_of_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210101" xmi:id="_ZLPifWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date" prompt="Report_as_of_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPifmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Hour_SK" prompt="Report_as_of_Start_Hour_SK?" promptNeeded="false" type="id_String" value="-1" xmi:id="_ZLPif2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_DateTime" prompt="Report_as_of_Start_DateTime?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPigGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE_SK" prompt="SCD_INEFFECTIVE_DATE_SK?" promptNeeded="false" type="id_Integer" value="20991231" xmi:id="_nvO51GcREeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE_SK" prompt="SCD_EFFECTIVE_DATE_SK?" promptNeeded="false" type="id_String" value="19690720" xmi:id="_nvO51WcREeuK9LGz2OYOWw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_VCDZ-lKBEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE" prompt="SCD_EFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_VCDZ-1KBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ_FKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ_VKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_VERSION" prompt="SCD_VERSION?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDZ_lKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE" prompt="SCD_INEFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="2099-12-31 00:00:00" xmi:id="_As2MrFKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_LATEST_IND" prompt="SCD_LATEST_IND?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_As2MrVKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_SOR_SK" prompt="DI_SOR_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_As2MrlKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_PID" prompt="DI_PID?" promptNeeded="false" type="id_String" value="'NoneProvided'" xmi:id="_As2Mr1KHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="Agg_Type_SK" prompt="Agg_Type_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_fvzgOFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Type_Code" prompt="Agg_Type_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_fvzgOVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="dd, mm" name="Agg_Type_Level" prompt="Agg_Type_Level?" promptNeeded="false" type="id_String" value="&quot;dd&quot;" xmi:id="_fvzgOlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_InProgress" prompt="Agg_InProgress?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_fvzgO1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date_SK" prompt="Agg_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgPFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date_SK" prompt="Agg_End_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgPVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date" prompt="Agg_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgPlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date" prompt="Agg_End_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgP1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Interval" prompt="Agg_Interval?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_N6hcc1PHEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Core_Build_Code" prompt="Agg_Core_Build_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_YgiFU1QpEeuzK6gdzLMXhA"/>
+    <contextParameter comment="" name="SlotGamedayStart_Time" prompt="SlotGamedayStart_Time?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_nHzSpldIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SlotGamedayStart_Hour" prompt="SlotGamedayStart_Hour?" promptNeeded="false" type="id_Integer" value="5" xmi:id="_nHzSp1dIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="InputForGameDate" prompt="InputForGameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_bCeDE1dJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate" prompt="GameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_u_qKQ1dJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_Hour" prompt="GameDate_Hour?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_tkzgY1dKEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_SK" prompt="GameDate_SK?" promptNeeded="false" type="id_Integer" value="20200101" xmi:id="_i9qn81ddEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause1" prompt="SQL_WhereClause1?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoixlmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause2" prompt="SQL_WhereClause2?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoix1mOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_Substitute" prompt="Dim_Attr_NULL_Substitute?" promptNeeded="false" type="id_String" value="&quot;NULL Value Input&quot;" xmi:id="_vIOI1l56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_SK" prompt="Dim_Attr_NULL_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_vIOI1156EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Agg_Group_Type" prompt="Agg_Group_Type?" promptNeeded="false" type="id_String" value="&quot;Property&quot;" xmi:id="_ZLPigWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01" prompt="Agg_SK01?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_ZLPigmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01_Desc" prompt="Agg_SK01_Desc?" promptNeeded="false" type="id_String" value="&quot;OPTX_Property_SK&quot;" xmi:id="_ZLPig2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02" prompt="Agg_SK02?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPihGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02_Desc" prompt="Agg_SK02_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPihWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03" prompt="Agg_SK03?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPihmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03_Desc" prompt="Agg_SK03_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPih2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date_SK" prompt="Report_as_of_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210101" xmi:id="_ZLPiiGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date" prompt="Report_as_of_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPiiWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Hour_SK" prompt="Report_as_of_Start_Hour_SK?" promptNeeded="false" type="id_String" value="-1" xmi:id="_ZLPiimSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_DateTime" prompt="Report_as_of_Start_DateTime?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPii2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE_SK" prompt="SCD_INEFFECTIVE_DATE_SK?" promptNeeded="false" type="id_Integer" value="20991231" xmi:id="_nvO51mcREeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE_SK" prompt="SCD_EFFECTIVE_DATE_SK?" promptNeeded="false" type="id_String" value="19690720" xmi:id="_nvO512cREeuK9LGz2OYOWw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_VCDZ_1KBEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE" prompt="SCD_EFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_VCDaAFKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDaAVKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDaAlKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_VERSION" prompt="SCD_VERSION?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDaA1KBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE" prompt="SCD_INEFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="2099-12-31 00:00:00" xmi:id="_As2MsFKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_LATEST_IND" prompt="SCD_LATEST_IND?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_As2MsVKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_SOR_SK" prompt="DI_SOR_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_As2MslKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_PID" prompt="DI_PID?" promptNeeded="false" type="id_String" value="'NoneProvided'" xmi:id="_As2Ms1KHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="Agg_Type_SK" prompt="Agg_Type_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_fvzgQFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Type_Code" prompt="Agg_Type_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_fvzgQVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="dd, mm" name="Agg_Type_Level" prompt="Agg_Type_Level?" promptNeeded="false" type="id_String" value="&quot;dd&quot;" xmi:id="_fvzgQlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_InProgress" prompt="Agg_InProgress?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_fvzgQ1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date_SK" prompt="Agg_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgRFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date_SK" prompt="Agg_End_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgRVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date" prompt="Agg_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgRlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date" prompt="Agg_End_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgR1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Interval" prompt="Agg_Interval?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_N6hcdFPHEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Core_Build_Code" prompt="Agg_Core_Build_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_YgiFVFQpEeuzK6gdzLMXhA"/>
+    <contextParameter comment="" name="SlotGamedayStart_Time" prompt="SlotGamedayStart_Time?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_nHzSqFdIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SlotGamedayStart_Hour" prompt="SlotGamedayStart_Hour?" promptNeeded="false" type="id_Integer" value="5" xmi:id="_nHzSqVdIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="InputForGameDate" prompt="InputForGameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_bCeDFFdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate" prompt="GameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_u_qKRFdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_Hour" prompt="GameDate_Hour?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_tkzgZFdKEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_SK" prompt="GameDate_SK?" promptNeeded="false" type="id_Integer" value="20200101" xmi:id="_i9qn9FddEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause1" prompt="SQL_WhereClause1?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiyFmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause2" prompt="SQL_WhereClause2?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiyVmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_Substitute" prompt="Dim_Attr_NULL_Substitute?" promptNeeded="false" type="id_String" value="&quot;NULL Value Input&quot;" xmi:id="_vIOI2F56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_SK" prompt="Dim_Attr_NULL_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_vIOI2V56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Agg_Group_Type" prompt="Agg_Group_Type?" promptNeeded="false" type="id_String" value="&quot;Property&quot;" xmi:id="_ZLPijGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01" prompt="Agg_SK01?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_ZLPijWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01_Desc" prompt="Agg_SK01_Desc?" promptNeeded="false" type="id_String" value="&quot;OPTX_Property_SK&quot;" xmi:id="_ZLPijmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02" prompt="Agg_SK02?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPij2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02_Desc" prompt="Agg_SK02_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPikGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03" prompt="Agg_SK03?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLPikWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03_Desc" prompt="Agg_SK03_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLPikmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date_SK" prompt="Report_as_of_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210101" xmi:id="_ZLPik2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date" prompt="Report_as_of_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPilGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Hour_SK" prompt="Report_as_of_Start_Hour_SK?" promptNeeded="false" type="id_String" value="-1" xmi:id="_ZLPilWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_DateTime" prompt="Report_as_of_Start_DateTime?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLPilmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE_SK" prompt="SCD_INEFFECTIVE_DATE_SK?" promptNeeded="false" type="id_Integer" value="20991231" xmi:id="_nvO52GcREeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE_SK" prompt="SCD_EFFECTIVE_DATE_SK?" promptNeeded="false" type="id_String" value="19690720" xmi:id="_nvO52WcREeuK9LGz2OYOWw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_VCDaBFKBEeuIAM6M8xuWrw">
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE" prompt="SCD_EFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="1990-01-01 00:00:00" xmi:id="_VCDaBVKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Customer_SK" prompt="OPTX_Customer_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDaBlKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="OPTX_Property_SK" prompt="OPTX_Property_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDaB1KBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_VERSION" prompt="SCD_VERSION?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_VCDaCFKBEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE" prompt="SCD_INEFFECTIVE_DATE?" promptNeeded="false" type="id_Date" value="2099-12-31 00:00:00" xmi:id="_As2MtFKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="SCD_LATEST_IND" prompt="SCD_LATEST_IND?" promptNeeded="false" type="id_Boolean" value="true" xmi:id="_As2MtVKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_SOR_SK" prompt="DI_SOR_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_As2MtlKHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="DI_PID" prompt="DI_PID?" promptNeeded="false" type="id_String" value="'NoneProvided'" xmi:id="_As2Mt1KHEeuIAM6M8xuWrw"/>
+    <contextParameter comment="" name="Agg_Type_SK" prompt="Agg_Type_SK?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_fvzgSFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Type_Code" prompt="Agg_Type_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_fvzgSVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="dd, mm" name="Agg_Type_Level" prompt="Agg_Type_Level?" promptNeeded="false" type="id_String" value="&quot;dd&quot;" xmi:id="_fvzgSlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_InProgress" prompt="Agg_InProgress?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_fvzgS1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date_SK" prompt="Agg_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgTFPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date_SK" prompt="Agg_End_Date_SK?" promptNeeded="false" type="id_Integer" value="20210109" xmi:id="_fvzgTVPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Start_Date" prompt="Agg_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgTlPAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_End_Date" prompt="Agg_End_Date?" promptNeeded="false" type="id_Date" value="2021-01-09 00:00:00" xmi:id="_fvzgT1PAEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Interval" prompt="Agg_Interval?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_N6hcdVPHEeu4WpmZyK4U-A"/>
+    <contextParameter comment="" name="Agg_Core_Build_Code" prompt="Agg_Core_Build_Code?" promptNeeded="false" type="id_String" value="&quot;daily&quot;" xmi:id="_YgiFVVQpEeuzK6gdzLMXhA"/>
+    <contextParameter comment="" name="SlotGamedayStart_Time" prompt="SlotGamedayStart_Time?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_nHzSqldIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SlotGamedayStart_Hour" prompt="SlotGamedayStart_Hour?" promptNeeded="false" type="id_Integer" value="5" xmi:id="_nHzSq1dIEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="InputForGameDate" prompt="InputForGameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_bCeDFVdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate" prompt="GameDate?" promptNeeded="false" type="id_Date" value="1900-01-01 05:00:00" xmi:id="_u_qKRVdJEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_Hour" prompt="GameDate_Hour?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_tkzgZVdKEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="GameDate_SK" prompt="GameDate_SK?" promptNeeded="false" type="id_Integer" value="20200101" xmi:id="_i9qn9VddEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause1" prompt="SQL_WhereClause1?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiylmOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="SQL_WhereClause2" prompt="SQL_WhereClause2?" promptNeeded="false" type="id_String" value="null" xmi:id="_EVoiy1mOEeu-rrMMNb-Mag"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_Substitute" prompt="Dim_Attr_NULL_Substitute?" promptNeeded="false" type="id_String" value="&quot;NULL Value Input&quot;" xmi:id="_vIOI2l56EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Dim_Attr_NULL_SK" prompt="Dim_Attr_NULL_SK?" promptNeeded="false" type="id_Integer" value="-99" xmi:id="_vIOI2156EeuSFpVsKtRcAA"/>
+    <contextParameter comment="" name="Agg_Group_Type" prompt="Agg_Group_Type?" promptNeeded="false" type="id_String" value="&quot;Property&quot;" xmi:id="_ZLQJcGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01" prompt="Agg_SK01?" promptNeeded="false" type="id_Integer" value="1" xmi:id="_ZLQJcWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK01_Desc" prompt="Agg_SK01_Desc?" promptNeeded="false" type="id_String" value="&quot;OPTX_Property_SK&quot;" xmi:id="_ZLQJcmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02" prompt="Agg_SK02?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLQJc2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK02_Desc" prompt="Agg_SK02_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLQJdGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03" prompt="Agg_SK03?" promptNeeded="false" type="id_Integer" value="-1" xmi:id="_ZLQJdWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Agg_SK03_Desc" prompt="Agg_SK03_Desc?" promptNeeded="false" type="id_String" value="null" xmi:id="_ZLQJdmSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date_SK" prompt="Report_as_of_Start_Date_SK?" promptNeeded="false" type="id_Integer" value="20210101" xmi:id="_ZLQJd2SUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Date" prompt="Report_as_of_Start_Date?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLQJeGSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_Hour_SK" prompt="Report_as_of_Start_Hour_SK?" promptNeeded="false" type="id_String" value="-1" xmi:id="_ZLQJeWSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="Report_as_of_Start_DateTime" prompt="Report_as_of_Start_DateTime?" promptNeeded="false" type="id_Date" value="2021-01-01 00:00:00" xmi:id="_ZLQJemSUEeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_INEFFECTIVE_DATE_SK" prompt="SCD_INEFFECTIVE_DATE_SK?" promptNeeded="false" type="id_Integer" value="20991231" xmi:id="_nvO52mcREeuK9LGz2OYOWw"/>
+    <contextParameter comment="" name="SCD_EFFECTIVE_DATE_SK" prompt="SCD_EFFECTIVE_DATE_SK?" promptNeeded="false" type="id_String" value="19690720" xmi:id="_nvO522cREeuK9LGz2OYOWw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_291aaa3a-3e24-44af-9506-fa6ddeceec80"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jzY4l9kfYiWNUsZhjZbAfo6fQzHvMoWOqW7IcLbDP4gnp3jfs60Ynqb6XC8CMS6J3tMNUaca2Vh7&#13;
+U78j9kSZvA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a879aa15-43fb-41dd-9a1f-9d9cafe1ecfa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QajhuYnLqxJKSeoYu2Za+G2JLbjqmLDUGOlIRUq3/HDTVqpqvz2n04BNaylAapaacpcyek+I7haW&#13;
+24qokQMAkA==</DigestValue></Reference></SignedInfo><SignatureValue>gmfh+20gYvZZqjY7B50k/Yrod0o4KoK5S9folm4cikQ20ai09YX5WEFSpiFrZxHewmBrqu/68rhP&#13;
++9jC7aAzT0ptfJv50D4nh+YqBfS86ZjHTaMzKuc14BCvvLe2lxlCnImuL7CCm7RnLSHFZasQkCiL&#13;
+oNgrF30tFf5pJPyHV/53zzjVW+/KlMkbEoUp7UfzvJrFY9ibETZjq1mcM+qPyDBvinza6Tc5iZ4L&#13;
+l0hpkq4obpZ6EnXcMDv4frLWY38WHgG8QKlMjPDrLa5Ye476/wWe1WUBp9M5yvA+HcNipDgUsf8w&#13;
+zsUssn8yDLOigfxbr8Hj0kgsGFfPqW+eQXkjnw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a879aa15-43fb-41dd-9a1f-9d9cafe1ecfa" Target="#_291aaa3a-3e24-44af-9506-fa6ddeceec80"><Timestamp>2023-06-11 04:22:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

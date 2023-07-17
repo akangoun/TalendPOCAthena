@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_NxpCED4iEeujZt-RlOLdxQ">
+    <contextParameter comment="" name="email_to" prompt="email_to?" promptNeeded="false" type="id_String" value="alex.kangoun@athena-solutions.com,cherukuru.g@athena-solutions.com" xmi:id="_NxppID4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_from" prompt="email_from?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppIT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_cc" prompt="email_cc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppIj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_bcc" prompt="email_bcc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppIz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_message" prompt="email_message?" promptNeeded="false" type="id_String" value="Job has failed" xmi:id="_NxppJD4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.gmail.com" xmi:id="_NxppJT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="465" xmi:id="_NxppJj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="auth_username" prompt="auth_username?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppJz4iEeujZt-RlOLdxQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_NxppKD4iEeujZt-RlOLdxQ">
+    <contextParameter comment="" name="email_to" prompt="email_to?" promptNeeded="false" type="id_String" value="alex.kangoun@athena-solutions.com,cherukuru.g@athena-solutions.com" xmi:id="_NxppKT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_from" prompt="email_from?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppKj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_cc" prompt="email_cc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppKz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_bcc" prompt="email_bcc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppLD4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_message" prompt="email_message?" promptNeeded="false" type="id_String" value="Job has failed" xmi:id="_NxppLT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.gmail.com" xmi:id="_NxppLj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="465" xmi:id="_NxppLz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="auth_username" prompt="auth_username?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppMD4iEeujZt-RlOLdxQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_NxppMT4iEeujZt-RlOLdxQ">
+    <contextParameter comment="" name="email_to" prompt="email_to?" promptNeeded="false" type="id_String" value="alex.kangoun@athena-solutions.com,cherukuru.g@athena-solutions.com" xmi:id="_NxppMj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_from" prompt="email_from?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppMz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_cc" prompt="email_cc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppND4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_bcc" prompt="email_bcc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppNT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_message" prompt="email_message?" promptNeeded="false" type="id_String" value="Job has failed" xmi:id="_NxppNj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.gmail.com" xmi:id="_NxppNz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="465" xmi:id="_NxppOD4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="auth_username" prompt="auth_username?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppOT4iEeujZt-RlOLdxQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_NxppOj4iEeujZt-RlOLdxQ">
+    <contextParameter comment="" name="email_to" prompt="email_to?" promptNeeded="false" type="id_String" value="alex.kangoun@athena-solutions.com,cherukuru.g@athena-solutions.com" xmi:id="_NxppOz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_from" prompt="email_from?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppPD4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_cc" prompt="email_cc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppPT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_bcc" prompt="email_bcc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppPj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_message" prompt="email_message?" promptNeeded="false" type="id_String" value="Job has failed" xmi:id="_NxppPz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.gmail.com" xmi:id="_NxppQD4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="465" xmi:id="_NxppQT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="auth_username" prompt="auth_username?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppQj4iEeujZt-RlOLdxQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_NxppQz4iEeujZt-RlOLdxQ">
+    <contextParameter comment="" name="email_to" prompt="email_to?" promptNeeded="false" type="id_String" value="alex.kangoun@athena-solutions.com,cherukuru.g@athena-solutions.com" xmi:id="_NxppRD4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_from" prompt="email_from?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppRT4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_cc" prompt="email_cc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppRj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_bcc" prompt="email_bcc?" promptNeeded="false" type="id_String" value="" xmi:id="_NxppRz4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="email_message" prompt="email_message?" promptNeeded="false" type="id_String" value="Job has failed" xmi:id="_NxppSD4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="smtp.gmail.com" xmi:id="_NxppST4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="465" xmi:id="_NxppSj4iEeujZt-RlOLdxQ"/>
+    <contextParameter comment="" name="auth_username" prompt="auth_username?" promptNeeded="false" type="id_String" value="rishvita@gmail.com" xmi:id="_NxppSz4iEeujZt-RlOLdxQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d1a10e99-8c77-418f-9a18-1a3435db96b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/ftMQlQc1EBBwt28oGd/ecSPaCxBpB8ypxHKMcmoeXCdpJUpXDK/8+ETwM4zpH6qU3BLjUHdErAc&#13;
+A4KGTynA+w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0925cd54-0baf-4543-a21c-6ada4754f041"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>voZ+Fi0X8N6K6b7KXSfJc88pp0gk458IkUa1U7m9DZ+TpD9ri8Sy7F0wqfGeIBq0PASn+O+SkEtY&#13;
+zwFMmVGfEw==</DigestValue></Reference></SignedInfo><SignatureValue>W8GnMo5KlxZ1U5nOgA34SZUpBzS6bxl7rDt8j4g75SHywwDe8tFslDUfI7aRCpAhzkM5dhj6o2BM&#13;
+EyFf/Xgv3mkldLgqCJp34QbGtZgqggEzybSSj1ZXIxIvNJCtvIYU8pOh1CNTX6fMSAD0XiSYIiOF&#13;
+8jS1b/O6gvzlFIT3mKoFtfU94uL5BQb5HjgZbC7ItrZjwy8XoRZDGLqoWVx359KA631alMlxxzMC&#13;
+pN95QCl+3G8Sq1bhzOzr4cwjh5gjv9fXK3+xKKz/tUELEi8G1jzE8YFvEtXV2aSEREDCEaGzKFPR&#13;
+uMXgt9QxGfVVj3/MwmpZVpHxM3YmAD/5PxIHgw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0925cd54-0baf-4543-a21c-6ada4754f041" Target="#_d1a10e99-8c77-418f-9a18-1a3435db96b7"><Timestamp>2023-06-11 04:22:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

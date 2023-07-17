@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_jHK0IBfhEeuBe8oVeLOFJQ">
+    <contextParameter comment="" name="MGT_Password" prompt="MGT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:b/WqamYRU81oT/OCleKS9oTkPWMoXQ8BivaZhVRrlJ6IrhVGcpo48d4=" xmi:id="_jHK0IRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Login" prompt="MGT_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_jHK0IhfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Schema" prompt="MGT_Schema?" promptNeeded="false" type="id_String" value="MGTPromo" xmi:id="_jHK0IxfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Port" prompt="MGT_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_jHK0JBfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Database" prompt="MGT_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_jHK0JRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Server" prompt="MGT_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_jHK0JhfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_AdditionalParams" prompt="MGT_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_jHK0JxfhEeuBe8oVeLOFJQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_jHK0KRfhEeuBe8oVeLOFJQ">
+    <contextParameter comment="" name="MGT_Password" prompt="MGT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:2N6DajgRM9tLD972MHEVMPWYpmsbmzBbqKsc1+ggfVzRWy58jq0a5/c=" xmi:id="_jHK0KhfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Login" prompt="MGT_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_jHK0KxfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Schema" prompt="MGT_Schema?" promptNeeded="false" type="id_String" value="MGTPromo" xmi:id="_jHK0LBfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Port" prompt="MGT_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_jHK0LRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Database" prompt="MGT_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_jHK0LhfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Server" prompt="MGT_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_jHK0LxfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_AdditionalParams" prompt="MGT_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_jHK0MBfhEeuBe8oVeLOFJQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_jHK0MhfhEeuBe8oVeLOFJQ">
+    <contextParameter comment="" name="MGT_Password" prompt="MGT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:PTcqwGJSf6GLKuICqtTjUlkTk7af8vpwBrZ2Zm/P6SLRKu989cxLNyo=" xmi:id="_jHK0MxfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Login" prompt="MGT_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_jHK0NBfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Schema" prompt="MGT_Schema?" promptNeeded="false" type="id_String" value="MGTPromo" xmi:id="_jHK0NRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Port" prompt="MGT_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_jHK0NhfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Database" prompt="MGT_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_jHK0NxfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Server" prompt="MGT_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_jHK0OBfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_AdditionalParams" prompt="MGT_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_jHK0ORfhEeuBe8oVeLOFJQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_jHK0OxfhEeuBe8oVeLOFJQ">
+    <contextParameter comment="" name="MGT_Password" prompt="MGT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:wyMiooI/J6RGY2jVt5pTHPUcUYVea2W4FflnDvI3ftrfVM6HUhDuVHM=" xmi:id="_jHK0PBfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Login" prompt="MGT_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_jHK0PRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Schema" prompt="MGT_Schema?" promptNeeded="false" type="id_String" value="MGTPromo" xmi:id="_jHK0PhfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Port" prompt="MGT_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_jHK0PxfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Database" prompt="MGT_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_jHK0QBfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Server" prompt="MGT_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_jHK0QRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_AdditionalParams" prompt="MGT_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_jHK0QhfhEeuBe8oVeLOFJQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_UX23gCRMEeuFxZ74K2E4Rw">
+    <contextParameter comment="" name="MGT_Password" prompt="MGT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:A4Ty00EWxjxuO+XbqXGwWGc+HrO8pmTAlfR8qbIM3lBsKq2CfkT7D78=" xmi:id="_UX23gSRMEeuFxZ74K2E4Rw"/>
+    <contextParameter comment="" name="MGT_Login" prompt="MGT_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_UX23giRMEeuFxZ74K2E4Rw"/>
+    <contextParameter comment="" name="MGT_Schema" prompt="MGT_Schema?" promptNeeded="false" type="id_String" value="MGTPromo" xmi:id="_UX23gyRMEeuFxZ74K2E4Rw"/>
+    <contextParameter comment="" name="MGT_Port" prompt="MGT_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_UX23hCRMEeuFxZ74K2E4Rw"/>
+    <contextParameter comment="" name="MGT_Database" prompt="MGT_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_UX23hSRMEeuFxZ74K2E4Rw"/>
+    <contextParameter comment="" name="MGT_Server" prompt="MGT_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_UX23hiRMEeuFxZ74K2E4Rw"/>
+    <contextParameter comment="" name="MGT_AdditionalParams" prompt="MGT_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_UX23hyRMEeuFxZ74K2E4Rw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_jHK0RBfhEeuBe8oVeLOFJQ">
+    <contextParameter comment="" name="MGT_Password" prompt="MGT_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:zpr3pe4GWLsezy+0incY6rPaAbQQBPjBKJ3VzlR4GNsG8k4I7VR9e5DZUw==" xmi:id="_jHK0RRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Login" prompt="MGT_Login?" promptNeeded="false" type="id_String" value="OPTX" xmi:id="_jHK0RhfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Schema" prompt="MGT_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_jHK0RxfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Port" prompt="MGT_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_jHK0SBfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Database" prompt="MGT_Database?" promptNeeded="false" type="id_String" value="MGTPromo" xmi:id="_jHK0SRfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_Server" prompt="MGT_Server?" promptNeeded="false" type="id_String" value="10.2.50.222" xmi:id="_jHK0ShfhEeuBe8oVeLOFJQ"/>
+    <contextParameter comment="" name="MGT_AdditionalParams" prompt="MGT_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_jHK0SxfhEeuBe8oVeLOFJQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_82d53b01-dcd5-49fe-a85d-66c499165428"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ICSueGaTFZbKkdUwVSVKLfC5bx5FtBfJBHDvnH2DOCfWW49pPNryH9BpPFQ8sloNcdgsD5L9a58f&#13;
+kLsFBtx6ng==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d28183f-3d93-4d06-9145-d07402368172"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CCIOu/wduZtPBMqw3P484cxQUgF1H3vLsCmNXhjcXaCae8LUMQxk6Gh/dQscfdDOCB1PeqsIdxUC&#13;
+Vp68Xab/vA==</DigestValue></Reference></SignedInfo><SignatureValue>Z1qJPGZwek8VSLou96sOEiEqwgzs7L8c9huGhovuSn1g8AsFC5cqs0C0uTTPabYXw80nSUr+J54G&#13;
+zQYHOiXTw7i0mTe/C6lKprIlPAc9SwZOLYkoL9FTveO1Nfigx81kxko0bGNUz2yQWeM9J7wf+qYA&#13;
+iAzlAJ0Ao0fVpcMWlndFQUCrvLNscbmlmMDCqz0tbsCoviN0hBRFPy5OAwMf5QXH8gJDwwOisDzn&#13;
+yyhd6hsNRmZYFIu2a3bI+UcK8/BRbVHgaN8NvzjTOT+k1oGguYUS1q1ry1eSvfCTxK9CxfQ7hkMh&#13;
+3Gl+VGTQ4lPIxKdjrblu1WvlfhnNrUvJZwQ/1A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d28183f-3d93-4d06-9145-d07402368172" Target="#_82d53b01-dcd5-49fe-a85d-66c499165428"><Timestamp>2023-06-11 04:22:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

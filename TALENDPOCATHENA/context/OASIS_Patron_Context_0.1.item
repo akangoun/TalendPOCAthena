@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_VnCBsB38Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:CSrsRnB0evQ7hqTWbFLqcNywbFb9k5s1X/E5axHU8G5KJRC6LztunuI=" xmi:id="_VnCBsR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_VnCBsh38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" type="id_String" value="Patron" xmi:id="_VnCBsx38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_VnCBtB38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_VnCBtR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_VnCBth38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_VnCBtx38Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_VnCBuB38Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:tUQB+yEM8PNt1OHU4KPERr44lX0R0CdWvPTYuhNQPE3lc85FLwmOEC8=" xmi:id="_VnCBuR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_VnCBuh38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" type="id_String" value="Patron" xmi:id="_VnCBux38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_VnCBvB38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_VnCBvR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_VnCBvh38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_VnCBvx38Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_VnCBwB38Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:2PA5zpsrxnL29RkXgYf++AuXNa5EKzrB65lfIwDNOWc9LVamhbeaBxc=" xmi:id="_VnCBwR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_VnCBwh38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" type="id_String" value="Patron" xmi:id="_VnCBwx38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_VnCBxB38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_VnCBxR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_VnCBxh38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_VnCBxx38Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_VnCByB38Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:AmxuecYyq9DWYtoPPiGYovexMJA6hXDHdt26h5N7HXhd37T+UY9GVYk=" xmi:id="_VnCByR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_VnCByh38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" type="id_String" value="Patron" xmi:id="_VnCByx38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_VnCBzB38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_VnCBzR38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_VnCBzh38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_VnCBzx38Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_VnCB0B38Eeu7fsMRxE5AWg">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:APlq/nh9MrIDptEOqu3sD8Gr3QOxErJVjoLaBoIB/+x0KEpgEJWBywk=" xmi:id="_VnCB0R38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_VnCB0h38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" type="id_String" value="Patron" xmi:id="_VnCB0x38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" type="id_String" value="OPTX_Sources" xmi:id="_VnCB1B38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_VnCB1R38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" type="id_String" value="optxadmin" xmi:id="_VnCB1h38Eeu7fsMRxE5AWg"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net" xmi:id="_VnCB1x38Eeu7fsMRxE5AWg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f25c016b-1c56-4347-a96d-ddb988223418"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GPcRaoOToPl8m7BT/J9/hB1rYITejQyw+hBGbInXRkh2C7JvluDLTDh2/yMRI3buU5wSgvV5bx2a&#13;
+TRML4WtMsg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2012a5e7-ed17-4c53-aa98-fd95167e3f4e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9qx1ZqOmavAiSI2hMtL1FSphnqqdPlsKSm4D+xrw8UeWwdzoatQCXrValfTPIRaHSpvPS9Qfz4VT&#13;
+G+cB2BqqOg==</DigestValue></Reference></SignedInfo><SignatureValue>hSoKiQPvDJb02yHpZrXj6pd/4PpmYeNaITKz0PX3KJtis8amh+69FEmTWjsAfHEfXVMfVJZqWXUw&#13;
+clk3ymW0UEX+5kuQTfZreLqCZrLBpEP06E7+Jw4RKm9fcCL1XZBIx0R2ZjAsrcVIqwFIv6RMhV/7&#13;
+PzzpC3vPg0wnTzVHSFrMlTlqSL4Z1hIL6LFkoJKKYcHI+W2Q1FQMjcB5v6tP8LrTwidp0sTJJJX3&#13;
+cOcswfbqqpfvKjE20in5TNyl5mQNZRAc9j5MzLWHGEgmcfqa5gj6TW8wdDRC5ANewYpfveImsk1n&#13;
+cHbWuAIWue7u3JUYkyQNAMh33DLtyuHaerjXZw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2012a5e7-ed17-4c53-aa98-fd95167e3f4e" Target="#_f25c016b-1c56-4347-a96d-ddb988223418"><Timestamp>2023-06-11 04:22:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,204 @@
+{
+  "itemId" : "_u3IFANd1EeyoYLBK67L36w",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_OU5accr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_OU5acsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_OU5ac8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_OU5adMr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_OU5adcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_OU5adsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_OU5ad8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_OU5agcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_OU5agsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_OU5ag8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_OU5ahMr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_OU5ahcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_OU5ahsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_OU5ah8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_OU5aecr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_OU5aesr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_OU5ae8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_OU5afMr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_OU5afcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_OU5afsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_OU5af8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  }, {
+    "contextName" : "TST",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_OU5amcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_OU5amsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_OU5am8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_OU5anMr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_OU5ancr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_OU5ansr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_OU5an8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  }, {
+    "contextName" : "SBX",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_OU5aicr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_OU5aisr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_OU5ai8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_OU5ajMr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_OU5ajcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_OU5ajsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_OU5aj8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_OU5aocr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_OU5aosr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_OU5ao8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_OU5apMr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_OU5apcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_OU5apsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_OU5ap8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  }, {
+    "contextName" : "SL_STG",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_OU5aicr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_OU5aisr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_OU5ai8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_OU5ajMr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_OU5ajcr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_OU5ajsr0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_OU5aj8r0EeyFVthlZZHF0g",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  }, {
+    "contextName" : "PRE",
+    "repoId" : "_OUvCYMr0EeyFVthlZZHF0g",
+    "parameterList" : [ {
+      "id" : "_i39LEdknEey9LLluWRIRQQ",
+      "name" : "src_d365_azure_synapse_Schema"
+    }, {
+      "id" : "_i39LEtknEey9LLluWRIRQQ",
+      "name" : "src_d365_azure_synapse_AdditionalParams"
+    }, {
+      "id" : "_i39LE9knEey9LLluWRIRQQ",
+      "name" : "src_d365_azure_synapse_Port"
+    }, {
+      "id" : "_i39LFNknEey9LLluWRIRQQ",
+      "name" : "src_d365_azure_synapse_Server"
+    }, {
+      "id" : "_i39LFdknEey9LLluWRIRQQ",
+      "name" : "src_d365_azure_synapse_Login"
+    }, {
+      "id" : "_i39LFtknEey9LLluWRIRQQ",
+      "name" : "src_d365_azure_synapse_Password"
+    }, {
+      "id" : "_i39LF9knEey9LLluWRIRQQ",
+      "name" : "src_d365_azure_synapse_Database"
+    } ]
+  } ]
+}

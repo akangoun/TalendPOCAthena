@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_fio2sBoAEeuUX5ipXs8zkw">
+    <contextParameter comment="" name="SecurityKey" prompt="SecurityKey?" promptNeeded="false" type="id_String" value="FA45EDBF-578F-44E6-B804-B92B9569C744" xmi:id="_sZjqADsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="StartTime" prompt="StartTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqATsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="EndTime" prompt="EndTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqAjsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="ProjectID" prompt="ProjectID?" promptNeeded="false" type="id_Integer" value="" xmi:id="_sZjqAzsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="Diff" prompt="Diff?" promptNeeded="false" type="id_Long" value="" xmi:id="_96qG8EPiEeu-WM7NzNwUGA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_fio2uBoAEeuUX5ipXs8zkw">
+    <contextParameter comment="" name="SecurityKey" prompt="SecurityKey?" promptNeeded="false" type="id_String" value="FA45EDBF-578F-44E6-B804-B92B9569C744" xmi:id="_sZjqBDsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="StartTime" prompt="StartTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqBTsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="EndTime" prompt="EndTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqBjsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="ProjectID" prompt="ProjectID?" promptNeeded="false" type="id_Integer" value="" xmi:id="_sZjqBzsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="Diff" prompt="Diff?" promptNeeded="false" type="id_Long" value="" xmi:id="_96qG8UPiEeu-WM7NzNwUGA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_fio2wBoAEeuUX5ipXs8zkw">
+    <contextParameter comment="" name="SecurityKey" prompt="SecurityKey?" promptNeeded="false" type="id_String" value="FA45EDBF-578F-44E6-B804-B92B9569C744" xmi:id="_sZjqCDsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="StartTime" prompt="StartTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqCTsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="EndTime" prompt="EndTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqCjsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="ProjectID" prompt="ProjectID?" promptNeeded="false" type="id_Integer" value="" xmi:id="_sZjqCzsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="Diff" prompt="Diff?" promptNeeded="false" type="id_Long" value="" xmi:id="_96qG8kPiEeu-WM7NzNwUGA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_fio2yBoAEeuUX5ipXs8zkw">
+    <contextParameter comment="" name="SecurityKey" prompt="SecurityKey?" promptNeeded="false" type="id_String" value="FA45EDBF-578F-44E6-B804-B92B9569C744" xmi:id="_sZjqDDsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="StartTime" prompt="StartTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqDTsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="EndTime" prompt="EndTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqDjsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="ProjectID" prompt="ProjectID?" promptNeeded="false" type="id_Integer" value="" xmi:id="_sZjqDzsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="Diff" prompt="Diff?" promptNeeded="false" type="id_Long" value="" xmi:id="_96qG80PiEeu-WM7NzNwUGA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_6prCECRLEeuFxZ74K2E4Rw">
+    <contextParameter comment="" name="SecurityKey" prompt="SecurityKey?" promptNeeded="false" type="id_String" value="FA45EDBF-578F-44E6-B804-B92B9569C744" xmi:id="_sZjqEDsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="StartTime" prompt="StartTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqETsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="EndTime" prompt="EndTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqEjsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="ProjectID" prompt="ProjectID?" promptNeeded="false" type="id_Integer" value="" xmi:id="_sZjqEzsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="Diff" prompt="Diff?" promptNeeded="false" type="id_Long" value="" xmi:id="_96qG9EPiEeu-WM7NzNwUGA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_fio20BoAEeuUX5ipXs8zkw">
+    <contextParameter comment="" name="SecurityKey" prompt="SecurityKey?" promptNeeded="false" type="id_String" value="FA45EDBF-578F-44E6-B804-B92B9569C744" xmi:id="_sZjqFDsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="StartTime" prompt="StartTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqFTsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="EndTime" prompt="EndTime?" promptNeeded="false" type="id_String" value="" xmi:id="_sZjqFjsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="ProjectID" prompt="ProjectID?" promptNeeded="false" type="id_Integer" value="35677" xmi:id="_sZjqFzsWEeuD17PDn4RNjQ"/>
+    <contextParameter comment="" name="Diff" prompt="Diff?" promptNeeded="false" type="id_Long" value="" xmi:id="_96qG9UPiEeu-WM7NzNwUGA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_40ddf550-05ae-49c4-bd32-9c8cbd58edd6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0sY+1NhvTMgS/mDWL9yyp5exkmSJn7twgHoo958LaBPfMux570+UgBlKnJqtUfuJLZI+0oJEIERl&#13;
+B85iPjhK4w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_940f830c-5dee-4028-9a1b-e52f1448af5e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jvVUm3LtvLgEbuCBNkaHQyUmZvjulw8SGHhLWMA0lRSKFVzzUYZcHTxlPQE2xx4V50iuQapgSP5O&#13;
+JGy9iUkfEA==</DigestValue></Reference></SignedInfo><SignatureValue>Dj6LzsfbuTWf/dN0D2cma7+PjTt+80x4u+W4laPklfUTEwZ8bC636eMkzSlWgMzZ+07FBqeANEXS&#13;
+VVvqMDsWdmFlSSvFY5XToOkrk5Nx8GsnU1btGeKSabxfsrJcE7DKyl0sNIyPAYHjkBRb4HsJPF79&#13;
+CIhHHN6Owufx6l2m1VzTY5Mi+4BfG0jk2H78uUpCdbu7/f0RL1YbNVn68V0uJsIh11DKKnRnMPv9&#13;
+ByNwSwMdKCMqPPLNgjrJPzoBPI2IqVl61flJ7v3+ADVqykxZ32QUur4zpI1Gu60/lCS7dBFhHRHW&#13;
+Cf2+bAFetYeN+jNf6e6V0EKNhMDb/J66HfURRQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_940f830c-5dee-4028-9a1b-e52f1448af5e" Target="#_40ddf550-05ae-49c4-bd32-9c8cbd58edd6"><Timestamp>2023-06-11 04:22:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

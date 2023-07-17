@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_VgD78ChNEeuwS5GGuQgnpQ">
+    <contextParameter comment="" name="sharedAccessSignature" prompt="sharedAccessSignature?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D" xmi:id="_VgD78ShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountName" prompt="accountName?" promptNeeded="false" type="id_String" value="" xmi:id="_VgD78ihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountKey" prompt="accountKey?" promptNeeded="false" type="id_Password" value="" xmi:id="_VgD78yhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="protocol" prompt="protocol?" promptNeeded="false" type="id_String" value="HTTPS" xmi:id="_VgD79ChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD79ShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" type="id_Integer" value="1000000" xmi:id="_VgD79ihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="data_source" prompt="data_source?" promptNeeded="false" type="id_String" value="optxv2diag" xmi:id="_VgD79yhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="container" prompt="container?" promptNeeded="false" type="id_String" value="optxbigload" xmi:id="_VgD7-ChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD7-ShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="env_prefix" prompt="env_prefix?" promptNeeded="false" type="id_String" value="DEV_" xmi:id="_VgD7-ihNEeuwS5GGuQgnpQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_VgD7-yhNEeuwS5GGuQgnpQ">
+    <contextParameter comment="" name="sharedAccessSignature" prompt="sharedAccessSignature?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D" xmi:id="_VgD7_ChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountName" prompt="accountName?" promptNeeded="false" type="id_String" value="" xmi:id="_VgD7_ShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountKey" prompt="accountKey?" promptNeeded="false" type="id_Password" value="" xmi:id="_VgD7_ihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="protocol" prompt="protocol?" promptNeeded="false" type="id_String" value="HTTPS" xmi:id="_VgD7_yhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8AChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" type="id_Integer" value="1000000" xmi:id="_VgD8AShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="data_source" prompt="data_source?" promptNeeded="false" type="id_String" value="optxv2diag" xmi:id="_VgD8AihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="container" prompt="container?" promptNeeded="false" type="id_String" value="optxbigload" xmi:id="_VgD8AyhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8BChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="env_prefix" prompt="env_prefix?" promptNeeded="false" type="id_String" value="DEV_" xmi:id="_VgD8BShNEeuwS5GGuQgnpQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_VgD8BihNEeuwS5GGuQgnpQ">
+    <contextParameter comment="" name="sharedAccessSignature" prompt="sharedAccessSignature?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D" xmi:id="_VgD8ByhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountName" prompt="accountName?" promptNeeded="false" type="id_String" value="" xmi:id="_VgD8CChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountKey" prompt="accountKey?" promptNeeded="false" type="id_Password" value="" xmi:id="_VgD8CShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="protocol" prompt="protocol?" promptNeeded="false" type="id_String" value="HTTPS" xmi:id="_VgD8CihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8CyhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" type="id_Integer" value="1000000" xmi:id="_VgD8DChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="data_source" prompt="data_source?" promptNeeded="false" type="id_String" value="optxv2diag" xmi:id="_VgD8DShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="container" prompt="container?" promptNeeded="false" type="id_String" value="optxbigload" xmi:id="_VgD8DihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8DyhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="env_prefix" prompt="env_prefix?" promptNeeded="false" type="id_String" value="LOC_" xmi:id="_VgD8EChNEeuwS5GGuQgnpQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_VgD8EShNEeuwS5GGuQgnpQ">
+    <contextParameter comment="" name="sharedAccessSignature" prompt="sharedAccessSignature?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D" xmi:id="_VgD8EihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountName" prompt="accountName?" promptNeeded="false" type="id_String" value="" xmi:id="_VgD8EyhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountKey" prompt="accountKey?" promptNeeded="false" type="id_Password" value="" xmi:id="_VgD8FChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="protocol" prompt="protocol?" promptNeeded="false" type="id_String" value="HTTPS" xmi:id="_VgD8FShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8FihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" type="id_Integer" value="1000000" xmi:id="_VgD8FyhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="data_source" prompt="data_source?" promptNeeded="false" type="id_String" value="optxv2diag" xmi:id="_VgD8GChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="container" prompt="container?" promptNeeded="false" type="id_String" value="optxbigload" xmi:id="_VgD8GShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8GihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="env_prefix" prompt="env_prefix?" promptNeeded="false" type="id_String" value="PRD_" xmi:id="_VgD8GyhNEeuwS5GGuQgnpQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_cYagkChdEeuwS5GGuQgnpQ">
+    <contextParameter comment="" name="sharedAccessSignature" prompt="sharedAccessSignature?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D" xmi:id="_cYagkShdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountName" prompt="accountName?" promptNeeded="false" type="id_String" value="" xmi:id="_cYagkihdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountKey" prompt="accountKey?" promptNeeded="false" type="id_Password" value="" xmi:id="_cYagkyhdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="protocol" prompt="protocol?" promptNeeded="false" type="id_String" value="HTTPS" xmi:id="_cYaglChdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="null" xmi:id="_cYaglShdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" type="id_Integer" value="1000000" xmi:id="_cYaglihdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="data_source" prompt="data_source?" promptNeeded="false" type="id_String" value="optxv2diag" xmi:id="_cYaglyhdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="container" prompt="container?" promptNeeded="false" type="id_String" value="optxbigload" xmi:id="_cYagmChdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" type="id_String" value="null" xmi:id="_cYagmShdEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="env_prefix" prompt="env_prefix?" promptNeeded="false" type="id_String" value="SBX_" xmi:id="_cYagmihdEeuwS5GGuQgnpQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_VgD8HChNEeuwS5GGuQgnpQ">
+    <contextParameter comment="" name="sharedAccessSignature" prompt="sharedAccessSignature?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D" xmi:id="_VgD8HShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountName" prompt="accountName?" promptNeeded="false" type="id_String" value="" xmi:id="_VgD8HihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="accountKey" prompt="accountKey?" promptNeeded="false" type="id_Password" value="" xmi:id="_VgD8HyhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="protocol" prompt="protocol?" promptNeeded="false" type="id_String" value="HTTPS" xmi:id="_VgD8IChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_name" prompt="file_name?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8IShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="batch_size" prompt="batch_size?" promptNeeded="false" type="id_Integer" value="1000000" xmi:id="_VgD8IihNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="data_source" prompt="data_source?" promptNeeded="false" type="id_String" value="optxv2diag" xmi:id="_VgD8IyhNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="container" prompt="container?" promptNeeded="false" type="id_String" value="optxbigload" xmi:id="_VgD8JChNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="file_path" prompt="file_path?" promptNeeded="false" type="id_String" value="null" xmi:id="_VgD8JShNEeuwS5GGuQgnpQ"/>
+    <contextParameter comment="" name="env_prefix" prompt="env_prefix?" promptNeeded="false" type="id_String" value="TST_" xmi:id="_VgD8JihNEeuwS5GGuQgnpQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a216a438-fa9a-49e1-abb0-e48963cbcc45"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZPA1bfKhuWDl2SnbybmV+MRJWl5dIRbgTppjIHXKDOaVhUkyfwBTfW/o74qzNbG8SK5HR8Zxndj9&#13;
+FCG/CsKyiQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bda5dde8-5b6c-46b8-964e-870afc1a035c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tc0pKzjVgvGzeybCZ6JTthfpGA45MOygaNeDhoxq78DZ1piLdtW/w/+28YAmG68VfL0xLbFM35O4&#13;
+lCp0WtLP5A==</DigestValue></Reference></SignedInfo><SignatureValue>ZPYMNytvXnUr96VKusihRDi1+dsByB/3UtIXw73TQHjT1+pPPNVvTUYeCH+cZSuf7bnIRzEXvsMc&#13;
+GgROUASohjHEzwoOzwPPPIKmW3YOVhlnTDlfktVpfUIRP+xXgPOxY1XTNedQph0S6kcI8TAap9PN&#13;
+pzAg2fLlpAbKLubwyhceS1KcwBwwQg1FxR00TJaEwCWfbxXMnbi4T7UkasdS68kDauoFQsKe7nfK&#13;
+CRr4uSF1jrFrGjPga2ePywDOeqvTwzlXzrFp7DbQiq0+TTUSYXFECLe2HepqHkeoQ8M6Xeue2V+C&#13;
+Y1XUhLhJ4Tm0WaboijscLhYGGinlGg66IoFBrQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bda5dde8-5b6c-46b8-964e-870afc1a035c" Target="#_a216a438-fa9a-49e1-abb0-e48963cbcc45"><Timestamp>2023-06-11 04:22:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

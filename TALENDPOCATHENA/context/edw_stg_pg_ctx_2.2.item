@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_f_MAMMY5Eey_T7VMIGknkA">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_f_MAMcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edw_sbx" xmi:id="_f_MAMsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_f_MAM8Y5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_f_MANMY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:9vzdoqSxnfV93XhiXhLTiuaXGIoiZ5MaDcE5iu2ZXS5c2n+mSeyGrcnj" xmi:id="_f_MANcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_f_MANsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_f_MAN8Y5Eey_T7VMIGknkA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_f_MAQMY5Eey_T7VMIGknkA">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_f_MAQcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edw_dev" xmi:id="_f_MAQsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_f_MAQ8Y5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_f_MARMY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:jl7fVk7WqVbZiu+wY/Thv+cpdoUKClf7UA7eX8ZeCIjGBdfVQuIDftw8" xmi:id="_f_MARcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_f_MARsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_f_MAR8Y5Eey_T7VMIGknkA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_K0WAkM4wEeyCdd6IuMV3Ag">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_K0WAkc4wEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edw_sbx" xmi:id="_K0WAks4wEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_K0WAk84wEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_K0WAlM4wEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:FLHSepj+Pa/BiEFCsFhyDvuW58qf7HN7ZWjpJzdCpY6aJNOnhnGV1C5i" xmi:id="_K0WAlc4wEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_K0WAls4wEeyCdd6IuMV3Ag"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_K0WAl84wEeyCdd6IuMV3Ag"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_f_MAYMY5Eey_T7VMIGknkA">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_f_MAYcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edt_tst" xmi:id="_f_MAYsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_f_MAY8Y5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_f_MAZMY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:dLgx2K/pltGtaA+KmThUyAQLuWkT1hLPFluZhhmMXR1BvZ2UBRGwEZsr" xmi:id="_f_MAZcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_f_MAZsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_f_MAZ8Y5Eey_T7VMIGknkA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_f_MAOMY5Eey_T7VMIGknkA">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_f_MAOcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="edw_sbx" xmi:id="_f_MAOsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_f_MAO8Y5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_f_MAPMY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:/Q9Zi1dfbb0yHH9A9nGup4jPXvtFNCD25QaNt64CcQ5D73Biomx0wtLY" xmi:id="_f_MAPcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_f_MAPsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_f_MAP8Y5Eey_T7VMIGknkA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SL_STG" xmi:id="_f_MAWMY5Eey_T7VMIGknkA">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_f_MAWcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edt_tst" xmi:id="_f_MAWsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_f_MAW8Y5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_f_MAXMY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:t9FZjZ4bN/fkLTXe341GgaYkcIp5ZQdJ1s3Ha983HnWYxcTbI2cU1Wji" xmi:id="_f_MAXcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_f_MAXsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_f_MAX8Y5Eey_T7VMIGknkA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_f_MASMY5Eey_T7VMIGknkA">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_f_MAScY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edt_tst" xmi:id="_f_MASsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_f_MAS8Y5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_f_MATMY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:cO+0kCuZQF/kRZ500Eb3m4gzbVzWiwQqqXJAMhC4Uk0dLN6CPsYJqCmo" xmi:id="_f_MATcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_f_MATsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_f_MAT8Y5Eey_T7VMIGknkA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="UAT" xmi:id="_f_MAUMY5Eey_T7VMIGknkA">
+    <contextParameter comment="" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_dev" xmi:id="_f_MAUcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="edt_tst" xmi:id="_f_MAUsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="stg" xmi:id="_f_MAU8Y5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" xmi:id="_f_MAVMY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:qjfeS2w7JkjD/wfdtWC49jOlQhLwx//gw57qXJgDC+ufSMiV1zclWmyT" xmi:id="_f_MAVcY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="5432" xmi:id="_f_MAVsY5Eey_T7VMIGknkA"/>
+    <contextParameter comment="" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="10.3.0.4" xmi:id="_f_MAV8Y5Eey_T7VMIGknkA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_832e2e65-177c-41e1-83ad-081f37960928"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9a0bYoE3gNvYKLnuSB4s+8a+jLAUqk/6j123hc8gbHMFlBa+1k/6dMRnx4AbvnMMu3oh6VY3HcX7&#13;
+2eRdMeQyCA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0add636d-3859-46cd-8f5e-7f46fad637e1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bij+V21CX+E/OrsnOdlMcoeX3ddcByO5Hz6g5Z54a/GJ11lD4B95u57sQ2KkTwNo+0hW3pdotOm9&#13;
+/esdal99XQ==</DigestValue></Reference></SignedInfo><SignatureValue>SPgCVylchwY0S2CFHPr7Lm8Fjt9Pu7IDedj2gzZfmuHiLfAUwp9VEHPMioVRQyEZZk/puwFAm+OT&#13;
+7mKuQZxr5uxoIplzgpqM0VCDlbs06UtJyn86H2oAlV31aYWtQVSXLaxJo2AQcEqOO/6OPKpdHrQ6&#13;
+bOdBWMG0oXr9vMGpUCcelkVtlrAlSZPizrJN+j9e6w8cPDUgbr1qlwKOU7gnzm3SiN/tl8WHjAcD&#13;
+zKld+YdljES7uE8frBINLbleUFNZ7vPVMZw2ulBin4vx6BICRUFaGCp+ntUxD/0Zl6VskAfCj2jF&#13;
+EkoQ1gRlgAbM0eA/zxPTHcbe0qAkYkF/I4DLuw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0add636d-3859-46cd-8f5e-7f46fad637e1" Target="#_832e2e65-177c-41e1-83ad-081f37960928"><Timestamp>2023-06-11 03:26:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

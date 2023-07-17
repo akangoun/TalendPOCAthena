@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_z-zCUAgGEe6iJ7loi8qa1A" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default" xmi:id="_z-zCUQgGEe6iJ7loi8qa1A">
+    <contextParameter comment="" internalId="_iGrT8LllEeu2loAnSRspuw" name="connection_SFDC_userPassword_password" prompt="connection_SFDC_userPassword_password?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCUggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT8bllEeu2loAnSRspuw" name="connection_SFDC_oauth_callbackHost" prompt="connection_SFDC_oauth_callbackHost?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCUwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT8rllEeu2loAnSRspuw" name="connection_SFDC_oauth_tokenFile" prompt="connection_SFDC_oauth_tokenFile?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCVAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT87llEeu2loAnSRspuw" name="connection_SFDC_userPassword_userId" prompt="connection_SFDC_userPassword_userId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCVQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT9LllEeu2loAnSRspuw" name="connection_SFDC_oauth_callbackPort" prompt="connection_SFDC_oauth_callbackPort?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="8080" xmi:id="_z-zCVggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT9bllEeu2loAnSRspuw" name="connection_SFDC_proxy_port" prompt="connection_SFDC_proxy_port?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="8080" xmi:id="_z-zCVwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT9rllEeu2loAnSRspuw" name="connection_SFDC_clientId" prompt="connection_SFDC_clientId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCWAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT97llEeu2loAnSRspuw" name="connection_SFDC_proxy_userPassword_password" prompt="connection_SFDC_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCWQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT-LllEeu2loAnSRspuw" name="connection_SFDC_oauth_clientId" prompt="connection_SFDC_oauth_clientId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCWggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT-bllEeu2loAnSRspuw" name="connection_SFDC_userPassword_securityKey" prompt="connection_SFDC_userPassword_securityKey?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCWwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT-rllEeu2loAnSRspuw" name="connection_SFDC_apiVersion" prompt="connection_SFDC_apiVersion?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="47.0" xmi:id="_z-zCXAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT-7llEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_keyStore" prompt="connection_SFDC_oauth2JwtFlow_keyStore?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCXQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT_LllEeu2loAnSRspuw" name="connection_SFDC_timeout" prompt="connection_SFDC_timeout?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="60000" xmi:id="_z-zCXggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT_bllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_issuer" prompt="connection_SFDC_oauth2JwtFlow_issuer?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCXwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT_rllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_keyStorePassword" prompt="connection_SFDC_oauth2JwtFlow_keyStorePassword?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="enc:system.encryption.key.v1:FafZiz3zLXaK2ElMl5me88OpwBZ0JqszzZauJaxgeGo6kg==" xmi:id="_z-zCYAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrT_7llEeu2loAnSRspuw" name="connection_SFDC_proxy_host" prompt="connection_SFDC_proxy_host?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCYQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUALllEeu2loAnSRspuw" name="connection_SFDC_oauth_clientSecret" prompt="connection_SFDC_oauth_clientSecret?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCYggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUAbllEeu2loAnSRspuw" name="connection_SFDC_sessionDirectory" prompt="connection_SFDC_sessionDirectory?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCYwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUArllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_audience" prompt="connection_SFDC_oauth2JwtFlow_audience?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCZAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUA7llEeu2loAnSRspuw" name="connection_SFDC_endpoint" prompt="connection_SFDC_endpoint?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCZQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUBLllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_expirationTime" prompt="connection_SFDC_oauth2JwtFlow_expirationTime?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="300" xmi:id="_z-zCZggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUBbllEeu2loAnSRspuw" name="connection_SFDC_proxy_userPassword_userId" prompt="connection_SFDC_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCZwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUBrllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_subject" prompt="connection_SFDC_oauth2JwtFlow_subject?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCaAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUB7llEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_certificateAlias" prompt="connection_SFDC_oauth2JwtFlow_certificateAlias?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCaQgGEe6iJ7loi8qa1A"/>
+  </context>
+  <context confirmationNeeded="false" name="D01" xmi:id="_z-zCaggGEe6iJ7loi8qa1A">
+    <contextParameter comment="" internalId="_iGrUCLllEeu2loAnSRspuw" name="connection_SFDC_userPassword_password" prompt="connection_SFDC_userPassword_password?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCawgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUCbllEeu2loAnSRspuw" name="connection_SFDC_oauth_callbackHost" prompt="connection_SFDC_oauth_callbackHost?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCbAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUCrllEeu2loAnSRspuw" name="connection_SFDC_oauth_tokenFile" prompt="connection_SFDC_oauth_tokenFile?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCbQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUC7llEeu2loAnSRspuw" name="connection_SFDC_userPassword_userId" prompt="connection_SFDC_userPassword_userId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCbggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUDLllEeu2loAnSRspuw" name="connection_SFDC_oauth_callbackPort" prompt="connection_SFDC_oauth_callbackPort?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="8080" xmi:id="_z-zCbwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUDbllEeu2loAnSRspuw" name="connection_SFDC_proxy_port" prompt="connection_SFDC_proxy_port?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="8080" xmi:id="_z-zCcAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUDrllEeu2loAnSRspuw" name="connection_SFDC_clientId" prompt="connection_SFDC_clientId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCcQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUD7llEeu2loAnSRspuw" name="connection_SFDC_proxy_userPassword_password" prompt="connection_SFDC_proxy_userPassword_password?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCcggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUELllEeu2loAnSRspuw" name="connection_SFDC_oauth_clientId" prompt="connection_SFDC_oauth_clientId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCcwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUEbllEeu2loAnSRspuw" name="connection_SFDC_userPassword_securityKey" prompt="connection_SFDC_userPassword_securityKey?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCdAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUErllEeu2loAnSRspuw" name="connection_SFDC_apiVersion" prompt="connection_SFDC_apiVersion?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="47.0" xmi:id="_z-zCdQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUE7llEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_keyStore" prompt="connection_SFDC_oauth2JwtFlow_keyStore?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCdggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUFLllEeu2loAnSRspuw" name="connection_SFDC_timeout" prompt="connection_SFDC_timeout?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="60000" xmi:id="_z-zCdwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUFbllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_issuer" prompt="connection_SFDC_oauth2JwtFlow_issuer?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCeAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUFrllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_keyStorePassword" prompt="connection_SFDC_oauth2JwtFlow_keyStorePassword?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="enc:system.encryption.key.v1:ND6b3YMvW6xH5xESzWh2oQ3KuASKHcnfyPkDay3d5/L2wg==" xmi:id="_z-zCeQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUF7llEeu2loAnSRspuw" name="connection_SFDC_proxy_host" prompt="connection_SFDC_proxy_host?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCeggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUGLllEeu2loAnSRspuw" name="connection_SFDC_oauth_clientSecret" prompt="connection_SFDC_oauth_clientSecret?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Password" value="" xmi:id="_z-zCewgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUGbllEeu2loAnSRspuw" name="connection_SFDC_sessionDirectory" prompt="connection_SFDC_sessionDirectory?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCfAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUGrllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_audience" prompt="connection_SFDC_oauth2JwtFlow_audience?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCfQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUG7llEeu2loAnSRspuw" name="connection_SFDC_endpoint" prompt="connection_SFDC_endpoint?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCfggGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUHLllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_expirationTime" prompt="connection_SFDC_oauth2JwtFlow_expirationTime?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_Integer" value="300" xmi:id="_z-zCfwgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUHbllEeu2loAnSRspuw" name="connection_SFDC_proxy_userPassword_userId" prompt="connection_SFDC_proxy_userPassword_userId?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCgAgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUHrllEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_subject" prompt="connection_SFDC_oauth2JwtFlow_subject?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCgQgGEe6iJ7loi8qa1A"/>
+    <contextParameter comment="" internalId="_iGrUH7llEeu2loAnSRspuw" name="connection_SFDC_oauth2JwtFlow_certificateAlias" prompt="connection_SFDC_oauth2JwtFlow_certificateAlias?" promptNeeded="false" repositoryContextId="_6nsboLi1EeuMtLoAC6VZzw" type="id_String" value="" xmi:id="_z-zCgggGEe6iJ7loi8qa1A"/>
+  </context>
+  <parameters xmi:id="_z-zCgwgGEe6iJ7loi8qa1A">
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info" xmi:id="_z-zChAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="224" xmi:id="_z-zChQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_z-zChggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_z-zChwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_z-zCiAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_z-zCiQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_z-zCiggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_z-zCiwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_z-zCjAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_z-zCjQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_z-zCjggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_z-zCjwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_z-zCkAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_z-zCkQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_z-zCkggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_z-zCkwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_z-zClAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_z-zClQgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_dij9Nt4nEeqAsutH5FsyYw" name="DQTechnical" xmi:id="_z-zClggGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_dg0Qw94nEeqAsutH5FsyYw" name="DataMasking" xmi:id="_z-zClwgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_dituNt4nEeqAsutH5FsyYw" name="DataOperation" xmi:id="_z-zCmAgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_diaMMN4nEeqAsutH5FsyYw" name="DataQualityDependencies" xmi:id="_z-zCmQgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_diRCSd4nEeqAsutH5FsyYw" name="DataQuality" xmi:id="_z-zCmggGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_diaMPN4nEeqAsutH5FsyYw" name="DqStringHandling" xmi:id="_z-zCmwgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_dituQN4nEeqAsutH5FsyYw" name="Mathematical" xmi:id="_z-zCnAgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_di24Jt4nEeqAsutH5FsyYw" name="Numeric" xmi:id="_z-zCnQgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_di24MN4nEeqAsutH5FsyYw" name="Relational" xmi:id="_z-zCnggGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_dij9QN4nEeqAsutH5FsyYw" name="SQLike" xmi:id="_z-zCnwgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_djApJt4nEeqAsutH5FsyYw" name="StringHandling" xmi:id="_z-zCoAgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_djApMN4nEeqAsutH5FsyYw" name="TalendDataGenerator" xmi:id="_z-zCoQgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_djKaJt4nEeqAsutH5FsyYw" name="TalendDate" xmi:id="_z-zCoggGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_djTkEN4nEeqAsutH5FsyYw" name="TalendStringUtil" xmi:id="_z-zCowgGEe6iJ7loi8qa1A"/>
+    <routinesParameter id="_djKaMN4nEeqAsutH5FsyYw" name="TalendString" xmi:id="_z-zCpAgGEe6iJ7loi8qa1A"/>
+  </parameters>
+  <node componentName="cConfig" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="0" posY="160" xmi:id="_z-zCpQgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cConfig_1" xmi:id="_z-zCpggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import org.apache.camel.util.jsse.KeyStoreParameters;&#10;import org.apache.camel.component.salesforce.SalesforceComponent;&#10;import org.apache.camel.component.salesforce.SalesforceEndpointConfig;&#10;import org.apache.camel.component.salesforce.SalesforceLoginConfig;&#10;import org.apache.camel.component.salesforce.AuthenticationType;&#10;import com.google.gson.Gson;&#10;" xmi:id="_z-zCpwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="SalesforceEndpointConfig salesforceEndpointConfig = new SalesforceEndpointConfig();&#10;KeyStoreParameters ksp = new KeyStoreParameters();&#10;SalesforceLoginConfig salesforceLoginConfig = new SalesforceLoginConfig();&#10;ksp.setResource(context.connection_SFDC_oauth2JwtFlow_keyStore);&#10;ksp.setPassword(context.connection_SFDC_oauth2JwtFlow_keyStorePassword);&#10;ksp.setType(&quot;JKS&quot;);&#10;salesforceEndpointConfig.setApiVersion(context.connection_SFDC_apiVersion);&#10;salesforceEndpointConfig.setRawPayload(true);&#10;salesforceLoginConfig.setLoginUrl(context.connection_SFDC_oauth2JwtFlow_audience);&#10;salesforceLoginConfig.setType(AuthenticationType.JWT);&#10;salesforceLoginConfig.setClientId(context.connection_SFDC_oauth2JwtFlow_issuer);&#10;salesforceLoginConfig.setClientSecret(context.connection_SFDC_clientId);&#10;salesforceLoginConfig.setUserName(context.connection_SFDC_oauth2JwtFlow_subject);&#10;salesforceLoginConfig.setLazyLogin(true);&#10;salesforceLoginConfig.setKeystore(ksp);&#10;&#10;SalesforceComponent salesforceComponent = getContext().getComponent(&quot;salesforce&quot;, SalesforceComponent.class);&#10;salesforceComponent.setLoginConfig(salesforceLoginConfig);&#10;salesforceComponent.setConfig(salesforceEndpointConfig);&#10;&#10;//Gson object&#10;Gson gson = new Gson();&#10;&#10;&#10;&#10;&#10; " xmi:id="_z-zCqAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" xmi:id="_z-zCqQgGEe6iJ7loi8qa1A">
+      <elementValue elementRef="JAR_NAME" value="gson-2.8.5.jar" xmi:id="_z-zCqggGEe6iJ7loi8qa1A"/>
+      <elementValue elementRef="JAR_NAME" value="camel-salesforce-alldep-2.24.2.jar" xmi:id="_z-zCqwgGEe6iJ7loi8qa1A"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="WARNING" value="*Note: External JARs will not be embedded in OSGi bundle by default, to configure it please edit Route Dependencies" xmi:id="_z-zCrAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="CHECK" name="USE_MDC_LOGGING" value="false" xmi:id="_z-zCrQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Load Library Dependencies" xmi:id="_z-zCrggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_z-zCrwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_z-zCsAgGEe6iJ7loi8qa1A"/>
+  </node>
+  <node componentName="cMessagingEndpoint" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="320" xmi:id="_z-zCsQgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMessagingEndpoint_1" xmi:id="_z-zCsggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;salesforce:event/Sample_Event__e?replayId=-1&quot;" xmi:id="_z-zCswgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TABLE" name="HOTLIBS" xmi:id="_z-zCtAgGEe6iJ7loi8qa1A">
+      <elementValue elementRef="LIBPATH" value="SALESFORCE" xmi:id="_z-zCtQgGEe6iJ7loi8qa1A"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_CUSTOM_COMPONENT" value="false" xmi:id="_z-zCtggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" show="false" value="" xmi:id="_z-zCtwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Call Salesforce Platform Event" xmi:id="_z-zCuAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_z-zCuQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_z-zCuggGEe6iJ7loi8qa1A"/>
+  </node>
+  <node componentName="cTalendJob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="320" xmi:id="_z-zCuwgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cTalendJob_1" xmi:id="_z-zCvAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="RADIO" name="FROM_REPOSITORY_JOB" value="true" xmi:id="_z-zCvQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="RADIO" name="FROM_EXTERNAL_JAR" value="false" xmi:id="_z-zCvggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="RADIO" name="USE_SELECTED_CONTEXT" value="false" xmi:id="_z-zCvwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="RADIO" name="USE_ROUTE_CONTEXT" value="false" xmi:id="_z-zCwAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="RADIO" name="USE_JOB_CONTEXT" value="true" xmi:id="_z-zCwQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="ROUTE_INPUT_PROCESS_TYPE" name="SELECTED_JOB_NAME" value="job_sfdc_cdc_dh_account_load" xmi:id="_z-zCwggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_CONTEXT" value="Default" xmi:id="_z-zCwwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_PROCESS" value="_jeDmcLo9EeuGDfYO1kdmCg" xmi:id="_z-zCxAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TECHNICAL" name="SELECTED_JOB_NAME:PROCESS_TYPE_VERSION" value="0.1" xmi:id="_z-zCxQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" show="false" value="" xmi:id="_z-zCxggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="JOB" show="false" value="&quot;&quot;" xmi:id="_z-zCxwgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="CONTEXT" show="false" value="&quot;Default&quot;" xmi:id="_z-zCyAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS" xmi:id="_z-zCyQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TABLE" name="EXTERNAL_JAR_CONTEXTPARAMS" show="false" xmi:id="_z-zCyggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="CHECK" name="PROPAGATE_HEADER" value="false" xmi:id="_z-zCywgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="CHECK" name="STICKY_JOB" value="false" xmi:id="_z-zCzAgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Call DI job" xmi:id="_z-zCzQgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_z-zCzggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_z-zCzwgGEe6iJ7loi8qa1A"/>
+  </node>
+  <node componentName="cProcessor" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320" xmi:id="_z-zC0AgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_1" xmi:id="_z-zC0QgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="" xmi:id="_z-zC0ggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="org.cometd.common.HashMapMessage map = ((org.cometd.common.HashMapMessage) exchange.getIn().getBody());&#10;String jsonInString = gson.toJson(map);&#10;exchange.getIn().setBody(jsonInString);&#10;System.out.println(jsonInString);" xmi:id="_z-zC0wgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;Convert to Json Payload" xmi:id="_z-zC1AgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_z-zC1QgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="LABEL" name="ROUTE_BREAKPOINT_EXAMPLE" value="Example: Lauguages=Simple, Expression=&quot;${body} contains 'Camel'&quot;" xmi:id="_z-zC1ggGEe6iJ7loi8qa1A"/>
+  </node>
+  <connection connectorName="ROUTE" label="route1" lineStyle="14" metaname="cMessagingEndpoint_1" offsetLabelX="0" offsetLabelY="0" source="cMessagingEndpoint_1" target="cProcessor_1" xmi:id="_z-zC1wgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route1" xmi:id="_z-zC2AgGEe6iJ7loi8qa1A"/>
+  </connection>
+  <connection connectorName="ROUTE" label="route2" lineStyle="14" metaname="cProcessor_1" offsetLabelX="0" offsetLabelY="0" source="cProcessor_1" target="cTalendJob_1" xmi:id="_z-zC2QgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route2" xmi:id="_z-zC2ggGEe6iJ7loi8qa1A"/>
+  </connection>
+  <note opaque="true" posX="-32" posY="1152" sizeHeight="64" sizeWidth="2497" text="End of Route" xmi:id="_z-zC2wgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="NOTE_FONT" value="Arial" xmi:id="_z-zC3AgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="TEXT" name="FONT_SIZE" value="18" xmi:id="_z-zC3QgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true" xmi:id="_z-zC3ggGEe6iJ7loi8qa1A"/>
+  </note>
+  <note opaque="true" posX="-224" posY="448" sizeHeight="64" sizeWidth="865" text="End of Route" xmi:id="_z-zC3wgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="NOTE_FONT" value="Arial" xmi:id="_z-zC4AgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true" xmi:id="_z-zC4QgGEe6iJ7loi8qa1A"/>
+  </note>
+  <note opaque="true" posX="-224" posY="64" sizeHeight="64" sizeWidth="1025" text="Detect automatically Platform event from Salesforce and push all the changes into the Talend DI job" xmi:id="_z-zC4ggGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="NOTE_FONT" value="Arial" xmi:id="_z-zC4wgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true" xmi:id="_z-zC5AgGEe6iJ7loi8qa1A"/>
+  </note>
+  <subjob xmi:id="_z-zC5QgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cConfig_1" xmi:id="_z-zC5ggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_z-zC5wgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_z-zC6AgGEe6iJ7loi8qa1A"/>
+  </subjob>
+  <subjob xmi:id="_z-zC6QgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cMessagingEndpoint_1" xmi:id="_z-zC6ggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_z-zC6wgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_z-zC7AgGEe6iJ7loi8qa1A"/>
+  </subjob>
+  <subjob xmi:id="_z-zC7QgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cTalendJob_1" xmi:id="_z-zC7ggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_z-zC7wgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_z-zC8AgGEe6iJ7loi8qa1A"/>
+  </subjob>
+  <subjob xmi:id="_z-zC8QgGEe6iJ7loi8qa1A">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cProcessor_1" xmi:id="_z-zC8ggGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_z-zC8wgGEe6iJ7loi8qa1A"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_z-zC9AgGEe6iJ7loi8qa1A"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_77acde86-7df8-49d2-969b-47f94d3e35c0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7gaYb3D1CkFLFKJmvqUS5HEvWtXt2qjBytn8gZZpzWoLgeqstiPaYaMSSq66S3j+SY6kWFOnGMS5&#13;
+B0SF3HOOag==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0749fc06-d868-4b15-a9a7-0b9c4d318bea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RDXNxwDb48TcLVuTrreKMULQ7s7wqTx9k79DkCEtOgabxYkhMOirB+9ChzeXgVc6ZpVFW+PeUIom&#13;
+E8c6x9Vk4g==</DigestValue></Reference></SignedInfo><SignatureValue>LKRZTIazfPURNuDDjd9wRtrOfr/9hSYxgcybgyqs4wXWP6xP7LzkwFMK/TI1UVL4tHxVWYj8CKYz&#13;
++l6O2wb2opX9LE6lFhcRHa8jYI12K+cxfRWIj+/nEMcvK4CsqxaA7r2ZewJZv8m7txAOEprtmr2l&#13;
+AKWtulC/j27S5IW46KC7tolmINC7QGtBj5RUopjNCt66H8g6K6+deFd80VYn0Cm3T9c7PuqfNnBY&#13;
+W+uSLINcIUzqheB6RPFqh0OR5O+GyWyo8WXBNyuW/+9qF9yYhcD0YsAG7YQja25V80Q0l5Z8ghXV&#13;
+lb/YCaBGPoFx8vAxJClLonxNo64vCW9yRaUaBg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0749fc06-d868-4b15-a9a7-0b9c4d318bea" Target="#_77acde86-7df8-49d2-969b-47f94d3e35c0"><Timestamp>2023-06-11 03:19:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

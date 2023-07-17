@@ -1,0 +1,29 @@
+{
+  "itemId" : "_MyalQBImEeuzudRwIlThHw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_bkYZcBQCEeuLR-lMc9lxEA",
+    "parameterList" : [ {
+      "id" : "_bkoRERQCEeuLR-lMc9lxEA",
+      "name" : "adventureworksdw_Password"
+    }, {
+      "id" : "_bkoREhQCEeuLR-lMc9lxEA",
+      "name" : "adventureworksdw_Server"
+    }, {
+      "id" : "_bkoRExQCEeuLR-lMc9lxEA",
+      "name" : "adventureworksdw_Schema"
+    }, {
+      "id" : "_bkoRFBQCEeuLR-lMc9lxEA",
+      "name" : "adventureworksdw_Login"
+    }, {
+      "id" : "_bkoRFRQCEeuLR-lMc9lxEA",
+      "name" : "adventureworksdw_AdditionalParams"
+    }, {
+      "id" : "_bkoRFhQCEeuLR-lMc9lxEA",
+      "name" : "adventureworksdw_Port"
+    }, {
+      "id" : "_bkoRFxQCEeuLR-lMc9lxEA",
+      "name" : "adventureworksdw_Database"
+    } ]
+  } ]
+}

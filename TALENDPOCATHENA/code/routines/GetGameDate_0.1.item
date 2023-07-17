@@ -1,0 +1,35 @@
+package routines;
+import java.util.Date;
+
+/*Calculating the GameDate which starts from 5:00am
+ USE 1.
+ 	2.
+ 	3 
+ 	
+ 	
+*/ 	
+ 
+
+public class GetGameDate {
+
+    public static Date GameDate(Date InputGameDate, Integer HourDiff) {
+    	// Checking NULL values
+        if (InputGameDate == null) {
+            return null;
+         }
+        
+        
+    	String BASE_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    	Date GameDateTime=TalendDate.addDate(InputGameDate, HourDiff, "HH"); //Adjusting the hour from input date
+    	Date GDate= TalendDate.parseDate("yyyy-MM-dd", TalendDate.formatDate("yyyy-MM-dd", GameDateTime)); //Extracting Date from Adjusted Date
+    	Date GTime= TalendDate.parseDate("HH:mm:ss", TalendDate.formatDate("HH:mm:ss", InputGameDate)); //Extracting Time from InputDate
+		
+    	//Concatenating the Date from AdjustedDate and InputDate Time
+    	Date GameStartDate = TalendDate.parseDate(BASE_FORMAT,TalendDate.formatDate("yyyy-MM-dd",GDate) + " " + TalendDate.formatDate("HH:mm:SS",GTime));
+    	
+    	
+    	return GameStartDate;
+    	
+
+    } 
+}

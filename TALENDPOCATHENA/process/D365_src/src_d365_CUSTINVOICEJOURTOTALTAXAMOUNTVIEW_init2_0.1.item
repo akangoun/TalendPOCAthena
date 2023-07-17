@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_HoD_UNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_HoD_UdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HoD_UteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HoD_U9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="datalakesynapsersm-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_HoD_VNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="service-talend"/>
+    <contextParameter comment="" internalId="_HoD_VdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:E2huhZEF97d4L7yx6YfrNn/dGuBpBMapdJxPIoAhLmiZU4uhp6gN/Mn1vOqjscEuRlP32IrcW9HPyA=="/>
+    <contextParameter comment="" internalId="_HoD_VteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_HoD_V9eHEeyAKo5LI0QBLg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_HoD_WNeHEeyAKo5LI0QBLg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:/4yhVOQv2c6QgPvaldYQQ7FbCG85YgyxLHodDSjhsFvxdW48nfn/aNC4"/>
+    <contextParameter comment="" internalId="_HoD_WdeHEeyAKo5LI0QBLg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_sbx"/>
+    <contextParameter comment="" internalId="_HoD_WteHEeyAKo5LI0QBLg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_HoD_W9eHEeyAKo5LI0QBLg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_HoD_XNeHEeyAKo5LI0QBLg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_HoD_XdeHEeyAKo5LI0QBLg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy0NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_Rxvy0deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_Rxvy0teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Rxvy09eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_Rxvy1NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_Rxvy1deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy1teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:gGCoG175Bcb3raeAb1BU2rrFnqVwFAVdpV/pnQz7whSo7sdvpI4NwPot"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" internalId="_HoEmYNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_HoEmYdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HoEmYteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HoEmY9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_HoEmZNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_HoEmZdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:1E5P9w3wb033blF35dSWJQMCo0L7GHHq3wTxdLA9epfrM+6rQA/Wdvdt7lOlPw=="/>
+    <contextParameter comment="" internalId="_HoEmZteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_HoEmZ9eHEeyAKo5LI0QBLg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_HoEmaNeHEeyAKo5LI0QBLg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:eGflihPL3GaSRIL5KxELnIc78tlXi9XrxxI2ap1eWd/dQNyGXb+XnL06"/>
+    <contextParameter comment="" internalId="_HoEmadeHEeyAKo5LI0QBLg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_HoEmateHEeyAKo5LI0QBLg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_HoEma9eHEeyAKo5LI0QBLg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_HoEmbNeHEeyAKo5LI0QBLg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_HoEmbdeHEeyAKo5LI0QBLg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy19eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_Rxvy2NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="prd"/>
+    <contextParameter comment="" internalId="_Rxvy2deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Rxvy2teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_Rxvy29eMEeyAKo5LI0QBLg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_Rxvy3NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy3deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:m4STAXAVyj+x/TgqEP83y6xy9DPzWzarfg0UqPP7vEs151WIyZPPiAnH"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_HoEmbteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_HoEmb9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HoEmcNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HoEmcdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_HoEmcteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_HoEmc9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:Hl03SmOlZDfVd5PBuzSlTiYREspKN6JlsvpNK3zQdk6dCBrl0HdXtRWhVbeNzA=="/>
+    <contextParameter comment="" internalId="_HoEmdNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_HoEmddeHEeyAKo5LI0QBLg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_HoEmdteHEeyAKo5LI0QBLg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:cN8ogcO8WJRPk0BBRuLahY3Yxit91WbPY2WkPjgdQRqxA/4xhgJy02qf"/>
+    <contextParameter comment="" internalId="_HoEmd9eHEeyAKo5LI0QBLg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_dev"/>
+    <contextParameter comment="" internalId="_HoEmeNeHEeyAKo5LI0QBLg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_HoEmedeHEeyAKo5LI0QBLg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_HoEmeteHEeyAKo5LI0QBLg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_HoEme9eHEeyAKo5LI0QBLg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy3teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_Rxvy39eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="dev"/>
+    <contextParameter comment="" internalId="_Rxvy4NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Rxvy4deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_Rxvy4teMEeyAKo5LI0QBLg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_Rxvy49eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy5NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:sbMoD4Lo5LTjdRMZrmqkCmkvIijXwzsADH3DjLjYTP5UYZrM2vcMrO3I"/>
+  </context>
+  <context confirmationNeeded="false" name="TST">
+    <contextParameter comment="" internalId="_HoEmfNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_HoEmfdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HoEmfteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HoEmf9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_HoEmgNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_HoEmgdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:XGhmvbcHduVEUWLAduATty8o6hjTvmcTGREns+gFTeXXgUc8vRHwR1MGKBwOxQ=="/>
+    <contextParameter comment="" internalId="_HoEmgteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_HoEmg9eHEeyAKo5LI0QBLg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_HoEmhNeHEeyAKo5LI0QBLg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:hkfJGiVClEMeQDrypiugOth8i/HCzUwS3cRvMxG3tquFy0OsciRFfEi+"/>
+    <contextParameter comment="" internalId="_HoEmhdeHEeyAKo5LI0QBLg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_HoEmhteHEeyAKo5LI0QBLg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_HoEmh9eHEeyAKo5LI0QBLg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_HoEmiNeHEeyAKo5LI0QBLg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_HoEmideHEeyAKo5LI0QBLg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy5deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_Rxvy5teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_Rxvy59eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Rxvy6NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_Rxvy6deMEeyAKo5LI0QBLg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_Rxvy6teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy69eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:kmAMWj6YUAquoi9AAOtducBnkhg3uD2M+7sUxNaa9k0OjcGuAJFthD9A"/>
+  </context>
+  <context confirmationNeeded="false" name="SBX">
+    <contextParameter comment="" internalId="_HoEmiteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_HoEmi9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HoEmjNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HoEmjdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_HoEmjteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_HoEmj9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:oLi3yGsqbkxPqkILJ5jH6vpyuVKIGOedWtbeBLtTSFwV4AQs6LinTodqnBJwzA=="/>
+    <contextParameter comment="" internalId="_HoEmkNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="EDWTestDB"/>
+    <contextParameter comment="" internalId="_HoEmkdeHEeyAKo5LI0QBLg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_HoEmkteHEeyAKo5LI0QBLg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:y76GzMiH+B6bMcojg+08zUGj5bObR0CrHo3yyDSg44SeaD1XSfZRI22g"/>
+    <contextParameter comment="" internalId="_HoEmk9eHEeyAKo5LI0QBLg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_sbx"/>
+    <contextParameter comment="" internalId="_HoEmlNeHEeyAKo5LI0QBLg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_HoEmldeHEeyAKo5LI0QBLg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_HoEmlteHEeyAKo5LI0QBLg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_HoEml9eHEeyAKo5LI0QBLg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy7NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_Rxvy7deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sbx"/>
+    <contextParameter comment="" internalId="_Rxvy7teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Rxvy79eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_Rxvy8NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_Rxvy8deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy8teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:PHYaWiNiY+otJCg+Z1rcMbT/nTwlJEyYMzPEGB2klQBJchTyXYPHrXkv"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" internalId="_HoEmmNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_HoEmmdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HoEmmteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HoEmm9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-prod-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_HoEmnNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_HoEmndeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:8PPOSGhr2+19yxFwt1ylKnDo3e8kyYgaUC6ZpbLxYSIrdQmHns+tZYVbWlzuRQ=="/>
+    <contextParameter comment="" internalId="_HoEmnteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_HoEmn9eHEeyAKo5LI0QBLg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_HoEmoNeHEeyAKo5LI0QBLg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:OgmFqdLnQYJHPyfqVHaG5wlDlPxnYL5ED9JRsOLNAxVf5a0aPPxV9in7"/>
+    <contextParameter comment="" internalId="_HoEmodeHEeyAKo5LI0QBLg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_HoEmoteHEeyAKo5LI0QBLg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_HoEmo9eHEeyAKo5LI0QBLg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_HoEmpNeHEeyAKo5LI0QBLg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_HoEmpdeHEeyAKo5LI0QBLg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy89eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_Rxvy9NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="uat"/>
+    <contextParameter comment="" internalId="_Rxvy9deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_Rxvy9teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_Rxvy99eMEeyAKo5LI0QBLg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_Rxvy-NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_Rxvy-deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:fk8YZ5NqfyXSZgltdD4nOSTBh8l83k9q6vg0OfFyiTlomrVTZqI6S9Ya"/>
+  </context>
+  <context confirmationNeeded="false" name="SL_STG">
+    <contextParameter comment="" internalId="_HoEmpteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_HoEmp9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HoEmqNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HoEmqdeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_HoEmqteHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_HoEmq9eHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:YRqIKx01Dsw74z77Cf9HvTDHd6mzJ4rlWDO/kuejwKQh/nwr0vQkGMIik3oI2w=="/>
+    <contextParameter comment="" internalId="_HoEmrNeHEeyAKo5LI0QBLg" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+    <contextParameter comment="" internalId="_HoEmrdeHEeyAKo5LI0QBLg" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_HoEmrteHEeyAKo5LI0QBLg" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:tbwnbwaj9abiumhD/95VHf1/b3I7a4R6dbiBquR1pNsCwlIvtBfGoa8p"/>
+    <contextParameter comment="" internalId="_HoEmr9eHEeyAKo5LI0QBLg" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_HoEmsNeHEeyAKo5LI0QBLg" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_HoEmsdeHEeyAKo5LI0QBLg" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="stg"/>
+    <contextParameter comment="" internalId="_HoEmsteHEeyAKo5LI0QBLg" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_HoEms9eHEeyAKo5LI0QBLg" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RxwZ4NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_RxwZ4deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="sl_stg"/>
+    <contextParameter comment="" internalId="_RxwZ4teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_RxwZ49eMEeyAKo5LI0QBLg" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_RxwZ5NeMEeyAKo5LI0QBLg" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_RxwZ5deMEeyAKo5LI0QBLg" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_RxwZ5teMEeyAKo5LI0QBLg" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:1LF0ybIPxtEht/KjJVYWuNEziqvWE76CkpVzDYbcf5yEqDBxDuGPZvdv"/>
+  </context>
+  <context confirmationNeeded="false" name="PRE">
+    <contextParameter comment="" internalId="_gfRccNknEey9LLluWRIRQQ" name="stg_EDW_AdditionalParams" prompt="stg_EDW_AdditionalParams?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gfRccdknEey9LLluWRIRQQ" name="stg_EDW_Password" prompt="stg_EDW_Password?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:nOS6E2/ps7oUNeiaKRs4lz9zAfw5+3UcrDP31SvW41oyUZe90ou/JGUx"/>
+    <contextParameter comment="" internalId="_gfRcctknEey9LLluWRIRQQ" name="stg_EDW_Database" prompt="stg_EDW_Database?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="edw_tst"/>
+    <contextParameter comment="" internalId="_gfRcc9knEey9LLluWRIRQQ" name="stg_EDW_Login" prompt="stg_EDW_Login?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gfRcdNknEey9LLluWRIRQQ" name="stg_EDW_Schema" prompt="stg_EDW_Schema?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_gfRcddknEey9LLluWRIRQQ" name="stg_EDW_Server" prompt="stg_EDW_Server?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gfRcdtknEey9LLluWRIRQQ" name="stg_EDW_Port" prompt="stg_EDW_Port?" promptNeeded="false" repositoryContextId="_0EXIQMi2EeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_gfRcd9knEey9LLluWRIRQQ" name="di_DI_CNTL_Database" prompt="di_DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="edw_di_cntl"/>
+    <contextParameter comment="" internalId="_gfRceNknEey9LLluWRIRQQ" name="di_DI_CNTL_Schema" prompt="di_DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="tst"/>
+    <contextParameter comment="" internalId="_gfRcedknEey9LLluWRIRQQ" name="di_DI_CNTL_Server" prompt="di_DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="10.3.0.4"/>
+    <contextParameter comment="" internalId="_gfRcetknEey9LLluWRIRQQ" name="di_DI_CNTL_Login" prompt="di_DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="talend_dev"/>
+    <contextParameter comment="" internalId="_gfRce9knEey9LLluWRIRQQ" name="di_DI_CNTL_AdditionalParams" prompt="di_DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="&quot;allowMultiQueries=true&quot;"/>
+    <contextParameter comment="" internalId="_gfRcfNknEey9LLluWRIRQQ" name="di_DI_CNTL_Port" prompt="di_DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_String" value="5432"/>
+    <contextParameter comment="" internalId="_gfRcfdknEey9LLluWRIRQQ" name="di_DI_CNTL_Password" prompt="di_DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_Y0JdIMlrEeyeS_tSFwatpA" type="id_Password" value="enc:system.encryption.key.v1:RmTKEO+NPmeSGSLtTFF8lcqbqU6KhvEntGrWj0kCDLAagCgfRMk6CCbv"/>
+    <contextParameter comment="" internalId="_gfRcftknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Schema" prompt="src_d365_azure_synapse_Schema?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_gfRcf9knEey9LLluWRIRQQ" name="src_d365_azure_synapse_AdditionalParams" prompt="src_d365_azure_synapse_AdditionalParams?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_gfRcgNknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Port" prompt="src_d365_azure_synapse_Port?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_gfRcgdknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Server" prompt="src_d365_azure_synapse_Server?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="syn-edw-d365-test-uswest2-ondemand.sql.azuresynapse.net"/>
+    <contextParameter comment="" internalId="_gfRcgtknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Login" prompt="src_d365_azure_synapse_Login?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="talendsvclocal"/>
+    <contextParameter comment="" internalId="_gfRcg9knEey9LLluWRIRQQ" name="src_d365_azure_synapse_Password" prompt="src_d365_azure_synapse_Password?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_Password" value="enc:system.encryption.key.v1:5LKzqQMcmiZZz8Ll7L05en4s9b7iT97zDuMD1+Inu+2Pd9gbtp02tTAfU+wZNg=="/>
+    <contextParameter comment="" internalId="_gfRchNknEey9LLluWRIRQQ" name="src_d365_azure_synapse_Database" prompt="src_d365_azure_synapse_Database?" promptNeeded="false" repositoryContextId="_OUvCYMr0EeyFVthlZZHF0g" type="id_String" value="D365ServerlessPool"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:6vVOLMQekTMgGYz+hwydUcpYTFvgG5swRyXFuSnd"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend-Studio-v801_workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xiUhtEOijcOnqqX5eIK/v/1gUaGhH74UGqubTtjY"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_a2kIUMVvEey3xfLApzgqSw" name="DQTechnical"/>
+    <routinesParameter id="_a2J4oMVvEey3xfLApzgqSw" name="DataMasking"/>
+    <routinesParameter id="_mnd_ILBpEeydZsfTpczvmg" name="DataOperation"/>
+    <routinesParameter id="_a2eBsMVvEey3xfLApzgqSw" name="DataQualityDependencies"/>
+    <routinesParameter id="_a2a-YMVvEey3xfLApzgqSw" name="DataQuality"/>
+    <routinesParameter id="_a2hFAMVvEey3xfLApzgqSw" name="DqStringHandling"/>
+    <routinesParameter id="_mnks0LBpEeydZsfTpczvmg" name="Mathematical"/>
+    <routinesParameter id="_mnud0LBpEeydZsfTpczvmg" name="Numeric"/>
+    <routinesParameter id="_moFqMLBpEeydZsfTpczvmg" name="Relational"/>
+    <routinesParameter id="_mlWfQLBpEeydZsfTpczvmg" name="SQLike"/>
+    <routinesParameter id="_moU6wLBpEeydZsfTpczvmg" name="StringHandling"/>
+    <routinesParameter id="_mogg8LBpEeydZsfTpczvmg" name="TalendDataGenerator"/>
+    <routinesParameter id="_moy00LBpEeydZsfTpczvmg" name="TalendDate"/>
+    <routinesParameter id="_mpQH0LBpEeydZsfTpczvmg" name="TalendStringUtil"/>
+    <routinesParameter id="_mpD6kLBpEeydZsfTpczvmg" name="TalendString"/>
+  </parameters>
+  <node componentName="DI_CNTL_Job_Tracking_Stats_ROOT_pg" componentVersion="12.2" offsetLabelX="0" offsetLabelY="0" posX="992" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_4qnfUMrzEeyFVthlZZHF0g"/>
+    <elementParameter field="TEXT" name="HOST" value="context.src_d365_azure_synapse_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.src_d365_azure_synapse_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.src_d365_azure_synapse_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.src_d365_azure_synapse_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.src_d365_azure_synapse_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EZTMNMpfnRlqgokXDY+9D1TSR2oGaCo8nmk280jieiMg7FFf0wphTnph3IY82HHt/z+t3QMtHYpujsF7JPOuFgKGNg=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_4qnfUMrzEeyFVthlZZHF0g - CUSTINVOICEJOURTOTALTAXAMOUNTVIEW"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CUSTINVOICEJOURTOTALTAXAMOUNTVIEW&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT \&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.CUSTINVOICEJOURTOTALTAXAMOUNTVIEW.CUSTINVOICEJOURRECID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.CUSTINVOICEJOURTOTALTAXAMOUNTVIEW.TOTALTAXAMOUNT,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.CUSTINVOICEJOURTOTALTAXAMOUNTVIEW.DATAAREAID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.CUSTINVOICEJOURTOTALTAXAMOUNTVIEW.PARTITION,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.CUSTINVOICEJOURTOTALTAXAMOUNTVIEW.RECID,&#10;&#9;&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.CUSTINVOICEJOURTOTALTAXAMOUNTVIEW.TAXAMOUNT&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.src_d365_azure_synapse_Schema+&quot;\&quot;.CUSTINVOICEJOURTOTALTAXAMOUNTVIEW&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.src_d365_azure_synapse_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTINVOICEJOURRECID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTALTAXAMOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATAAREAID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PARTITION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAXAMOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SET_QUERY_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="QUERY_TIMEOUT_IN_SECONDS" show="false" value="30"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_d365_azure_synapse"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="CUSTINVOICEJOURTOTALTAXAMOUNTVIEW" name="tDBInput_1">
+      <column comment="" key="false" length="19" name="CUSTINVOICEJOURRECID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALTAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RECID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_t6QEsNeDEeyAKo5LI0QBLg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="put_CustTable" name="OutputLoad">
+      <column comment="" key="false" length="19" name="CUSTINVOICEJOURRECID" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALTAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RECID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="di_created_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="di_updated_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="OutputLoad" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row1.CUSTINVOICEJOURRECID " name="CUSTINVOICEJOURRECID" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.TOTALTAXAMOUNT " name="TOTALTAXAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row1.DATAAREAID " name="DATAAREAID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row1.PARTITION " name="PARTITION" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row1.RECID " name="RECID" type="id_Integer"/>
+        <mapperTableEntries expression="row1.TAXAMOUNT " name="TAXAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="di_created_dt" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="di_updated_dt" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="pid" name="di_jobid" nullable="true" type="id_String"/>
+        <mapperTableEntries name="di_isdeleted" nullable="true" type="id_Boolean"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="CUSTINVOICEJOURRECID" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="TOTALTAXAMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DATAAREAID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PARTITION" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="RECID" type="id_Integer"/>
+        <mapperTableEntries name="TAXAMOUNT" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_2ZkGAMlvEeyeS_tSFwatpA"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.stg_EDW_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.stg_EDW_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.stg_EDW_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="POSTGRESQL"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.stg_EDW_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.stg_EDW_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mtxeZW+mobbmCxBrPLc2LpI0q2SSUjzM3UDSqtUZdrIyyVZz/x+1J7HN1iKPgpuBldd1mQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;d365_CUSTINVOICEJOURTOTALTAXAMOUNTVIEW&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" show="false" value="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" show="false" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="postgres_id"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.stg_EDW_AdditionalParams"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSTINVOICEJOURRECID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTALTAXAMOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATAAREAID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PARTITION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RECID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TAXAMOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_created_dt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_updated_dt"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_jobid"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="di_isdeleted"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="d365_CUSTINVOICEJOURTOTALTAXAMOUNTVIEW"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="put_CustTable" name="tDBOutput_1">
+      <column comment="" key="false" length="19" name="CUSTINVOICEJOURRECID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALTAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RECID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="di_created_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="di_updated_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="put_CustTable" name="REJECT">
+      <column comment="" key="false" length="19" name="CUSTINVOICEJOURRECID" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TOTALTAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="DATAAREAID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PARTITION" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RECID" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="TAXAMOUNT" nullable="true" pattern="" precision="6" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="di_created_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="di_updated_dt" nullable="true" originalLength="23" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="TIMESTAMPTZ" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="di_jobid" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="di_isdeleted" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="OutputLoad" lineStyle="0" metaname="OutputLoad" offsetLabelX="50" offsetLabelY="1" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="TAXAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CUSTINVOICEJOURRECID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTALTAXAMOUNT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OutputLoad"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DI_CNTL_Job_Tracking_Stats_ROOT_pg_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3a8af142-dd36-4063-84c7-dd0f686f8ce3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>I3eBeW8nbTcfRITrrhn/4uLYsdUvY79vpTzKcbqxcNtj27sU4lR1lPcVH1AlKq2x0We4gj1eYLZx&#13;
+Cwv8F0Pczg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_24326ed3-a92a-45e0-a2a3-e1a3a7bb5440"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HnKAc0c9fsTbxWqzZO/NHgeJOBZPE8bXYlytTtEk4KJaD5VYYe7XtJa21VVBofTMAkR3GnifyH8S&#13;
+wTtiPCA6zQ==</DigestValue></Reference></SignedInfo><SignatureValue>aqfXcF9+wqNuGlY3b2DMY6xOE83DWKWckkbo+hw3pFhVKA4/Y8sucJkqiivEKF0lWthd2p7+C/th&#13;
+FXZOlW9r6Sfn+byWPUsJB3MpaZZrF1zl2MHHbT5zF4dnD/85vK3HFWOvDcqm4034kM8RB2eHy9T3&#13;
+T7QJR8NTQHLIHlZ+vRik2NAAesZtp5U1Wm7FUIcAdkG/mCZsY8ZdLCZL9ECbKA8ImhDtc8T6rwov&#13;
+eaRuN6WfgLTIRHdbJNrpoFH4uDzDJhmupSRRQLez1NE4NEkxunAhBoGAH/8+O/C8GRgYMhGG20lr&#13;
+viXRi6ysx7uQ++cW2M67TvuW7ilMYIWRtkhN5w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_24326ed3-a92a-45e0-a2a3-e1a3a7bb5440" Target="#_3a8af142-dd36-4063-84c7-dd0f686f8ce3"><Timestamp>2023-06-11 15:20:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

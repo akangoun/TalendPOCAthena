@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_bkoREBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="adventureworksdw_Password" prompt="adventureworksdw_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:dwJWJUyl6/fMuaO8ojLRGh8m/EOmupYcEe7V1tr1IjRTUDil" xmi:id="_bkoRERQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Server" prompt="adventureworksdw_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_bkoREhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Schema" prompt="adventureworksdw_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_bkoRExQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Login" prompt="adventureworksdw_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_bkoRFBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_AdditionalParams" prompt="adventureworksdw_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bkoRFRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Port" prompt="adventureworksdw_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bkoRFhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Database" prompt="adventureworksdw_Database?" promptNeeded="false" type="id_String" value="adventureworksdw2017" xmi:id="_bkoRFxQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_bkoRGBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="adventureworksdw_Password" prompt="adventureworksdw_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:deY/t7bOPOoCsg+R0d9rpReTHAxnYrVQFFxer6REmVsq5SDO" xmi:id="_bkoRGRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Server" prompt="adventureworksdw_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_bkoRGhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Schema" prompt="adventureworksdw_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_bkoRGxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Login" prompt="adventureworksdw_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_bkoRHBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_AdditionalParams" prompt="adventureworksdw_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bkoRHRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Port" prompt="adventureworksdw_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bkoRHhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Database" prompt="adventureworksdw_Database?" promptNeeded="false" type="id_String" value="adventureworksdw2017" xmi:id="_bkoRHxQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LOC" xmi:id="_bkoRIBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="adventureworksdw_Password" prompt="adventureworksdw_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:jz/9A/u6bAQCESnIyRRT3KdobuSx4BcAsp4b5yr9ATfZAEvS" xmi:id="_bkoRIRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Server" prompt="adventureworksdw_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_bkoRIhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Schema" prompt="adventureworksdw_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_bkoRIxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Login" prompt="adventureworksdw_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_bkoRJBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_AdditionalParams" prompt="adventureworksdw_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bkoRJRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Port" prompt="adventureworksdw_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bkoRJhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Database" prompt="adventureworksdw_Database?" promptNeeded="false" type="id_String" value="adventureworksdw2017" xmi:id="_bkoRJxQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_bkoRKBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="adventureworksdw_Password" prompt="adventureworksdw_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:gezslN8hXHZAAzW9ZOH3E3KP/baLAdrn+nIra639IqEx2VUw" xmi:id="_bkoRKRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Server" prompt="adventureworksdw_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_bkoRKhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Schema" prompt="adventureworksdw_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_bkoRKxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Login" prompt="adventureworksdw_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_bkoRLBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_AdditionalParams" prompt="adventureworksdw_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bkoRLRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Port" prompt="adventureworksdw_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bkoRLhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Database" prompt="adventureworksdw_Database?" promptNeeded="false" type="id_String" value="adventureworksdw2017" xmi:id="_bkoRLxQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_bkoRMBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="adventureworksdw_Password" prompt="adventureworksdw_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:9bl/WEIyvcVcTMk8T7TAYfUFtjQLJzOlt6OuNbu0f5MbhHO0" xmi:id="_bkoRMRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Server" prompt="adventureworksdw_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_bkoRMhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Schema" prompt="adventureworksdw_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_bkoRMxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Login" prompt="adventureworksdw_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_bkoRNBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_AdditionalParams" prompt="adventureworksdw_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bkoRNRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Port" prompt="adventureworksdw_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bkoRNhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Database" prompt="adventureworksdw_Database?" promptNeeded="false" type="id_String" value="adventureworksdw2017" xmi:id="_bkoRNxQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_bkoROBQCEeuLR-lMc9lxEA">
+    <contextParameter comment="" name="adventureworksdw_Password" prompt="adventureworksdw_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:xcQZQkDX7osuBxtCiQLYkcSHDKnFWgloLkF7pPO4TnSDyHct" xmi:id="_bkoRORQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Server" prompt="adventureworksdw_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_bkoROhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Schema" prompt="adventureworksdw_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_bkoROxQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Login" prompt="adventureworksdw_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_bkoRPBQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_AdditionalParams" prompt="adventureworksdw_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_bkoRPRQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Port" prompt="adventureworksdw_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_bkoRPhQCEeuLR-lMc9lxEA"/>
+    <contextParameter comment="" name="adventureworksdw_Database" prompt="adventureworksdw_Database?" promptNeeded="false" type="id_String" value="adventureworksdw2017" xmi:id="_bkoRPxQCEeuLR-lMc9lxEA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_575f3413-dfcf-4844-ac6d-7e2d714278c1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v9XBvcNq3KF59MGdkkGMXgLU0uKAxXaqaTjpYvd25ctksoSqDYtLDjBLkj8nMO3qg9A4/QpZWWDa&#13;
+bsO7SM6xtA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b51174d5-9849-42c2-bfae-2accc415efe3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wnb6h/TBj7ph3HACrxEueTcsgu+7mjHdu4A0anAO6b3ICRUUYdik95oFVnrAkXQdmcKBwMK/9aqU&#13;
+hwxsGhfkCg==</DigestValue></Reference></SignedInfo><SignatureValue>b9mYViQAY2lUwk2Q2yzZrDbEYoU36Rk2r4vE55zO14ayhND3Kap65RhFXX2fooRkvYbBeawTsptm&#13;
+uPyHnamYCcxir729eEl3x4PW6oU0pUHuNHRiWSYuMFhLlPJzIoaejVEq9Rn14Zev9rMalWuTxOGI&#13;
+49sLZImAv7nci2IEnXSlyk/dWbBABkxEMbnYIVh0nZcnXje7Id8qd9PH59Pzhl65bfN0+DcndM+S&#13;
+lI46d7mTgzvfFr48adkS39fAIvUuBTVfNCxy22mQvf7llheQbqXLwikw14f01JesWqZjWc1WNbwF&#13;
+bkf3v5HZqInYi9Lnc/5qCTlbLtmAPt/uEV2T+g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b51174d5-9849-42c2-bfae-2accc415efe3" Target="#_575f3413-dfcf-4844-ac6d-7e2d714278c1"><Timestamp>2023-06-11 03:34:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

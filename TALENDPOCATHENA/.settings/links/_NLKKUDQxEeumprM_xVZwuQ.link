@@ -1,0 +1,29 @@
+{
+  "itemId" : "_NLKKUDQxEeumprM_xVZwuQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_xPJV8DQxEeumprM_xVZwuQ",
+    "parameterList" : [ {
+      "id" : "_PAYzYVOTEeyP67gCLS_GIA",
+      "name" : "imdb_final_project_Login"
+    }, {
+      "id" : "_PAYzYlOTEeyP67gCLS_GIA",
+      "name" : "imdb_final_project_Password"
+    }, {
+      "id" : "_PAYzY1OTEeyP67gCLS_GIA",
+      "name" : "imdb_final_project_Port"
+    }, {
+      "id" : "_PAYzZFOTEeyP67gCLS_GIA",
+      "name" : "imdb_final_project_Database"
+    }, {
+      "id" : "_PAYzZVOTEeyP67gCLS_GIA",
+      "name" : "imdb_final_project_Schema"
+    }, {
+      "id" : "_PAYzZlOTEeyP67gCLS_GIA",
+      "name" : "imdb_final_project_Server"
+    }, {
+      "id" : "_PAYzZ1OTEeyP67gCLS_GIA",
+      "name" : "imdb_final_project_AdditionalParams"
+    } ]
+  } ]
+}

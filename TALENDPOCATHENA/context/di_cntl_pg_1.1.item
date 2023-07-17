@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_Pj918MwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj918cwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj918swCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:TyDyZP810fTcedr01M+j+WlFKvPuOEdlo5JV4ck6BRAf1qIo" xmi:id="_Pj9188wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj919MwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj919cwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj919swCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj9198wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_Pj91-MwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj91-cwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj91-swCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:6Lw3k0zlmQoFRGKu2jHY5ZMgnQDpW/HaVKpiEFIbOMPTRCye" xmi:id="_Pj91-8wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj91_MwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj91_cwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj91_swCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj91_8wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="LCL" xmi:id="_Pj92AMwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj92AcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj92AswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:lrF00idydk5tDt2x0RoKgF0cREN1i+e46zAQX4zT5/lYg6ea" xmi:id="_Pj92A8wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj92BMwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj92BcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj92BswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj92B8wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_Pj92CMwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj92CcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj92CswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:PPe2k1p4pERrxkLpVl5NUbixRHlGDvmt3Ray3o4tVFo6ZNrx" xmi:id="_Pj92C8wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj92DMwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj92DcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj92DswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj92D8wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_Pj92EMwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj92EcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj92EswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:0DH0tjD/57xohhm/ZdP5qZuitmlCYpegPss8R3OKs+39iq5B" xmi:id="_Pj92E8wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj92FMwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj92FcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj92FswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj92F8wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SL_STG" xmi:id="_Pj92GMwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj92GcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj92GswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:MUAkPvCEN3rVH/NwxXYNE0xGxDVTFQtyE2Wt/Aw309rmPuCd" xmi:id="_Pj92G8wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj92HMwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj92HcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj92HswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj92H8wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_Pj92IMwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj92IcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj92IswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:uKvDM5jTG5KYokiBBCJCMdJpSfbJsKY7uw4xylgCSD+jkBi+" xmi:id="_Pj92I8wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj92JMwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj92JcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj92JswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj92J8wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="UAT" xmi:id="_Pj92KMwCEey1p4M7NYmjkg">
+    <contextParameter comment="" name="di_cntl_pg_Login" prompt="di_cntl_pg_Login?" promptNeeded="false" repositoryContextId="" type="id_String" value="damg6210" xmi:id="_Pj92KcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Server" prompt="di_cntl_pg_Server?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost" xmi:id="_Pj92KswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Password" prompt="di_cntl_pg_Password?" promptNeeded="false" repositoryContextId="" type="id_Password" value="enc:system.encryption.key.v1:6gWn4qG+VTKEQyZ92sCtDkky63rnUk1fBYomgTWuBldFbGRf" xmi:id="_Pj92K8wCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Schema" prompt="di_cntl_pg_Schema?" promptNeeded="false" repositoryContextId="" type="id_String" value="dev" xmi:id="_Pj92LMwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Port" prompt="di_cntl_pg_Port?" promptNeeded="false" repositoryContextId="" type="id_String" value="5433" xmi:id="_Pj92LcwCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_Database" prompt="di_cntl_pg_Database?" promptNeeded="false" repositoryContextId="" type="id_String" value="di_cntl" xmi:id="_Pj92LswCEey1p4M7NYmjkg"/>
+    <contextParameter comment="" name="di_cntl_pg_AdditionalParams" prompt="di_cntl_pg_AdditionalParams?" promptNeeded="false" repositoryContextId="" type="id_String" value="" xmi:id="_Pj92L8wCEey1p4M7NYmjkg"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_57cc59bf-b65c-44c4-8c6d-253fe897ccf2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LJVO00n6fo5Olvit/ZMXcB7uu0+ZzpQaOT8/x+newZT0AJevsc/nt/h6fIThXKmFt4GPAiKLO4Nu&#13;
+TqBSXPdZtg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bd0f5d06-3596-4ff7-b008-2ef780e8a94a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>L3yJRpV7iSzS8/BMO902GxYwIEROPR6zSiijHUdjtXjhgs1ClUfLV6MMzXmUI90hRD7iP8RpydRt&#13;
+kCg0g9MW6A==</DigestValue></Reference></SignedInfo><SignatureValue>Zt7hzPT14jnopm1k4bvsG9IlgR9SAHhSL0cxtNZfQZSKa8Hw3NZ3WSka3p19IJ59U/ePPlw4+KKN&#13;
+F5YGECUcQuTRjnn/O+X5fFWaHtadykM0V3qnHCxfC6h5x+F01nmQxPX3lueqc8C82NnW1i3UvLbI&#13;
+VBFOAjFWyDWV4qqVPpQw9qbBrjgdzzOvFofznUkRuExkBRkTaWofOU33M4VQrvOCqC3KD5JE2zY0&#13;
+N4zxJRhDXE+YBwx8XoLTSPIdGZNT/WWkHEVNfxd82JryZFBfJbuImfKUtsRNGiB994hjlejLc9DM&#13;
+/KS4ZzE3z+4uL1n5+7a8w66YFf2Q7ehLJDBtXA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bd0f5d06-3596-4ff7-b008-2ef780e8a94a" Target="#_57cc59bf-b65c-44c4-8c6d-253fe897ccf2"><Timestamp>2023-06-11 03:34:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_N-LKECR3Eeuce4FDEpyMkw">
+    <contextParameter comment="" name="SAS_token" prompt="SAS_token?" promptNeeded="false" type="id_String" value="?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKESR3Eeuce4FDEpyMkw"/>
+    <contextParameter comment="" name="SAS_URLString" prompt="SAS_URLString?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKEiR3Eeuce4FDEpyMkw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_N-LKEyR3Eeuce4FDEpyMkw">
+    <contextParameter comment="" name="SAS_token" prompt="SAS_token?" promptNeeded="false" type="id_String" value="?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKFCR3Eeuce4FDEpyMkw"/>
+    <contextParameter comment="" name="SAS_URLString" prompt="SAS_URLString?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKFSR3Eeuce4FDEpyMkw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="PRD" xmi:id="_N-LKFiR3Eeuce4FDEpyMkw">
+    <contextParameter comment="" name="SAS_token" prompt="SAS_token?" promptNeeded="false" type="id_String" value="?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKFyR3Eeuce4FDEpyMkw"/>
+    <contextParameter comment="" name="SAS_URLString" prompt="SAS_URLString?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKGCR3Eeuce4FDEpyMkw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="SBX" xmi:id="_N-LKGSR3Eeuce4FDEpyMkw">
+    <contextParameter comment="" name="SAS_token" prompt="SAS_token?" promptNeeded="false" type="id_String" value="?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKGiR3Eeuce4FDEpyMkw"/>
+    <contextParameter comment="" name="SAS_URLString" prompt="SAS_URLString?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKGyR3Eeuce4FDEpyMkw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_N-LKHCR3Eeuce4FDEpyMkw">
+    <contextParameter comment="" name="SAS_token" prompt="SAS_token?" promptNeeded="false" type="id_String" value="?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKHSR3Eeuce4FDEpyMkw"/>
+    <contextParameter comment="" name="SAS_URLString" prompt="SAS_URLString?" promptNeeded="false" type="id_String" value="https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-24T00:33:33Z&amp;st=2020-11-23T16:33:33Z&amp;spr=https&amp;sig=OPAgU%2FvVDCpL%2BHzrX4f4uQ8b3zsjFkTjwK4c94akl2o%3D" xmi:id="_N-LKHiR3Eeuce4FDEpyMkw"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ba293916-e5f4-4148-8713-437a45fa0e50"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bWgr8FKMBvcCwqa9zjHe3vt2vo+Cz4/pI+nllMmxiJK7ZgyB/Azvz2GM02+uETiJ7GmvTeoWRTec&#13;
+KDiq06QksQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_08b7a9fe-06ad-4c55-8bd4-a0a63bfb8a4d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WeiUIjcaVHyRlc9Ldz1KwnTfsenljWi5C669xR+Dd54KEk+I6aMS2Y/pojdorn8gavXenyvJndnZ&#13;
+wyCxZFda9Q==</DigestValue></Reference></SignedInfo><SignatureValue>BXrg1PS4JBpJNBLZQfiVt0OFuHU+Red2md3Ucq927hK4Pgu/blSw6WftHmgx3wBTNhck+QV/xYZn&#13;
+6oNLXoAdD35IPDyshYO/M1is84cFYahjPejesy3c9M1lsKFwNo58AZB1whXgezxgruB8sWKXCBbk&#13;
+JvQ7s7bqMcVWvOvCEgQhDpw/tc2I7pDgdDYIaBalcn9UEDFrO7yZtI7x5Ke/PjefALb27T8gQO2I&#13;
+t7K9eSJVLRg8mtF6VK9HGsgxuauVtRkvYMx2NkVvEo3vjdGY9rat0qPQ2D+H94GP80/9W2fRgCeF&#13;
+ZiYsVLOeLf5rNgOWrX2UGb3g+npkbMve4eH9nw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_08b7a9fe-06ad-4c55-8bd4-a0a63bfb8a4d" Target="#_ba293916-e5f4-4148-8713-437a45fa0e50"><Timestamp>2023-06-11 04:22:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
