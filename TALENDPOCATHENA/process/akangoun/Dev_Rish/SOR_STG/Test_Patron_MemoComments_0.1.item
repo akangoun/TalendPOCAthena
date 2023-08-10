@@ -1,0 +1,1117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_Password" value="enc:system.encryption.key.v1:kENBc7ft+qK7u6tTbQpb9Y5msjJVf3dyZPpFhjQrHDgsNUyhxaLSCj0="/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="Patron"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_loc"/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:dBHHHEftyjSsgzgGZJggvW3XQ0KFnMDso7uuJ8BQ9JlfEo1T"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Database" prompt="OASIS_ARCH_Database?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_ARCH_Login" prompt="OASIS_ARCH_Login?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_ARCH_Server" prompt="OASIS_ARCH_Server?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="OASIS_ARCH_Password" prompt="OASIS_ARCH_Password?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_Password" value="enc:system.encryption.key.v1:DGtM5yJOiGA1wdHe61oJ4Ijau/Das0ZV0cGwitQMS/pam6aIEnnvzH4="/>
+    <contextParameter comment="" name="OASIS_ARCH_AdditionalParams" prompt="OASIS_ARCH_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Port" prompt="OASIS_ARCH_Port?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_ARCH_Schema" prompt="OASIS_ARCH_Schema?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dbo"/>
+  </context>
+  <context confirmationNeeded="false" name="LOC">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_Password" value="enc:system.encryption.key.v1:vd28Tc8cRXvfgXN0bN9lp+n7MSEhjt9C71/zYagfKIG6ib79zZyjqjU="/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="Patron"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_loc"/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:TpWUxVJXPUC7zjPSUlnWgh2wuMPLs5mGzyLyUrFg7pmlUbPN"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Database" prompt="OASIS_ARCH_Database?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_ARCH_Login" prompt="OASIS_ARCH_Login?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_ARCH_Server" prompt="OASIS_ARCH_Server?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="OASIS_ARCH_Password" prompt="OASIS_ARCH_Password?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_Password" value="enc:system.encryption.key.v1:H/QVRrdSRrWDUjZyCDs8oU5logtUxbWD2JnKBnT6aZzZlpGLgLOrpBM="/>
+    <contextParameter comment="" name="OASIS_ARCH_AdditionalParams" prompt="OASIS_ARCH_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Port" prompt="OASIS_ARCH_Port?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_ARCH_Schema" prompt="OASIS_ARCH_Schema?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="WinOasisArch"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_Password" value="enc:system.encryption.key.v1:H586JG/NMhDa8Vb/Ed8PSwS+nChJqNexZ7qzTX3kY+E3CbGf7MpzTGs="/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="Patron"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_tst"/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:JvmmCRHFVS+I8+XqU1rn4fmr22VcLRLyTW+Ieh39eDGxNc9k79vO0pg="/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Database" prompt="OASIS_ARCH_Database?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_ARCH_Login" prompt="OASIS_ARCH_Login?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_ARCH_Server" prompt="OASIS_ARCH_Server?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="OASIS_ARCH_Password" prompt="OASIS_ARCH_Password?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_Password" value="enc:system.encryption.key.v1:WtfXmRVhQKuM05pQu058Rdtc85tJ2cfPyzI8rk94IN/bhdA/HyeRuhg="/>
+    <contextParameter comment="" name="OASIS_ARCH_AdditionalParams" prompt="OASIS_ARCH_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Port" prompt="OASIS_ARCH_Port?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_ARCH_Schema" prompt="OASIS_ARCH_Schema?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="WinOasisArch"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_Password" value="enc:system.encryption.key.v1:IARwybHHuYZtsrPnMx0IEMl6YvAqSyBmADqFqUnA9xP5gIhCgQ8sgSg="/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="Patron"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_dev"/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:T7sFNuTKpEHGWn3tuClRDXhVnXzsGPVCO4LQXogIx8VMrv9BZFXWttw="/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Database" prompt="OASIS_ARCH_Database?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_ARCH_Login" prompt="OASIS_ARCH_Login?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_ARCH_Server" prompt="OASIS_ARCH_Server?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="OASIS_ARCH_Password" prompt="OASIS_ARCH_Password?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_Password" value="enc:system.encryption.key.v1:YFUk4g6TStC82lGkuHdIx9UNgZjxO4sFy40ntWhbO35gDR9NGH2LdIs="/>
+    <contextParameter comment="" name="OASIS_ARCH_AdditionalParams" prompt="OASIS_ARCH_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Port" prompt="OASIS_ARCH_Port?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_ARCH_Schema" prompt="OASIS_ARCH_Schema?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="WinOasisArch"/>
+  </context>
+  <context confirmationNeeded="false" name="TST">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_Password" value="enc:system.encryption.key.v1:qLi6RGboq/9kIcrE7pE26gU4Z5p2I3AlJGFAjWdPZ5SgO6QagS/cujo25w=="/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="Patron"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="WinOASIS"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="OPTX"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="10.2.55.10"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_tst"/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:ibLCJowBliJMrL4ukUROHcNEXFNFdpElnSYvq+Bd1qLZOQwJRRuHGzI="/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Database" prompt="OASIS_ARCH_Database?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="WinOASIS_ARCH"/>
+    <contextParameter comment="" name="OASIS_ARCH_Login" prompt="OASIS_ARCH_Login?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="OPTX"/>
+    <contextParameter comment="" name="OASIS_ARCH_Server" prompt="OASIS_ARCH_Server?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="10.2.55.10"/>
+    <contextParameter comment="" name="OASIS_ARCH_Password" prompt="OASIS_ARCH_Password?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_Password" value="enc:system.encryption.key.v1:9/qOGHQcf72PLy8gCzEWaSXpb3qKqUAhNMKd4Wxko4GO4ZHLAiUQtP5sxw=="/>
+    <contextParameter comment="" name="OASIS_ARCH_AdditionalParams" prompt="OASIS_ARCH_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Port" prompt="OASIS_ARCH_Port?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_ARCH_Schema" prompt="OASIS_ARCH_Schema?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dbo"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="OASIS_Patron_Password" prompt="OASIS_Patron_Password?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_Password" value="enc:system.encryption.key.v1:SZAN11sduHhgK+aCjValemKnasp9zjVSwOq/6QwDuhZGU1oNDdEgjR0="/>
+    <contextParameter comment="" name="OASIS_Patron_Port" prompt="OASIS_Patron_Port?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_Patron_Schema" prompt="OASIS_Patron_Schema?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="Patron"/>
+    <contextParameter comment="" name="OASIS_Patron_Database" prompt="OASIS_Patron_Database?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_Patron_AdditionalParams" prompt="OASIS_Patron_AdditionalParams?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_Patron_Login" prompt="OASIS_Patron_Login?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_Patron_Server" prompt="OASIS_Patron_Server?" promptNeeded="false" repositoryContextId="_1zVNcBlDEeuqpLmy0vHRLg" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="OASIS_ARCH_Database" prompt="OASIS_ARCH_Database?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="OPTX_Sources"/>
+    <contextParameter comment="" name="OASIS_ARCH_Login" prompt="OASIS_ARCH_Login?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="OASIS_ARCH_Server" prompt="OASIS_ARCH_Server?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="OASIS_ARCH_Password" prompt="OASIS_ARCH_Password?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_Password" value="enc:system.encryption.key.v1:pfBNIT4xJCx2WuIXpFzH3AK76Dq4uW9fg+dLfjaHsP1wDeyYq5RKhrk="/>
+    <contextParameter comment="" name="OASIS_ARCH_AdditionalParams" prompt="OASIS_ARCH_AdditionalParams?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value=""/>
+    <contextParameter comment="" name="OASIS_ARCH_Port" prompt="OASIS_ARCH_Port?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="OASIS_ARCH_Schema" prompt="OASIS_ARCH_Schema?" promptNeeded="false" repositoryContextId="_ofxwcB6YEeuEVNt-Y3etfw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_tst"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:TZ5jKyvTBz/z1uV7QXQKseiFBAyCdBTx3OYBEdDN4LO9eHtVLF/C5xg="/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:v+Ef0AyykOVIhCX4ocssS5UexmdmgfcQuhBvy3YQ"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/TalendWorkspaceCloud/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:n2xYNozjeqCdpAAt66DXnE+UdlMYuHFafz9AsO3p"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_2dCyAA2AEeu1TPPsnJu-RQ" name="DataOperation"/>
+    <routinesParameter id="_2f1nUA2AEeu1TPPsnJu-RQ" name="Mathematical"/>
+    <routinesParameter id="_2ga2IA2AEeu1TPPsnJu-RQ" name="Numeric"/>
+    <routinesParameter id="_2g-20A2AEeu1TPPsnJu-RQ" name="Relational"/>
+    <routinesParameter id="_2jD6cA2AEeu1TPPsnJu-RQ" name="SQLike"/>
+    <routinesParameter id="_2hWqQA2AEeu1TPPsnJu-RQ" name="StringHandling"/>
+    <routinesParameter id="_2h1ycA2AEeu1TPPsnJu-RQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_2iFDAA2AEeu1TPPsnJu-RQ" name="TalendDate"/>
+    <routinesParameter id="_2iw_gA2AEeu1TPPsnJu-RQ" name="TalendStringUtil"/>
+    <routinesParameter id="_2ieroA2AEeu1TPPsnJu-RQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_pDZ7UBfcEeugnsdFvYN2lg"/>
+    <elementParameter field="TEXT" name="HOST" value="context.OASIS_ARCH_Server"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.OASIS_ARCH_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.OASIS_ARCH_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.OASIS_ARCH_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.OASIS_ARCH_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hLf1ZR4zVaWGzmm0lhdXJY0ZeKYEVdzoxHzUzxgXA6YsILu6bu9q4zVij3F7u9U8hVdItarfyQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;CDS_AUDITTRAIL&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT top 1000000 \&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.Casino_ID,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.Timestamp,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.AuditTrail_ID,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.Application_ID,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.AuditEvent_ID,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.AuditDate,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.AuditGamingdate,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.Shift_ID,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.\&quot;User_ID\&quot;,&#10;&#9;&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL.Location_ID&quot;&#10;+&quot;&#10;FROM&#9;\&quot;&quot;+context.OASIS_ARCH_Schema+&quot;\&quot;.CDS_AUDITTRAIL&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.OASIS_ARCH_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Casino_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Timestamp"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AuditTrail_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Application_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AuditEvent_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AuditDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AuditGamingdate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Shift_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="User_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Location_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="3" name="Casino_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="Timestamp" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="AuditTrail_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Application_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="AuditEvent_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AuditDate" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="AuditGamingdate" nullable="true" originalLength="-1" pattern="" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Shift_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="User_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Location_ID" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_E2dK0CK6EeuBKaAgS7MJYA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="tMap_Stage"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OAS_CDS_StatDetail" name="copyOfput_tgt_table">
+      <column comment="" key="false" length="-1" name="OAS_CDS_AuditTrail_SK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Casino_ID" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="Timestamp" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="AuditTrail_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Application_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="AuditEvent_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="AuditDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="AuditGamingdate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Shift_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="User_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Location_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'((0))'" key="false" length="1" name="DI_Is_Deleted" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DI_Deleted_Date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'((0))'" key="false" length="1" name="DI_Is_Archived" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DI_Archived_Date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables activateExpressionFilter="true" name="copyOfput_tgt_table" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="" name="OAS_CDS_AuditTrail_SK" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Casino_ID " name="Casino_ID" nullable="true" type="id_Short"/>
+        <mapperTableEntries expression="row2.Timestamp " name="Timestamp" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.AuditTrail_ID " name="AuditTrail_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Application_ID " name="Application_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.AuditEvent_ID " name="AuditEvent_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.AuditDate " name="AuditDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.AuditGamingdate " name="AuditGamingdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.Shift_ID " name="Shift_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.User_ID " name="User_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Location_ID " name="Location_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="3" name="DI_SOR_SK" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="0" name="DI_Is_Deleted" type="id_Byte"/>
+        <mapperTableEntries expression="null" name="DI_Deleted_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="1" name="DI_Is_Archived" type="id_Byte"/>
+        <mapperTableEntries expression="null" name="DI_Archived_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="pid" name="DI_PID" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate() " name="DI_CREATE_DATE" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()" name="DI_MODIFY_DATE" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="Casino_ID" nullable="true" type="id_Short"/>
+        <mapperTableEntries name="Timestamp" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="AuditTrail_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Application_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="AuditEvent_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="AuditDate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="AuditGamingdate" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="Shift_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="User_ID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Location_ID" nullable="true" type="id_Integer"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;Z:/DataImport/CDS_AuditTrail_ToLoad.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;\&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OAS_CDS_StatDetail" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="OAS_CDS_AuditTrail_SK" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Casino_ID" nullable="true" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="Timestamp" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="AuditTrail_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Application_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="AuditEvent_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="AuditDate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="AuditGamingdate" nullable="true" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="Shift_ID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="User_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Location_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'((0))'" key="false" length="1" name="DI_Is_Deleted" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DI_Deleted_Date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'((0))'" key="false" length="1" name="DI_Is_Archived" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Byte" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DI_Archived_Date" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss.SSSSSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tAzureStorageConnection" componentVersion="0.28.2" offsetLabelX="0" offsetLabelY="0" posX="864" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAzureStorageConnection_1"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value="QUERYSTORE_TYPE : &quot;BUILT_IN&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties&quot;,&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;repositoryLocation&quot;:null,&quot;accountKey&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:FBWYrlnus+k4q4k5VGsPqR3IA2ytUSIN2B3vx/dG&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;accountKey&quot;,&quot;tags&quot;:null},&quot;accountName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;accountName&quot;,&quot;tags&quot;:null},&quot;useSharedAccessSignature&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useSharedAccessSignature&quot;,&quot;tags&quot;:null},&quot;sharedAccessSignature&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;},&quot;storedValue&quot;:&quot;\&quot;https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;sharedAccessSignature&quot;,&quot;tags&quot;:null},&quot;protocol&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties$Protocol&quot;,&quot;name&quot;:&quot;HTTPS&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties$Protocol&quot;,&quot;name&quot;:&quot;HTTP&quot;},{&quot;@type&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties$Protocol&quot;,&quot;name&quot;:&quot;HTTPS&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties.Protocol&quot;,&quot;name&quot;:&quot;protocol&quot;,&quot;tags&quot;:null},&quot;referencedComponent&quot;:{&quot;referenceType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;THIS_COMPONENT&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_TYPE&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties&lt;P extends org.talend.daikon.properties.Properties&gt;.ReferenceType&quot;,&quot;name&quot;:&quot;referenceType&quot;,&quot;tags&quot;:null},&quot;componentInstanceId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;componentInstanceId&quot;,&quot;tags&quot;:null},&quot;referenceDefinitionName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;tAzureStorageConnection&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;referenceDefinitionName&quot;,&quot;tags&quot;:null},&quot;reference&quot;:null,&quot;name&quot;:&quot;referencedComponent&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;testConnection&quot;:{&quot;formtoShow&quot;:null,&quot;name&quot;:&quot;testConnection&quot;,&quot;tags&quot;:null},&quot;BlobSchema&quot;:null,&quot;QueueSchema&quot;:null,&quot;TableSchema&quot;:null,&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
+  </node>
+  <node componentName="tAzureStoragePut" componentVersion="0.28.2" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAzureStoragePut_1"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" show="false" value="QUERYSTORE_TYPE : &quot;BUILT_IN&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter name="PROPERTIES" value="{&quot;@type&quot;:&quot;org.talend.components.azurestorage.blob.tazurestorageput.TAzureStoragePutProperties&quot;,&quot;localFolder&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;Z:/DataImport\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;localFolder&quot;,&quot;tags&quot;:null},&quot;remoteFolder&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;remoteFolder&quot;,&quot;tags&quot;:null},&quot;useFileList&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useFileList&quot;,&quot;tags&quot;:null},&quot;files&quot;:{&quot;fileMask&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;fileMask&quot;,&quot;tags&quot;:null},&quot;newName&quot;:{&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;newName&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;files&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;remoteBlobs&quot;:{&quot;prefix&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;prefix&quot;,&quot;tags&quot;:null},&quot;include&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.Boolean&gt;&quot;,&quot;name&quot;:&quot;include&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;remoteBlobs&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;dieOnError&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;dieOnError&quot;,&quot;tags&quot;:null},&quot;container&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;\&quot;optxbigload\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;container&quot;,&quot;tags&quot;:null},&quot;connection&quot;:{&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;repositoryLocation&quot;:null,&quot;accountKey&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;enc:system.encryption.key.v1:ZrPSEDurTaOmdP4lZVqM/ESf1knBpFUyNLiGA86H&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;accountKey&quot;,&quot;tags&quot;:null},&quot;accountName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:&quot;\&quot;\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;accountName&quot;,&quot;tags&quot;:null},&quot;useSharedAccessSignature&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:true},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:false,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useSharedAccessSignature&quot;,&quot;tags&quot;:null},&quot;sharedAccessSignature&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;},&quot;storedValue&quot;:&quot;\&quot;https://optxv2diag.blob.core.windows.net/?sv=2019-12-12&amp;ss=bfqt&amp;srt=sco&amp;sp=rwdlacupx&amp;se=2021-11-12T07:41:23Z&amp;st=2020-11-11T23:41:23Z&amp;spr=https&amp;sig=98thv5p%2BizuYlmi3%2BWcOXeEpYeALWDs8ajopBfNzuMY%3D\&quot;&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;sharedAccessSignature&quot;,&quot;tags&quot;:null},&quot;protocol&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;HIDDEN&quot;}]},&quot;storedValue&quot;:{&quot;@type&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties$Protocol&quot;,&quot;name&quot;:&quot;HTTPS&quot;},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;SUPPORT_CONTEXT&quot;:true,&quot;IS_DYNAMIC&quot;:false,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties$Protocol&quot;,&quot;name&quot;:&quot;HTTP&quot;},{&quot;@type&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties$Protocol&quot;,&quot;name&quot;:&quot;HTTPS&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.azurestorage.tazurestorageconnection.TAzureStorageConnectionProperties.Protocol&quot;,&quot;name&quot;:&quot;protocol&quot;,&quot;tags&quot;:null},&quot;referencedComponent&quot;:{&quot;referenceType&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.EnumProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;THIS_COMPONENT&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_TYPE&quot;},{&quot;@type&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties$ReferenceType&quot;,&quot;name&quot;:&quot;COMPONENT_INSTANCE&quot;}]},&quot;currentType&quot;:&quot;org.talend.components.api.properties.ComponentReferenceProperties&lt;P extends org.talend.daikon.properties.Properties&gt;.ReferenceType&quot;,&quot;name&quot;:&quot;referenceType&quot;,&quot;tags&quot;:null},&quot;componentInstanceId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;componentInstanceId&quot;,&quot;tags&quot;:null},&quot;referenceDefinitionName&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;tAzureStorageConnection&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;REPOSITORY_VALUE&quot;:null},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;referenceDefinitionName&quot;,&quot;tags&quot;:null},&quot;reference&quot;:null,&quot;name&quot;:&quot;referencedComponent&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;testConnection&quot;:{&quot;formtoShow&quot;:null,&quot;name&quot;:&quot;testConnection&quot;,&quot;tags&quot;:null},&quot;BlobSchema&quot;:null,&quot;QueueSchema&quot;:null,&quot;TableSchema&quot;:null,&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;schema&quot;:{&quot;schema&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.SchemaProperty&quot;,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;{\&quot;type\&quot;:\&quot;record\&quot;,\&quot;name\&quot;:\&quot;EmptyRecord\&quot;,\&quot;fields\&quot;:[]}&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;org.apache.avro.Schema&quot;,&quot;name&quot;:&quot;schema&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;schema&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;name&quot;:&quot;root&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="-5" offsetLabelY="-1" posX="1472" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" show="false" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.sandbox_local_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.sandbox_local_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" show="false" value="context.sandbox_local_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.sandbox_local_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.sandbox_local_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:T/woeXfFuinHJc/cNrhesFq5p4RcTc8ROCh74x8jbW9c74Gr+T2gfSinh8Vo1lisDeGFugDkPr1mxA=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_9yILABInEeuzudRwIlThHw - STG_FactInternetSales"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="context.TGT_TableName "/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;BULK INSERT OAS_CDS_AuditTrail&#13;&#10;FROM 'optxbigload/CDS_AuditTrail_ToLoad.csv'&#13;&#10;WITH ( DATA_SOURCE = 'optxv2diag' ,&#13;&#10;BATCHsize = 1000000,&#13;&#10;FIELDTERMINATOR=';', ROWTERMINATOR='0x0A');&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.sandbox_local_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="ProductKey"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="STG_FactInternetSales" name="tDBRow_1">
+      <column comment="" key="false" length="10" name="ProductKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="OrderDateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DueDateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ShipDateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CustomerKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PromotionKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CurrencyKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SalesTerritoryKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="20" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="SalesOrderLineNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="OrderQuantity" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UnitPrice" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ExtendedAmount" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="53" name="UnitPriceDiscountPct" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="53" name="DiscountAmount" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ProductStandardCost" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="TotalProductCost" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="SalesAmount" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CustomerPONumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="OrderDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DueDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="ShipDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="STG_FactInternetSales" name="REJECT">
+      <column comment="" key="false" length="10" name="ProductKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="OrderDateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DueDateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ShipDateKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CustomerKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PromotionKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CurrencyKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SalesTerritoryKey" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="20" name="SalesOrderNumber" nullable="false" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="3" name="SalesOrderLineNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="3" name="RevisionNumber" nullable="false" pattern="" precision="0" sourceType="TINYINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="OrderQuantity" nullable="false" pattern="" precision="0" sourceType="SMALLINT" type="id_Short" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UnitPrice" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ExtendedAmount" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="53" name="UnitPriceDiscountPct" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="53" name="DiscountAmount" nullable="false" pattern="" precision="0" sourceType="FLOAT" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ProductStandardCost" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="TotalProductCost" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="SalesAmount" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="TaxAmt" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Freight" nullable="false" pattern="" precision="0" sourceType="VARBINARY" type="id_Object" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CarrierTrackingNumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="25" name="CustomerPONumber" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="OrderDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="DueDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="ShipDate" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfput_tgt_table" lineStyle="0" metaname="copyOfput_tgt_table" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DI_CREATE_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LoginID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EmployeeNationalIDAlternateKey"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_Is_Archived"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_Archived_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Employee_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Gender"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_Is_Deleted"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_PID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BaseRate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_SOR_SK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StartDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PayFrequency"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Phone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Last_Update_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HireDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrentFlag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STG_DimEmployee_V2_SK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SalariedFlag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Status"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SickLeaveHours"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ParentEmployeeKey"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_Deleted_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SalesPersonFlag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Title"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MiddleName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EndDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EmailAddress"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DI_MODIFY_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EmergencyContactPhone"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MaritalStatus"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RowVersion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RowVersion_Bigint"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VacationHours"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DepartmentName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Create_Date"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EmergencyContactName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BirthDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RankID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PlayerID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SystemRankID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ExcludePlayerInTierJob"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastSysCalcDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UpdateDatetime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ManualRankID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OAS_PlayerRank_sk"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MachineID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TransactionType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccountID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GamingDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Comments"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Amount"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LocationID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ShiftID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ExpirationRuleID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AccountType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TransactionID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ExpirationDatetime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LegacyID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ReferenceID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UserID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ExternalTransactionID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="InsertedDatetime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OAS_Transactions_sk"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FrontIn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EndTime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PtsEarned"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TWin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CompEarned"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Shift_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PointCalc_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RatedByUser_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OAS_CDS_AuditTrail_SK"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PromoDollarsEarned"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DollarsEarned"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="User_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PromoPtsEarned"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CreditIn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PlayerSkill"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TimePlayed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SlotNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StartTime"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="StatType"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RawAverageBetTimesTime3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RawAverageBetTimesTime2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RawAverageBetTimesTime1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="JackPot"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Denomination"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TableNumber"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PlayerSpeed"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CashOut"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MoneyPlay"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CashIn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ChipsIn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Pit"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PromoPlay"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Detail_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="OCR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Location"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Location_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AuditEvent_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AuditDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AuditGamingdate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Casino_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Application_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="AuditTrail_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Timestamp"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfput_tgt_table"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tAzureStorageConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tAzureStorageConnection_1" offsetLabelX="0" offsetLabelY="0" source="tAzureStorageConnection_1" target="tAzureStoragePut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tAzureStoragePut_1" offsetLabelX="0" offsetLabelY="0" source="tAzureStoragePut_1" target="tDBRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAzureStorageConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAzureStoragePut_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cf68a305-8890-4d19-8139-67b978c7bddf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>moapV+Uvv8eMnLq5T0li3WU81iih6PL1KkEev0e2LAKEbZIzOwY9qJgg6a2lyb3wwhBU6Bo7nV6/&#13;
+oP2YN9FXjg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_11b5f874-5cf7-4836-ba1b-1d2f7c435275"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eLCTBlcIWJaTfyTXBcawLqyCOt4MFvvbI2iWzlDRgiVmQIYq2HrDWaRIL3Zv3vqUm5LUbWuhPBKw&#13;
+5ntkKaUY/g==</DigestValue></Reference></SignedInfo><SignatureValue>MfxnrFVdR+6zLd/9zaXXFjCFsqJ7C+dFNY7GplszDZLrEQNXNexb6GyoKc5/52sG1DlaVqU7NUsb&#13;
+7XwVjNZDXKl4vi6gS+E1HuyHKBatruSSWtDUq7uOuSlQaydxJYU5faE7gQaySYqVPhk+7sH8RCnO&#13;
+kyJ3p5AB9xG59N8hjNSp112Bp5RL10fxHueGN/Ay6bZCOgvdH+ruZerenmjx5fNWs8DvX6XwzVRI&#13;
+45tXvFPvTWi+YgKqkePrIA0R7Ao9z2dMEozyIVMY1bS9G/h4baR2kr/zBfMEzc9ivES4fJFlkRZG&#13;
+1dkjFt3OZNdpJYvzPsz/a13nVzUDSt7zJrtP6A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_11b5f874-5cf7-4836-ba1b-1d2f7c435275" Target="#_cf68a305-8890-4d19-8139-67b978c7bddf"><Timestamp>2023-07-25 21:03:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

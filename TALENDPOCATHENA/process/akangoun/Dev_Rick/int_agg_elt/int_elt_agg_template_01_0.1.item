@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_loc"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:TaJQUWeqU1UmUK/AUVXz6SpUsanMGIIXi3nY77mc1Sb2VcAf"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_LOC"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:p8OUAA0T4HEcXZdS4KEhzqoohlfmp1YKHYIlVWEXnnmQh6A0"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:XCS965kmjBOCg+ETr7TOc3J4cS9qPyPSgVeU/7AcekvbFMO9"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="stg_loc"/>
+  </context>
+  <context confirmationNeeded="false" name="LOC">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_loc"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:+d7Hi3pn0Hzzt1OHWeFtl7fP13IKLYUkA9mTRwY5GpwLZTMu"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_LOC"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:78Dk+MwxVbSWT4ndrQgMia2vA3VSlKxKq3uRCCmylmQvdU1G"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:VkUo1ZLzuVpHw2m27Zd6Te6OPOP4oAgtouLHAkLmHWFPNxBf"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="stg_loc"/>
+  </context>
+  <context confirmationNeeded="false" name="MD_SOR">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_dev"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:TxBv9v27sSpSxlL2Xj1xhZFXMtErLTN0FNDzbRB/vkq8oarT4efuVGw="/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_LOC"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:aplX1TwjoqpuPUpanZNYH9nUM3mqnK9bm2fU00IcVOvJorep"/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:ylvt23Yn0e6KKUmfpCsDg3Q/OOnpia/SuXN6arH5MWmrrEqKoYA2v0M="/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="int_tst"/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_tst"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:9qnqLG02PhQaFHxpErfQtBj8X4pPHEENt2FCaK3+QcHQz3dw7v6uVwM="/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_UAT"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:L36eNeMVTKHLq4IiLpu7KLe3EUKz7Y0mrUNZSZWth5q/MroAm1MJ+U8="/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:eOtUP2zeQOZjayshkbiOPMHlshQwUaBTQQamDa4qaSLjzrBfeKnTg+8="/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="int_uat"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_dev"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:BEMjVK6/sSP4mNHijtmCiLkHdyZzpzBNNfK7i73C1HnUeR0b+qaDt+U="/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_DEV"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:hrIeN1xbcZWXjQrXbu09jPAgp5k5v5gcIK0mUAWFnU/JkLaR0hi3ihM="/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:B6XIA0nlhyCbKxsq8q9LiCZrU7EBlF4EF002ZtDLvgQ0uOSkdd9lY+c="/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="int_dev"/>
+  </context>
+  <context confirmationNeeded="false" name="TST">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_tst"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:3eAj7KtNpMbMvlokVEJfuQpKrO+EatuAKriv49EDsf6Nernonw4vTpo="/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_TST"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:AQiFUhKMnBncmQQaxtOCuGcOUvAbrBruADmjhdylPrgX3xfgig/1gM8="/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:zHqgCu5mpEEKYAvvnS7pU31geZA54kbVtV8YY91ccwLNquAruKS6T1I="/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="int_tst"/>
+  </context>
+  <context confirmationNeeded="false" name="SBX">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="sandbox_loc"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:Roapj7l+y9sCjOhJBZFickssNBUBKn2VGUUG5p7yGKYSIVhqZEuI7rU="/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_DEV"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:CgP5Z0QcGqIX56zmDdy1jzGB4G+8rm/1pfYwhckMoRRyM10hwXfHjnQ="/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:1v5y91UIzmXHh637c+b7CXPePvJc5jpGegy7pdZBe5s7PQja00CEYBw="/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="sandbox_loc"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_tst"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:UB5++N/P1yUjq+mrlFMH2/nXGmb1xoKYkdEX6Ml6W7KTzDm4YjrpqP8="/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Server" prompt="DI_CNTL_Server?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="DI_CNTL_Login" prompt="DI_CNTL_Login?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="DI_CNTL_Database" prompt="DI_CNTL_Database?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="DI_CNTL_UAT"/>
+    <contextParameter comment="" name="DI_CNTL_Port" prompt="DI_CNTL_Port?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="1433"/>
+    <contextParameter comment="" name="DI_CNTL_AdditionalParams" prompt="DI_CNTL_AdditionalParams?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value=""/>
+    <contextParameter comment="" name="DI_CNTL_Schema" prompt="DI_CNTL_Schema?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="DI_CNTL_Password" prompt="DI_CNTL_Password?" promptNeeded="false" repositoryContextId="_hjcBYA7qEeuf9oDbYCmqtA" type="id_Password" value="enc:system.encryption.key.v1:yi9zAjxlOrK/MWXj+CarqB+wS0Q4J+mGXCGhIw3SSXQjy0szFoTa2hM="/>
+    <contextParameter comment="" name="int_schema_Login" prompt="int_schema_Login?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="int_schema_Server" prompt="int_schema_Server?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" name="int_schema_Database" prompt="int_schema_Database?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="int_uat"/>
+    <contextParameter comment="" name="int_schema_AdditionalParams" prompt="int_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value=""/>
+    <contextParameter comment="" name="int_schema_Password" prompt="int_schema_Password?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_Password" value="enc:system.encryption.key.v1:NjKdAORBGoAK7u+NvfsIT10RtgZTQUVAPg1HHoJvW6W3x5qlbweFqAs="/>
+    <contextParameter comment="" name="int_schema_Schema" prompt="int_schema_Schema?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="int_schema_Port" prompt="int_schema_Port?" promptNeeded="false" repositoryContextId="_mb_wcFIBEeuIAM6M8xuWrw" type="id_String" value="1433"/>
+  </context>
+  <parameters>
+    <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+m1S4vUf+QwQfHxOA7qFr4sL9sgtK5zsestzVaY9"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/TalendWorkspaceCloud/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FT7VrFDzk1hZuQXZfAAxwgXZm9cdJxMyLPd9Ut8H"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_2dCyAA2AEeu1TPPsnJu-RQ" name="DataOperation"/>
+    <routinesParameter id="_2f1nUA2AEeu1TPPsnJu-RQ" name="Mathematical"/>
+    <routinesParameter id="_2ga2IA2AEeu1TPPsnJu-RQ" name="Numeric"/>
+    <routinesParameter id="_2g-20A2AEeu1TPPsnJu-RQ" name="Relational"/>
+    <routinesParameter id="_2jD6cA2AEeu1TPPsnJu-RQ" name="SQLike"/>
+    <routinesParameter id="_2hWqQA2AEeu1TPPsnJu-RQ" name="StringHandling"/>
+    <routinesParameter id="_2h1ycA2AEeu1TPPsnJu-RQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_2iFDAA2AEeu1TPPsnJu-RQ" name="TalendDate"/>
+    <routinesParameter id="_2iw_gA2AEeu1TPPsnJu-RQ" name="TalendStringUtil"/>
+    <routinesParameter id="_2ieroA2AEeu1TPPsnJu-RQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_as0zkFIBEeuIAM6M8xuWrw"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.int_schema_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.int_schema_Port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.int_schema_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.int_schema_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.int_schema_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gLXTiVRhwA9S94sOgWlE/g0cz39K+UP2TEIWFTUYPDXUR4Jj83KGDwEpMPCNVa09lJYSto4dwg=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.int_schema_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSQLTemplateAggregate" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateAggregate_1"/>
+    <elementParameter field="CLOSED_LIST" name="DBTYPE" value="MSSQL"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_AS400" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DB2" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_FIREBIRD" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_GREENPLUM" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_HIVE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INGRES" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INTERBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MSSQL" value="tDBConnection_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MYSQL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DBORACLE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_PARACCEL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGREPLUS" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGRE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SQLITE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SYBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_TERADATA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_VERTICA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SNOWFLAKE" show="false" value=""/>
+    <elementParameter field="TEXT" name="DATABASE_NAME" value="&quot;stg_tst&quot;"/>
+    <elementParameter field="TEXT" name="TABLE_NAME" value="&quot;INT_FCT_SlotPlay_Completed&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_BCfsgBfvEeuUr4792Oip2g - INT_FCT_SlotPlay_Completed"/>
+    <elementParameter field="TEXT" name="TABLE_NAME_TARGET" value="&quot;OPTX_AGG_SlotTotals_Daily_V1&quot;"/>
+    <elementParameter field="TABLE" name="OPERATION">
+      <elementValue elementRef="OUTPUT_COLUMN" value="GamesPlayed"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="GamesPlayed"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Jackpot"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="Jackpot"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="NumberOfRatedPlayers"/>
+      <elementValue elementRef="FUNCTION" value="count(distinct @COLUMN)"/>
+      <elementValue elementRef="INPUT_COLUMN" value="CardNumber"/>
+      <elementValue elementRef="IGNORE_NULL" value="true"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="NumberOfTotalPlayers"/>
+      <elementValue elementRef="FUNCTION" value="count"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PlayID"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUPBY">
+      <elementValue elementRef="OUTPUT_COLUMN" value="PlayGameDay_SK"/>
+      <elementValue elementRef="INPUT_COLUMN" value="PlaySession_SK"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="Slot_SK"/>
+      <elementValue elementRef="INPUT_COLUMN" value="SlotMastID"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="PlayGameDay"/>
+      <elementValue elementRef="INPUT_COLUMN" value="GamingDate"/>
+    </elementParameter>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TEXT" name="SQLPATTERN_DB_NAME" show="false" value="Generic"/>
+    <elementParameter field="TABLE" name="SQLPATTERN_VALUE">
+      <elementValue elementRef="SQLPATTERNLIST" value="_2joiMA2AEeu1TPPsnJu-RQ--Aggregate"/>
+    </elementParameter>
+    <metadata connector="TABLE" label="INT_FCT_SlotPlay_Completed" name="tSQLTemplateAggregate_1">
+      <column comment="" key="true" length="19" name="PlaySession_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Slot_SCD_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Slot_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Slot_PlaySession_No" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Player_SCD_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Player_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Player_PlaySession_No" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Player_Rated_YN" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="PlaySession_Start_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="PlaySession_End_DT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlaySession_Length_sec" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CashableBet" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="NonCashableBet" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PromoBet" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CashIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="NonCashableIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PromoIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="VoucherIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="VoucherOut" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="GamesPlayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="GamesWon" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="TheoWin" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ActualWin" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Jackpot" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayerTrip_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="10" name="OPTX_Customer_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="10" name="OPTX_Property_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PlayID" nullable="false" pattern="" precision="0" sourceType="BIGINT" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SlotMastID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="CardNumber" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="GamingDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="BeginDatetime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="27" name="EndDatetime" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="DATETIME2" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="EndTime" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="7" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SecondsPlayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CoinIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PromoPlayed" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CashPlayed" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CoinOut" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UnrealizedWinMin" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UnrealizedWinMax" nullable="false" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Points" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameMonth_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('NoneProvided')'" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="SCHEMA_TARGET" label="OPTX_AGG_SlotTotals_Daily_V1" name="SCHEMA_TARGET">
+      <column comment="" key="false" length="10" name="Slot_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="TotalSessionsLength_sec" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NumberOfSlotsPlayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NumberOfTotalPlayers" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NumberOfRatedPlayers" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NumberOfUnratedPlayers" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CashableBet" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="NonCashableBet" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PromoBet" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CashIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="NonCashableIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="PromoIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="VoucherIn" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="VoucherOut" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="GamesPlayed" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="GamesWon" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="TheoWin" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ActualWin" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Jackpot" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="Taxes" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="BillAcceptnacePct" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="JackpotResponseTime" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="7" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="16" name="ChangeLightResponseTime" nullable="true" pattern="&quot;HH:mm:ss&quot;" precision="7" sourceType="TIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="AvgUtilization" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DaysOnFloor" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="OPTX_Customer_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="OPTX_Property_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tSQLTemplateCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateCommit_1"/>
+    <elementParameter field="CLOSED_LIST" name="DBTYPE" value="MSSQL"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_AS400" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DB2" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_FIREBIRD" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_GREENPLUM" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_HIVE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INGRES" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INTERBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MSSQL" value="tDBConnection_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MYSQL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DBORACLE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_PARACCEL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGREPLUS" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGRE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SQLITE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SYBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_TERADATA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_VERTICA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SNOWFLAKE" show="false" value=""/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TEXT" name="SQLPATTERN_DB_NAME" show="false" value="Generic"/>
+    <elementParameter field="TABLE" name="SQLPATTERN_VALUE">
+      <elementValue elementRef="SQLPATTERNLIST" value="_2kCK0A2AEeu1TPPsnJu-RQ--Commit"/>
+    </elementParameter>
+  </node>
+  <node componentName="DI_CNTL_Job_Tracking_Stats_ROOT" componentVersion="8.1" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DI_CNTL_Job_Tracking_Stats_ROOT_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="START" show="false" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="DI_CNTL_Job_Tracking_Stats_ROOT"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_as0zkFIBEeuIAM6M8xuWrw"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.int_schema_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.int_schema_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.int_schema_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.int_schema_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.int_schema_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bvFdf95eDARotR0RWyfS7/D0r2olxArXcHIq5hPRyilVOvhlUTcF7XasDL1qSFZRAxhYvehwOA=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" show="false" value="_BCfsgBfvEeuUr4792Oip2g - INT_AGG_SlotTotals_Daily_V1"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;INT_AGG_SlotTotals_Daily_V1&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;truncate table INT_AGG_SlotTotals_Daily_V1&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.int_schema_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="SlotTotals_Daily_SK"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="INT_AGG_SlotTotals_Daily_V1" name="tDBRow_1">
+      <column comment="" key="true" length="19" name="SlotTotals_Daily_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Slot_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="TotalSessionsLength_sec" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ActualWin" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="10" name="OPTX_Customer_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="10" name="OPTX_Property_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((-99))" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('none_given')'" key="false" length="20" name="DI_PID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="INT_AGG_SlotTotals_Daily_V1" name="REJECT">
+      <column comment="" key="true" length="19" name="SlotTotals_Daily_SK" nullable="false" pattern="" precision="0" sourceType="BIGINT IDENTITY" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Slot_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PlayGameDay_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="TotalSessionsLength_sec" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="ActualWin" nullable="true" pattern="" precision="4" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="10" name="OPTX_Customer_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((1))" key="false" length="10" name="OPTX_Property_SK" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="((-99))" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('none_given')'" key="false" length="20" name="DI_PID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSQLTemplateFilterRows" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateFilterRows_1"/>
+    <elementParameter field="CLOSED_LIST" name="DBTYPE" value="MSSQL"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_AS400" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DB2" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_FIREBIRD" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_GREENPLUM" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_HIVE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INGRES" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INTERBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MSSQL" value="tDBConnection_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MYSQL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DBORACLE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_PARACCEL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGREPLUS" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGRE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SQLITE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SYBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_TERADATA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_VERTICA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SNOWFLAKE" show="false" value=""/>
+    <elementParameter field="TEXT" name="DATABASE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLE_NAME_TARGET" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="WHERE_CLAUSE" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TEXT" name="SQLPATTERN_DB_NAME" show="false" value="Generic"/>
+    <elementParameter field="TABLE" name="SQLPATTERN_VALUE">
+      <elementValue elementRef="SQLPATTERNLIST" value="_2k5tgA2AEeu1TPPsnJu-RQ--FilterRow"/>
+    </elementParameter>
+    <metadata connector="TABLE" name="tSQLTemplateFilterRows_1"/>
+    <metadata connector="SCHEMA_TARGET" name="SCHEMA_TARGET"/>
+  </node>
+  <node componentName="tSQLTemplateFilterColumns" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateFilterColumns_1"/>
+    <elementParameter field="CLOSED_LIST" name="DBTYPE" value="MYSQL"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_AS400" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DB2" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_FIREBIRD" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_GREENPLUM" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_HIVE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INGRES" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_INTERBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MSSQL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_MYSQL" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_DBORACLE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_PARACCEL" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGREPLUS" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_POSTGRE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SQLITE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SYBASE" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_TERADATA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_VERTICA" show="false" value=""/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION_SNOWFLAKE" show="false" value=""/>
+    <elementParameter field="TEXT" name="DATABASE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLE_NAME_TARGET" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="TABLE_SCHEMA"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="TEXT" name="SQLPATTERN_DB_NAME" show="false" value="Generic"/>
+    <elementParameter field="TABLE" name="SQLPATTERN_VALUE">
+      <elementValue elementRef="SQLPATTERNLIST" value="_2krEAA2AEeu1TPPsnJu-RQ--FilterColumns"/>
+    </elementParameter>
+    <metadata connector="TABLE" name="tSQLTemplateFilterColumns_1"/>
+    <metadata connector="SCHEMA_TARGET" name="SCHEMA_TARGET"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tSQLTemplateAggregate_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSQLTemplateAggregate_1" offsetLabelX="0" offsetLabelY="0" source="tSQLTemplateAggregate_1" target="tSQLTemplateCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateAggregate_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DI_CNTL_Job_Tracking_Stats_ROOT_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateFilterRows_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSQLTemplateFilterColumns_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_32412a65-6d51-4567-b2d0-3d5b98b33387"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FdgBvGCTdmHXpkEisCemi453qLG2LxJPKcart2HaoIjmaMPtTzSNW8GehDLS5EtdZmvJfYQP4Ryb&#13;
+BChayrvU3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b4ee44bf-98b9-4987-8da5-a76cb7d65ead"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g7igB/34v2yNwYySOPDDgw5StHNFfDBTQUCp3qSMI3ip/qghjWfxG0Vq4GU1cjoV7CixgFZ/+HYf&#13;
+pF2tfA7mug==</DigestValue></Reference></SignedInfo><SignatureValue>AJDgue4JEonG+DemuPdXkbkWjMvQ+uPqspv9CgaWxK5lq9HRk+rT0ZAJpInXmTTh9eRJexc3t1uY&#13;
+r7qnn81IHXdiPSwGfZ5UU99n088nSvcjnZJP1Tp6q3p1dZBfrkJornR7Dyz8PgOsYusmOs7DAF2r&#13;
+8bALzgL2P8LhdICQI/u4x6cUMTjdXN2QEvY5hNzikEbYcuxshS2N4G3pZkpR0507m8zGPm3mS31+&#13;
+zJp40RZoitzmrY0TAwVYXgnPEMGW/UGL8s7fEbdizoTG+0FHbxJZY8co//L6OLhhZyqLGE6VA9Q5&#13;
+z+M5GfQn5eBJy6UPT/UhHpcQ6uYPrx1+PjpYJg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b4ee44bf-98b9-4987-8da5-a76cb7d65ead" Target="#_32412a65-6d51-4567-b2d0-3d5b98b33387"><Timestamp>2023-07-25 21:01:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

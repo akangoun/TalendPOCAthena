@@ -1,0 +1,534 @@
+{
+  "itemId" : "_Q7HO4B4tEeuI_YtsupsPTw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_RxeLQBfvEeuUr4792Oip2g",
+    "parameterList" : [ {
+      "id" : "_2ap9gyUHEeujM7NZEPUzCg",
+      "name" : "stg_schema_Database"
+    }, {
+      "id" : "_2ap9hSUHEeujM7NZEPUzCg",
+      "name" : "stg_schema_Password"
+    }, {
+      "id" : "_2ap9giUHEeujM7NZEPUzCg",
+      "name" : "stg_schema_Server"
+    }, {
+      "id" : "_2ap9gSUHEeujM7NZEPUzCg",
+      "name" : "stg_schema_Login"
+    }, {
+      "id" : "_2ap9hyUHEeujM7NZEPUzCg",
+      "name" : "stg_schema_Port"
+    }, {
+      "id" : "_2ap9hiUHEeujM7NZEPUzCg",
+      "name" : "stg_schema_Schema"
+    }, {
+      "id" : "_2ap9hCUHEeujM7NZEPUzCg",
+      "name" : "stg_schema_AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_Pb92ABf7EeuUr4792Oip2g",
+    "parameterList" : [ {
+      "id" : "_2aNRlyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Port"
+    }, {
+      "id" : "_2aNRlSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Password"
+    }, {
+      "id" : "_2aNRkyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Database"
+    }, {
+      "id" : "_2aNRkSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Login"
+    }, {
+      "id" : "_2aNRkiUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Server"
+    }, {
+      "id" : "_2aNRliUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Schema"
+    }, {
+      "id" : "_2aNRlCUHEeujM7NZEPUzCg",
+      "name" : "OASIS_AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_dgXfsBnMEemh99EK0ZkCQQ",
+    "parameterList" : [ {
+      "id" : "_1RidaxMAEeu_N67zfaBnvw",
+      "name" : "DI_SCD"
+    }, {
+      "id" : "_djbxoBYnEeuQAfXX0tarVA",
+      "name" : "TGT_Criteria_GetMax_RowVer"
+    }, {
+      "id" : "_1RidYhMAEeu_N67zfaBnvw",
+      "name" : "TGT_MaxModifyDate"
+    }, {
+      "id" : "_1RidbxMAEeu_N67zfaBnvw",
+      "name" : "TGT_TableRowCount_Before"
+    }, {
+      "id" : "_1RidchMAEeu_N67zfaBnvw",
+      "name" : "SRC_Password"
+    }, {
+      "id" : "_1RidhxMAEeu_N67zfaBnvw",
+      "name" : "SOR_Name"
+    }, {
+      "id" : "_rILhABeQEeuTJfcLUJpqRw",
+      "name" : "DI_CDC_Type"
+    }, {
+      "id" : "_91Vu8CA8EeuaWY5JFvxBOw",
+      "name" : "DI_JobContext"
+    }, {
+      "id" : "_djbxohYnEeuQAfXX0tarVA",
+      "name" : "TGT_Criteria_GetMax_CreateDate"
+    }, {
+      "id" : "_1RidhBMAEeu_N67zfaBnvw",
+      "name" : "TGT_RowVersion_Criteria_GetMax"
+    }, {
+      "id" : "_91Vu9yA8EeuaWY5JFvxBOw",
+      "name" : "TGT_Criteria_NK_VerNo"
+    }, {
+      "id" : "_91Vu8SA8EeuaWY5JFvxBOw",
+      "name" : "DI_JobName"
+    }, {
+      "id" : "_1RidfRMAEeu_N67zfaBnvw",
+      "name" : "TGT_AdditionalParams"
+    }, {
+      "id" : "_1RidiRMAEeu_N67zfaBnvw",
+      "name" : "TGT_Name"
+    }, {
+      "id" : "_1RidgBMAEeu_N67zfaBnvw",
+      "name" : "SCD_Start"
+    }, {
+      "id" : "_1RidcBMAEeu_N67zfaBnvw",
+      "name" : "SRC_Login"
+    }, {
+      "id" : "_1RiddBMAEeu_N67zfaBnvw",
+      "name" : "SRC_SOR_SK"
+    }, {
+      "id" : "_1RidaRMAEeu_N67zfaBnvw",
+      "name" : "DI_Schema"
+    }, {
+      "id" : "_91Vu9SA8EeuaWY5JFvxBOw",
+      "name" : "TGT_Criteria_Combo2_String"
+    }, {
+      "id" : "_1RidZRMAEeu_N67zfaBnvw",
+      "name" : "SRC_MaxCreateDate"
+    }, {
+      "id" : "_1RidexMAEeu_N67zfaBnvw",
+      "name" : "TGT_Port"
+    }, {
+      "id" : "_1RidZBMAEeu_N67zfaBnvw",
+      "name" : "TGT_TableName"
+    }, {
+      "id" : "_1RidfhMAEeu_N67zfaBnvw",
+      "name" : "Source_Key"
+    }, {
+      "id" : "_1RidfxMAEeu_N67zfaBnvw",
+      "name" : "SCDType2_1"
+    }, {
+      "id" : "_1RidiBMAEeu_N67zfaBnvw",
+      "name" : "SRC_Name"
+    }, {
+      "id" : "_0nIpwBVWEeuUla4iiJBSdg",
+      "name" : "Target_LineTotal"
+    }, {
+      "id" : "_Vuzr4BVwEeuUla4iiJBSdg",
+      "name" : "SRC_MaxRowVersion"
+    }, {
+      "id" : "_1RiddhMAEeu_N67zfaBnvw",
+      "name" : "SRC_AdditionalParams"
+    }, {
+      "id" : "_1RidehMAEeu_N67zfaBnvw",
+      "name" : "TGT_Login"
+    }, {
+      "id" : "_91Vu9CA8EeuaWY5JFvxBOw",
+      "name" : "TGT_Criteria_Combo2_Int"
+    }, {
+      "id" : "_1RidgRMAEeu_N67zfaBnvw",
+      "name" : "Initial_Load_IND"
+    }, {
+      "id" : "_1RidbBMAEeu_N67zfaBnvw",
+      "name" : "SRC_Server"
+    }, {
+      "id" : "_0nIpwhVWEeuUla4iiJBSdg",
+      "name" : "Target_LineUpdated"
+    }, {
+      "id" : "_1RidZhMAEeu_N67zfaBnvw",
+      "name" : "SRC_MaxModifyDate"
+    }, {
+      "id" : "_1RidZxMAEeu_N67zfaBnvw",
+      "name" : "SRC_MaxSeqNo"
+    }, {
+      "id" : "_91Vu9iA8EeuaWY5JFvxBOw",
+      "name" : "TGT_Criteria_GUID"
+    }, {
+      "id" : "_1RidhhMAEeu_N67zfaBnvw",
+      "name" : "TGT_Update_Criteria"
+    }, {
+      "id" : "_1RidcxMAEeu_N67zfaBnvw",
+      "name" : "TGT_Criteria_GetMax"
+    }, {
+      "id" : "_1RidcRMAEeu_N67zfaBnvw",
+      "name" : "SRC_Port"
+    }, {
+      "id" : "_1RidghMAEeu_N67zfaBnvw",
+      "name" : "SRC_RankQuery"
+    }, {
+      "id" : "_1RidbRMAEeu_N67zfaBnvw",
+      "name" : "SRC_Database"
+    }, {
+      "id" : "_91Vu8iA8EeuaWY5JFvxBOw",
+      "name" : "DI_JobStatus"
+    }, {
+      "id" : "_1RideRMAEeu_N67zfaBnvw",
+      "name" : "TGT_Schema"
+    }, {
+      "id" : "_0nIpxhVWEeuUla4iiJBSdg",
+      "name" : "Source_Query"
+    }, {
+      "id" : "_1RideBMAEeu_N67zfaBnvw",
+      "name" : "TGT_Database"
+    }, {
+      "id" : "_1RidYRMAEeu_N67zfaBnvw",
+      "name" : "TGT_MaxCreateDate"
+    }, {
+      "id" : "_0nIpxBVWEeuUla4iiJBSdg",
+      "name" : "Target_LineRejected"
+    }, {
+      "id" : "_1RidfBMAEeu_N67zfaBnvw",
+      "name" : "TGT_Password"
+    }, {
+      "id" : "_91Vu8yA8EeuaWY5JFvxBOw",
+      "name" : "TGT_Criteria_Combo1_String"
+    }, {
+      "id" : "_1RidYxMAEeu_N67zfaBnvw",
+      "name" : "TGT_MaxSeqNo"
+    }, {
+      "id" : "_0nIpwRVWEeuUla4iiJBSdg",
+      "name" : "Target_LineInserted"
+    }, {
+      "id" : "_1RiddxMAEeu_N67zfaBnvw",
+      "name" : "TGT_Server"
+    }, {
+      "id" : "_djbxoRYnEeuQAfXX0tarVA",
+      "name" : "TGT_Criteria_GetMax_UpdateDate"
+    }, {
+      "id" : "_IFbGYBQCEeuLR-lMc9lxEA",
+      "name" : "SRC_RowCount"
+    }, {
+      "id" : "_1RidahMAEeu_N67zfaBnvw",
+      "name" : "DI_CDC"
+    }, {
+      "id" : "_1RidhRMAEeu_N67zfaBnvw",
+      "name" : "TGT_MaxRowVersion"
+    }, {
+      "id" : "_1RiddRMAEeu_N67zfaBnvw",
+      "name" : "TGT_SOR_SK"
+    }, {
+      "id" : "_1RidaBMAEeu_N67zfaBnvw",
+      "name" : "SRC_TableName"
+    }, {
+      "id" : "_0nIpxRVWEeuUla4iiJBSdg",
+      "name" : "Source_NBLines"
+    }, {
+      "id" : "_1RidbhMAEeu_N67zfaBnvw",
+      "name" : "SRC_Schema"
+    }, {
+      "id" : "_1RidgxMAEeu_N67zfaBnvw",
+      "name" : "DeletedTableRowCount_Before"
+    }, {
+      "id" : "_0nIpwxVWEeuUla4iiJBSdg",
+      "name" : "Target_LineDeleted"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_ofxwcB6YEeuEVNt-Y3etfw",
+    "parameterList" : [ {
+      "id" : "_2Z5vkyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Database"
+    }, {
+      "id" : "_2Z5vkSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Login"
+    }, {
+      "id" : "_2Z5vkiUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Server"
+    }, {
+      "id" : "_2Z5vlSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Password"
+    }, {
+      "id" : "_2Z5vlCUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_AdditionalParams"
+    }, {
+      "id" : "_2Z5vlyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Port"
+    }, {
+      "id" : "_2Z5vliUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Schema"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_RxeLQBfvEeuUr4792Oip2g",
+    "parameterList" : [ {
+      "id" : "_0N0Sw22mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Database"
+    }, {
+      "id" : "_0N0SxW2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Password"
+    }, {
+      "id" : "_0N0Swm2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Server"
+    }, {
+      "id" : "_0N0SwW2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Login"
+    }, {
+      "id" : "_0N0Sx22mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Port"
+    }, {
+      "id" : "_0N0Sxm2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Schema"
+    }, {
+      "id" : "_0N0SxG2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_Pb92ABf7EeuUr4792Oip2g",
+    "parameterList" : [ {
+      "id" : "_2aNRlyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Port"
+    }, {
+      "id" : "_2aNRlSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Password"
+    }, {
+      "id" : "_2aNRkyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Database"
+    }, {
+      "id" : "_2aNRkSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Login"
+    }, {
+      "id" : "_2aNRkiUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Server"
+    }, {
+      "id" : "_2aNRliUHEeujM7NZEPUzCg",
+      "name" : "OASIS_Schema"
+    }, {
+      "id" : "_2aNRlCUHEeujM7NZEPUzCg",
+      "name" : "OASIS_AdditionalParams"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_dgXfsBnMEemh99EK0ZkCQQ",
+    "parameterList" : [ {
+      "id" : "_0cuens4vEeyCdd6IuMV3Ag",
+      "name" : "DI_SCD"
+    }, {
+      "id" : "_0cuexs4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax_RowVer"
+    }, {
+      "id" : "_0cuelc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxModifyDate"
+    }, {
+      "id" : "_0cueos4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_TableRowCount_Before"
+    }, {
+      "id" : "_0cuepc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Password"
+    }, {
+      "id" : "_0cueus4vEeyCdd6IuMV3Ag",
+      "name" : "SOR_Name"
+    }, {
+      "id" : "_0cueyc4vEeyCdd6IuMV3Ag",
+      "name" : "DI_CDC_Type"
+    }, {
+      "id" : "_0cueys4vEeyCdd6IuMV3Ag",
+      "name" : "DI_JobContext"
+    }, {
+      "id" : "_0cueyM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax_CreateDate"
+    }, {
+      "id" : "_0cuet84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_RowVersion_Criteria_GetMax"
+    }, {
+      "id" : "_0cue0c4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_NK_VerNo"
+    }, {
+      "id" : "_0cuey84vEeyCdd6IuMV3Ag",
+      "name" : "DI_JobName"
+    }, {
+      "id" : "_0cuesM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_AdditionalParams"
+    }, {
+      "id" : "_0cuevM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Name"
+    }, {
+      "id" : "_0cues84vEeyCdd6IuMV3Ag",
+      "name" : "SCD_Start"
+    }, {
+      "id" : "_0cueo84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Login"
+    }, {
+      "id" : "_0cuep84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_SOR_SK"
+    }, {
+      "id" : "_0cuenM4vEeyCdd6IuMV3Ag",
+      "name" : "DI_Schema"
+    }, {
+      "id" : "_0cuez84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_Combo2_String"
+    }, {
+      "id" : "_0cuemM4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxCreateDate"
+    }, {
+      "id" : "_0cuers4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Port"
+    }, {
+      "id" : "_0cuel84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_TableName"
+    }, {
+      "id" : "_0cuesc4vEeyCdd6IuMV3Ag",
+      "name" : "Source_Key"
+    }, {
+      "id" : "_0cuess4vEeyCdd6IuMV3Ag",
+      "name" : "SCDType2_1"
+    }, {
+      "id" : "_0cueu84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Name"
+    }, {
+      "id" : "_0cuevs4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineTotal"
+    }, {
+      "id" : "_0cuexc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxRowVersion"
+    }, {
+      "id" : "_0cueqc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_AdditionalParams"
+    }, {
+      "id" : "_0cuerc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Login"
+    }, {
+      "id" : "_0cuezs4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_Combo2_Int"
+    }, {
+      "id" : "_0cuetM4vEeyCdd6IuMV3Ag",
+      "name" : "Initial_Load_IND"
+    }, {
+      "id" : "_0cuen84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Server"
+    }, {
+      "id" : "_0cuewM4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineUpdated"
+    }, {
+      "id" : "_0cuemc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxModifyDate"
+    }, {
+      "id" : "_0cuems4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxSeqNo"
+    }, {
+      "id" : "_0cue0M4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GUID"
+    }, {
+      "id" : "_0cueuc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Update_Criteria"
+    }, {
+      "id" : "_0cueps4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax"
+    }, {
+      "id" : "_0cuepM4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Port"
+    }, {
+      "id" : "_0cuetc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_RankQuery"
+    }, {
+      "id" : "_0cueoM4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Database"
+    }, {
+      "id" : "_0cuezM4vEeyCdd6IuMV3Ag",
+      "name" : "DI_JobStatus"
+    }, {
+      "id" : "_0cuerM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Schema"
+    }, {
+      "id" : "_0cuexM4vEeyCdd6IuMV3Ag",
+      "name" : "Source_Query"
+    }, {
+      "id" : "_0cueq84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Database"
+    }, {
+      "id" : "_0cuelM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxCreateDate"
+    }, {
+      "id" : "_0cuews4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineRejected"
+    }, {
+      "id" : "_0cuer84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Password"
+    }, {
+      "id" : "_0cuezc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_Combo1_String"
+    }, {
+      "id" : "_0cuels4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxSeqNo"
+    }, {
+      "id" : "_0cuev84vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineInserted"
+    }, {
+      "id" : "_0cueqs4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Server"
+    }, {
+      "id" : "_0cuex84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax_UpdateDate"
+    }, {
+      "id" : "_0cuevc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_RowCount"
+    }, {
+      "id" : "_0cuenc4vEeyCdd6IuMV3Ag",
+      "name" : "DI_CDC"
+    }, {
+      "id" : "_0cueuM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxRowVersion"
+    }, {
+      "id" : "_0cueqM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_SOR_SK"
+    }, {
+      "id" : "_0cuem84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_TableName"
+    }, {
+      "id" : "_0cuew84vEeyCdd6IuMV3Ag",
+      "name" : "Source_NBLines"
+    }, {
+      "id" : "_0cueoc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Schema"
+    }, {
+      "id" : "_0cuets4vEeyCdd6IuMV3Ag",
+      "name" : "DeletedTableRowCount_Before"
+    }, {
+      "id" : "_0cuewc4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineDeleted"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_ofxwcB6YEeuEVNt-Y3etfw",
+    "parameterList" : [ {
+      "id" : "_2Z5vkyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Database"
+    }, {
+      "id" : "_2Z5vkSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Login"
+    }, {
+      "id" : "_2Z5vkiUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Server"
+    }, {
+      "id" : "_2Z5vlSUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Password"
+    }, {
+      "id" : "_2Z5vlCUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_AdditionalParams"
+    }, {
+      "id" : "_2Z5vlyUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Port"
+    }, {
+      "id" : "_2Z5vliUHEeujM7NZEPUzCg",
+      "name" : "OASIS_ARCH_Schema"
+    } ]
+  } ]
+}

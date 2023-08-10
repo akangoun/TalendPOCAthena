@@ -52,22 +52,130 @@
     } ]
   }, {
     "contextName" : "LOC",
-    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
     "parameterList" : [ {
+      "id" : "_ZLPifmSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date"
+    }, {
+      "id" : "_fvzgNFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date_SK"
+    }, {
       "id" : "_VCDZ9lKBEeuIAM6M8xuWrw",
-      "name" : "date_start"
+      "name" : "SCD_EFFECTIVE_DATE"
     }, {
       "id" : "_VCDZ91KBEeuIAM6M8xuWrw",
-      "name" : "number_of_years"
+      "name" : "OPTX_Customer_SK"
+    }, {
+      "id" : "_As2MqFKHEeuIAM6M8xuWrw",
+      "name" : "SCD_INEFFECTIVE_DATE"
+    }, {
+      "id" : "_YgiFUlQpEeuzK6gdzLMXhA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_vIOI1V56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_ZLPid2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_ZLPif2SUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_ZLPigGSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_tkzgYldKEeu-rrMMNb-Mag",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_ZLPieWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_nvO51GcREeuK9LGz2OYOWw",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_As2Mq1KHEeuIAM6M8xuWrw",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_nHzSpFdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_ZLPie2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_ZLPidmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_As2MqlKHEeuIAM6M8xuWrw",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_ZLPifWSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_ZLPifGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_nvO51WcREeuK9LGz2OYOWw",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_fvzgNVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_EVoixVmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_fvzgM1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_EVoixFmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_ZLPiemSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_bCeDEldJEeu-rrMMNb-Mag",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_fvzgNlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_fvzgN1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_fvzgMVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_N6hcclPHEeu4WpmZyK4U-A",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_fvzgMFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_i9qn8lddEeu-rrMMNb-Mag",
+      "name" : "GameDate_SK"
     }, {
       "id" : "_VCDZ-FKBEeuIAM6M8xuWrw",
-      "name" : "number_of_days"
+      "name" : "OPTX_Property_SK"
     }, {
       "id" : "_VCDZ-VKBEeuIAM6M8xuWrw",
-      "name" : "number_of_months"
+      "name" : "SCD_VERSION"
     }, {
-      "id" : "_RB7LYlKMEeuIAM6M8xuWrw",
-      "name" : "dow_seed"
+      "id" : "_ZLPieGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_fvzgMlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_nHzSpVdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_As2MqVKHEeuIAM6M8xuWrw",
+      "name" : "SCD_LATEST_IND"
+    }, {
+      "id" : "_vIOI1F56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_Substitute"
+    }, {
+      "id" : "_u_qKQldJEeu-rrMMNb-Mag",
+      "name" : "GameDate"
     } ]
   }, {
     "contextName" : "LOC",
@@ -267,121 +375,31 @@
     } ]
   }, {
     "contextName" : "LOC",
-    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_ZLPifmSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date"
-    }, {
-      "id" : "_fvzgNFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date_SK"
-    }, {
       "id" : "_VCDZ9lKBEeuIAM6M8xuWrw",
-      "name" : "SCD_EFFECTIVE_DATE"
+      "name" : "date_start"
     }, {
       "id" : "_VCDZ91KBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Customer_SK"
+      "name" : "number_of_years"
     }, {
-      "id" : "_As2MqFKHEeuIAM6M8xuWrw",
-      "name" : "SCD_INEFFECTIVE_DATE"
-    }, {
-      "id" : "_YgiFUlQpEeuzK6gdzLMXhA",
-      "name" : "Agg_Core_Build_Code"
-    }, {
-      "id" : "_vIOI1V56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_SK"
-    }, {
-      "id" : "_ZLPid2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01"
-    }, {
-      "id" : "_ZLPif2SUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Hour_SK"
-    }, {
-      "id" : "_tkzgYldKEeu-rrMMNb-Mag",
-      "name" : "GameDate_Hour"
-    }, {
-      "id" : "_ZLPieWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02"
-    }, {
-      "id" : "_As2Mq1KHEeuIAM6M8xuWrw",
-      "name" : "DI_PID"
-    }, {
-      "id" : "_nHzSpFdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Time"
-    }, {
-      "id" : "_ZLPie2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03"
-    }, {
-      "id" : "_ZLPidmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_Group_Type"
-    }, {
-      "id" : "_As2MqlKHEeuIAM6M8xuWrw",
-      "name" : "DI_SOR_SK"
-    }, {
-      "id" : "_ZLPifWSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date_SK"
-    }, {
-      "id" : "_ZLPifGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03_Desc"
-    }, {
-      "id" : "_fvzgNVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date_SK"
-    }, {
-      "id" : "_EVoixVmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause2"
-    }, {
-      "id" : "_fvzgM1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_InProgress"
-    }, {
-      "id" : "_EVoixFmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause1"
-    }, {
-      "id" : "_ZLPiemSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02_Desc"
-    }, {
-      "id" : "_bCeDEldJEeu-rrMMNb-Mag",
-      "name" : "InputForGameDate"
-    }, {
-      "id" : "_fvzgNlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date"
-    }, {
-      "id" : "_fvzgN1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date"
-    }, {
-      "id" : "_fvzgMVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Code"
-    }, {
-      "id" : "_N6hcclPHEeu4WpmZyK4U-A",
-      "name" : "Agg_Interval"
-    }, {
-      "id" : "_fvzgMFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_SK"
-    }, {
-      "id" : "_i9qn8lddEeu-rrMMNb-Mag",
-      "name" : "GameDate_SK"
+      "id" : "_3sHV6GjVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
     }, {
       "id" : "_VCDZ-FKBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Property_SK"
+      "name" : "number_of_days"
     }, {
       "id" : "_VCDZ-VKBEeuIAM6M8xuWrw",
-      "name" : "SCD_VERSION"
+      "name" : "number_of_months"
     }, {
-      "id" : "_ZLPieGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01_Desc"
+      "id" : "_3sHV52jVEeuQtaUJNkU7nA",
+      "name" : "date_end"
     }, {
-      "id" : "_fvzgMlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Level"
+      "id" : "_3sHV5mjVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
     }, {
-      "id" : "_nHzSpVdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Hour"
-    }, {
-      "id" : "_As2MqVKHEeuIAM6M8xuWrw",
-      "name" : "SCD_LATEST_IND"
-    }, {
-      "id" : "_vIOI1F56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_Substitute"
-    }, {
-      "id" : "_u_qKQldJEeu-rrMMNb-Mag",
-      "name" : "GameDate"
+      "id" : "_RB7LYlKMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
     } ]
   }, {
     "contextName" : "MD_SOR",
@@ -435,22 +453,130 @@
     } ]
   }, {
     "contextName" : "MD_SOR",
-    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_bCqNUVKIEeuIAM6M8xuWrw",
-      "name" : "date_start"
+      "id" : "_ZLPiaGSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date"
     }, {
-      "id" : "_bCqNUlKIEeuIAM6M8xuWrw",
-      "name" : "number_of_years"
+      "id" : "_fvzgJFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date_SK"
     }, {
-      "id" : "_bCqNU1KIEeuIAM6M8xuWrw",
-      "name" : "number_of_days"
+      "id" : "_8gg90FKAEeuIAM6M8xuWrw",
+      "name" : "SCD_EFFECTIVE_DATE"
     }, {
-      "id" : "_bCqNVFKIEeuIAM6M8xuWrw",
-      "name" : "number_of_months"
+      "id" : "_8gg90VKAEeuIAM6M8xuWrw",
+      "name" : "OPTX_Customer_SK"
     }, {
-      "id" : "_RB7LY1KMEeuIAM6M8xuWrw",
-      "name" : "dow_seed"
+      "id" : "_As2MoFKHEeuIAM6M8xuWrw",
+      "name" : "SCD_INEFFECTIVE_DATE"
+    }, {
+      "id" : "_YgiFUFQpEeuzK6gdzLMXhA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_vIOI0V56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_ZLPiYWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_ZLPiaWSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_ZLPiamSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_tkzgYFdKEeu-rrMMNb-Mag",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_ZLPiY2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_nvO50GcREeuK9LGz2OYOWw",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_As2Mo1KHEeuIAM6M8xuWrw",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_nHzSoFdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_ZLPiZWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_ZLPiYGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_As2MolKHEeuIAM6M8xuWrw",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_ZLPiZ2SUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_ZLPiZmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_nvO50WcREeuK9LGz2OYOWw",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_fvzgJVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_EVoiwVmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_fvzgI1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_EVoiwFmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_ZLPiZGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_bCeDEFdJEeu-rrMMNb-Mag",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_fvzgJlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_fvzgJ1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_fvzgIVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_N6hccFPHEeu4WpmZyK4U-A",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_fvzgIFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_i9qn8FddEeu-rrMMNb-Mag",
+      "name" : "GameDate_SK"
+    }, {
+      "id" : "_8gg90lKAEeuIAM6M8xuWrw",
+      "name" : "OPTX_Property_SK"
+    }, {
+      "id" : "_8gg901KAEeuIAM6M8xuWrw",
+      "name" : "SCD_VERSION"
+    }, {
+      "id" : "_ZLPiYmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_fvzgIlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_nHzSoVdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_As2MoVKHEeuIAM6M8xuWrw",
+      "name" : "SCD_LATEST_IND"
+    }, {
+      "id" : "_vIOI0F56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_Substitute"
+    }, {
+      "id" : "_u_qKQFdJEeu-rrMMNb-Mag",
+      "name" : "GameDate"
     } ]
   }, {
     "contextName" : "MD_SOR",
@@ -650,121 +776,31 @@
     } ]
   }, {
     "contextName" : "MD_SOR",
-    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_ZLPiaGSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date"
+      "id" : "_bCqNUVKIEeuIAM6M8xuWrw",
+      "name" : "date_start"
     }, {
-      "id" : "_fvzgJFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date_SK"
+      "id" : "_bCqNUlKIEeuIAM6M8xuWrw",
+      "name" : "number_of_years"
     }, {
-      "id" : "_8gg90FKAEeuIAM6M8xuWrw",
-      "name" : "SCD_EFFECTIVE_DATE"
+      "id" : "_3sHV62jVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
     }, {
-      "id" : "_8gg90VKAEeuIAM6M8xuWrw",
-      "name" : "OPTX_Customer_SK"
+      "id" : "_bCqNU1KIEeuIAM6M8xuWrw",
+      "name" : "number_of_days"
     }, {
-      "id" : "_As2MoFKHEeuIAM6M8xuWrw",
-      "name" : "SCD_INEFFECTIVE_DATE"
+      "id" : "_bCqNVFKIEeuIAM6M8xuWrw",
+      "name" : "number_of_months"
     }, {
-      "id" : "_YgiFUFQpEeuzK6gdzLMXhA",
-      "name" : "Agg_Core_Build_Code"
+      "id" : "_3sHV6mjVEeuQtaUJNkU7nA",
+      "name" : "date_end"
     }, {
-      "id" : "_vIOI0V56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_SK"
+      "id" : "_3sHV6WjVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
     }, {
-      "id" : "_ZLPiYWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01"
-    }, {
-      "id" : "_ZLPiaWSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Hour_SK"
-    }, {
-      "id" : "_tkzgYFdKEeu-rrMMNb-Mag",
-      "name" : "GameDate_Hour"
-    }, {
-      "id" : "_ZLPiY2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02"
-    }, {
-      "id" : "_As2Mo1KHEeuIAM6M8xuWrw",
-      "name" : "DI_PID"
-    }, {
-      "id" : "_nHzSoFdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Time"
-    }, {
-      "id" : "_ZLPiZWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03"
-    }, {
-      "id" : "_ZLPiYGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_Group_Type"
-    }, {
-      "id" : "_As2MolKHEeuIAM6M8xuWrw",
-      "name" : "DI_SOR_SK"
-    }, {
-      "id" : "_ZLPiZ2SUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date_SK"
-    }, {
-      "id" : "_ZLPiZmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03_Desc"
-    }, {
-      "id" : "_fvzgJVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date_SK"
-    }, {
-      "id" : "_EVoiwVmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause2"
-    }, {
-      "id" : "_fvzgI1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_InProgress"
-    }, {
-      "id" : "_EVoiwFmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause1"
-    }, {
-      "id" : "_ZLPiZGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02_Desc"
-    }, {
-      "id" : "_bCeDEFdJEeu-rrMMNb-Mag",
-      "name" : "InputForGameDate"
-    }, {
-      "id" : "_fvzgJlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date"
-    }, {
-      "id" : "_fvzgJ1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date"
-    }, {
-      "id" : "_fvzgIVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Code"
-    }, {
-      "id" : "_N6hccFPHEeu4WpmZyK4U-A",
-      "name" : "Agg_Interval"
-    }, {
-      "id" : "_fvzgIFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_SK"
-    }, {
-      "id" : "_i9qn8FddEeu-rrMMNb-Mag",
-      "name" : "GameDate_SK"
-    }, {
-      "id" : "_8gg90lKAEeuIAM6M8xuWrw",
-      "name" : "OPTX_Property_SK"
-    }, {
-      "id" : "_8gg901KAEeuIAM6M8xuWrw",
-      "name" : "SCD_VERSION"
-    }, {
-      "id" : "_ZLPiYmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01_Desc"
-    }, {
-      "id" : "_fvzgIlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Level"
-    }, {
-      "id" : "_nHzSoVdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Hour"
-    }, {
-      "id" : "_As2MoVKHEeuIAM6M8xuWrw",
-      "name" : "SCD_LATEST_IND"
-    }, {
-      "id" : "_vIOI0F56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_Substitute"
-    }, {
-      "id" : "_u_qKQFdJEeu-rrMMNb-Mag",
-      "name" : "GameDate"
+      "id" : "_RB7LY1KMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
     } ]
   }, {
     "contextName" : "PRD",
@@ -818,22 +854,130 @@
     } ]
   }, {
     "contextName" : "PRD",
-    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
     "parameterList" : [ {
+      "id" : "_ZLPiiWSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date"
+    }, {
+      "id" : "_fvzgPFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date_SK"
+    }, {
       "id" : "_VCDZ-1KBEeuIAM6M8xuWrw",
-      "name" : "date_start"
+      "name" : "SCD_EFFECTIVE_DATE"
     }, {
       "id" : "_VCDZ_FKBEeuIAM6M8xuWrw",
-      "name" : "number_of_years"
+      "name" : "OPTX_Customer_SK"
+    }, {
+      "id" : "_As2MrFKHEeuIAM6M8xuWrw",
+      "name" : "SCD_INEFFECTIVE_DATE"
+    }, {
+      "id" : "_YgiFU1QpEeuzK6gdzLMXhA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_vIOI1156EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_ZLPigmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_ZLPiimSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_ZLPii2SUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_tkzgY1dKEeu-rrMMNb-Mag",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_ZLPihGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_nvO51mcREeuK9LGz2OYOWw",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_As2Mr1KHEeuIAM6M8xuWrw",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_nHzSpldIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_ZLPihmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_ZLPigWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_As2MrlKHEeuIAM6M8xuWrw",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_ZLPiiGSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_ZLPih2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_nvO512cREeuK9LGz2OYOWw",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_fvzgPVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_EVoix1mOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_fvzgO1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_EVoixlmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_ZLPihWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_bCeDE1dJEeu-rrMMNb-Mag",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_fvzgPlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_fvzgP1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_fvzgOVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_N6hcc1PHEeu4WpmZyK4U-A",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_fvzgOFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_i9qn81ddEeu-rrMMNb-Mag",
+      "name" : "GameDate_SK"
     }, {
       "id" : "_VCDZ_VKBEeuIAM6M8xuWrw",
-      "name" : "number_of_days"
+      "name" : "OPTX_Property_SK"
     }, {
       "id" : "_VCDZ_lKBEeuIAM6M8xuWrw",
-      "name" : "number_of_months"
+      "name" : "SCD_VERSION"
     }, {
-      "id" : "_RB7LZFKMEeuIAM6M8xuWrw",
-      "name" : "dow_seed"
+      "id" : "_ZLPig2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_fvzgOlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_nHzSp1dIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_As2MrVKHEeuIAM6M8xuWrw",
+      "name" : "SCD_LATEST_IND"
+    }, {
+      "id" : "_vIOI1l56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_Substitute"
+    }, {
+      "id" : "_u_qKQ1dJEeu-rrMMNb-Mag",
+      "name" : "GameDate"
     } ]
   }, {
     "contextName" : "PRD",
@@ -1033,121 +1177,31 @@
     } ]
   }, {
     "contextName" : "PRD",
-    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_ZLPiiWSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date"
-    }, {
-      "id" : "_fvzgPFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date_SK"
-    }, {
       "id" : "_VCDZ-1KBEeuIAM6M8xuWrw",
-      "name" : "SCD_EFFECTIVE_DATE"
+      "name" : "date_start"
     }, {
       "id" : "_VCDZ_FKBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Customer_SK"
+      "name" : "number_of_years"
     }, {
-      "id" : "_As2MrFKHEeuIAM6M8xuWrw",
-      "name" : "SCD_INEFFECTIVE_DATE"
-    }, {
-      "id" : "_YgiFU1QpEeuzK6gdzLMXhA",
-      "name" : "Agg_Core_Build_Code"
-    }, {
-      "id" : "_vIOI1156EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_SK"
-    }, {
-      "id" : "_ZLPigmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01"
-    }, {
-      "id" : "_ZLPiimSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Hour_SK"
-    }, {
-      "id" : "_tkzgY1dKEeu-rrMMNb-Mag",
-      "name" : "GameDate_Hour"
-    }, {
-      "id" : "_ZLPihGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02"
-    }, {
-      "id" : "_As2Mr1KHEeuIAM6M8xuWrw",
-      "name" : "DI_PID"
-    }, {
-      "id" : "_nHzSpldIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Time"
-    }, {
-      "id" : "_ZLPihmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03"
-    }, {
-      "id" : "_ZLPigWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_Group_Type"
-    }, {
-      "id" : "_As2MrlKHEeuIAM6M8xuWrw",
-      "name" : "DI_SOR_SK"
-    }, {
-      "id" : "_ZLPiiGSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date_SK"
-    }, {
-      "id" : "_ZLPih2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03_Desc"
-    }, {
-      "id" : "_fvzgPVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date_SK"
-    }, {
-      "id" : "_EVoix1mOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause2"
-    }, {
-      "id" : "_fvzgO1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_InProgress"
-    }, {
-      "id" : "_EVoixlmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause1"
-    }, {
-      "id" : "_ZLPihWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02_Desc"
-    }, {
-      "id" : "_bCeDE1dJEeu-rrMMNb-Mag",
-      "name" : "InputForGameDate"
-    }, {
-      "id" : "_fvzgPlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date"
-    }, {
-      "id" : "_fvzgP1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date"
-    }, {
-      "id" : "_fvzgOVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Code"
-    }, {
-      "id" : "_N6hcc1PHEeu4WpmZyK4U-A",
-      "name" : "Agg_Interval"
-    }, {
-      "id" : "_fvzgOFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_SK"
-    }, {
-      "id" : "_i9qn81ddEeu-rrMMNb-Mag",
-      "name" : "GameDate_SK"
+      "id" : "_3sHV7mjVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
     }, {
       "id" : "_VCDZ_VKBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Property_SK"
+      "name" : "number_of_days"
     }, {
       "id" : "_VCDZ_lKBEeuIAM6M8xuWrw",
-      "name" : "SCD_VERSION"
+      "name" : "number_of_months"
     }, {
-      "id" : "_ZLPig2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01_Desc"
+      "id" : "_3sHV7WjVEeuQtaUJNkU7nA",
+      "name" : "date_end"
     }, {
-      "id" : "_fvzgOlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Level"
+      "id" : "_3sHV7GjVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
     }, {
-      "id" : "_nHzSp1dIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Hour"
-    }, {
-      "id" : "_As2MrVKHEeuIAM6M8xuWrw",
-      "name" : "SCD_LATEST_IND"
-    }, {
-      "id" : "_vIOI1l56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_Substitute"
-    }, {
-      "id" : "_u_qKQ1dJEeu-rrMMNb-Mag",
-      "name" : "GameDate"
+      "id" : "_RB7LZFKMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
     } ]
   }, {
     "contextName" : "DEV",
@@ -1201,22 +1255,130 @@
     } ]
   }, {
     "contextName" : "DEV",
-    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
     "parameterList" : [ {
+      "id" : "_ZLPic2SUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date"
+    }, {
+      "id" : "_fvzgLFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date_SK"
+    }, {
       "id" : "_VCDZ8VKBEeuIAM6M8xuWrw",
-      "name" : "date_start"
+      "name" : "SCD_EFFECTIVE_DATE"
     }, {
       "id" : "_VCDZ8lKBEeuIAM6M8xuWrw",
-      "name" : "number_of_years"
+      "name" : "OPTX_Customer_SK"
+    }, {
+      "id" : "_As2MpFKHEeuIAM6M8xuWrw",
+      "name" : "SCD_INEFFECTIVE_DATE"
+    }, {
+      "id" : "_YgiFUVQpEeuzK6gdzLMXhA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_vIOI0156EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_ZLPibGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_ZLPidGSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_ZLPidWSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_tkzgYVdKEeu-rrMMNb-Mag",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_ZLPibmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_nvO50mcREeuK9LGz2OYOWw",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_As2Mp1KHEeuIAM6M8xuWrw",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_nHzSoldIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_ZLPicGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_ZLPia2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_As2MplKHEeuIAM6M8xuWrw",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_ZLPicmSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_ZLPicWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_nvO502cREeuK9LGz2OYOWw",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_fvzgLVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_EVoiw1mOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_fvzgK1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_EVoiwlmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_ZLPib2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_bCeDEVdJEeu-rrMMNb-Mag",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_fvzgLlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_fvzgL1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_fvzgKVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_N6hccVPHEeu4WpmZyK4U-A",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_fvzgKFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_i9qn8VddEeu-rrMMNb-Mag",
+      "name" : "GameDate_SK"
     }, {
       "id" : "_VCDZ81KBEeuIAM6M8xuWrw",
-      "name" : "number_of_days"
+      "name" : "OPTX_Property_SK"
     }, {
       "id" : "_VCDZ9FKBEeuIAM6M8xuWrw",
-      "name" : "number_of_months"
+      "name" : "SCD_VERSION"
     }, {
-      "id" : "_RB7LYVKMEeuIAM6M8xuWrw",
-      "name" : "dow_seed"
+      "id" : "_ZLPibWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_fvzgKlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_nHzSo1dIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_As2MpVKHEeuIAM6M8xuWrw",
+      "name" : "SCD_LATEST_IND"
+    }, {
+      "id" : "_vIOI0l56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_Substitute"
+    }, {
+      "id" : "_u_qKQVdJEeu-rrMMNb-Mag",
+      "name" : "GameDate"
     } ]
   }, {
     "contextName" : "DEV",
@@ -1416,121 +1578,31 @@
     } ]
   }, {
     "contextName" : "DEV",
-    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_ZLPic2SUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date"
-    }, {
-      "id" : "_fvzgLFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date_SK"
-    }, {
       "id" : "_VCDZ8VKBEeuIAM6M8xuWrw",
-      "name" : "SCD_EFFECTIVE_DATE"
+      "name" : "date_start"
     }, {
       "id" : "_VCDZ8lKBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Customer_SK"
+      "name" : "number_of_years"
     }, {
-      "id" : "_As2MpFKHEeuIAM6M8xuWrw",
-      "name" : "SCD_INEFFECTIVE_DATE"
-    }, {
-      "id" : "_YgiFUVQpEeuzK6gdzLMXhA",
-      "name" : "Agg_Core_Build_Code"
-    }, {
-      "id" : "_vIOI0156EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_SK"
-    }, {
-      "id" : "_ZLPibGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01"
-    }, {
-      "id" : "_ZLPidGSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Hour_SK"
-    }, {
-      "id" : "_tkzgYVdKEeu-rrMMNb-Mag",
-      "name" : "GameDate_Hour"
-    }, {
-      "id" : "_ZLPibmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02"
-    }, {
-      "id" : "_As2Mp1KHEeuIAM6M8xuWrw",
-      "name" : "DI_PID"
-    }, {
-      "id" : "_nHzSoldIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Time"
-    }, {
-      "id" : "_ZLPicGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03"
-    }, {
-      "id" : "_ZLPia2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_Group_Type"
-    }, {
-      "id" : "_As2MplKHEeuIAM6M8xuWrw",
-      "name" : "DI_SOR_SK"
-    }, {
-      "id" : "_ZLPicmSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date_SK"
-    }, {
-      "id" : "_ZLPicWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03_Desc"
-    }, {
-      "id" : "_fvzgLVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date_SK"
-    }, {
-      "id" : "_EVoiw1mOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause2"
-    }, {
-      "id" : "_fvzgK1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_InProgress"
-    }, {
-      "id" : "_EVoiwlmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause1"
-    }, {
-      "id" : "_ZLPib2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02_Desc"
-    }, {
-      "id" : "_bCeDEVdJEeu-rrMMNb-Mag",
-      "name" : "InputForGameDate"
-    }, {
-      "id" : "_fvzgLlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date"
-    }, {
-      "id" : "_fvzgL1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date"
-    }, {
-      "id" : "_fvzgKVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Code"
-    }, {
-      "id" : "_N6hccVPHEeu4WpmZyK4U-A",
-      "name" : "Agg_Interval"
-    }, {
-      "id" : "_fvzgKFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_SK"
-    }, {
-      "id" : "_i9qn8VddEeu-rrMMNb-Mag",
-      "name" : "GameDate_SK"
+      "id" : "_3sHV5WjVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
     }, {
       "id" : "_VCDZ81KBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Property_SK"
+      "name" : "number_of_days"
     }, {
       "id" : "_VCDZ9FKBEeuIAM6M8xuWrw",
-      "name" : "SCD_VERSION"
+      "name" : "number_of_months"
     }, {
-      "id" : "_ZLPibWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01_Desc"
+      "id" : "_3sHV5GjVEeuQtaUJNkU7nA",
+      "name" : "date_end"
     }, {
-      "id" : "_fvzgKlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Level"
+      "id" : "_3sHV42jVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
     }, {
-      "id" : "_nHzSo1dIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Hour"
-    }, {
-      "id" : "_As2MpVKHEeuIAM6M8xuWrw",
-      "name" : "SCD_LATEST_IND"
-    }, {
-      "id" : "_vIOI0l56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_Substitute"
-    }, {
-      "id" : "_u_qKQVdJEeu-rrMMNb-Mag",
-      "name" : "GameDate"
+      "id" : "_RB7LYVKMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
     } ]
   }, {
     "contextName" : "TST",
@@ -1584,22 +1656,130 @@
     } ]
   }, {
     "contextName" : "TST",
-    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
     "parameterList" : [ {
+      "id" : "_ZLQJeGSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date"
+    }, {
+      "id" : "_fvzgTFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date_SK"
+    }, {
       "id" : "_VCDaBVKBEeuIAM6M8xuWrw",
-      "name" : "date_start"
+      "name" : "SCD_EFFECTIVE_DATE"
     }, {
       "id" : "_VCDaBlKBEeuIAM6M8xuWrw",
-      "name" : "number_of_years"
+      "name" : "OPTX_Customer_SK"
+    }, {
+      "id" : "_As2MtFKHEeuIAM6M8xuWrw",
+      "name" : "SCD_INEFFECTIVE_DATE"
+    }, {
+      "id" : "_YgiFVVQpEeuzK6gdzLMXhA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_vIOI2156EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_ZLQJcWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_ZLQJeWSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_ZLQJemSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_tkzgZVdKEeu-rrMMNb-Mag",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_ZLQJc2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_nvO52mcREeuK9LGz2OYOWw",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_As2Mt1KHEeuIAM6M8xuWrw",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_nHzSqldIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_ZLQJdWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_ZLQJcGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_As2MtlKHEeuIAM6M8xuWrw",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_ZLQJd2SUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_ZLQJdmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_nvO522cREeuK9LGz2OYOWw",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_fvzgTVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_EVoiy1mOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_fvzgS1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_EVoiylmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_ZLQJdGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_bCeDFVdJEeu-rrMMNb-Mag",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_fvzgTlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_fvzgT1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_fvzgSVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_N6hcdVPHEeu4WpmZyK4U-A",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_fvzgSFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_i9qn9VddEeu-rrMMNb-Mag",
+      "name" : "GameDate_SK"
     }, {
       "id" : "_VCDaB1KBEeuIAM6M8xuWrw",
-      "name" : "number_of_days"
+      "name" : "OPTX_Property_SK"
     }, {
       "id" : "_VCDaCFKBEeuIAM6M8xuWrw",
-      "name" : "number_of_months"
+      "name" : "SCD_VERSION"
     }, {
-      "id" : "_RB7LZlKMEeuIAM6M8xuWrw",
-      "name" : "dow_seed"
+      "id" : "_ZLQJcmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_fvzgSlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_nHzSq1dIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_As2MtVKHEeuIAM6M8xuWrw",
+      "name" : "SCD_LATEST_IND"
+    }, {
+      "id" : "_vIOI2l56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_Substitute"
+    }, {
+      "id" : "_u_qKRVdJEeu-rrMMNb-Mag",
+      "name" : "GameDate"
     } ]
   }, {
     "contextName" : "TST",
@@ -1799,121 +1979,31 @@
     } ]
   }, {
     "contextName" : "TST",
-    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_ZLQJeGSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date"
-    }, {
-      "id" : "_fvzgTFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date_SK"
-    }, {
       "id" : "_VCDaBVKBEeuIAM6M8xuWrw",
-      "name" : "SCD_EFFECTIVE_DATE"
+      "name" : "date_start"
     }, {
       "id" : "_VCDaBlKBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Customer_SK"
+      "name" : "number_of_years"
     }, {
-      "id" : "_As2MtFKHEeuIAM6M8xuWrw",
-      "name" : "SCD_INEFFECTIVE_DATE"
-    }, {
-      "id" : "_YgiFVVQpEeuzK6gdzLMXhA",
-      "name" : "Agg_Core_Build_Code"
-    }, {
-      "id" : "_vIOI2156EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_SK"
-    }, {
-      "id" : "_ZLQJcWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01"
-    }, {
-      "id" : "_ZLQJeWSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Hour_SK"
-    }, {
-      "id" : "_tkzgZVdKEeu-rrMMNb-Mag",
-      "name" : "GameDate_Hour"
-    }, {
-      "id" : "_ZLQJc2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02"
-    }, {
-      "id" : "_As2Mt1KHEeuIAM6M8xuWrw",
-      "name" : "DI_PID"
-    }, {
-      "id" : "_nHzSqldIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Time"
-    }, {
-      "id" : "_ZLQJdWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03"
-    }, {
-      "id" : "_ZLQJcGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_Group_Type"
-    }, {
-      "id" : "_As2MtlKHEeuIAM6M8xuWrw",
-      "name" : "DI_SOR_SK"
-    }, {
-      "id" : "_ZLQJd2SUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date_SK"
-    }, {
-      "id" : "_ZLQJdmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03_Desc"
-    }, {
-      "id" : "_fvzgTVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date_SK"
-    }, {
-      "id" : "_EVoiy1mOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause2"
-    }, {
-      "id" : "_fvzgS1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_InProgress"
-    }, {
-      "id" : "_EVoiylmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause1"
-    }, {
-      "id" : "_ZLQJdGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02_Desc"
-    }, {
-      "id" : "_bCeDFVdJEeu-rrMMNb-Mag",
-      "name" : "InputForGameDate"
-    }, {
-      "id" : "_fvzgTlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date"
-    }, {
-      "id" : "_fvzgT1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date"
-    }, {
-      "id" : "_fvzgSVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Code"
-    }, {
-      "id" : "_N6hcdVPHEeu4WpmZyK4U-A",
-      "name" : "Agg_Interval"
-    }, {
-      "id" : "_fvzgSFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_SK"
-    }, {
-      "id" : "_i9qn9VddEeu-rrMMNb-Mag",
-      "name" : "GameDate_SK"
+      "id" : "_3sHV9GjVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
     }, {
       "id" : "_VCDaB1KBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Property_SK"
+      "name" : "number_of_days"
     }, {
       "id" : "_VCDaCFKBEeuIAM6M8xuWrw",
-      "name" : "SCD_VERSION"
+      "name" : "number_of_months"
     }, {
-      "id" : "_ZLQJcmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01_Desc"
+      "id" : "_3sHV82jVEeuQtaUJNkU7nA",
+      "name" : "date_end"
     }, {
-      "id" : "_fvzgSlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Level"
+      "id" : "_3sHV8mjVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
     }, {
-      "id" : "_nHzSq1dIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Hour"
-    }, {
-      "id" : "_As2MtVKHEeuIAM6M8xuWrw",
-      "name" : "SCD_LATEST_IND"
-    }, {
-      "id" : "_vIOI2l56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_Substitute"
-    }, {
-      "id" : "_u_qKRVdJEeu-rrMMNb-Mag",
-      "name" : "GameDate"
+      "id" : "_RB7LZlKMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
     } ]
   }, {
     "contextName" : "SBX",
@@ -1967,22 +2057,130 @@
     } ]
   }, {
     "contextName" : "SBX",
-    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
     "parameterList" : [ {
+      "id" : "_ZLPilGSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date"
+    }, {
+      "id" : "_fvzgRFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date_SK"
+    }, {
       "id" : "_VCDaAFKBEeuIAM6M8xuWrw",
-      "name" : "date_start"
+      "name" : "SCD_EFFECTIVE_DATE"
     }, {
       "id" : "_VCDaAVKBEeuIAM6M8xuWrw",
-      "name" : "number_of_years"
+      "name" : "OPTX_Customer_SK"
+    }, {
+      "id" : "_As2MsFKHEeuIAM6M8xuWrw",
+      "name" : "SCD_INEFFECTIVE_DATE"
+    }, {
+      "id" : "_YgiFVFQpEeuzK6gdzLMXhA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_vIOI2V56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_ZLPijWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_ZLPilWSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_ZLPilmSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_tkzgZFdKEeu-rrMMNb-Mag",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_ZLPij2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_nvO52GcREeuK9LGz2OYOWw",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_As2Ms1KHEeuIAM6M8xuWrw",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_nHzSqFdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_ZLPikWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_ZLPijGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_As2MslKHEeuIAM6M8xuWrw",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_ZLPik2SUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_ZLPikmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_nvO52WcREeuK9LGz2OYOWw",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_fvzgRVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_EVoiyVmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_fvzgQ1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_EVoiyFmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_ZLPikGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_bCeDFFdJEeu-rrMMNb-Mag",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_fvzgRlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_fvzgR1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_fvzgQVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_N6hcdFPHEeu4WpmZyK4U-A",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_fvzgQFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_i9qn9FddEeu-rrMMNb-Mag",
+      "name" : "GameDate_SK"
     }, {
       "id" : "_VCDaAlKBEeuIAM6M8xuWrw",
-      "name" : "number_of_days"
+      "name" : "OPTX_Property_SK"
     }, {
       "id" : "_VCDaA1KBEeuIAM6M8xuWrw",
-      "name" : "number_of_months"
+      "name" : "SCD_VERSION"
     }, {
-      "id" : "_RB7LZVKMEeuIAM6M8xuWrw",
-      "name" : "dow_seed"
+      "id" : "_ZLPijmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_fvzgQlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_nHzSqVdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_As2MsVKHEeuIAM6M8xuWrw",
+      "name" : "SCD_LATEST_IND"
+    }, {
+      "id" : "_vIOI2F56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_Substitute"
+    }, {
+      "id" : "_u_qKRFdJEeu-rrMMNb-Mag",
+      "name" : "GameDate"
     } ]
   }, {
     "contextName" : "SBX",
@@ -2182,121 +2380,31 @@
     } ]
   }, {
     "contextName" : "SBX",
-    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_ZLPilGSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date"
-    }, {
-      "id" : "_fvzgRFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date_SK"
-    }, {
       "id" : "_VCDaAFKBEeuIAM6M8xuWrw",
-      "name" : "SCD_EFFECTIVE_DATE"
+      "name" : "date_start"
     }, {
       "id" : "_VCDaAVKBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Customer_SK"
+      "name" : "number_of_years"
     }, {
-      "id" : "_As2MsFKHEeuIAM6M8xuWrw",
-      "name" : "SCD_INEFFECTIVE_DATE"
-    }, {
-      "id" : "_YgiFVFQpEeuzK6gdzLMXhA",
-      "name" : "Agg_Core_Build_Code"
-    }, {
-      "id" : "_vIOI2V56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_SK"
-    }, {
-      "id" : "_ZLPijWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01"
-    }, {
-      "id" : "_ZLPilWSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Hour_SK"
-    }, {
-      "id" : "_tkzgZFdKEeu-rrMMNb-Mag",
-      "name" : "GameDate_Hour"
-    }, {
-      "id" : "_ZLPij2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02"
-    }, {
-      "id" : "_As2Ms1KHEeuIAM6M8xuWrw",
-      "name" : "DI_PID"
-    }, {
-      "id" : "_nHzSqFdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Time"
-    }, {
-      "id" : "_ZLPikWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03"
-    }, {
-      "id" : "_ZLPijGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_Group_Type"
-    }, {
-      "id" : "_As2MslKHEeuIAM6M8xuWrw",
-      "name" : "DI_SOR_SK"
-    }, {
-      "id" : "_ZLPik2SUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date_SK"
-    }, {
-      "id" : "_ZLPikmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03_Desc"
-    }, {
-      "id" : "_fvzgRVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date_SK"
-    }, {
-      "id" : "_EVoiyVmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause2"
-    }, {
-      "id" : "_fvzgQ1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_InProgress"
-    }, {
-      "id" : "_EVoiyFmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause1"
-    }, {
-      "id" : "_ZLPikGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02_Desc"
-    }, {
-      "id" : "_bCeDFFdJEeu-rrMMNb-Mag",
-      "name" : "InputForGameDate"
-    }, {
-      "id" : "_fvzgRlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date"
-    }, {
-      "id" : "_fvzgR1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date"
-    }, {
-      "id" : "_fvzgQVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Code"
-    }, {
-      "id" : "_N6hcdFPHEeu4WpmZyK4U-A",
-      "name" : "Agg_Interval"
-    }, {
-      "id" : "_fvzgQFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_SK"
-    }, {
-      "id" : "_i9qn9FddEeu-rrMMNb-Mag",
-      "name" : "GameDate_SK"
+      "id" : "_3sHV8WjVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
     }, {
       "id" : "_VCDaAlKBEeuIAM6M8xuWrw",
-      "name" : "OPTX_Property_SK"
+      "name" : "number_of_days"
     }, {
       "id" : "_VCDaA1KBEeuIAM6M8xuWrw",
-      "name" : "SCD_VERSION"
+      "name" : "number_of_months"
     }, {
-      "id" : "_ZLPijmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01_Desc"
+      "id" : "_3sHV8GjVEeuQtaUJNkU7nA",
+      "name" : "date_end"
     }, {
-      "id" : "_fvzgQlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Level"
+      "id" : "_3sHV72jVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
     }, {
-      "id" : "_nHzSqVdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Hour"
-    }, {
-      "id" : "_As2MsVKHEeuIAM6M8xuWrw",
-      "name" : "SCD_LATEST_IND"
-    }, {
-      "id" : "_vIOI2F56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_Substitute"
-    }, {
-      "id" : "_u_qKRFdJEeu-rrMMNb-Mag",
-      "name" : "GameDate"
+      "id" : "_RB7LZVKMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
     } ]
   }, {
     "contextName" : "Default",
@@ -2350,22 +2458,130 @@
     } ]
   }, {
     "contextName" : "Default",
-    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
     "parameterList" : [ {
+      "id" : "_ZLPiaGSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date"
+    }, {
+      "id" : "_fvzgJFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date_SK"
+    }, {
       "id" : "_8gg90FKAEeuIAM6M8xuWrw",
-      "name" : "date_start"
+      "name" : "SCD_EFFECTIVE_DATE"
     }, {
       "id" : "_8gg90VKAEeuIAM6M8xuWrw",
-      "name" : "number_of_years"
+      "name" : "OPTX_Customer_SK"
+    }, {
+      "id" : "_As2MoFKHEeuIAM6M8xuWrw",
+      "name" : "SCD_INEFFECTIVE_DATE"
+    }, {
+      "id" : "_YgiFUFQpEeuzK6gdzLMXhA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_vIOI0V56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_ZLPiYWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_ZLPiaWSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_ZLPiamSUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_tkzgYFdKEeu-rrMMNb-Mag",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_ZLPiY2SUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_nvO50GcREeuK9LGz2OYOWw",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_As2Mo1KHEeuIAM6M8xuWrw",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_nHzSoFdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_ZLPiZWSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_ZLPiYGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_As2MolKHEeuIAM6M8xuWrw",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_ZLPiZ2SUEeuK9LGz2OYOWw",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_ZLPiZmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_nvO50WcREeuK9LGz2OYOWw",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_fvzgJVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_EVoiwVmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_fvzgI1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_EVoiwFmOEeu-rrMMNb-Mag",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_ZLPiZGSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_bCeDEFdJEeu-rrMMNb-Mag",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_fvzgJlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_fvzgJ1PAEeu4WpmZyK4U-A",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_fvzgIVPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_N6hccFPHEeu4WpmZyK4U-A",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_fvzgIFPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_i9qn8FddEeu-rrMMNb-Mag",
+      "name" : "GameDate_SK"
     }, {
       "id" : "_8gg90lKAEeuIAM6M8xuWrw",
-      "name" : "number_of_days"
+      "name" : "OPTX_Property_SK"
     }, {
       "id" : "_8gg901KAEeuIAM6M8xuWrw",
-      "name" : "number_of_months"
+      "name" : "SCD_VERSION"
     }, {
-      "id" : "_RB7LYFKMEeuIAM6M8xuWrw",
-      "name" : "dow_seed"
+      "id" : "_ZLPiYmSUEeuK9LGz2OYOWw",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_fvzgIlPAEeu4WpmZyK4U-A",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_nHzSoVdIEeu-rrMMNb-Mag",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_As2MoVKHEeuIAM6M8xuWrw",
+      "name" : "SCD_LATEST_IND"
+    }, {
+      "id" : "_vIOI0F56EeuSFpVsKtRcAA",
+      "name" : "Dim_Attr_NULL_Substitute"
+    }, {
+      "id" : "_u_qKQFdJEeu-rrMMNb-Mag",
+      "name" : "GameDate"
     } ]
   }, {
     "contextName" : "Default",
@@ -2565,121 +2781,432 @@
     } ]
   }, {
     "contextName" : "Default",
-    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
     "parameterList" : [ {
-      "id" : "_ZLPiaGSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date"
-    }, {
-      "id" : "_fvzgJFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date_SK"
-    }, {
       "id" : "_8gg90FKAEeuIAM6M8xuWrw",
-      "name" : "SCD_EFFECTIVE_DATE"
+      "name" : "date_start"
     }, {
       "id" : "_8gg90VKAEeuIAM6M8xuWrw",
-      "name" : "OPTX_Customer_SK"
+      "name" : "number_of_years"
     }, {
-      "id" : "_As2MoFKHEeuIAM6M8xuWrw",
-      "name" : "SCD_INEFFECTIVE_DATE"
-    }, {
-      "id" : "_YgiFUFQpEeuzK6gdzLMXhA",
-      "name" : "Agg_Core_Build_Code"
-    }, {
-      "id" : "_vIOI0V56EeuSFpVsKtRcAA",
-      "name" : "Dim_Attr_NULL_SK"
-    }, {
-      "id" : "_ZLPiYWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01"
-    }, {
-      "id" : "_ZLPiaWSUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Hour_SK"
-    }, {
-      "id" : "_tkzgYFdKEeu-rrMMNb-Mag",
-      "name" : "GameDate_Hour"
-    }, {
-      "id" : "_ZLPiY2SUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02"
-    }, {
-      "id" : "_As2Mo1KHEeuIAM6M8xuWrw",
-      "name" : "DI_PID"
-    }, {
-      "id" : "_nHzSoFdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Time"
-    }, {
-      "id" : "_ZLPiZWSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03"
-    }, {
-      "id" : "_ZLPiYGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_Group_Type"
-    }, {
-      "id" : "_As2MolKHEeuIAM6M8xuWrw",
-      "name" : "DI_SOR_SK"
-    }, {
-      "id" : "_ZLPiZ2SUEeuK9LGz2OYOWw",
-      "name" : "Report_as_of_Start_Date_SK"
-    }, {
-      "id" : "_ZLPiZmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK03_Desc"
-    }, {
-      "id" : "_fvzgJVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date_SK"
-    }, {
-      "id" : "_EVoiwVmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause2"
-    }, {
-      "id" : "_fvzgI1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_InProgress"
-    }, {
-      "id" : "_EVoiwFmOEeu-rrMMNb-Mag",
-      "name" : "SQL_WhereClause1"
-    }, {
-      "id" : "_ZLPiZGSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK02_Desc"
-    }, {
-      "id" : "_bCeDEFdJEeu-rrMMNb-Mag",
-      "name" : "InputForGameDate"
-    }, {
-      "id" : "_fvzgJlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Start_Date"
-    }, {
-      "id" : "_fvzgJ1PAEeu4WpmZyK4U-A",
-      "name" : "Agg_End_Date"
-    }, {
-      "id" : "_fvzgIVPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Code"
-    }, {
-      "id" : "_N6hccFPHEeu4WpmZyK4U-A",
-      "name" : "Agg_Interval"
-    }, {
-      "id" : "_fvzgIFPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_SK"
-    }, {
-      "id" : "_i9qn8FddEeu-rrMMNb-Mag",
-      "name" : "GameDate_SK"
+      "id" : "_3sHV4mjVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
     }, {
       "id" : "_8gg90lKAEeuIAM6M8xuWrw",
-      "name" : "OPTX_Property_SK"
+      "name" : "number_of_days"
     }, {
       "id" : "_8gg901KAEeuIAM6M8xuWrw",
+      "name" : "number_of_months"
+    }, {
+      "id" : "_3sHV4WjVEeuQtaUJNkU7nA",
+      "name" : "date_end"
+    }, {
+      "id" : "_3sHV4GjVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
+    }, {
+      "id" : "_RB7LYFKMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_mb_wcFIBEeuIAM6M8xuWrw",
+    "parameterList" : [ {
+      "id" : "_ruTFlm2iEeuU0I8KyzzDYA",
+      "name" : "int_schema_Schema"
+    }, {
+      "id" : "_ruTFkW2iEeuU0I8KyzzDYA",
+      "name" : "int_schema_Login"
+    }, {
+      "id" : "_ruTFkm2iEeuU0I8KyzzDYA",
+      "name" : "int_schema_Server"
+    }, {
+      "id" : "_ruTFl22iEeuU0I8KyzzDYA",
+      "name" : "int_schema_Port"
+    }, {
+      "id" : "_ruTFlG2iEeuU0I8KyzzDYA",
+      "name" : "int_schema_AdditionalParams"
+    }, {
+      "id" : "_ruTFlW2iEeuU0I8KyzzDYA",
+      "name" : "int_schema_Password"
+    }, {
+      "id" : "_ruTFk22iEeuU0I8KyzzDYA",
+      "name" : "int_schema_Database"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_RxeLQBfvEeuUr4792Oip2g",
+    "parameterList" : [ {
+      "id" : "_0N0Sw22mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Database"
+    }, {
+      "id" : "_0N0SxW2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Password"
+    }, {
+      "id" : "_0N0Swm2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Server"
+    }, {
+      "id" : "_0N0SwW2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Login"
+    }, {
+      "id" : "_0N0Sx22mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Port"
+    }, {
+      "id" : "_0N0SxG2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_AdditionalParams"
+    }, {
+      "id" : "_0N0Sxm2mEeuU0I8KyzzDYA",
+      "name" : "stg_schema_Schema"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_dgXfsBnMEemh99EK0ZkCQQ",
+    "parameterList" : [ {
+      "id" : "_0cuens4vEeyCdd6IuMV3Ag",
+      "name" : "DI_SCD"
+    }, {
+      "id" : "_0cuelc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxModifyDate"
+    }, {
+      "id" : "_0cueos4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_TableRowCount_Before"
+    }, {
+      "id" : "_0cuepc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Password"
+    }, {
+      "id" : "_0cueyc4vEeyCdd6IuMV3Ag",
+      "name" : "DI_CDC_Type"
+    }, {
+      "id" : "_0cueys4vEeyCdd6IuMV3Ag",
+      "name" : "DI_JobContext"
+    }, {
+      "id" : "_0cuet84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_RowVersion_Criteria_GetMax"
+    }, {
+      "id" : "_0cue0c4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_NK_VerNo"
+    }, {
+      "id" : "_0cuey84vEeyCdd6IuMV3Ag",
+      "name" : "DI_JobName"
+    }, {
+      "id" : "_0cues84vEeyCdd6IuMV3Ag",
+      "name" : "SCD_Start"
+    }, {
+      "id" : "_0cueo84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Login"
+    }, {
+      "id" : "_0cuemM4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxCreateDate"
+    }, {
+      "id" : "_0cueu84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Name"
+    }, {
+      "id" : "_JLAIU_huEey6coOqkv9qoA",
+      "name" : "SRC_Criteria_GetMax"
+    }, {
+      "id" : "_0cuerc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Login"
+    }, {
+      "id" : "_0cuezs4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_Combo2_Int"
+    }, {
+      "id" : "_0cuetM4vEeyCdd6IuMV3Ag",
+      "name" : "Initial_Load_IND"
+    }, {
+      "id" : "_0cuems4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxSeqNo"
+    }, {
+      "id" : "_0cue0M4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GUID"
+    }, {
+      "id" : "_0cueps4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax"
+    }, {
+      "id" : "_0cuepM4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Port"
+    }, {
+      "id" : "_0cueoM4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Database"
+    }, {
+      "id" : "_0cueq84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Database"
+    }, {
+      "id" : "_0cuelM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxCreateDate"
+    }, {
+      "id" : "_0cuews4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineRejected"
+    }, {
+      "id" : "_0cuer84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Password"
+    }, {
+      "id" : "_0cuezc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_Combo1_String"
+    }, {
+      "id" : "_0cuels4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxSeqNo"
+    }, {
+      "id" : "_0cuev84vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineInserted"
+    }, {
+      "id" : "_0cuex84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax_UpdateDate"
+    }, {
+      "id" : "_0cuenc4vEeyCdd6IuMV3Ag",
+      "name" : "DI_CDC"
+    }, {
+      "id" : "_0cuew84vEeyCdd6IuMV3Ag",
+      "name" : "Source_NBLines"
+    }, {
+      "id" : "_0cuets4vEeyCdd6IuMV3Ag",
+      "name" : "DeletedTableRowCount_Before"
+    }, {
+      "id" : "_0cuexs4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax_RowVer"
+    }, {
+      "id" : "_0cueus4vEeyCdd6IuMV3Ag",
+      "name" : "SOR_Name"
+    }, {
+      "id" : "_0cueyM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_GetMax_CreateDate"
+    }, {
+      "id" : "_0cuesM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_AdditionalParams"
+    }, {
+      "id" : "_0cuevM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Name"
+    }, {
+      "id" : "_0cuep84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_SOR_SK"
+    }, {
+      "id" : "_0cuenM4vEeyCdd6IuMV3Ag",
+      "name" : "DI_Schema"
+    }, {
+      "id" : "_0cuez84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Criteria_Combo2_String"
+    }, {
+      "id" : "_0cuers4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Port"
+    }, {
+      "id" : "_0cuel84vEeyCdd6IuMV3Ag",
+      "name" : "TGT_TableName"
+    }, {
+      "id" : "_0cuesc4vEeyCdd6IuMV3Ag",
+      "name" : "Source_Key"
+    }, {
+      "id" : "_0cuess4vEeyCdd6IuMV3Ag",
+      "name" : "SCDType2_1"
+    }, {
+      "id" : "_0cuevs4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineTotal"
+    }, {
+      "id" : "_0cuexc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxRowVersion"
+    }, {
+      "id" : "_0cueqc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_AdditionalParams"
+    }, {
+      "id" : "_0cuen84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Server"
+    }, {
+      "id" : "_0cuewM4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineUpdated"
+    }, {
+      "id" : "_0cuemc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_MaxModifyDate"
+    }, {
+      "id" : "_0cueuc4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Update_Criteria"
+    }, {
+      "id" : "_0cuetc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_RankQuery"
+    }, {
+      "id" : "_0cuezM4vEeyCdd6IuMV3Ag",
+      "name" : "DI_JobStatus"
+    }, {
+      "id" : "_0cuerM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Schema"
+    }, {
+      "id" : "_0cuexM4vEeyCdd6IuMV3Ag",
+      "name" : "Source_Query"
+    }, {
+      "id" : "_JLAIUvhuEey6coOqkv9qoA",
+      "name" : "SRC_Criteria_GetMax_UpdateDate"
+    }, {
+      "id" : "_0cueqs4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_Server"
+    }, {
+      "id" : "_0cuevc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_RowCount"
+    }, {
+      "id" : "_0cueuM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_MaxRowVersion"
+    }, {
+      "id" : "_0cueqM4vEeyCdd6IuMV3Ag",
+      "name" : "TGT_SOR_SK"
+    }, {
+      "id" : "_0cuem84vEeyCdd6IuMV3Ag",
+      "name" : "SRC_TableName"
+    }, {
+      "id" : "_0cueoc4vEeyCdd6IuMV3Ag",
+      "name" : "SRC_Schema"
+    }, {
+      "id" : "_0cuewc4vEeyCdd6IuMV3Ag",
+      "name" : "Target_LineDeleted"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_2PCOIFJ_EeuIAM6M8xuWrw",
+    "parameterList" : [ {
+      "id" : "_8gg90FKAEeuIAM6M8xuWrw",
+      "name" : "date_start"
+    }, {
+      "id" : "_8gg90VKAEeuIAM6M8xuWrw",
+      "name" : "number_of_years"
+    }, {
+      "id" : "_3sHV4mjVEeuQtaUJNkU7nA",
+      "name" : "date_end_sk"
+    }, {
+      "id" : "_8gg90lKAEeuIAM6M8xuWrw",
+      "name" : "number_of_days"
+    }, {
+      "id" : "_8gg901KAEeuIAM6M8xuWrw",
+      "name" : "number_of_months"
+    }, {
+      "id" : "_3sHV4WjVEeuQtaUJNkU7nA",
+      "name" : "date_end"
+    }, {
+      "id" : "_3sHV4GjVEeuQtaUJNkU7nA",
+      "name" : "date_start_sk"
+    }, {
+      "id" : "_RB7LYFKMEeuIAM6M8xuWrw",
+      "name" : "dow_seed"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_0-hZwFKFEeuIAM6M8xuWrw",
+    "parameterList" : [ {
+      "id" : "_1-upAW2hEeuU0I8KyzzDYA",
+      "name" : "SCD_EFFECTIVE_DATE"
+    }, {
+      "id" : "_1-upAm2hEeuU0I8KyzzDYA",
+      "name" : "OPTX_Customer_SK"
+    }, {
+      "id" : "_1-upA22hEeuU0I8KyzzDYA",
+      "name" : "OPTX_Property_SK"
+    }, {
+      "id" : "_1-upBG2hEeuU0I8KyzzDYA",
       "name" : "SCD_VERSION"
     }, {
-      "id" : "_ZLPiYmSUEeuK9LGz2OYOWw",
-      "name" : "Agg_SK01_Desc"
+      "id" : "_1-upBW2hEeuU0I8KyzzDYA",
+      "name" : "SCD_INEFFECTIVE_DATE"
     }, {
-      "id" : "_fvzgIlPAEeu4WpmZyK4U-A",
-      "name" : "Agg_Type_Level"
-    }, {
-      "id" : "_nHzSoVdIEeu-rrMMNb-Mag",
-      "name" : "SlotGamedayStart_Hour"
-    }, {
-      "id" : "_As2MoVKHEeuIAM6M8xuWrw",
+      "id" : "_1-upBm2hEeuU0I8KyzzDYA",
       "name" : "SCD_LATEST_IND"
     }, {
-      "id" : "_vIOI0F56EeuSFpVsKtRcAA",
+      "id" : "_1-upB22hEeuU0I8KyzzDYA",
+      "name" : "DI_SOR_SK"
+    }, {
+      "id" : "_1-upCG2hEeuU0I8KyzzDYA",
+      "name" : "DI_PID"
+    }, {
+      "id" : "_1-upCW2hEeuU0I8KyzzDYA",
+      "name" : "Agg_Type_SK"
+    }, {
+      "id" : "_1-upCm2hEeuU0I8KyzzDYA",
+      "name" : "Agg_Type_Code"
+    }, {
+      "id" : "_1-upC22hEeuU0I8KyzzDYA",
+      "name" : "Agg_Type_Level"
+    }, {
+      "id" : "_1-upDG2hEeuU0I8KyzzDYA",
+      "name" : "Agg_InProgress"
+    }, {
+      "id" : "_1-upDW2hEeuU0I8KyzzDYA",
+      "name" : "Agg_Start_Date_SK"
+    }, {
+      "id" : "_1-upDm2hEeuU0I8KyzzDYA",
+      "name" : "Agg_End_Date_SK"
+    }, {
+      "id" : "_1-upD22hEeuU0I8KyzzDYA",
+      "name" : "Agg_Start_Date"
+    }, {
+      "id" : "_1-upEG2hEeuU0I8KyzzDYA",
+      "name" : "Agg_End_Date"
+    }, {
+      "id" : "_1-upEW2hEeuU0I8KyzzDYA",
+      "name" : "Agg_Interval"
+    }, {
+      "id" : "_1-upEm2hEeuU0I8KyzzDYA",
+      "name" : "Agg_Core_Build_Code"
+    }, {
+      "id" : "_1-upE22hEeuU0I8KyzzDYA",
+      "name" : "SlotGamedayStart_Time"
+    }, {
+      "id" : "_1-upFG2hEeuU0I8KyzzDYA",
+      "name" : "SlotGamedayStart_Hour"
+    }, {
+      "id" : "_1-upFW2hEeuU0I8KyzzDYA",
+      "name" : "InputForGameDate"
+    }, {
+      "id" : "_1-upFm2hEeuU0I8KyzzDYA",
+      "name" : "GameDate"
+    }, {
+      "id" : "_1-upF22hEeuU0I8KyzzDYA",
+      "name" : "GameDate_Hour"
+    }, {
+      "id" : "_1-upGG2hEeuU0I8KyzzDYA",
+      "name" : "GameDate_SK"
+    }, {
+      "id" : "_1-upGW2hEeuU0I8KyzzDYA",
+      "name" : "SQL_WhereClause1"
+    }, {
+      "id" : "_1-upGm2hEeuU0I8KyzzDYA",
+      "name" : "SQL_WhereClause2"
+    }, {
+      "id" : "_1-upG22hEeuU0I8KyzzDYA",
       "name" : "Dim_Attr_NULL_Substitute"
     }, {
-      "id" : "_u_qKQFdJEeu-rrMMNb-Mag",
-      "name" : "GameDate"
+      "id" : "_1-upHG2hEeuU0I8KyzzDYA",
+      "name" : "Dim_Attr_NULL_SK"
+    }, {
+      "id" : "_1-upHW2hEeuU0I8KyzzDYA",
+      "name" : "Agg_Group_Type"
+    }, {
+      "id" : "_1-upHm2hEeuU0I8KyzzDYA",
+      "name" : "Agg_SK01"
+    }, {
+      "id" : "_1-upH22hEeuU0I8KyzzDYA",
+      "name" : "Agg_SK01_Desc"
+    }, {
+      "id" : "_1-upIG2hEeuU0I8KyzzDYA",
+      "name" : "Agg_SK02"
+    }, {
+      "id" : "_1-upIW2hEeuU0I8KyzzDYA",
+      "name" : "Agg_SK02_Desc"
+    }, {
+      "id" : "_1-upIm2hEeuU0I8KyzzDYA",
+      "name" : "Agg_SK03"
+    }, {
+      "id" : "_1-upI22hEeuU0I8KyzzDYA",
+      "name" : "Agg_SK03_Desc"
+    }, {
+      "id" : "_1-upJG2hEeuU0I8KyzzDYA",
+      "name" : "Report_as_of_Start_Date_SK"
+    }, {
+      "id" : "_1-upJW2hEeuU0I8KyzzDYA",
+      "name" : "Report_as_of_Start_Date"
+    }, {
+      "id" : "_1-upJm2hEeuU0I8KyzzDYA",
+      "name" : "Report_as_of_Start_Hour_SK"
+    }, {
+      "id" : "_1-upJ22hEeuU0I8KyzzDYA",
+      "name" : "Report_as_of_Start_DateTime"
+    }, {
+      "id" : "_1-upKG2hEeuU0I8KyzzDYA",
+      "name" : "SCD_INEFFECTIVE_DATE_SK"
+    }, {
+      "id" : "_1-upKW2hEeuU0I8KyzzDYA",
+      "name" : "SCD_EFFECTIVE_DATE_SK"
     } ]
   } ]
 }

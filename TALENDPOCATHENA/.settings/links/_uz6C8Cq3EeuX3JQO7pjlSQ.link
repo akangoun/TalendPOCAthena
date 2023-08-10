@@ -1,0 +1,154 @@
+{
+  "itemId" : "_uz6C8Cq3EeuX3JQO7pjlSQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_wRLZkCq0Eeup6tcZnCtUKg",
+    "parameterList" : [ {
+      "id" : "_d435cVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Login"
+    }, {
+      "id" : "_d435claOEeutzbLaa4epNA",
+      "name" : "OPERA_Password"
+    }, {
+      "id" : "_d435c1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Server"
+    }, {
+      "id" : "_d435dFaOEeutzbLaa4epNA",
+      "name" : "OPERA_AdditionalParams"
+    }, {
+      "id" : "_d435dVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Port"
+    }, {
+      "id" : "_d435dlaOEeutzbLaa4epNA",
+      "name" : "OPERA_Sid"
+    }, {
+      "id" : "_d435d1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Schema"
+    } ]
+  }, {
+    "contextName" : "LOC",
+    "repoId" : "_wRLZkCq0Eeup6tcZnCtUKg",
+    "parameterList" : [ {
+      "id" : "_d435gVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Login"
+    }, {
+      "id" : "_d435glaOEeutzbLaa4epNA",
+      "name" : "OPERA_Password"
+    }, {
+      "id" : "_d435g1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Server"
+    }, {
+      "id" : "_d435hFaOEeutzbLaa4epNA",
+      "name" : "OPERA_AdditionalParams"
+    }, {
+      "id" : "_d435hVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Port"
+    }, {
+      "id" : "_d435hlaOEeutzbLaa4epNA",
+      "name" : "OPERA_Sid"
+    }, {
+      "id" : "_d435h1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Schema"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_wRLZkCq0Eeup6tcZnCtUKg",
+    "parameterList" : [ {
+      "id" : "_d435iVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Login"
+    }, {
+      "id" : "_d435ilaOEeutzbLaa4epNA",
+      "name" : "OPERA_Password"
+    }, {
+      "id" : "_d435i1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Server"
+    }, {
+      "id" : "_d435jFaOEeutzbLaa4epNA",
+      "name" : "OPERA_AdditionalParams"
+    }, {
+      "id" : "_d435jVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Port"
+    }, {
+      "id" : "_d435jlaOEeutzbLaa4epNA",
+      "name" : "OPERA_Sid"
+    }, {
+      "id" : "_d435j1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Schema"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_wRLZkCq0Eeup6tcZnCtUKg",
+    "parameterList" : [ {
+      "id" : "_d435eVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Login"
+    }, {
+      "id" : "_d435elaOEeutzbLaa4epNA",
+      "name" : "OPERA_Password"
+    }, {
+      "id" : "_d435e1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Server"
+    }, {
+      "id" : "_d435fFaOEeutzbLaa4epNA",
+      "name" : "OPERA_AdditionalParams"
+    }, {
+      "id" : "_d435fVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Port"
+    }, {
+      "id" : "_d435flaOEeutzbLaa4epNA",
+      "name" : "OPERA_Sid"
+    }, {
+      "id" : "_d435f1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Schema"
+    } ]
+  }, {
+    "contextName" : "SBX",
+    "repoId" : "_wRLZkCq0Eeup6tcZnCtUKg",
+    "parameterList" : [ {
+      "id" : "_d435kVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Login"
+    }, {
+      "id" : "_d435klaOEeutzbLaa4epNA",
+      "name" : "OPERA_Password"
+    }, {
+      "id" : "_d435k1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Server"
+    }, {
+      "id" : "_d435lFaOEeutzbLaa4epNA",
+      "name" : "OPERA_AdditionalParams"
+    }, {
+      "id" : "_d435lVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Port"
+    }, {
+      "id" : "_d435llaOEeutzbLaa4epNA",
+      "name" : "OPERA_Sid"
+    }, {
+      "id" : "_d435l1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Schema"
+    } ]
+  }, {
+    "contextName" : "TST",
+    "repoId" : "_wRLZkCq0Eeup6tcZnCtUKg",
+    "parameterList" : [ {
+      "id" : "_d435mVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Login"
+    }, {
+      "id" : "_d435mlaOEeutzbLaa4epNA",
+      "name" : "OPERA_Password"
+    }, {
+      "id" : "_d435m1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Server"
+    }, {
+      "id" : "_d435nFaOEeutzbLaa4epNA",
+      "name" : "OPERA_AdditionalParams"
+    }, {
+      "id" : "_d435nVaOEeutzbLaa4epNA",
+      "name" : "OPERA_Port"
+    }, {
+      "id" : "_d435nlaOEeutzbLaa4epNA",
+      "name" : "OPERA_Sid"
+    }, {
+      "id" : "_d435n1aOEeutzbLaa4epNA",
+      "name" : "OPERA_Schema"
+    } ]
+  } ]
+}
