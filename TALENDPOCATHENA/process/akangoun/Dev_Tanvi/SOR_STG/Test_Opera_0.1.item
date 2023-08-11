@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value=""/>
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="bireporting"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_Password" value="enc:system.encryption.key.v1:0fbxeZ4qlw6vhDcG4TCbit435Kh1sD2nFFBcsXwJf1tduq7esQ=="/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="1521"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="OPERA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="10.2.50.175"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="OPERA"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_loc"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="AthenaDev"/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:QFbFKgx5VhwwZIG8QQzIxQ0+J+6IYpkjNBQ/uaQOT3Cp08LZ"/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="localhost"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="OPERA_AdditionalParams" prompt="OPERA_AdditionalParams?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value=""/>
+    <contextParameter comment="" name="OPERA_Login" prompt="OPERA_Login?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="bireporting"/>
+    <contextParameter comment="" name="OPERA_Password" prompt="OPERA_Password?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_Password" value="enc:system.encryption.key.v1:UJPiX8mXOHt5qFFTZm+Srd26GVFbJpQG1kLbWFqFoeurA1VIrw=="/>
+    <contextParameter comment="" name="OPERA_Port" prompt="OPERA_Port?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="1521"/>
+    <contextParameter comment="" name="OPERA_Schema" prompt="OPERA_Schema?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="OPERA"/>
+    <contextParameter comment="" name="OPERA_Server" prompt="OPERA_Server?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="10.2.50.175"/>
+    <contextParameter comment="" name="OPERA_Sid" prompt="OPERA_Sid?" promptNeeded="false" repositoryContextId="_wRLZkCq0Eeup6tcZnCtUKg" type="id_String" value="OPERA"/>
+    <contextParameter comment="" name="stg_schema_AdditionalParams" prompt="stg_schema_AdditionalParams?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value=""/>
+    <contextParameter comment="" name="stg_schema_Database" prompt="stg_schema_Database?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="stg_dev"/>
+    <contextParameter comment="" name="stg_schema_Login" prompt="stg_schema_Login?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" name="stg_schema_Password" prompt="stg_schema_Password?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_Password" value="enc:system.encryption.key.v1:PjE8HcXKp5KkIzOHASWjhtTTOnGEBWtlGAgkqtDNeSNWLsve2KXcgDo="/>
+    <contextParameter comment="" name="stg_schema_Port" prompt="stg_schema_Port?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="1433"/>
+    <contextParameter comment="" name="stg_schema_Schema" prompt="stg_schema_Schema?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="stg_schema_Server" prompt="stg_schema_Server?" promptNeeded="false" repositoryContextId="_RxeLQBfvEeuUr4792Oip2g" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:79E5ItxSYZLABs+3mjXP3T5DCRv/z8FbvirR/tn5"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/TalendWorkspaceCloud/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cifsER8To6a6yfy+XjWobqrfYyxQ7Ao23Np4qlg3"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_2dCyAA2AEeu1TPPsnJu-RQ" name="DataOperation"/>
+    <routinesParameter id="_2f1nUA2AEeu1TPPsnJu-RQ" name="Mathematical"/>
+    <routinesParameter id="_2ga2IA2AEeu1TPPsnJu-RQ" name="Numeric"/>
+    <routinesParameter id="_2g-20A2AEeu1TPPsnJu-RQ" name="Relational"/>
+    <routinesParameter id="_2jD6cA2AEeu1TPPsnJu-RQ" name="SQLike"/>
+    <routinesParameter id="_2hWqQA2AEeu1TPPsnJu-RQ" name="StringHandling"/>
+    <routinesParameter id="_2h1ycA2AEeu1TPPsnJu-RQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_2iFDAA2AEeu1TPPsnJu-RQ" name="TalendDate"/>
+    <routinesParameter id="_2iw_gA2AEeu1TPPsnJu-RQ" name="TalendStringUtil"/>
+    <routinesParameter id="_2ieroA2AEeu1TPPsnJu-RQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_SP27ACq0Eeup6tcZnCtUKg"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="context.OPERA_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="context.OPERA_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SID"/>
+    <elementParameter field="TEXT" name="PORT" value="context.OPERA_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.OPERA_Sid"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.OPERA_Sid"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.OPERA_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.OPERA_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AkRB2n2TF+LoEVlG3gExgLQmRZuwIhvOfuz+s7taqY4iTnBrx7KZNc6MaUelGnUYH/w="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_SP27ACq0Eeup6tcZnCtUKg - RESORT__ROOM_CATEGORY"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;RESORT$_ROOM_CATEGORY&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.RESORT, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ROOM_CATEGORY, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ROOM_CLASS, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.NUMBER_ROOMS, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.SHORT_DESCRIPTION, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.LONG_DESCRIPTION, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.COMPILED, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.PSUEDO_ROOM_TYPE, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ACTIVE_DATE, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.INACTIVE_DATE, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.REPLACES_CATEGORY, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORDER_BY, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.MAX_OCCUPANCY, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.MAX_ROLLAWAYS, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.RATE_CATEGORY, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.LABEL, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.GENERIC_FLAG, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.SUITE_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.MEETINGROOM_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.INSERT_USER, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.INSERT_DATE, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.UPDATE_USER, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.UPDATE_DATE, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.RATE_CODE, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.RATE_AMOUNT, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.DEF_OCCUPANCY, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.IMAGE_ID, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.PSEUDO_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.SEND_TO_INTERFACE_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.YIELDABLE_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.YIELD_CATEGORY, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.HOUSEKEEPING, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.CAN_DELETE_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ROOMINFO_URL, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.OWNER_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.AUTO_INCLUDE_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.INITIAL_ROUND_UP, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.INCREMENTS, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ROTATION_GROUP, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.AUTO_ROOM_ASSIGN_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.SALES_FLAG, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.UPSELL_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_UPSELL_RANK, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_UPSELL_AMT, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_DRXTRA_ADULT, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_DRXTRA_CHILD, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.MAX_OCCUPANCY_ADULTS, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.MAX_OCCUPANCY_CHILDREN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ROOM_POOL, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.MEMBER_AWARD_ROOM_GRP, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_DRXTRA_2ND_ADULT, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_DRTIER1, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_DRTIER2, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.ORMS_DRTIER3, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.AUTO_CHECKIN_YN, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.RATE_FLOOR, &#10;  &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;.MAX_FIX_BED_OCCUPANCY&#10;FROM &quot;+context.OPERA_Schema+&quot;.\&quot;RESORT$_ROOM_CATEGORY\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.OPERA_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RESORT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOM_CATEGORY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOM_CLASS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMBER_ROOMS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHORT_DESCRIPTION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LONG_DESCRIPTION"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPILED"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSUEDO_ROOM_TYPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTIVE_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INACTIVE_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REPLACES_CATEGORY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDER_BY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_OCCUPANCY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_ROLLAWAYS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_CATEGORY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LABEL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GENERIC_FLAG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUITE_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEETINGROOM_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSERT_USER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSERT_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UPDATE_USER"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UPDATE_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_AMOUNT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEF_OCCUPANCY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMAGE_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSEUDO_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEND_TO_INTERFACE_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YIELDABLE_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YIELD_CATEGORY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HOUSEKEEPING"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CAN_DELETE_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOMINFO_URL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OWNER_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_INCLUDE_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INITIAL_ROUND_UP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCREMENTS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROTATION_GROUP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_ROOM_ASSIGN_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALES_FLAG"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UPSELL_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_UPSELL_RANK"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_UPSELL_AMT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRXTRA_ADULT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRXTRA_CHILD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_OCCUPANCY_ADULTS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_OCCUPANCY_CHILDREN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOM_POOL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBER_AWARD_ROOM_GRP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRXTRA_2ND_ADULT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRTIER1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRTIER2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRTIER3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_CHECKIN_YN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_FLOOR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_FIX_BED_OCCUPANCY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="RESORT__ROOM_CATEGORY" name="tDBInput_2">
+      <column comment="The property that the record belongs to" key="true" length="20" name="RESORT" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="The property that the record belongs to"/>
+      </column>
+      <column comment="The room category which is valid for this property.  This is actually a synthetic key which the room" key="true" length="20" name="ROOM_CATEGORY" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="The room category which is valid for this property.  This is actually a synthetic key which the room"/>
+      </column>
+      <column comment="The room class to which this room category belongs" key="false" length="20" name="ROOM_CLASS" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="The room class to which this room category belongs"/>
+      </column>
+      <column comment="The physical number of rooms in this room category at this property" key="false" length="22" name="NUMBER_ROOMS" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The physical number of rooms in this room category at this property"/>
+      </column>
+      <column comment="The short description for this room category. This field is displayed in lieu of a classic &quot;Room type&quot;" key="false" length="2000" name="SHORT_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="The short description for this room category. This field is displayed in lieu of a classic &quot;Room type&quot;"/>
+      </column>
+      <column comment="The long description for this room category.  If automatically compiled, the concatenated descriptio" key="false" length="2000" name="LONG_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="The long description for this room category.  If automatically compiled, the concatenated descriptio"/>
+      </column>
+      <column comment="Has this room category's long and short description been compiled from the feature list? Y/N" key="false" length="1" name="COMPILED" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Has this room category's long and short description been compiled from the feature list? Y/N"/>
+      </column>
+      <column comment="To Identify Psuedo Room Types. Null indicates not a Psuedo room" key="false" length="20" name="PSUEDO_ROOM_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="To Identify Psuedo Room Types. Null indicates not a Psuedo room"/>
+      </column>
+      <column comment="The date this record becomes valid for use by the system.  User enterable" key="false" length="7" name="ACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="The date this record becomes valid for use by the system.  User enterable"/>
+      </column>
+      <column comment="The date the record was marked as inactive" key="false" length="7" name="INACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="The date the record was marked as inactive"/>
+      </column>
+      <column comment="When room categories are renamed, this flag indicates which room category this category replaces." key="false" length="20" name="REPLACES_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="When room categories are renamed, this flag indicates which room category this category replaces."/>
+      </column>
+      <column comment="The order that the booking screen should display this room category. (The display is usually ascendi" key="false" length="22" name="ORDER_BY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The order that the booking screen should display this room category. (The display is usually ascendi"/>
+      </column>
+      <column comment="The maximum occupancy for this room category" key="false" length="22" name="MAX_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The maximum occupancy for this room category"/>
+      </column>
+      <column comment="Not used" key="false" length="22" name="MAX_ROLLAWAYS" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Not used"/>
+      </column>
+      <column comment="Rate category that room category belongs" key="false" length="20" name="RATE_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Rate category that room category belongs"/>
+      </column>
+      <column comment="Room type description (4 letter)" key="false" length="20" name="LABEL" nullable="false" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room type description (4 letter)"/>
+      </column>
+      <column comment="Room type generic Y/N" key="false" length="1" name="GENERIC_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room type generic Y/N"/>
+      </column>
+      <column comment="Room type is Suite Y/N." key="false" length="1" name="SUITE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room type is Suite Y/N."/>
+      </column>
+      <column comment="Room type is a Meeting Room Y/N." defaultValue="'N'" key="false" length="1" name="MEETINGROOM_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room type is a Meeting Room Y/N."/>
+      </column>
+      <column comment="The user that created the record" key="false" length="22" name="INSERT_USER" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The user that created the record"/>
+      </column>
+      <column comment="The date the record was created" key="false" length="7" name="INSERT_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="The date the record was created"/>
+      </column>
+      <column comment="The user that modified the record" key="false" length="22" name="UPDATE_USER" nullable="false" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The user that modified the record"/>
+      </column>
+      <column comment="The date the record was modified" key="false" length="7" name="UPDATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value="The date the record was modified"/>
+      </column>
+      <column comment="Default rate code for the room type" key="false" length="20" name="RATE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Default rate code for the room type"/>
+      </column>
+      <column comment="Default rate amount for the room type" key="false" length="22" name="RATE_AMOUNT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Default rate amount for the room type"/>
+      </column>
+      <column comment="Default occupancy for the room type" key="false" length="22" name="DEF_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Default occupancy for the room type"/>
+      </column>
+      <column comment="Internal ID for the room type image." key="false" length="22" name="IMAGE_ID" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Internal ID for the room type image."/>
+      </column>
+      <column comment="Pseudo room type Y/N" defaultValue="'N'" key="false" length="1" name="PSEUDO_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Pseudo room type Y/N"/>
+      </column>
+      <column comment="Room type sent to interface Y/N" defaultValue="'N'" key="false" length="1" name="SEND_TO_INTERFACE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room type sent to interface Y/N"/>
+      </column>
+      <column comment="Room type is yieldable Y/N" key="false" length="1" name="YIELDABLE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room type is yieldable Y/N"/>
+      </column>
+      <column comment="Yield category the room type belongs" key="false" length="20" name="YIELD_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Yield category the room type belongs"/>
+      </column>
+      <column comment="Room type shows in housekeeping Y/N" key="false" length="1" name="HOUSEKEEPING" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room type shows in housekeeping Y/N"/>
+      </column>
+      <column comment="Can delete room type Y/N" key="false" length="1" name="CAN_DELETE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Can delete room type Y/N"/>
+      </column>
+      <column comment="URL where room information is stored." key="false" length="2000" name="ROOMINFO_URL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="URL where room information is stored."/>
+      </column>
+      <column comment="Indicates that this room type is for owned units which are not in the rental program." key="false" length="1" name="OWNER_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indicates that this room type is for owned units which are not in the rental program."/>
+      </column>
+      <column comment="Include room type in the rate header for Myfidelio rates." key="false" length="1" name="AUTO_INCLUDE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Include room type in the rate header for Myfidelio rates."/>
+      </column>
+      <column comment="Initial round up value for rates by day by LOS." key="false" length="22" name="INITIAL_ROUND_UP" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Initial round up value for rates by day by LOS."/>
+      </column>
+      <column comment="Increment value for rates by day by LOS." key="false" length="22" name="INCREMENTS" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Increment value for rates by day by LOS."/>
+      </column>
+      <column comment="Rotation Group this Room Type belongs to." key="false" length="20" name="ROTATION_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Rotation Group this Room Type belongs to."/>
+      </column>
+      <column comment="A setting of Y will automatically assign an available room number to any reservation that is made for this room type." key="false" length="1" name="AUTO_ROOM_ASSIGN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="A setting of Y will automatically assign an available room number to any reservation that is made for this room type."/>
+      </column>
+      <column comment="Sales strategy flag for Room Types: L=Lead, U=Upsell, A=Alternate." key="false" length="1" name="SALES_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Sales strategy flag for Room Types: L=Lead, U=Upsell, A=Alternate."/>
+      </column>
+      <column comment="Indicates if the room category can be upsold" key="false" length="1" name="UPSELL_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indicates if the room category can be upsold"/>
+      </column>
+      <column comment="Relative rank (low to high) of the room category per yield category." key="false" length="22" name="ORMS_UPSELL_RANK" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Relative rank (low to high) of the room category per yield category."/>
+      </column>
+      <column comment="Relative amount increase per room category per yield category. Used only in ADF10." key="false" length="22" name="ORMS_UPSELL_AMT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Relative amount increase per room category per yield category. Used only in ADF10."/>
+      </column>
+      <column comment="Daily Rate extra adult additional charge for this room type." key="false" length="22" name="ORMS_DRXTRA_ADULT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Daily Rate extra adult additional charge for this room type."/>
+      </column>
+      <column comment="Daily Rate extra children additional charge for this room type." key="false" length="22" name="ORMS_DRXTRA_CHILD" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Daily Rate extra children additional charge for this room type."/>
+      </column>
+      <column comment="The maximum occupancy of adults for this room category." key="false" length="22" name="MAX_OCCUPANCY_ADULTS" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The maximum occupancy of adults for this room category."/>
+      </column>
+      <column comment="The maximum occupancy of children for this room category." key="false" length="22" name="MAX_OCCUPANCY_CHILDREN" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The maximum occupancy of children for this room category."/>
+      </column>
+      <column comment="Room Pool that this room type belongs to. (Used in Marriott mode)." key="false" length="20" name="ROOM_POOL" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Room Pool that this room type belongs to. (Used in Marriott mode)."/>
+      </column>
+      <column comment="Specifies which membership award room group the room category belongs to." key="false" length="20" name="MEMBER_AWARD_ROOM_GRP" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Specifies which membership award room group the room category belongs to."/>
+      </column>
+      <column comment="The extra charge on 2nd adult." key="false" length="22" name="ORMS_DRXTRA_2ND_ADULT" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The extra charge on 2nd adult."/>
+      </column>
+      <column comment="The extra charge on child in age tier1" key="false" length="22" name="ORMS_DRTIER1" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The extra charge on child in age tier1"/>
+      </column>
+      <column comment="The extra charge on child in age tier2" key="false" length="22" name="ORMS_DRTIER2" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The extra charge on child in age tier2"/>
+      </column>
+      <column comment="The extra charge on child in age tier3" key="false" length="22" name="ORMS_DRTIER3" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="The extra charge on child in age tier3"/>
+      </column>
+      <column comment="Indicated if a new reservation should be created and automatically checked in whenever the room is checked out. Available for pseudo room types only." key="false" length="1" name="AUTO_CHECKIN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value="Indicated if a new reservation should be created and automatically checked in whenever the room is checked out. Available for pseudo room types only."/>
+      </column>
+      <column comment="This column stores the minimum Rate Amount at which this Room Type can be configured." key="false" length="22" name="RATE_FLOOR" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="This column stores the minimum Rate Amount at which this Room Type can be configured."/>
+      </column>
+      <column comment="Maximum number of persons that can be accommodated in this room type without providing an extra bed." key="false" length="22" name="MAX_FIX_BED_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value="Maximum number of persons that can be accommodated in this room type without providing an extra bed."/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_NgZoQC9UEeu1WsU0ANFl1A-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OPR_Resort__Room_Category" name="roomcat_op">
+      <column comment="" key="false" length="20" name="RESORT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_CLASS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUMBER_ROOMS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="SHORT_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="LONG_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="COMPILED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PSUEDO_ROOM_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="ACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="INACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="REPLACES_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORDER_BY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_ROLLAWAYS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATE_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="LABEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="GENERIC_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SUITE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="MEETINGROOM_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INSERT_USER" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="INSERT_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="UPDATE_USER" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="UPDATE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RATE_AMOUNT" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DEF_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IMAGE_ID" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="PSEUDO_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="SEND_TO_INTERFACE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="YIELDABLE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YIELD_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HOUSEKEEPING" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="CAN_DELETE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="ROOMINFO_URL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="OWNER_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_INCLUDE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INITIAL_ROUND_UP" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INCREMENTS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROTATION_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_ROOM_ASSIGN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SALES_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="UPSELL_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_UPSELL_RANK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_UPSELL_AMT" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_ADULT" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_CHILD" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY_ADULTS" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY_CHILDREN" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_POOL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MEMBER_AWARD_ROOM_GRP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_2ND_ADULT" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER1" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER2" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER3" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_CHECKIN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RATE_FLOOR" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_FIX_BED_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_Deleted_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="10" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="10" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="roomcat_op" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row2.RESORT" name="RESORT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ROOM_CATEGORY" name="ROOM_CATEGORY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ROOM_CLASS" name="ROOM_CLASS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.NUMBER_ROOMS" name="NUMBER_ROOMS" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.SHORT_DESCRIPTION" name="SHORT_DESCRIPTION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.LONG_DESCRIPTION" name="LONG_DESCRIPTION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.COMPILED" name="COMPILED" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.PSUEDO_ROOM_TYPE" name="PSUEDO_ROOM_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ACTIVE_DATE" name="ACTIVE_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.INACTIVE_DATE" name="INACTIVE_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.REPLACES_CATEGORY" name="REPLACES_CATEGORY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ORDER_BY" name="ORDER_BY" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.MAX_OCCUPANCY" name="MAX_OCCUPANCY" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.MAX_ROLLAWAYS" name="MAX_ROLLAWAYS" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.RATE_CATEGORY" name="RATE_CATEGORY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.LABEL" name="LABEL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.GENERIC_FLAG" name="GENERIC_FLAG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SUITE_YN" name="SUITE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.MEETINGROOM_YN" name="MEETINGROOM_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.INSERT_USER" name="INSERT_USER" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.INSERT_DATE" name="INSERT_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.UPDATE_USER" name="UPDATE_USER" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.UPDATE_DATE" name="UPDATE_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.RATE_CODE" name="RATE_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.RATE_AMOUNT" name="RATE_AMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.DEF_OCCUPANCY" name="DEF_OCCUPANCY" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.IMAGE_ID" name="IMAGE_ID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.PSEUDO_YN" name="PSEUDO_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SEND_TO_INTERFACE_YN" name="SEND_TO_INTERFACE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.YIELDABLE_YN" name="YIELDABLE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.YIELD_CATEGORY" name="YIELD_CATEGORY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.HOUSEKEEPING" name="HOUSEKEEPING" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.CAN_DELETE_YN" name="CAN_DELETE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ROOMINFO_URL" name="ROOMINFO_URL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.OWNER_YN" name="OWNER_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.AUTO_INCLUDE_YN" name="AUTO_INCLUDE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.INITIAL_ROUND_UP" name="INITIAL_ROUND_UP" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.INCREMENTS" name="INCREMENTS" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ROTATION_GROUP" name="ROTATION_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.AUTO_ROOM_ASSIGN_YN" name="AUTO_ROOM_ASSIGN_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.SALES_FLAG" name="SALES_FLAG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.UPSELL_YN" name="UPSELL_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ORMS_UPSELL_RANK" name="ORMS_UPSELL_RANK" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ORMS_UPSELL_AMT" name="ORMS_UPSELL_AMT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ORMS_DRXTRA_ADULT" name="ORMS_DRXTRA_ADULT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ORMS_DRXTRA_CHILD" name="ORMS_DRXTRA_CHILD" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.MAX_OCCUPANCY_ADULTS" name="MAX_OCCUPANCY_ADULTS" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.MAX_OCCUPANCY_CHILDREN" name="MAX_OCCUPANCY_CHILDREN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ROOM_POOL" name="ROOM_POOL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.MEMBER_AWARD_ROOM_GRP" name="MEMBER_AWARD_ROOM_GRP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.ORMS_DRXTRA_2ND_ADULT" name="ORMS_DRXTRA_2ND_ADULT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ORMS_DRTIER1" name="ORMS_DRTIER1" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ORMS_DRTIER2" name="ORMS_DRTIER2" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.ORMS_DRTIER3" name="ORMS_DRTIER3" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.AUTO_CHECKIN_YN" name="AUTO_CHECKIN_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.RATE_FLOOR" name="RATE_FLOOR" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="row2.MAX_FIX_BED_OCCUPANCY" name="MAX_FIX_BED_OCCUPANCY" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DI_SOR_SK" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries expression="" name="DI_Deleted_Date" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="pid" name="DI_PID" type="id_String"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()" name="DI_CREATE_DATE" type="id_Date"/>
+        <mapperTableEntries expression="TalendDate.getCurrentDate()" name="DI_MODIFY_DATE" type="id_Date"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="RESORT" type="id_String"/>
+        <mapperTableEntries name="ROOM_CATEGORY" type="id_String"/>
+        <mapperTableEntries name="ROOM_CLASS" type="id_String"/>
+        <mapperTableEntries name="NUMBER_ROOMS" type="id_BigDecimal"/>
+        <mapperTableEntries name="SHORT_DESCRIPTION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LONG_DESCRIPTION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="COMPILED" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PSUEDO_ROOM_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ACTIVE_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="INACTIVE_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="REPLACES_CATEGORY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ORDER_BY" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="MAX_OCCUPANCY" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="MAX_ROLLAWAYS" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="RATE_CATEGORY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LABEL" type="id_String"/>
+        <mapperTableEntries name="GENERIC_FLAG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SUITE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MEETINGROOM_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INSERT_USER" type="id_BigDecimal"/>
+        <mapperTableEntries name="INSERT_DATE" type="id_Date"/>
+        <mapperTableEntries name="UPDATE_USER" type="id_BigDecimal"/>
+        <mapperTableEntries name="UPDATE_DATE" type="id_Date"/>
+        <mapperTableEntries name="RATE_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RATE_AMOUNT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="DEF_OCCUPANCY" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="IMAGE_ID" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="PSEUDO_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SEND_TO_INTERFACE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="YIELDABLE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="YIELD_CATEGORY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HOUSEKEEPING" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CAN_DELETE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ROOMINFO_URL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="OWNER_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AUTO_INCLUDE_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="INITIAL_ROUND_UP" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="INCREMENTS" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ROTATION_GROUP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="AUTO_ROOM_ASSIGN_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SALES_FLAG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="UPSELL_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ORMS_UPSELL_RANK" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ORMS_UPSELL_AMT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ORMS_DRXTRA_ADULT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ORMS_DRXTRA_CHILD" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="MAX_OCCUPANCY_ADULTS" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="MAX_OCCUPANCY_CHILDREN" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ROOM_POOL" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MEMBER_AWARD_ROOM_GRP" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ORMS_DRXTRA_2ND_ADULT" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ORMS_DRTIER1" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ORMS_DRTIER2" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="ORMS_DRTIER3" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="AUTO_CHECKIN_YN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RATE_FLOOR" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="MAX_FIX_BED_OCCUPANCY" nullable="true" type="id_BigDecimal"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_BCfsgBfvEeuUr4792Oip2g"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="MSSQL_PROP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.stg_schema_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.stg_schema_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.stg_schema_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.stg_schema_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.stg_schema_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KWzN7/degn453jRd2yXazXB964CuoezOUqQFwLM27xVMJkC0yU2nFpvBkprt9uCpb3hilUwjSw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;OPR_Resort$_Room_Category&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="RESORT"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.stg_schema_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="RESORT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOM_CATEGORY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOM_CLASS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NUMBER_ROOMS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHORT_DESCRIPTION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LONG_DESCRIPTION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPILED"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSUEDO_ROOM_TYPE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACTIVE_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INACTIVE_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REPLACES_CATEGORY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORDER_BY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_OCCUPANCY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_ROLLAWAYS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_CATEGORY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LABEL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GENERIC_FLAG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUITE_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEETINGROOM_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSERT_USER"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INSERT_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UPDATE_USER"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UPDATE_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_CODE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_AMOUNT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DEF_OCCUPANCY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IMAGE_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSEUDO_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEND_TO_INTERFACE_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YIELDABLE_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="YIELD_CATEGORY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HOUSEKEEPING"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CAN_DELETE_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOMINFO_URL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OWNER_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_INCLUDE_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INITIAL_ROUND_UP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INCREMENTS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROTATION_GROUP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_ROOM_ASSIGN_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SALES_FLAG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UPSELL_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_UPSELL_RANK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_UPSELL_AMT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRXTRA_ADULT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRXTRA_CHILD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_OCCUPANCY_ADULTS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_OCCUPANCY_CHILDREN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ROOM_POOL"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEMBER_AWARD_ROOM_GRP"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRXTRA_2ND_ADULT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRTIER1"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRTIER2"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ORMS_DRTIER3"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AUTO_CHECKIN_YN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RATE_FLOOR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MAX_FIX_BED_OCCUPANCY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_SOR_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_Deleted_Date"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_PID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_CREATE_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_MODIFY_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="OPR_Resort__Room_Category" name="tDBOutput_2">
+      <column comment="" key="false" length="20" name="RESORT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_CLASS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUMBER_ROOMS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="SHORT_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="LONG_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="COMPILED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PSUEDO_ROOM_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="ACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="INACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="REPLACES_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORDER_BY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_ROLLAWAYS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATE_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="LABEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="GENERIC_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SUITE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="MEETINGROOM_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INSERT_USER" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="INSERT_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="UPDATE_USER" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="UPDATE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RATE_AMOUNT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DEF_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IMAGE_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="PSEUDO_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="SEND_TO_INTERFACE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="YIELDABLE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YIELD_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HOUSEKEEPING" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="CAN_DELETE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="ROOMINFO_URL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="OWNER_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_INCLUDE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INITIAL_ROUND_UP" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INCREMENTS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROTATION_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_ROOM_ASSIGN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SALES_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="UPSELL_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_UPSELL_RANK" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_UPSELL_AMT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_ADULT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_CHILD" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY_ADULTS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY_CHILDREN" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_POOL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MEMBER_AWARD_ROOM_GRP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_2ND_ADULT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER1" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER2" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER3" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_CHECKIN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RATE_FLOOR" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_FIX_BED_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_Deleted_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="10" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="10" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="OPR_Resort__Room_Category" name="REJECT">
+      <column comment="" key="false" length="20" name="RESORT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_CLASS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="NUMBER_ROOMS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="SHORT_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="LONG_DESCRIPTION" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="COMPILED" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="PSUEDO_ROOM_TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="ACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="INACTIVE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="REPLACES_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORDER_BY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_ROLLAWAYS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATE_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="LABEL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="GENERIC_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SUITE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="MEETINGROOM_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INSERT_USER" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="INSERT_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="UPDATE_USER" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="UPDATE_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="RATE_CODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RATE_AMOUNT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DEF_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="IMAGE_ID" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="PSEUDO_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'('N')'" key="false" length="1" name="SEND_TO_INTERFACE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="YIELDABLE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="YIELD_CATEGORY" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HOUSEKEEPING" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="CAN_DELETE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="2000" name="ROOMINFO_URL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="OWNER_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_INCLUDE_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INITIAL_ROUND_UP" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="INCREMENTS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROTATION_GROUP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_ROOM_ASSIGN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="SALES_FLAG" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="UPSELL_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_UPSELL_RANK" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_UPSELL_AMT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_ADULT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_CHILD" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY_ADULTS" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_OCCUPANCY_CHILDREN" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="ROOM_POOL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="MEMBER_AWARD_ROOM_GRP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRXTRA_2ND_ADULT" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER1" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER2" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ORMS_DRTIER3" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="AUTO_CHECKIN_YN" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RATE_FLOOR" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="MAX_FIX_BED_OCCUPANCY" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_Deleted_Date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="10" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="10" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="roomcat_op" lineStyle="0" metaname="roomcat_op" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="roomcat_op"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_810ce791-9360-4220-bdb8-12e1da2cb8ae"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jOrcwAKdP12/8lIFOKog5tR8TmPLhRqz/a7ajRuNamTjeljuT83oOSfNJHKTgMdezyJcS9msHHTP&#13;
+aAIAKilGCg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_23505edb-51ff-406f-a5d0-c0e187cf22f9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cS5wGjSpF/hh0vc/LqIujwNfFYCbtai1wCn/DdWmyGQZX8vkReSHT/B7OxiHsyahe2q0p9T45OOO&#13;
+WbqTMaaWAg==</DigestValue></Reference></SignedInfo><SignatureValue>dYvXeSCzZC83pbmC37uAAj2hRe/QmD25x8VGQMMahFEIiy4btiQ/AU7gJmoZB48Cv+uwSANnblbj&#13;
+UVTWxeGCwFSGHBjyf/Hbr6J6a6/JWaS+ELwyKI+S/XKA7rsr4CNcRODOy6rlCA1RTdWgXc/7yhCP&#13;
+fw1FnQCAuH8q2qlk2HXfrgByoCStiipgrwUwFI+WK0UlPJNliAk9OBwIDL55m/J6mg+nyR1U1hGH&#13;
+vG2Qkt5JoS17QmRJqmris/NU7wv4xEMgCx+Nce96o0w308bRk5We4MtCe1qeM8+R3i+f2311y/ie&#13;
+i0H5ShurXTZo6U9DuxH9gPvDtQijsqNNTCZtLQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_23505edb-51ff-406f-a5d0-c0e187cf22f9" Target="#_810ce791-9360-4220-bdb8-12e1da2cb8ae"><Timestamp>2023-07-25 21:04:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

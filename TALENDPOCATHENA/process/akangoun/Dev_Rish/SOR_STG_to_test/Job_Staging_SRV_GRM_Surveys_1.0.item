@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_t_JkcCsuEe6rtfIqED56VA" name="STG_Password" prompt="STG_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:1s9TnijGUZq47bsi4jYbOQ7g8nhSzDVVINIQZK6D3c9cqjWVIIbXs5Y="/>
+    <contextParameter comment="" internalId="_t_JkcSsuEe6rtfIqED56VA" name="STG_Login" prompt="STG_Login?" promptNeeded="false" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" internalId="_t_JkcisuEe6rtfIqED56VA" name="STG_Schema" prompt="STG_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_t_JkcysuEe6rtfIqED56VA" name="STG_Port" prompt="STG_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_t_JkdCsuEe6rtfIqED56VA" name="STG_Database" prompt="STG_Database?" promptNeeded="false" type="id_String" value="STG_DEV"/>
+    <contextParameter comment="" internalId="_t_JkdSsuEe6rtfIqED56VA" name="STG_Server" prompt="STG_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" internalId="_t_JkdisuEe6rtfIqED56VA" name="STG_AdditionalParams" prompt="STG_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" internalId="_t_JkdysuEe6rtfIqED56VA" name="STG_Password" prompt="STG_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Z0+FjhoWcQy8cDQuOLOqZRjSv116Yq4SxEuecngw/iZkG0vCHz56MbE="/>
+    <contextParameter comment="" internalId="_t_JkeCsuEe6rtfIqED56VA" name="STG_Login" prompt="STG_Login?" promptNeeded="false" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" internalId="_t_JkeSsuEe6rtfIqED56VA" name="STG_Schema" prompt="STG_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_t_JkeisuEe6rtfIqED56VA" name="STG_Port" prompt="STG_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_t_JkeysuEe6rtfIqED56VA" name="STG_Database" prompt="STG_Database?" promptNeeded="false" type="id_String" value="STG_DEV"/>
+    <contextParameter comment="" internalId="_t_JkfCsuEe6rtfIqED56VA" name="STG_Server" prompt="STG_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" internalId="_t_JkfSsuEe6rtfIqED56VA" name="STG_AdditionalParams" prompt="STG_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_t_JkfisuEe6rtfIqED56VA" name="STG_Password" prompt="STG_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:zokpUNtFfvKHFVVe/aMJv9akz3PnPgE8vJUZ2CyVVSd2UWeTo6WWzx0="/>
+    <contextParameter comment="" internalId="_t_JkfysuEe6rtfIqED56VA" name="STG_Login" prompt="STG_Login?" promptNeeded="false" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" internalId="_t_JkgCsuEe6rtfIqED56VA" name="STG_Schema" prompt="STG_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_t_JkgSsuEe6rtfIqED56VA" name="STG_Port" prompt="STG_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_t_JkgisuEe6rtfIqED56VA" name="STG_Database" prompt="STG_Database?" promptNeeded="false" type="id_String" value="STG_DEV"/>
+    <contextParameter comment="" internalId="_t_JkgysuEe6rtfIqED56VA" name="STG_Server" prompt="STG_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" internalId="_t_JkhCsuEe6rtfIqED56VA" name="STG_AdditionalParams" prompt="STG_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="TST">
+    <contextParameter comment="" internalId="_t_JkhSsuEe6rtfIqED56VA" name="STG_Password" prompt="STG_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:OYlHWRFvrHzZ7ShzDJmK76fqAEZXkxH7WMqY9TENDnzleMLU4+BMMUk="/>
+    <contextParameter comment="" internalId="_t_JkhisuEe6rtfIqED56VA" name="STG_Login" prompt="STG_Login?" promptNeeded="false" type="id_String" value="optxadmin"/>
+    <contextParameter comment="" internalId="_t_JkhysuEe6rtfIqED56VA" name="STG_Schema" prompt="STG_Schema?" promptNeeded="false" type="id_String" value="dbo"/>
+    <contextParameter comment="" internalId="_t_JkiCsuEe6rtfIqED56VA" name="STG_Port" prompt="STG_Port?" promptNeeded="false" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_t_JkiSsuEe6rtfIqED56VA" name="STG_Database" prompt="STG_Database?" promptNeeded="false" type="id_String" value="STG_DEV"/>
+    <contextParameter comment="" internalId="_t_JkiisuEe6rtfIqED56VA" name="STG_Server" prompt="STG_Server?" promptNeeded="false" type="id_String" value="dev-v2-sqlserver.database.windows.net"/>
+    <contextParameter comment="" internalId="_t_JkiysuEe6rtfIqED56VA" name="STG_AdditionalParams" prompt="STG_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:oXPdSef9386dADcO5yqO/0WhKbhqVBvdpLBX2vBy"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;E:/TalendWorkspaceCloud/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:V4oC+52UztHItLH75qqrrbxShHkKJL/o5ulH6YsR"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_2dCyAA2AEeu1TPPsnJu-RQ" name="DataOperation"/>
+    <routinesParameter id="_2f1nUA2AEeu1TPPsnJu-RQ" name="Mathematical"/>
+    <routinesParameter id="_2ga2IA2AEeu1TPPsnJu-RQ" name="Numeric"/>
+    <routinesParameter id="_2g-20A2AEeu1TPPsnJu-RQ" name="Relational"/>
+    <routinesParameter id="_2jD6cA2AEeu1TPPsnJu-RQ" name="SQLike"/>
+    <routinesParameter id="_2hWqQA2AEeu1TPPsnJu-RQ" name="StringHandling"/>
+    <routinesParameter id="_2h1ycA2AEeu1TPPsnJu-RQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_2iFDAA2AEeu1TPPsnJu-RQ" name="TalendDate"/>
+    <routinesParameter id="_2iw_gA2AEeu1TPPsnJu-RQ" name="TalendStringUtil"/>
+    <routinesParameter id="_2ieroA2AEeu1TPPsnJu-RQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tSOAP" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSOAP_1"/>
+    <elementParameter field="CHECK" name="USE_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="NTLM_DOMAIN" show="false" value="&quot;192.168.0.100&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:bNwH+bCXoh1I6FJJd0FUoHTkd9IcaOubrInJFTu2tIfpyehQCoM="/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:ay1+Jl8EKQbwc5VUqSKxPGeG3//lq/KAUGjrYMW/"/>
+    <elementParameter field="CHECK" name="NEED_SSL_TO_TRUSTSERVER" value="false"/>
+    <elementParameter field="TEXT" name="SSL_TRUSTSERVER_TRUSTSTORE" show="false" value="&quot;C:/clientTrustStore.trustStore&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" show="false" value="enc:system.encryption.key.v1:WBaFBs4xyY172BU7/u6Olb0UST8c+g3Nzc+UQHDidEySN3ZjUzU="/>
+    <elementParameter field="TEXT" name="ENDPOINT" value="&quot;https://dashboard1.unifocus.com/GetSurveyResults.asmx&quot;"/>
+    <elementParameter field="TEXT" name="ACTION" value="&quot;https://dashboard1.unifocus.com/GetSurveyResults.asmx/GetSurveyResult&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="SOAP_VERSION" value="Soap11"/>
+    <elementParameter field="CHECK" name="USE_MESSAGE_FROM_SCHEMA" value="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="SOAPMESSAGE_FROM_SCHEMA" show="false" value=""/>
+    <elementParameter field="MEMO" name="SOAPMESSAGE" value="&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&gt;&#13;&#10;&lt;soap:Envelope xmlns:xsi=\&quot;http://www.w3.org/2001/XMLSchema-instance\&quot; xmlns:xsd=\&quot;http://www.w3.org/2001/XMLSchema\&quot; xmlns:soap=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot;&gt;&#13;&#10;  &lt;soap:Body&gt;&#13;&#10;    &lt;GetSurveyResult xmlns=\&quot;https://dashboard1.unifocus.com/GetSurveyResults.asmx\&quot;&gt;&#13;&#10;      &lt;SecurityKey&gt;FA45EDBF-578F-44E6-B804-B92B9569C744&lt;/SecurityKey&gt;&#13;&#10;      &lt;PodProjectID&gt;35677&lt;/PodProjectID&gt;&#13;&#10;      &lt;FromDate&gt;2020-10-19T12:00:00&lt;/FromDate&gt;&#13;&#10;      &lt;ToDate&gt;2020-10-25T23:59:59&lt;/ToDate&gt;&#13;&#10;    &lt;/GetSurveyResult&gt;&#13;&#10;  &lt;/soap:Body&gt;&#13;&#10;&lt;/soap:Envelope&gt;&quot;"/>
+    <elementParameter field="CHECK" name="OUTPUT_DOCUMENT" value="true"/>
+    <elementParameter field="CHECK" name="USE_KERBEROS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="KERBEROS_CONFIGURATION" show="false" value=""/>
+    <elementParameter field="CHECK" name="ENFORCE_NTLM" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSOAP_1">
+      <column defaultValue="" key="false" length="0" name="Soap" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SRV_GRM_Surveys" name="Table_Surveys">
+      <column comment="" key="false" length="32" name="Id" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ClientCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="PropertyCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FacilityCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProjectCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PodProjectId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RespondentId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="FullPodProjectName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HasNegative" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="HasComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="24" name="OverallRating" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeTaken" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="input_surveys">
+        <nodes expression="" name="Soap" type="id_Document" xpath="input_surveys/Soap">
+          <children main="true" name="soap:Envelope" type="id_String" xpath="input_surveys.Soap:/soap:Envelope">
+            <children defaultValue="http://schemas.xmlsoap.org/soap/envelope/" name="soap" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/xmlns:soap"/>
+            <children main="true" name="soap:Body" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body">
+              <children main="true" name="GetSurveyResultResponse" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse">
+                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/xmlns:"/>
+                <children main="true" name="GetSurveyResultResult" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult">
+                  <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/xmlns:"/>
+                  <children loop="true" main="true" name="ArrayOfSimpleSurveyWithRespondent" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent">
+                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/xmlns:"/>
+                    <children name="SimpleSurveyWithRespondent" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent">
+                      <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/xmlns:"/>
+                      <children name="ClientCode" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/ClientCode">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/ClientCode/xmlns:"/>
+                      </children>
+                      <children name="PropertyCode" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/PropertyCode">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/PropertyCode/xmlns:"/>
+                      </children>
+                      <children name="FacilityCode" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/FacilityCode">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/FacilityCode/xmlns:"/>
+                      </children>
+                      <children name="ProjectCode" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/ProjectCode">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/ProjectCode/xmlns:"/>
+                      </children>
+                      <children name="PodProjectID" outgoingConnections="//@node.1/@nodeData/@connections.9" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/PodProjectID">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/PodProjectID/xmlns:"/>
+                      </children>
+                      <children name="RespondentID" outgoingConnections="//@node.1/@nodeData/@connections.10" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/RespondentID">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/RespondentID/xmlns:"/>
+                      </children>
+                      <children name="FullPodProjectName" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/FullPodProjectName">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/FullPodProjectName/xmlns:"/>
+                      </children>
+                      <children name="HasNegative" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/HasNegative">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/HasNegative/xmlns:"/>
+                      </children>
+                      <children name="HasComments" outgoingConnections="//@node.1/@nodeData/@connections.6" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/HasComments">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/HasComments/xmlns:"/>
+                      </children>
+                      <children name="Rate" outgoingConnections="//@node.1/@nodeData/@connections.8" type="id_Float" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Rate">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Rate/xmlns:"/>
+                      </children>
+                      <children name="GRSResponse" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/GRSResponse">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/GRSResponse/xmlns:"/>
+                      </children>
+                      <children name="TimeTaken" outgoingConnections="//@node.1/@nodeData/@connections.7" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/TimeTaken">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/TimeTaken/xmlns:"/>
+                      </children>
+                      <children name="Sections" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/xmlns:"/>
+                        <children name="SimpleSurveyPart" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/xmlns:"/>
+                          <children name="ID" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/ID">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/ID/xmlns:"/>
+                          </children>
+                          <children name="Name" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Name">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Name/xmlns:"/>
+                          </children>
+                          <children name="HasNegative" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/HasNegative">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/HasNegative/xmlns:"/>
+                          </children>
+                          <children name="HasComments" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/HasComments">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/HasComments/xmlns:"/>
+                          </children>
+                          <children name="AutoGenerated" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/AutoGenerated">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/AutoGenerated/xmlns:"/>
+                          </children>
+                          <children name="TimeTaken" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/TimeTaken">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/TimeTaken/xmlns:"/>
+                          </children>
+                          <children name="LastUpdated" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/LastUpdated">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/LastUpdated/xmlns:"/>
+                          </children>
+                          <children name="QuestionsIncluded" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/QuestionsIncluded">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/QuestionsIncluded/xmlns:"/>
+                          </children>
+                          <children name="Questions" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/xmlns:"/>
+                            <children name="SimpleSurveyQuestion" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion">
+                              <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/xmlns:"/>
+                              <children name="GroupCode" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/GroupCode">
+                                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/GroupCode/xmlns:"/>
+                              </children>
+                              <children name="QuestionCode" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/QuestionCode">
+                                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/QuestionCode/xmlns:"/>
+                              </children>
+                              <children name="GroupName" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/GroupName">
+                                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/GroupName/xmlns:"/>
+                              </children>
+                              <children name="QuestionText" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/QuestionText">
+                                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/QuestionText/xmlns:"/>
+                              </children>
+                              <children name="Demographic" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Demographic">
+                                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Demographic/xmlns:"/>
+                              </children>
+                              <children name="Position" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Position">
+                                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Position/xmlns:"/>
+                              </children>
+                              <children name="Responses" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses">
+                                <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/xmlns:"/>
+                                <children name="SimpleSurveyResponse" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse">
+                                  <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/xmlns:"/>
+                                  <children name="ResponseCode" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/ResponseCode">
+                                    <children name="xsi:nil" nodeType="ATTRIBUT" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/ResponseCode/@xsi:nil"/>
+                                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/ResponseCode/xmlns:"/>
+                                  </children>
+                                  <children name="ResposeText" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/ResposeText">
+                                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/ResposeText/xmlns:"/>
+                                  </children>
+                                  <children name="Color" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/Color">
+                                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/Color/xmlns:"/>
+                                  </children>
+                                  <children name="Score" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/Score">
+                                    <children name="xsi:nil" nodeType="ATTRIBUT" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/Score/@xsi:nil"/>
+                                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/Score/xmlns:"/>
+                                  </children>
+                                  <children name="RValue" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/RValue">
+                                    <children name="xsi:nil" nodeType="ATTRIBUT" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/RValue/@xsi:nil"/>
+                                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/RValue/xmlns:"/>
+                                  </children>
+                                  <children name="Comment" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/Comment">
+                                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/Comment/xmlns:"/>
+                                  </children>
+                                  <children name="CommentCategory" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/CommentCategory">
+                                    <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Sections/SimpleSurveyPart/Questions/SimpleSurveyQuestion/Responses/SimpleSurveyResponse/CommentCategory/xmlns:"/>
+                                  </children>
+                                </children>
+                              </children>
+                            </children>
+                          </children>
+                        </children>
+                      </children>
+                      <children name="Respondent" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/xmlns:"/>
+                        <children name="ID" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/ID">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/ID/xmlns:"/>
+                        </children>
+                        <children name="Name" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Name">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Name/xmlns:"/>
+                        </children>
+                        <children name="IPAddress" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/IPAddress">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/IPAddress/xmlns:"/>
+                        </children>
+                        <children name="PropertyFacName" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/PropertyFacName">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/PropertyFacName/xmlns:"/>
+                        </children>
+                        <children name="Address" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Address">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Address/xmlns:"/>
+                          <children name="Address1" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Address/Address1">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Address/Address1/xmlns:"/>
+                          </children>
+                          <children name="Province" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Address/Province">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Address/Province/xmlns:"/>
+                          </children>
+                        </children>
+                        <children name="Email_Address" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_Address">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_Address/xmlns:"/>
+                        </children>
+                        <children name="Email_OptedOut" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_OptedOut">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_OptedOut/xmlns:"/>
+                        </children>
+                        <children name="Email_IsValid" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_IsValid">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_IsValid/xmlns:"/>
+                        </children>
+                        <children name="Email_SendHTML" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_SendHTML">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Email_SendHTML/xmlns:"/>
+                        </children>
+                        <children name="Phone" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Phone">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Phone/xmlns:"/>
+                        </children>
+                        <children name="Fax" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Fax">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Fax/xmlns:"/>
+                        </children>
+                        <children name="LanguageID" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/LanguageID">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/LanguageID/xmlns:"/>
+                        </children>
+                        <children name="LangaugeName" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/LangaugeName">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/LangaugeName/xmlns:"/>
+                        </children>
+                        <children name="GuestNumberDate" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/GuestNumberDate">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/GuestNumberDate/xmlns:"/>
+                        </children>
+                        <children name="Arrival" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Arrival">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Arrival/xmlns:"/>
+                        </children>
+                        <children name="Arrival_Booked" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Arrival_Booked">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Arrival_Booked/xmlns:"/>
+                        </children>
+                        <children name="Departure" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Departure">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Departure/xmlns:"/>
+                        </children>
+                        <children name="Departure_Booked" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Departure_Booked">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Departure_Booked/xmlns:"/>
+                        </children>
+                        <children name="ReservationNumberDate" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/ReservationNumberDate">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/ReservationNumberDate/xmlns:"/>
+                        </children>
+                        <children name="RoomNumber" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/RoomNumber">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/RoomNumber/xmlns:"/>
+                        </children>
+                        <children name="RoomRate" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/RoomRate">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/RoomRate/xmlns:"/>
+                        </children>
+                        <children name="NumberOfAdults" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/NumberOfAdults">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/NumberOfAdults/xmlns:"/>
+                        </children>
+                        <children name="NumberOfChildren" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/NumberOfChildren">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/NumberOfChildren/xmlns:"/>
+                        </children>
+                        <children name="NumberOfInfants" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/NumberOfInfants">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/NumberOfInfants/xmlns:"/>
+                        </children>
+                        <children name="SourceID" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/SourceID">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/SourceID/xmlns:"/>
+                        </children>
+                        <children name="SourceName" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/SourceName">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/SourceName/xmlns:"/>
+                        </children>
+                        <children name="UploadTime" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/UploadTime">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/UploadTime/xmlns:"/>
+                        </children>
+                        <children name="TimeTaken" pattern="&quot;dd-MM-yyyy&quot;" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/TimeTaken">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/TimeTaken/xmlns:"/>
+                        </children>
+                        <children name="ResponseSent" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/ResponseSent">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/ResponseSent/xmlns:"/>
+                        </children>
+                        <children name="EnoughInfoForGRS" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/EnoughInfoForGRS">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/EnoughInfoForGRS/xmlns:"/>
+                        </children>
+                        <children name="Attributes" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/xmlns:"/>
+                          <children name="StayAttribute" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute">
+                            <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute/xmlns:"/>
+                            <children name="ID" type="id_Integer" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute/ID">
+                              <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute/ID/xmlns:"/>
+                            </children>
+                            <children name="Name" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute/Name">
+                              <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute/Name/xmlns:"/>
+                            </children>
+                            <children name="Value" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute/Value">
+                              <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/Attributes/StayAttribute/Value/xmlns:"/>
+                            </children>
+                          </children>
+                        </children>
+                        <children name="IsUsable" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/IsUsable">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/IsUsable/xmlns:"/>
+                        </children>
+                        <children name="IsTest" type="id_Boolean" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/IsTest">
+                          <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Respondent/IsTest/xmlns:"/>
+                        </children>
+                      </children>
+                      <children name="SurveyDetailURL" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/SurveyDetailURL">
+                        <children defaultValue="https://dashboard1.unifocus.com/GetSurveyResults.asmx" name="(default)" nodeType="NAME_SPACE" type="id_String" xpath="input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/SurveyDetailURL/xmlns:"/>
+                      </children>
+                    </children>
+                  </children>
+                </children>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="Table_Surveys">
+        <nodes expression="" name="Id" type="id_String" xpath="Table_Surveys/Id"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/ClientCode]" incomingConnections="//@node.1/@nodeData/@connections.0" name="ClientCode" type="id_Integer" xpath="Table_Surveys/ClientCode"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/PropertyCode]" incomingConnections="//@node.1/@nodeData/@connections.1" name="PropertyCode" type="id_String" xpath="Table_Surveys/PropertyCode"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/FacilityCode]" incomingConnections="//@node.1/@nodeData/@connections.2" name="FacilityCode" type="id_Integer" xpath="Table_Surveys/FacilityCode"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/ProjectCode]" incomingConnections="//@node.1/@nodeData/@connections.3" name="ProjectCode" type="id_Integer" xpath="Table_Surveys/ProjectCode"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/PodProjectID]" incomingConnections="//@node.1/@nodeData/@connections.9" name="PodProjectId" type="id_Integer" xpath="Table_Surveys/PodProjectId"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/RespondentID]" incomingConnections="//@node.1/@nodeData/@connections.10" name="RespondentId" type="id_Integer" xpath="Table_Surveys/RespondentId"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/FullPodProjectName]" incomingConnections="//@node.1/@nodeData/@connections.4" name="FullPodProjectName" type="id_String" xpath="Table_Surveys/FullPodProjectName"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/HasNegative]" incomingConnections="//@node.1/@nodeData/@connections.5" name="HasNegative" type="id_Boolean" xpath="Table_Surveys/HasNegative"/>
+        <nodes expression="[input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/HasComments]" incomingConnections="//@node.1/@nodeData/@connections.6" name="HasComments" type="id_String" xpath="Table_Surveys/HasComments"/>
+        <nodes expression=" [input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/Rate]" incomingConnections="//@node.1/@nodeData/@connections.8" name="OverallRating" type="id_Float" xpath="Table_Surveys/OverallRating"/>
+        <nodes expression="Relational.ISNULL&#13;&#10;([input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/TimeTaken])?null:&#13;&#10;([input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/TimeTaken].contains(&quot;0001&quot;)?null:TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, [input_surveys.Soap:/soap:Envelope/soap:Body/GetSurveyResultResponse/GetSurveyResultResult/ArrayOfSimpleSurveyWithRespondent/SimpleSurveyWithRespondent/TimeTaken])) " incomingConnections="//@node.1/@nodeData/@connections.7" name="TimeTaken" pattern="&quot;yyyy-MM-dd'T'HH:mm:ss&quot;" type="id_Date" xpath="Table_Surveys/TimeTaken"/>
+        <nodes expression="5" name="DI_SOR_SK" type="id_Integer" xpath="Table_Surveys/DI_SOR_SK"/>
+        <nodes expression="pid " name="DI_PID" nullable="false" type="id_String" xpath="Table_Surveys/DI_PID"/>
+        <nodes expression="TalendDate.getCurrentDate()" name="DI_CREATE_DATE" nullable="false" type="id_Date" xpath="Table_Surveys/DI_CREATE_DATE"/>
+        <nodes expression="TalendDate.getCurrentDate()" name="DI_MODIFY_DATE" nullable="false" type="id_Date" xpath="Table_Surveys/DI_MODIFY_DATE"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.7" target="//@node.1/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.8" target="//@node.1/@nodeData/@outputTrees.0/@nodes.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.9" target="//@node.1/@nodeData/@outputTrees.0/@nodes.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.12" target="//@node.1/@nodeData/@outputTrees.0/@nodes.11" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.10" target="//@node.1/@nodeData/@outputTrees.0/@nodes.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0/@children.1/@children.1/@children.1/@children.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.STG_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.STG_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.STG_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.STG_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.STG_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kkfGD+GzgILHB6Co2XBMCNkn5N2+65r5WPfyL2VnBlD0vYujBRIUebgG9F1O4ErQ"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SRV_GRM_Surveys&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="Id"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.STG_AdditionalParams"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ClientCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PropertyCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FacilityCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProjectCode"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PodProjectId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RespondentId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FullPodProjectName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HasNegative"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HasComments"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OverallRating"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TimeTaken"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_SOR_SK"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_PID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_CREATE_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DI_MODIFY_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SRV_GRM_Surveys" name="tDBOutput_1">
+      <column comment="" key="false" length="32" name="Id" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ClientCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="PropertyCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FacilityCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProjectCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PodProjectId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RespondentId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="FullPodProjectName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HasNegative" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="HasComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="24" name="OverallRating" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeTaken" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="SRV_GRM_Surveys" name="REJECT">
+      <column comment="" key="false" length="32" name="Id" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ClientCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="PropertyCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FacilityCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProjectCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PodProjectId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RespondentId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="FullPodProjectName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HasNegative" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="HasComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="24" name="OverallRating" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeTaken" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.STG_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.STG_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.STG_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.STG_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.STG_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wkdbmWoCCbKvovpU4H0OJEOfQq4dgdKAYkLBILK5keS841K+cZO50Is7D9vLPY9X"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;SRV_GRM_Surveys&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;TRUNCATE TABLE&#9;\&quot;&quot;+context.STG_Schema+&quot;\&quot;.SRV_GRM_Surveys&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.STG_AdditionalParams"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="SRV_GRM_Surveys_SK"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="SRV_GRM_Surveys" name="tDBRow_1">
+      <column comment="" key="true" length="10" name="SRV_GRM_Surveys_SK" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="Id" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ClientCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="PropertyCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FacilityCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProjectCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PodProjectId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RespondentId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="FullPodProjectName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HasNegative" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="HasComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="24" name="OverallRating" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeTaken" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="SRV_GRM_Surveys" name="REJECT">
+      <column comment="" key="true" length="10" name="SRV_GRM_Surveys_SK" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="32" name="Id" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ClientCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="PropertyCode" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FacilityCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="ProjectCode" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="PodProjectId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="RespondentId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="FullPodProjectName" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="HasNegative" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1073741823" name="HasComments" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="24" name="OverallRating" nullable="true" pattern="" precision="0" sourceType="REAL" type="id_Float" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="TimeTaken" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DI_SOR_SK" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="DI_PID" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_CREATE_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(getdate())'" key="false" length="23" name="DI_MODIFY_DATE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;E:/TalendWorkspace/out.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1"/>
+  </node>
+  <connection connectorName="FLOW" label="input_surveys" lineStyle="0" metaname="tSOAP_1" offsetLabelX="0" offsetLabelY="0" source="tSOAP_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="input_surveys"/>
+  </connection>
+  <connection connectorName="FLOW" label="Table_Surveys" lineStyle="0" metaname="Table_Surveys" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Table_Surveys"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tSOAP_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSOAP_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_34cb042d-481f-44e3-94b9-14a853670ae4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NaVjiN3mqXeYzmvYudBXKXJMeUnltytday2aHwMqhtj4BPBC31XvWcVO3xD+ZHgm/cSWlfAlYDQC&#13;
+Zk+7uMb3Rw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b60103ef-7a3d-4956-951b-b11ebfb0abc7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gSa7RtIsHkE4HclNBHln3hUajIrRa45hol1mKfSw12Tc2Vlt7Ngn1m64DAft3UV0mUUu+om4B1mQ&#13;
+WmGPKTvdZw==</DigestValue></Reference></SignedInfo><SignatureValue>BlwcFMP0rDU9WvRDipueWhnKrdrRHnDqOX/MD5mIl3ZiSjomgzkyKpIlr7xvVo0FkkqgDOBDgK71&#13;
+32yHasOkX4kv9NK4+0GcU4F3P1hvJWlKfkZ08WPkq1C+v2ZnNdDjYwMmBsDlV5C/Ae9LROBaCzP0&#13;
+d5F/2ugulp2fWtMfvINAwBWac/IFqI31Q3HPTMgTSWS8Ab3CxcZxxwkasK7LLYgmH4E7kXSkHEeu&#13;
+RJ04hNukhSitBR3ZmjQYV5zRLvOSBHmX+CWU+Kt/VRYxB862iW8PRCIba6Ipqfrgnk22kIaczeLx&#13;
+4zj1WbYZ48Jv0AWs3QR3GWAuc91gh/KHGNNcxw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b60103ef-7a3d-4956-951b-b11ebfb0abc7" Target="#_34cb042d-481f-44e3-94b9-14a853670ae4"><Timestamp>2023-07-25 21:03:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

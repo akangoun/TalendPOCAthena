@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/Final_project</deletedFolders>
   <deletedFolders>process/NCMIC</deletedFolders>
   <deletedFolders>process/NCMIC/INT_dev</deletedFolders>
   <deletedFolders>process/NCMIC/INT_dev/infox</deletedFolders>
+  <deletedFolders>process/ORM_Train</deletedFolders>
+  <deletedFolders>process/SBX</deletedFolders>
+  <deletedFolders>process/SBX/init_jobs</deletedFolders>
+  <deletedFolders>process/SBX_init_jobs</deletedFolders>
+  <deletedFolders>process/SBX_templates</deletedFolders>
+  <deletedFolders>process/SFDC_CDC</deletedFolders>
   <deletedItems id="_QMZ6gN0PEeyQx48_Gc5lWw" path="" type="METADATA_CONNECTIONS"/>
 </recyclebin:RecycleBin>
